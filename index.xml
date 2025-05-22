@@ -29,11 +29,12 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 换头像&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 配置文件的配置过一遍&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 添加博客默认图片&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 添加博客默认图片&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 完成我们论文的初稿, 即使论文目前还有很多漏洞. 但是船大难掉头, 目前先考虑论文写完, 先是一个完整的论文再说. 毕竟明晚就是 ddl 了, 也没有办法再去做论文的重构了.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;好的又要吧论文拖到明天了 😅&lt;/p&gt;
 </description>
         </item>
         <item>
