@@ -2,18 +2,144 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Henry Zhang</title>
-        <link>https://Gzmomo001.github.io/</link>
+        <link>http://localhost:1313/</link>
         <description>Recent content on Henry Zhang</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <copyright>Henry Zhang</copyright>
-        <lastBuildDate>Thu, 22 May 2025 04:08:44 +0800</lastBuildDate><atom:link href="https://Gzmomo001.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <copyright>henryzhang070&#43;contact@gmail.com</copyright>
+        <lastBuildDate>Thu, 22 May 2025 23:40:31 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Daliy_blog2025 05 22</title>
+        <link>http://localhost:1313/p/daliy_blog2025-05-22/</link>
+        <pubDate>Thu, 22 May 2025 23:40:31 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/daliy_blog2025-05-22/</guid>
+        <description>&lt;img src="http://localhost:1313/default.jpeg" alt="Featured image of post Daliy_blog2025 05 22" /&gt;&lt;h1 id=&#34;日常记录&#34;&gt;日常记录
+&lt;/h1&gt;&lt;h2 id=&#34;关于自己&#34;&gt;关于自己
+&lt;/h2&gt;&lt;p&gt;昨天晚上搞博客搞的太上头, 一不小心又熬到 4.多 🥹. 然后今天睡到下午才起床, 真是得不偿失啊啊啊啊. 但我这种性格就是, 很多时候如果不把一件事做完就是不会停下来. 直到我把这件事做到某一个我想对满意的阶段的时候我可能才会开始休息. 简直就是先天牛马圣体.下周大大小小的考试就基本都考完了, 所以, 这几天再撑一下吧 🫠.&lt;/p&gt;
+&lt;h2 id=&#34;关于考试&#34;&gt;关于考试
+&lt;/h2&gt;&lt;p&gt;距离高数的期末考还有两天, 今天已经看了一整天的高数视频了. 也不知道自己学没学进去, 但聊胜于无嘛. &lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1zr421F7UN?spm_id_from=333.788.videopod.episodes&amp;amp;vd_source=fbc2a846bae010cde7c33a4fbe6c2e57&amp;amp;p=4&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Kari&lt;/a&gt;老师的视频确实感觉已经比国内大部分大学教授讲的都要好了. 逻辑比较清晰, 也都是按照思维导图来复习. 很适合我这种 visual memory 的人.&lt;/p&gt;
+&lt;p&gt;目前为止的复习进度也还是比较紧张, 2231 专业课 java 我已经很久都没有看, 也没有 coding 了. 不过大部分的内容其实也都是记忆的东西. 这种一般花个半天时间就搞定了. 其实比较担心的还是我的两门数学考试, 和 2920 计算机系统架构. 数学考试的备考感觉是没有尽头的. 因为总会有更难的题型给你做, 你的熟练度也基本没有上线. 所以数学的复习还是不能太上头, 不然就像是时间黑洞一样吞噬你的时间.😇 很容易把其他事情耽误了.&lt;/p&gt;
+&lt;h2 id=&#34;final-project&#34;&gt;Final project
+&lt;/h2&gt;&lt;p&gt;期末的那个论文到目前的情况确实是差强人意了, 一开始我就低估了这个领域的强度和我们小组的执行能力. 布置出去的任务基本都要延迟几天才能完成, 这还是挺扰乱原本的计划的. 这个项目原本要做的实验也是时间的原因没有做成, 而且小组里似乎也只有我有这个代码能力. 本来的设想是我来完成我们项目的代码部分, 然后我的小组成员能帮我完成论文. 但我也没有提前了解他们对这领域的了解, 最后出于他们的执行力, 和了解程度. 我打算论文还是我自己来执手. 所以, 项目的代码部分就只能学期结束之后再继续推进了.&lt;/p&gt;
+&lt;h2 id=&#34;今天最后的一点任务&#34;&gt;今天最后的一点任务
+&lt;/h2&gt;&lt;p&gt;当我开始写这个博客的时候已经快 12.了. 但事情总是做不完的. 今晚也不能再熬怎么晚了. 所以今晚就最后再完成两个任务吧.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 完善我的博客内容, 由于博客是昨天才匆忙搭建完的. 对这个项目的熟悉程度也不够. 希望今天能在完善博客的时候, 顺便也能熟悉一下这个项目的使用.
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 换头像&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 配置文件的配置过一遍&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 添加博客默认图片&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 完成我们论文的初稿, 即使论文目前还有很多漏洞. 但是船大难掉头, 目前先考虑论文写完, 先是一个完整的论文再说. 毕竟明晚就是 ddl 了, 也没有办法再去做论文的重构了.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>Hugo_notes</title>
+        <link>http://localhost:1313/p/hugo_notes/</link>
+        <pubDate>Thu, 22 May 2025 23:29:01 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/hugo_notes/</guid>
+        <description>&lt;img src="http://localhost:1313/p/hugo_notes/1.jpeg" alt="Featured image of post Hugo_notes" /&gt;&lt;h1 id=&#34;hugo-笔记&#34;&gt;Hugo 笔记
+&lt;/h1&gt;&lt;p&gt;这里是我记录 Hugo 这个框架笔记的方法, 方便我以后忘记的时候能回来查看. 本 blog 会持续更新&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;当然这里很多笔记也会是基于 stack 这个主题, 不过 hugo 大部分语法应该是通用的. 应该也有一定的参考价值.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;创建新的博客&#34;&gt;创建新的博客
+&lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo new content/post/&amp;lt;博客名&amp;gt;.md
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo new content/post/daliy_blog&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;date +%Y-%m-%d&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;.md
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 这个方法适用于日常博客的发表, 博客名会基于当前的日期创建&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo new content/post/daliy_blog&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;date +%Y-%m-%d&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;/index.md
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 这样可以创建博客文件夹, 文件夹下可以放图片等内容&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cp static/images/default.jpg content/post/daily_blog&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;date +%Y-%m-%d&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;/
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;刷新静态文件&#34;&gt;刷新静态文件
+&lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 这个指令会在你的静态文件目录下生成静态文件, 然后你就可以在你的服务器上部署了&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo server -D
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 这个指令会打开本地hugo服务, 并在你有修改的时候自动刷新静态文件&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;stack-主题设置&#34;&gt;stack 主题设置
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;点击这里进入官方文档&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;b 站有个 up 已经发了 stack 主题比较详细的配置教程了, 所以我都在这个&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1bovfeaEtQ?spm_id_from=333.788.videopod.episodes&amp;amp;vd_source=5677f4a9840d40a9506c647b6c360e84&amp;amp;p=2&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;视频&lt;/a&gt;中学习&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://letere-gzj.github.io/hugo-stack/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;大佬的静态博客, 这里有很多学习的链接&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;widgets&#34;&gt;widgets
+&lt;/h3&gt;&lt;p&gt;配置文件下的这个部分是控制博客主页右侧的一些小组件的, 我觉得视频中的音乐播放器挺不错.&lt;/p&gt;
+&lt;h3 id=&#34;add-links&#34;&gt;add links
+&lt;/h3&gt;&lt;p&gt;To use this feature, add &lt;code&gt;links&lt;/code&gt; section to frontmatter.&lt;/p&gt;
+&lt;p&gt;This page&amp;rsquo;s frontmatter:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;links&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;- &lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;GitHub&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;description&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;GitHub is the world&amp;#39;s largest software development platform.&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;website&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;https://github.com&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;image&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;- &lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;TypeScript&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;description&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;website&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;https://www.typescriptlang.org&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;image&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;ts-logo-128.jpg&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;code&gt;image&lt;/code&gt; field accepts both local and external images.&lt;/p&gt;
+&lt;h2 id=&#34;todo&#34;&gt;TODO
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 配置评论区, &lt;a class=&#34;link&#34; href=&#34;https://juejin.cn/post/6844903834712539150&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;方案链接&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; widgets 添加音乐播放器, &lt;a class=&#34;link&#34; href=&#34;&#34; &gt;方案链接&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
         <title>Myfirstblog</title>
-        <link>https://Gzmomo001.github.io/p/myfirstblog/</link>
+        <link>http://localhost:1313/p/myfirstblog/</link>
         <pubDate>Thu, 22 May 2025 04:08:44 +0800</pubDate>
         
-        <guid>https://Gzmomo001.github.io/p/myfirstblog/</guid>
-        <description>&lt;h1 id=&#34;这个是我的第一个条博客准确来说是第二条-hhh&#34;&gt;这个是我的第一个条博客(准确来说是第二条 hhh)
+        <guid>http://localhost:1313/p/myfirstblog/</guid>
+        <description>&lt;img src="http://localhost:1313/default.jpeg" alt="Featured image of post Myfirstblog" /&gt;&lt;h1 id=&#34;这个是我的第一个条博客准确来说是第二条-hhh&#34;&gt;这个是我的第一个条博客(准确来说是第二条 hhh)
 &lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;时间: 25 年 5 月 22 号&lt;/li&gt;
 &lt;/ul&gt;
@@ -45,11 +171,11 @@
         </item>
         <item>
         <title>Chinese Test</title>
-        <link>https://Gzmomo001.github.io/p/test-chinese/</link>
+        <link>http://localhost:1313/p/test-chinese/</link>
         <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
         
-        <guid>https://Gzmomo001.github.io/p/test-chinese/</guid>
-        <description>&lt;img src="https://Gzmomo001.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg" alt="Featured image of post Chinese Test" /&gt;&lt;h2 id=&#34;正文测试&#34;&gt;正文测试
+        <guid>http://localhost:1313/p/test-chinese/</guid>
+        <description>&lt;img src="http://localhost:1313/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg" alt="Featured image of post Chinese Test" /&gt;&lt;h2 id=&#34;正文测试&#34;&gt;正文测试
 &lt;/h2&gt;&lt;p&gt;而这些并不是完全重要，更加重要的问题是， 带着这些问题，我们来审视一下学生会退会。 既然如何， 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 我们不得不面对一个非常尴尬的事实，那就是， 可是，即使是这样，学生会退会的出现仍然代表了一定的意义。 学生会退会，发生了会如何，不发生又会如何。 经过上述讨论， 生活中，若学生会退会出现了，我们就不得不考虑它出现了的事实。 学生会退会，到底应该如何实现。 这样看来， 在这种困难的抉择下，本人思来想去，寝食难安。 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 就我个人来说，学生会退会对我的意义，不能不说非常重大。 莎士比亚曾经提到过，人的一生是短的，但如果卑劣地过这一生，就太长了。这似乎解答了我的疑惑。 莫扎特说过一句富有哲理的话，谁和我一样用功，谁就会和我一样成功。这启发了我， 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 学生会退会，到底应该如何实现。 一般来说， 从这个角度来看， 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 在这种困难的抉择下，本人思来想去，寝食难安。 了解清楚学生会退会到底是一种怎么样的存在，是解决一切问题的关键。 一般来说， 生活中，若学生会退会出现了，我们就不得不考虑它出现了的事实。 问题的关键究竟为何？ 而这些并不是完全重要，更加重要的问题是。&lt;/p&gt;
 &lt;p&gt;奥斯特洛夫斯基曾经说过，共同的事业，共同的斗争，可以使人们产生忍受一切的力量。　带着这句话，我们还要更加慎重的审视这个问题： 一般来讲，我们都必须务必慎重的考虑考虑。 既然如此， 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 带着这些问题，我们来审视一下学生会退会。 我认为， 我认为， 在这种困难的抉择下，本人思来想去，寝食难安。 问题的关键究竟为何？ 每个人都不得不面对这些问题。 在面对这种问题时， 要想清楚，学生会退会，到底是一种怎么样的存在。 我认为， 既然如此， 每个人都不得不面对这些问题。 在面对这种问题时， 那么， 我认为， 学生会退会因何而发生。&lt;/p&gt;
 &lt;h2 id=&#34;引用&#34;&gt;引用
@@ -61,10 +187,10 @@
 &lt;p&gt;&lt;em&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=3aypp_YlBzI&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;最暖的憂傷 - 田馥甄&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;图片&#34;&gt;图片
-&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://Gzmomo001.github.io/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash.jpg&#34;
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash.jpg&#34;
 	width=&#34;667&#34;
 	height=&#34;1000&#34;
-	srcset=&#34;https://Gzmomo001.github.io/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu_e98fca2b4272416e.jpg 480w, https://Gzmomo001.github.io/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu_e3d37c9ded115b12.jpg 1024w&#34;
+	srcset=&#34;http://localhost:1313/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu_e98fca2b4272416e.jpg 480w, http://localhost:1313/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu_e3d37c9ded115b12.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Photo by Florian Klauer on Unsplash&#34;
@@ -74,10 +200,10 @@
 		data-flex-grow=&#34;66&#34;
 		data-flex-basis=&#34;160px&#34;
 	
-&gt;  &lt;img src=&#34;https://Gzmomo001.github.io/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash.jpg&#34;
+&gt;  &lt;img src=&#34;http://localhost:1313/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash.jpg&#34;
 	width=&#34;1000&#34;
 	height=&#34;667&#34;
-	srcset=&#34;https://Gzmomo001.github.io/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu_e13c58d5189f892c.jpg 480w, https://Gzmomo001.github.io/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu_8fc948b7ee525251.jpg 1024w&#34;
+	srcset=&#34;http://localhost:1313/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu_e13c58d5189f892c.jpg 480w, http://localhost:1313/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu_8fc948b7ee525251.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Photo by Luca Bravo on Unsplash&#34;
@@ -88,10 +214,10 @@
 		data-flex-basis=&#34;359px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Gzmomo001.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg&#34;
 	width=&#34;1000&#34;
 	height=&#34;750&#34;
-	srcset=&#34;https://Gzmomo001.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu_503c0ebcc5245e10.jpg 480w, https://Gzmomo001.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu_48c98de55fb3c999.jpg 1024w&#34;
+	srcset=&#34;http://localhost:1313/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu_503c0ebcc5245e10.jpg 480w, http://localhost:1313/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu_48c98de55fb3c999.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Photo by Helena Hertz on Unsplash&#34;
@@ -101,10 +227,10 @@
 		data-flex-grow=&#34;133&#34;
 		data-flex-basis=&#34;320px&#34;
 	
-&gt;  &lt;img src=&#34;https://Gzmomo001.github.io/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash.jpg&#34;
+&gt;  &lt;img src=&#34;http://localhost:1313/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash.jpg&#34;
 	width=&#34;667&#34;
 	height=&#34;1000&#34;
-	srcset=&#34;https://Gzmomo001.github.io/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hu_f81a3588c5c4a663.jpg 480w, https://Gzmomo001.github.io/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hu_1c52ba2a4ad7b9a0.jpg 1024w&#34;
+	srcset=&#34;http://localhost:1313/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hu_f81a3588c5c4a663.jpg 480w, http://localhost:1313/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hu_1c52ba2a4ad7b9a0.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Photo by Hudai Gayiran on Unsplash&#34;
@@ -133,19 +259,19 @@
         </item>
         <item>
         <title>Archives</title>
-        <link>https://Gzmomo001.github.io/archives/</link>
+        <link>http://localhost:1313/archives/</link>
         <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://Gzmomo001.github.io/archives/</guid>
+        <guid>http://localhost:1313/archives/</guid>
         <description></description>
         </item>
         <item>
         <title>Markdown Syntax Guide</title>
-        <link>https://Gzmomo001.github.io/p/markdown-syntax-guide/</link>
+        <link>http://localhost:1313/p/markdown-syntax-guide/</link>
         <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://Gzmomo001.github.io/p/markdown-syntax-guide/</guid>
-        <description>&lt;img src="https://Gzmomo001.github.io/p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg" alt="Featured image of post Markdown Syntax Guide" /&gt;&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;
+        <guid>http://localhost:1313/p/markdown-syntax-guide/</guid>
+        <description>&lt;img src="http://localhost:1313/p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg" alt="Featured image of post Markdown Syntax Guide" /&gt;&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;
 &lt;h2 id=&#34;headings&#34;&gt;Headings
 &lt;/h2&gt;&lt;p&gt;The following HTML &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;—&lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; elements represent six levels of section headings. &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; is the highest section level while &lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; is the lowest.&lt;/p&gt;
 &lt;h1 id=&#34;h1&#34;&gt;H1
@@ -369,10 +495,10 @@
         </item>
         <item>
         <title>Rich Content</title>
-        <link>https://Gzmomo001.github.io/p/rich-content/</link>
+        <link>http://localhost:1313/p/rich-content/</link>
         <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://Gzmomo001.github.io/p/rich-content/</guid>
+        <guid>http://localhost:1313/p/rich-content/</guid>
         <description>&lt;p&gt;Hugo ships with several &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;
@@ -390,61 +516,13 @@
 &lt;br&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;twitter-simple-shortcode&#34;&gt;Twitter Simple Shortcode
-&lt;/h2&gt;&lt;style type=&#34;text/css&#34;&gt;
-      .twitter-tweet {
-        font:
-          14px/1.45 -apple-system,
-          BlinkMacSystemFont,
-          &#34;Segoe UI&#34;,
-          Roboto,
-          Oxygen-Sans,
-          Ubuntu,
-          Cantarell,
-          &#34;Helvetica Neue&#34;,
-          sans-serif;
-        border-left: 4px solid #2b7bb9;
-        padding-left: 1.5em;
-        color: #555;
-      }
-      .twitter-tweet a {
-        color: #2b7bb9;
-        text-decoration: none;
-      }
-      blockquote.twitter-tweet a:hover,
-      blockquote.twitter-tweet a:focus {
-        text-decoration: underline;
-      }
-    &lt;/style&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;“In addition to being more logical, asymmetry has the advantage that its complete appearance is far more optically effective than symmetry.”&lt;br&gt;— Jan Tschichold &lt;a href=&#34;https://t.co/gcv7SrhvJb&#34;&gt;pic.twitter.com/gcv7SrhvJb&lt;/a&gt;&lt;/p&gt;&amp;mdash; Design Reviewed | Graphic Design History (@DesignReviewed) &lt;a href=&#34;https://twitter.com/DesignReviewed/status/1085870671291310081?ref_src=twsrc%5Etfw&#34;&gt;January 17, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;/h2&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;“In addition to being more logical, asymmetry has the advantage that its complete appearance is far more optically effective than symmetry.”&lt;br&gt;— Jan Tschichold &lt;a href=&#34;https://t.co/gcv7SrhvJb&#34;&gt;pic.twitter.com/gcv7SrhvJb&lt;/a&gt;&lt;/p&gt;&amp;mdash; Design Reviewed | Graphic Design History (@DesignReviewed) &lt;a href=&#34;https://twitter.com/DesignReviewed/status/1085870671291310081?ref_src=twsrc%5Etfw&#34;&gt;January 17, 2019&lt;/a&gt;&lt;/blockquote&gt;
 
 
 &lt;br&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;vimeo-simple-shortcode&#34;&gt;Vimeo Simple Shortcode
-&lt;/h2&gt;&lt;style&gt;
-.__h_video {
-   position: relative;
-   padding-bottom: 56.23%;
-   height: 0;
-   overflow: hidden;
-   width: 100%;
-   background: #000;
-}
-.__h_video img {
-   width: 100%;
-   height: auto;
-   color: #000;
-}
-.__h_video .play {
-   height: 72px;
-   width: 72px;
-   left: 50%;
-   top: 50%;
-   margin-left: -36px;
-   margin-top: -36px;
-   position: absolute;
-   cursor: pointer;
-}
-&lt;/style&gt;&lt;div class=&#34;s_video_simple __h_video&#34;&gt;
+&lt;/h2&gt;&lt;div class=&#34;s_video_simple __h_video&#34;&gt;
           &lt;a href=&#34;https://vimeo.com/48912912&#34; rel=&#34;noopener&#34; target=&#34;_blank&#34;&gt;
             &lt;img src=&#34;https://i.vimeocdn.com/video/337401969-979f0cc9f55fdf305fb8984e90d92639ec9d7ecc4c9dfbc6536e28edb43784ce-d_640?region=us&#34; srcset=&#34;https://i.vimeocdn.com/video/337401969-979f0cc9f55fdf305fb8984e90d92639ec9d7ecc4c9dfbc6536e28edb43784ce-d_640?region=us 1x, https://i.vimeocdn.com/video/337401969-979f0cc9f55fdf305fb8984e90d92639ec9d7ecc4c9dfbc6536e28edb43784ce-d_640?region=us 2x&#34; alt=&#34;Sing Jan Swing - Kinetic Type&#34;&gt;
             &lt;div class=&#34;play&#34;&gt;
@@ -493,11 +571,11 @@
         </item>
         <item>
         <title>Placeholder Text</title>
-        <link>https://Gzmomo001.github.io/p/placeholder-text/</link>
+        <link>http://localhost:1313/p/placeholder-text/</link>
         <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://Gzmomo001.github.io/p/placeholder-text/</guid>
-        <description>&lt;img src="https://Gzmomo001.github.io/p/placeholder-text/matt-le-SJSpo9hQf7s-unsplash.jpg" alt="Featured image of post Placeholder Text" /&gt;&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;
+        <guid>http://localhost:1313/p/placeholder-text/</guid>
+        <description>&lt;img src="http://localhost:1313/p/placeholder-text/matt-le-SJSpo9hQf7s-unsplash.jpg" alt="Featured image of post Placeholder Text" /&gt;&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;
 &lt;p&gt;Redit teque digerit hominumque toris verebor lumina non cervice subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc caluere tempus inhospita parcite confusaque translucet patri vestro qui optatis lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Exierant elisi ambit vivere dedere&lt;/li&gt;
@@ -524,10 +602,10 @@
         </item>
         <item>
         <title>Math Typesetting</title>
-        <link>https://Gzmomo001.github.io/p/math-typesetting/</link>
+        <link>http://localhost:1313/p/math-typesetting/</link>
         <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://Gzmomo001.github.io/p/math-typesetting/</guid>
+        <guid>http://localhost:1313/p/math-typesetting/</guid>
         <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;
 &lt;p&gt;In this example we will be using &lt;a class=&#34;link&#34; href=&#34;https://katex.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;KaTeX&lt;/a&gt;&lt;/p&gt;
@@ -566,11 +644,11 @@ $$</description>
         </item>
         <item>
         <title>Emoji Support</title>
-        <link>https://Gzmomo001.github.io/p/emoji-support/</link>
+        <link>http://localhost:1313/p/emoji-support/</link>
         <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://Gzmomo001.github.io/p/emoji-support/</guid>
-        <description>&lt;img src="https://Gzmomo001.github.io/p/emoji-support/the-creative-exchange-d2zvqp3fpro-unsplash.jpg" alt="Featured image of post Emoji Support" /&gt;&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;
+        <guid>http://localhost:1313/p/emoji-support/</guid>
+        <description>&lt;img src="http://localhost:1313/p/emoji-support/the-creative-exchange-d2zvqp3fpro-unsplash.jpg" alt="Featured image of post Emoji Support" /&gt;&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;
 &lt;p&gt;The &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/functions/emojify/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;emojify&lt;/code&gt;&lt;/a&gt; function can be called directly in templates or &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/templates/shortcode-templates/#inline-shortcodes&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Inline Shortcodes&lt;/a&gt;.&lt;/p&gt;
@@ -596,55 +674,36 @@ $$</description>
 &lt;/div&gt;</description>
         </item>
         <item>
-        <title>Links</title>
-        <link>https://Gzmomo001.github.io/links/</link>
+        <title>About me</title>
+        <link>http://localhost:1313/about-me/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://Gzmomo001.github.io/links/</guid>
-        <description>&lt;p&gt;To use this feature, add &lt;code&gt;links&lt;/code&gt; section to frontmatter.&lt;/p&gt;
-&lt;p&gt;This page&amp;rsquo;s frontmatter:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;links&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;- &lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;GitHub&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;description&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;GitHub is the world&amp;#39;s largest software development platform.&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;website&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;https://github.com&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;image&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;- &lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;TypeScript&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;description&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;website&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;https://www.typescriptlang.org&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;image&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;ts-logo-128.jpg&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;code&gt;image&lt;/code&gt; field accepts both local and external images.&lt;/p&gt;
+        <guid>http://localhost:1313/about-me/</guid>
+        <description>&lt;p&gt;这里有关于我的一些信息.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 待完成&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         <item>
         <title>Search</title>
-        <link>https://Gzmomo001.github.io/search/</link>
+        <link>http://localhost:1313/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://Gzmomo001.github.io/search/</guid>
+        <guid>http://localhost:1313/search/</guid>
         <description></description>
         </item>
         <item>
-        <title>关于</title>
-        <link>https://Gzmomo001.github.io/%E5%85%B3%E4%BA%8E/</link>
+        <title>Some Useful Links</title>
+        <link>http://localhost:1313/some-useful-links/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://Gzmomo001.github.io/%E5%85%B3%E4%BA%8E/</guid>
-        <description>&lt;p&gt;This is a test page for i18n support.&lt;/p&gt;
+        <guid>http://localhost:1313/some-useful-links/</guid>
+        <description>&lt;p&gt;这里有一些我认为比较实用, 并且常用的一些网站链接.&lt;/p&gt;
+&lt;p&gt;Feel free to take it🥰.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 待完成&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         
