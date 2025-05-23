@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
-    <head><meta charset='utf-8'>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="这里是我记录 Hugo 这个框架笔记的地方">
 <title>Hugo_notes</title>
 
-<link rel='canonical' href='https://Gzmomo001.github.io/p/hugo_notes/'>
+<link rel='canonical' href='http://localhost:1313/p/hugo_notes/'>
 
-<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="Hugo_notes">
+<link rel="stylesheet" href="/scss/style.min.8d934ad4bc016d1815207ceb7e43fb3eb6fedac5e3d051f641d6ce55cf579125.css"><meta property='og:title' content="Hugo_notes">
 <meta property='og:description' content="这里是我记录 Hugo 这个框架笔记的地方">
-<meta property='og:url' content='https://Gzmomo001.github.io/p/hugo_notes/'>
+<meta property='og:url' content='http://localhost:1313/p/hugo_notes/'>
 <meta property='og:site_name' content='Henry Zhang'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Hugo' /><meta property='article:published_time' content='2025-05-22T23:29:01&#43;08:00'/><meta property='article:modified_time' content='2025-05-22T23:29:01&#43;08:00'/><meta property='og:image' content='https://Gzmomo001.github.io/p/hugo_notes/1.jpeg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Hugo' /><meta property='article:published_time' content='2025-05-22T23:29:01&#43;08:00'/><meta property='article:modified_time' content='2025-05-23T01:59:34&#43;08:00'/><meta property='og:image' content='http://localhost:1313/p/hugo_notes/1.jpeg' />
 <meta name="twitter:title" content="Hugo_notes">
 <meta name="twitter:description" content="这里是我记录 Hugo 这个框架笔记的地方"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://Gzmomo001.github.io/p/hugo_notes/1.jpeg' />
+    <meta name="twitter:image" content='http://localhost:1313/p/hugo_notes/1.jpeg' />
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -214,9 +214,9 @@
 
                             <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
                                 
-                                    <option value="https://Gzmomo001.github.io/en/" >English</option>
+                                    <option value="http://localhost:1313/en/" >English</option>
                                 
-                                    <option value="https://Gzmomo001.github.io/" selected>简体中文</option>
+                                    <option value="http://localhost:1313/" selected>简体中文</option>
                                 
                             </select>
                         </li>
@@ -347,9 +347,19 @@
 </svg>
                 <time class="article-time--published">2025-05-22</time>
             </div>
-        
+        <div class="article-lastmod">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
 
-        
+
+
+                <time>
+                    May 23, 2025 01:59 CST
+                </time>
+            </div>
     </footer>
     
 
@@ -475,7 +485,10 @@
 
         <span>A winner is just a loser who tried one more time.</span>
     </section>
-    </footer>
+    
+
+    
+</footer>
 
 
     
@@ -616,7 +629,7 @@
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.afc006ea9bd8920c4b7cd9127cbd08958842accd71f27f27b34b6c0c77a82951.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');
@@ -627,6 +640,111 @@
 
         document.head.appendChild(customFont);
     }());
+</script>
+<style>
+    @font-face {
+      font-family: 'MapleMono';
+      src: url(http://localhost:1313/font/MapleMono.ttf) format('truetype');
+    }
+  
+    :root {
+      --base-font-family: 'MapleMono';
+      --code-font-family: 'MapleMono';
+    }
+
+</style>
+
+<style>
+    #TableOfContents > ul, ol {
+        ul, ol {
+            display: none;
+        }
+        .open {
+            display: block;
+        }
+    }
+</style>
+
+<script>
+    function initTocHide() {
+        
+        let toc = document.querySelector(".widget--toc");
+        if (!toc) {
+            return;
+        }
+        
+        window.addEventListener('scroll', function() {
+            
+            let openUl = document.querySelectorAll(".open");
+            if (openUl.length > 0) {
+              openUl.forEach((ul) => {
+                ul.classList.remove("open")
+              })
+            }
+            
+            let currentLi = document.querySelector(".active-class");
+            if (!currentLi) {
+                return
+            }
+            
+            if (currentLi.children.length > 1) {
+                currentLi.children[1].classList.add("open")
+            }
+            
+            let ul = currentLi.parentElement;
+            do {
+                ul.classList.add("open");
+                ul = ul.parentElement.parentElement
+            } while (ul !== undefined && (ul.localName === 'ul' || ul.localName === 'ol'))
+        });
+    }
+    initTocHide()
+</script>
+
+<style>
+    #backTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        z-index: 99;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        background-image: url(http://localhost:1313/icons/backtop.svg);
+    }
+</style>
+
+<script>
+    
+
+    function initScrollTop() {
+        let rightSideBar = document.querySelector(".right-sidebar");
+        if (!rightSideBar) {
+            return;
+        }
+        
+        let btn = document.createElement("div");
+        btn.id = "backTopBtn";
+        btn.onclick = backToTop
+        rightSideBar.appendChild(btn)
+        
+        window.onscroll = function() {
+            
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+    }
+
+    
+
+    function backToTop(){
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+
+    initScrollTop();
 </script>
 
     </body>

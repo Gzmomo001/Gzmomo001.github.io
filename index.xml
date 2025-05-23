@@ -6,8 +6,59 @@
         <description>Recent content on Henry Zhang</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <copyright>henryzhang070&#43;contact@gmail.com</copyright>
-        <lastBuildDate>Thu, 22 May 2025 23:40:31 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <copyright>henryzhang070&#43;contact@gmail.com</copyright><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Daliy_blog2025 05 24</title>
+        <link>http://localhost:1313/p/daliy_blog2025-05-24/</link>
+        <pubDate>Sat, 24 May 2025 03:53:50 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/daliy_blog2025-05-24/</guid>
+        <description>&lt;img src="http://localhost:1313/default.jpeg" alt="Featured image of post Daliy_blog2025 05 24" /&gt;&lt;h1 id=&#34;不知好歹的博主&#34;&gt;不知好歹的博主
+&lt;/h1&gt;&lt;p&gt;博主第二天要考高数, 现在还熬到快四点钟真的很有生活了.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 添加网页个性化鼠标指针&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 添加网页字体&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 链接改为双拦显示, 能显示的内容更多了&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 博客能显示最后的修改时间&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 添加浏览标题自动展开和折叠的功能, 文章末尾是测试, 可以忽略&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 引入加载动画的功能&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;顺便记录一下周末的-todo&#34;&gt;顺便记录一下周末的 TODO
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 2526 学完双独立变量的部分&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 2231 11, 12, 13 章节过一遍&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 2920 先看几个单元.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;1&#34;&gt;1
+&lt;/h2&gt;&lt;h3 id=&#34;1-1&#34;&gt;1
+&lt;/h3&gt;&lt;p&gt;1&lt;/p&gt;
+&lt;h3 id=&#34;2&#34;&gt;2
+&lt;/h3&gt;&lt;p&gt;2&lt;/p&gt;
+&lt;h3 id=&#34;3&#34;&gt;3
+&lt;/h3&gt;&lt;p&gt;3&lt;/p&gt;
+&lt;h2 id=&#34;2-1&#34;&gt;2
+&lt;/h2&gt;&lt;h3 id=&#34;1-2&#34;&gt;1
+&lt;/h3&gt;&lt;p&gt;1&lt;/p&gt;
+&lt;h3 id=&#34;2-2&#34;&gt;2
+&lt;/h3&gt;&lt;p&gt;2&lt;/p&gt;
+&lt;h3 id=&#34;3-1&#34;&gt;3
+&lt;/h3&gt;&lt;p&gt;3&lt;/p&gt;
+&lt;h2 id=&#34;3-2&#34;&gt;3
+&lt;/h2&gt;&lt;h3 id=&#34;1-3&#34;&gt;1
+&lt;/h3&gt;&lt;p&gt;1&lt;/p&gt;
+&lt;h3 id=&#34;2-3&#34;&gt;2
+&lt;/h3&gt;&lt;p&gt;2&lt;/p&gt;
+&lt;h3 id=&#34;3-3&#34;&gt;3
+&lt;/h3&gt;&lt;p&gt;3&lt;/p&gt;
+&lt;h2 id=&#34;test&#34;&gt;test
+&lt;/h2&gt;&lt;h3 id=&#34;1-4&#34;&gt;1
+&lt;/h3&gt;&lt;p&gt;1&lt;/p&gt;
+&lt;h3 id=&#34;2-4&#34;&gt;2
+&lt;/h3&gt;&lt;p&gt;2&lt;/p&gt;
+&lt;h3 id=&#34;3-4&#34;&gt;3
+&lt;/h3&gt;&lt;p&gt;3&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Daliy_blog2025 05 22</title>
         <link>http://localhost:1313/p/daliy_blog2025-05-22/</link>
         <pubDate>Thu, 22 May 2025 23:40:31 +0800</pubDate>
@@ -32,7 +83,7 @@
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 添加博客默认图片&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 完成我们论文的初稿, 即使论文目前还有很多漏洞. 但是船大难掉头, 目前先考虑论文写完, 先是一个完整的论文再说. 毕竟明晚就是 ddl 了, 也没有办法再去做论文的重构了.&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 完成我们论文的初稿, 即使论文目前还有很多漏洞. 但是船大难掉头, 目前先考虑论文写完, 先是一个完整的论文再说. 毕竟明晚就是 ddl 了, 也没有办法再去做论文的重构了.(发现 ddl 是第二天 12. 明天起来交作业)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;好的又要吧论文拖到明天了 😅&lt;/p&gt;
 </description>
@@ -517,13 +568,61 @@
 &lt;br&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;twitter-simple-shortcode&#34;&gt;Twitter Simple Shortcode
-&lt;/h2&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;“In addition to being more logical, asymmetry has the advantage that its complete appearance is far more optically effective than symmetry.”&lt;br&gt;— Jan Tschichold &lt;a href=&#34;https://t.co/gcv7SrhvJb&#34;&gt;pic.twitter.com/gcv7SrhvJb&lt;/a&gt;&lt;/p&gt;&amp;mdash; Design Reviewed | Graphic Design History (@DesignReviewed) &lt;a href=&#34;https://twitter.com/DesignReviewed/status/1085870671291310081?ref_src=twsrc%5Etfw&#34;&gt;January 17, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;/h2&gt;&lt;style type=&#34;text/css&#34;&gt;
+      .twitter-tweet {
+        font:
+          14px/1.45 -apple-system,
+          BlinkMacSystemFont,
+          &#34;Segoe UI&#34;,
+          Roboto,
+          Oxygen-Sans,
+          Ubuntu,
+          Cantarell,
+          &#34;Helvetica Neue&#34;,
+          sans-serif;
+        border-left: 4px solid #2b7bb9;
+        padding-left: 1.5em;
+        color: #555;
+      }
+      .twitter-tweet a {
+        color: #2b7bb9;
+        text-decoration: none;
+      }
+      blockquote.twitter-tweet a:hover,
+      blockquote.twitter-tweet a:focus {
+        text-decoration: underline;
+      }
+    &lt;/style&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;“In addition to being more logical, asymmetry has the advantage that its complete appearance is far more optically effective than symmetry.”&lt;br&gt;— Jan Tschichold &lt;a href=&#34;https://t.co/gcv7SrhvJb&#34;&gt;pic.twitter.com/gcv7SrhvJb&lt;/a&gt;&lt;/p&gt;&amp;mdash; Design Reviewed | Graphic Design History (@DesignReviewed) &lt;a href=&#34;https://twitter.com/DesignReviewed/status/1085870671291310081?ref_src=twsrc%5Etfw&#34;&gt;January 17, 2019&lt;/a&gt;&lt;/blockquote&gt;
 
 
 &lt;br&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;vimeo-simple-shortcode&#34;&gt;Vimeo Simple Shortcode
-&lt;/h2&gt;&lt;div class=&#34;s_video_simple __h_video&#34;&gt;
+&lt;/h2&gt;&lt;style&gt;
+.__h_video {
+   position: relative;
+   padding-bottom: 56.23%;
+   height: 0;
+   overflow: hidden;
+   width: 100%;
+   background: #000;
+}
+.__h_video img {
+   width: 100%;
+   height: auto;
+   color: #000;
+}
+.__h_video .play {
+   height: 72px;
+   width: 72px;
+   left: 50%;
+   top: 50%;
+   margin-left: -36px;
+   margin-top: -36px;
+   position: absolute;
+   cursor: pointer;
+}
+&lt;/style&gt;&lt;div class=&#34;s_video_simple __h_video&#34;&gt;
           &lt;a href=&#34;https://vimeo.com/48912912&#34; rel=&#34;noopener&#34; target=&#34;_blank&#34;&gt;
             &lt;img src=&#34;https://i.vimeocdn.com/video/337401969-979f0cc9f55fdf305fb8984e90d92639ec9d7ecc4c9dfbc6536e28edb43784ce-d_640?region=us&#34; srcset=&#34;https://i.vimeocdn.com/video/337401969-979f0cc9f55fdf305fb8984e90d92639ec9d7ecc4c9dfbc6536e28edb43784ce-d_640?region=us 1x, https://i.vimeocdn.com/video/337401969-979f0cc9f55fdf305fb8984e90d92639ec9d7ecc4c9dfbc6536e28edb43784ce-d_640?region=us 2x&#34; alt=&#34;Sing Jan Swing - Kinetic Type&#34;&gt;
             &lt;div class=&#34;play&#34;&gt;

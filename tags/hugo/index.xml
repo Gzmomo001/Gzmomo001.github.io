@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Hugo on Henry Zhang</title>
-        <link>https://Gzmomo001.github.io/tags/hugo/</link>
+        <link>http://localhost:1313/tags/hugo/</link>
         <description>Recent content in Hugo on Henry Zhang</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>henryzhang070&#43;contact@gmail.com</copyright>
-        <lastBuildDate>Thu, 22 May 2025 23:29:01 +0800</lastBuildDate><atom:link href="https://Gzmomo001.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 23 May 2025 01:59:34 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/hugo/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Hugo_notes</title>
-        <link>https://Gzmomo001.github.io/p/hugo_notes/</link>
+        <link>http://localhost:1313/p/hugo_notes/</link>
         <pubDate>Thu, 22 May 2025 23:29:01 +0800</pubDate>
         
-        <guid>https://Gzmomo001.github.io/p/hugo_notes/</guid>
-        <description>&lt;img src="https://Gzmomo001.github.io/p/hugo_notes/1.jpeg" alt="Featured image of post Hugo_notes" /&gt;&lt;h1 id=&#34;hugo-笔记&#34;&gt;Hugo 笔记
+        <guid>http://localhost:1313/p/hugo_notes/</guid>
+        <description>&lt;img src="http://localhost:1313/p/hugo_notes/1.jpeg" alt="Featured image of post Hugo_notes" /&gt;&lt;h1 id=&#34;hugo-笔记&#34;&gt;Hugo 笔记
 &lt;/h1&gt;&lt;p&gt;这里是我记录 Hugo 这个框架笔记的方法, 方便我以后忘记的时候能回来查看. 本 blog 会持续更新&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;当然这里很多笔记也会是基于 stack 这个主题, 不过 hugo 大部分语法应该是通用的. 应该也有一定的参考价值.&lt;/p&gt;&lt;/blockquote&gt;

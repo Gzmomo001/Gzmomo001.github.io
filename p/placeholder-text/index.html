@@ -6,11 +6,11 @@
 
 <link rel='canonical' href='http://localhost:1313/p/placeholder-text/'>
 
-<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="Placeholder Text">
+<link rel="stylesheet" href="/scss/style.min.8d934ad4bc016d1815207ceb7e43fb3eb6fedac5e3d051f641d6ce55cf579125.css"><meta property='og:title' content="Placeholder Text">
 <meta property='og:description' content="Lorem Ipsum Dolor Si Amet">
 <meta property='og:url' content='http://localhost:1313/p/placeholder-text/'>
 <meta property='og:site_name' content='Henry Zhang'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='markdown' /><meta property='article:tag' content='text' /><meta property='article:tag' content='tag with whitespaces' /><meta property='article:published_time' content='2019-03-09T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2019-03-09T00:00:00&#43;00:00'/><meta property='og:image' content='http://localhost:1313/p/placeholder-text/matt-le-SJSpo9hQf7s-unsplash.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='markdown' /><meta property='article:tag' content='text' /><meta property='article:tag' content='tag with whitespaces' /><meta property='article:published_time' content='2019-03-09T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-01-24T05:55:27&#43;08:00'/><meta property='og:image' content='http://localhost:1313/p/placeholder-text/matt-le-SJSpo9hQf7s-unsplash.jpg' />
 <meta name="twitter:title" content="Placeholder Text">
 <meta name="twitter:description" content="Lorem Ipsum Dolor Si Amet"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='http://localhost:1313/p/placeholder-text/matt-le-SJSpo9hQf7s-unsplash.jpg' />
@@ -343,9 +343,19 @@
 </svg>
                 <time class="article-time--published">2019-03-09</time>
             </div>
-        
+        <div class="article-lastmod">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
 
-        
+
+
+                <time>
+                    Jan 24, 2025 05:55 CST
+                </time>
+            </div>
     </footer>
     
 
@@ -409,7 +419,10 @@
 
         <span>A winner is just a loser who tried one more time.</span>
     </section>
-    </footer>
+    
+
+    
+</footer>
 
 
     
@@ -456,7 +469,7 @@
         
         
             <div class="article-image">
-                <img src="/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.46f61e8ea6a2df8fc5bf1d24a17c44a6.46f61e8ea6a2df8fc5bf1d24a17c44a6_hu_57b7cab9514860c.jpg" 
+                <img src="/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.46f61e8ea6a2df8fc5bf1d24a17c44a6_hu_57b7cab9514860c.jpg" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -480,7 +493,7 @@
         
         
             <div class="article-image">
-                <img src="/p/emoji-support/the-creative-exchange-d2zvqp3fpro-unsplash.60116b1ccfc8632e9a65f7d51df3efc2.60116b1ccfc8632e9a65f7d51df3efc2_hu_c1cfd6b8275d624a.jpg" 
+                <img src="/p/emoji-support/the-creative-exchange-d2zvqp3fpro-unsplash.60116b1ccfc8632e9a65f7d51df3efc2_hu_c1cfd6b8275d624a.jpg" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -618,6 +631,111 @@
 
         document.head.appendChild(customFont);
     }());
+</script>
+<style>
+    @font-face {
+      font-family: 'MapleMono';
+      src: url(http://localhost:1313/font/MapleMono.ttf) format('truetype');
+    }
+  
+    :root {
+      --base-font-family: 'MapleMono';
+      --code-font-family: 'MapleMono';
+    }
+
+</style>
+
+<style>
+    #TableOfContents > ul, ol {
+        ul, ol {
+            display: none;
+        }
+        .open {
+            display: block;
+        }
+    }
+</style>
+
+<script>
+    function initTocHide() {
+        
+        let toc = document.querySelector(".widget--toc");
+        if (!toc) {
+            return;
+        }
+        
+        window.addEventListener('scroll', function() {
+            
+            let openUl = document.querySelectorAll(".open");
+            if (openUl.length > 0) {
+              openUl.forEach((ul) => {
+                ul.classList.remove("open")
+              })
+            }
+            
+            let currentLi = document.querySelector(".active-class");
+            if (!currentLi) {
+                return
+            }
+            
+            if (currentLi.children.length > 1) {
+                currentLi.children[1].classList.add("open")
+            }
+            
+            let ul = currentLi.parentElement;
+            do {
+                ul.classList.add("open");
+                ul = ul.parentElement.parentElement
+            } while (ul !== undefined && (ul.localName === 'ul' || ul.localName === 'ol'))
+        });
+    }
+    initTocHide()
+</script>
+
+<style>
+    #backTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        z-index: 99;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        background-image: url(http://localhost:1313/icons/backtop.svg);
+    }
+</style>
+
+<script>
+    
+
+    function initScrollTop() {
+        let rightSideBar = document.querySelector(".right-sidebar");
+        if (!rightSideBar) {
+            return;
+        }
+        
+        let btn = document.createElement("div");
+        btn.id = "backTopBtn";
+        btn.onclick = backToTop
+        rightSideBar.appendChild(btn)
+        
+        window.onscroll = function() {
+            
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+    }
+
+    
+
+    function backToTop(){
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+
+    initScrollTop();
 </script>
 
     </body>

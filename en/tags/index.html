@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head><meta charset='utf-8'>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Driven by Wonder, Powered by Knowledge.🤓">
 <title>Tags</title>
 
-<link rel='canonical' href='https://Gzmomo001.github.io/en/tags/'>
+<link rel='canonical' href='http://localhost:1313/en/tags/'>
 
-<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="Tags">
+<link rel="stylesheet" href="/scss/style.min.8d934ad4bc016d1815207ceb7e43fb3eb6fedac5e3d051f641d6ce55cf579125.css"><meta property='og:title' content="Tags">
 <meta property='og:description' content="Driven by Wonder, Powered by Knowledge.🤓">
-<meta property='og:url' content='https://Gzmomo001.github.io/en/tags/'>
+<meta property='og:url' content='http://localhost:1313/en/tags/'>
 <meta property='og:site_name' content='Henry Zhang'>
 <meta property='og:type' content='website'>
 <meta name="twitter:title" content="Tags">
-<meta name="twitter:description" content="Driven by Wonder, Powered by Knowledge.🤓"><link rel="alternate" type="application/rss&#43;xml" href="https://Gzmomo001.github.io/en/tags/index.xml">
+<meta name="twitter:description" content="Driven by Wonder, Powered by Knowledge.🤓"><link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/en/tags/index.xml">
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -114,9 +114,9 @@
 
                             <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
                                 
-                                    <option value="https://Gzmomo001.github.io/en/" selected>English</option>
+                                    <option value="http://localhost:1313/en/" selected>English</option>
                                 
-                                    <option value="https://Gzmomo001.github.io/" >简体中文</option>
+                                    <option value="http://localhost:1313/" >简体中文</option>
                                 
                             </select>
                         </li>
@@ -152,14 +152,6 @@
     <aside class="sidebar right-sidebar sticky">
         
             
-                
-            
-        
-            
-                
-            
-        
-            
                 <section class="widget tagCloud">
     <div class="widget-icon">
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -180,26 +172,6 @@
     </div>
 </section>
 
-            
-        
-            
-                <section class="widget tagCloud">
-    <div class="widget-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tag" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M11 3L20 12a1.5 1.5 0 0 1 0 2L14 20a1.5 1.5 0 0 1 -2 0L3 11v-4a4 4 0 0 1 4 -4h4" />
-  <circle cx="9" cy="9" r="2" />
-</svg>
-
-
-
-    </div>
-    <h2 class="widget-title section-title">Tags</h2>
-
-    <div class="tagCloud-tags">
-        
-    </div>
-</section>
             
         
     </aside>
@@ -248,7 +220,7 @@
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.afc006ea9bd8920c4b7cd9127cbd08958842accd71f27f27b34b6c0c77a82951.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');
@@ -259,6 +231,111 @@
 
         document.head.appendChild(customFont);
     }());
+</script>
+<style>
+    @font-face {
+      font-family: 'MapleMono';
+      src: url(http://localhost:1313/font/MapleMono.ttf) format('truetype');
+    }
+  
+    :root {
+      --base-font-family: 'MapleMono';
+      --code-font-family: 'MapleMono';
+    }
+
+</style>
+
+<style>
+    #TableOfContents > ul, ol {
+        ul, ol {
+            display: none;
+        }
+        .open {
+            display: block;
+        }
+    }
+</style>
+
+<script>
+    function initTocHide() {
+        
+        let toc = document.querySelector(".widget--toc");
+        if (!toc) {
+            return;
+        }
+        
+        window.addEventListener('scroll', function() {
+            
+            let openUl = document.querySelectorAll(".open");
+            if (openUl.length > 0) {
+              openUl.forEach((ul) => {
+                ul.classList.remove("open")
+              })
+            }
+            
+            let currentLi = document.querySelector(".active-class");
+            if (!currentLi) {
+                return
+            }
+            
+            if (currentLi.children.length > 1) {
+                currentLi.children[1].classList.add("open")
+            }
+            
+            let ul = currentLi.parentElement;
+            do {
+                ul.classList.add("open");
+                ul = ul.parentElement.parentElement
+            } while (ul !== undefined && (ul.localName === 'ul' || ul.localName === 'ol'))
+        });
+    }
+    initTocHide()
+</script>
+
+<style>
+    #backTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        z-index: 99;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        background-image: url(http://localhost:1313/icons/backtop.svg);
+    }
+</style>
+
+<script>
+    
+
+    function initScrollTop() {
+        let rightSideBar = document.querySelector(".right-sidebar");
+        if (!rightSideBar) {
+            return;
+        }
+        
+        let btn = document.createElement("div");
+        btn.id = "backTopBtn";
+        btn.onclick = backToTop
+        rightSideBar.appendChild(btn)
+        
+        window.onscroll = function() {
+            
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+    }
+
+    
+
+    function backToTop(){
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+
+    initScrollTop();
 </script>
 
     </body>
