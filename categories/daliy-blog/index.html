@@ -6,14 +6,16 @@
 
 <link rel='canonical' href='http://localhost:1313/categories/daliy-blog/'>
 
-<link rel="stylesheet" href="/scss/style.min.8d934ad4bc016d1815207ceb7e43fb3eb6fedac5e3d051f641d6ce55cf579125.css"><meta property='og:title' content="Category: Daliy Blog - Henry Zhang">
+<link rel="stylesheet" href="/scss/style.min.834766163037abfea60cc11e71f0892ce0faca00461b8640b53145fdbf06b145.css"><meta property='og:title' content="Category: Daliy Blog - Henry Zhang">
 <meta property='og:description' content="Driven by Wonder, Powered by Knowledge.🤓">
 <meta property='og:url' content='http://localhost:1313/categories/daliy-blog/'>
 <meta property='og:site_name' content='Henry Zhang'>
-<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2025-05-25T00:49:29&#43;08:00 '/>
+<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2025-05-25T05:20:01&#43;08:00 '/>
 <meta name="twitter:title" content="Category: Daliy Blog - Henry Zhang">
 <meta name="twitter:description" content="Driven by Wonder, Powered by Knowledge.🤓"><link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/categories/daliy-blog/index.xml">
     <link rel="shortcut icon" href="/favicon.ico" />
+<link rel='stylesheet' href='https://chinese-fonts-cdn.deno.dev/packages/dymh/dist/DouyinSansBold/result.css' />
+
 
     </head>
     <body class="">
@@ -266,12 +268,12 @@
 
     <div class="tagCloud-tags">
         
-            <a href="/categories/daliy-blog/" class="font_size_3">
-                Daliy Blog
+            <a href="/categories/notes/" class="font_size_4">
+                Notes
             </a>
         
-            <a href="/categories/notes/" class="font_size_3">
-                Notes
+            <a href="/categories/daliy-blog/" class="font_size_3">
+                Daliy Blog
             </a>
         
             <a href="/categories/test/" class="font_size_3">
@@ -355,22 +357,24 @@
     </a>
 </article>
         
+            <article>
+    <a href="/p/myfirstblog/">
+        <div class="article-details">
+            <h2 class="article-title">Myfirstblog</h2>
+            <footer class="article-time">
+                <time datetime='2025-05-22T04:08:44&#43;08:00'>2025-05-22</time>
+            </footer>
+        </div>
+            <div class="article-image">
+                
+                    <img src="/default.jpeg" loading="lazy" alt="Featured image of post Myfirstblog" />
+                
+            </div>
+        
+    </a>
+</article>
+        
     </section>
-    <nav class='pagination'>
-        
-        
-
-        
-            
-                <span class='page-link current'>1</span>
-                
-            
-            
-                    <a class='page-link' href='/categories/daliy-blog/page/2/'>2</a>
-                
-            
-    </nav>
-
 <footer class="site-footer">
     <section class="copyright">
         &copy; 
@@ -405,19 +409,6 @@
         document.head.appendChild(customFont);
     }());
 </script>
-<style>
-    @font-face {
-      font-family: 'MapleMono';
-      src: url(http://localhost:1313/font/MapleMono.ttf) format('truetype');
-    }
-  
-    :root {
-      --base-font-family: 'MapleMono';
-      --code-font-family: 'MapleMono';
-    }
-
-</style>
-
 <style>
     #TableOfContents > ul, ol {
         ul, ol {
@@ -470,11 +461,17 @@
         display: none;
         position: fixed;
         bottom: 30px;
+        right: 375px;
         z-index: 99;
         cursor: pointer;
         width: 30px;
         height: 30px;
-        background-image: url(http://localhost:1313/icons/backtop.svg);
+        background-color: #666;
+        border-radius: 8px;
+        color: white;
+        text-align: center;
+        line-height: 30px;
+        font-size: 20px;
     }
 </style>
 
@@ -489,12 +486,13 @@
         
         let btn = document.createElement("div");
         btn.id = "backTopBtn";
-        btn.onclick = backToTop
-        rightSideBar.appendChild(btn)
+        btn.innerHTML = "↑";
+        btn.onclick = backToTop;
+        rightSideBar.appendChild(btn);
         
         window.onscroll = function() {
             
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
                 btn.style.display = "block";
             } else {
                 btn.style.display = "none";
@@ -509,6 +507,92 @@
     }
 
     initScrollTop();
+</script>
+
+<style>
+    .highlight {
+         
+        max-height: 1000px;
+        overflow: hidden;
+    }
+
+    .code-show {
+        max-height: none !important;
+    }
+
+    .code-more-box {
+        width: 100%;
+        padding-top: 120px;  
+        background-image: linear-gradient(
+            to bottom,
+            rgba(4, 6, 5, 0) 0%,
+            rgba(4, 6, 5, 0.4) 40%,
+            rgba(4, 6, 5, 0.8) 100%
+        );
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    .code-more-btn {
+        display: block;
+        margin: auto;
+        width: 44px;
+        height: 22px;
+        background: #5f5f5f;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        padding-top: 6px;
+        cursor: pointer;
+    }
+
+    .code-more-img {
+        cursor: pointer !important;
+        display: block;
+        margin: auto;
+        width: 22px;
+        height: 16px;
+    }
+</style>
+
+<script>
+  function initCodeMoreBox() {
+    let codeBlocks = document.querySelectorAll(".highlight");
+    if (!codeBlocks) {
+      return;
+    }
+    codeBlocks.forEach(codeBlock => {
+      
+      if (codeBlock.scrollHeight <= codeBlock.clientHeight) {
+        return;
+      }
+      
+      
+      let codeMoreBox = document.createElement('div');
+      codeMoreBox.classList.add('code-more-box');
+      
+      let codeMoreBtn = document.createElement('span');
+      codeMoreBtn.classList.add('code-more-btn');
+      codeMoreBtn.addEventListener('click', () => {
+        codeBlock.classList.add('code-show');
+        codeMoreBox.style.display = 'none';
+        
+        window.dispatchEvent(new Event('resize'))
+      })
+      
+      let img = document.createElement('img');
+      img.classList.add('code-more-img');
+      img.src = "http://localhost:1313/icons/down.png"
+      
+      codeMoreBtn.appendChild(img);
+      codeMoreBox.appendChild(codeMoreBtn);
+      codeBlock.appendChild(codeMoreBox)
+    })
+  }
+  
+  initCodeMoreBox();
 </script>
 
     </body>

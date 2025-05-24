@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='http://localhost:1313/p/rich-content/'>
 
-<link rel="stylesheet" href="/scss/style.min.8d934ad4bc016d1815207ceb7e43fb3eb6fedac5e3d051f641d6ce55cf579125.css"><meta property='og:title' content="Rich Content">
+<link rel="stylesheet" href="/scss/style.min.834766163037abfea60cc11e71f0892ce0faca00461b8640b53145fdbf06b145.css"><meta property='og:title' content="Rich Content">
 <meta property='og:description' content="A brief description of Hugo Shortcodes">
 <meta property='og:url' content='http://localhost:1313/p/rich-content/'>
 <meta property='og:site_name' content='Henry Zhang'>
@@ -14,6 +14,8 @@
 <meta name="twitter:title" content="Rich Content">
 <meta name="twitter:description" content="A brief description of Hugo Shortcodes">
     <link rel="shortcut icon" href="/favicon.ico" />
+<link rel='stylesheet' href='https://chinese-fonts-cdn.deno.dev/packages/dymh/dist/DouyinSansBold/result.css' />
+
 
     </head>
     <body class="
@@ -365,13 +367,61 @@
 <br>
 <hr>
 <h2 id="twitter-simple-shortcode">Twitter Simple Shortcode
-</h2><blockquote class="twitter-tweet"><p lang="en" dir="ltr">“In addition to being more logical, asymmetry has the advantage that its complete appearance is far more optically effective than symmetry.”<br>— Jan Tschichold <a href="https://t.co/gcv7SrhvJb">pic.twitter.com/gcv7SrhvJb</a></p>&mdash; Design Reviewed | Graphic Design History (@DesignReviewed) <a href="https://twitter.com/DesignReviewed/status/1085870671291310081?ref_src=twsrc%5Etfw">January 17, 2019</a></blockquote>
+</h2><style type="text/css">
+      .twitter-tweet {
+        font:
+          14px/1.45 -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          Oxygen-Sans,
+          Ubuntu,
+          Cantarell,
+          "Helvetica Neue",
+          sans-serif;
+        border-left: 4px solid #2b7bb9;
+        padding-left: 1.5em;
+        color: #555;
+      }
+      .twitter-tweet a {
+        color: #2b7bb9;
+        text-decoration: none;
+      }
+      blockquote.twitter-tweet a:hover,
+      blockquote.twitter-tweet a:focus {
+        text-decoration: underline;
+      }
+    </style><blockquote class="twitter-tweet"><p lang="en" dir="ltr">“In addition to being more logical, asymmetry has the advantage that its complete appearance is far more optically effective than symmetry.”<br>— Jan Tschichold <a href="https://t.co/gcv7SrhvJb">pic.twitter.com/gcv7SrhvJb</a></p>&mdash; Design Reviewed | Graphic Design History (@DesignReviewed) <a href="https://twitter.com/DesignReviewed/status/1085870671291310081?ref_src=twsrc%5Etfw">January 17, 2019</a></blockquote>
 
 
 <br>
 <hr>
 <h2 id="vimeo-simple-shortcode">Vimeo Simple Shortcode
-</h2><div class="s_video_simple __h_video">
+</h2><style>
+.__h_video {
+   position: relative;
+   padding-bottom: 56.23%;
+   height: 0;
+   overflow: hidden;
+   width: 100%;
+   background: #000;
+}
+.__h_video img {
+   width: 100%;
+   height: auto;
+   color: #000;
+}
+.__h_video .play {
+   height: 72px;
+   width: 72px;
+   left: 50%;
+   top: 50%;
+   margin-left: -36px;
+   margin-top: -36px;
+   position: absolute;
+   cursor: pointer;
+}
+</style><div class="s_video_simple __h_video">
           <a href="https://vimeo.com/48912912" rel="noopener" target="_blank">
             <img src="https://i.vimeocdn.com/video/337401969-979f0cc9f55fdf305fb8984e90d92639ec9d7ecc4c9dfbc6536e28edb43784ce-d_640?region=us" srcset="https://i.vimeocdn.com/video/337401969-979f0cc9f55fdf305fb8984e90d92639ec9d7ecc4c9dfbc6536e28edb43784ce-d_640?region=us 1x, https://i.vimeocdn.com/video/337401969-979f0cc9f55fdf305fb8984e90d92639ec9d7ecc4c9dfbc6536e28edb43784ce-d_640?region=us 2x" alt="Sing Jan Swing - Kinetic Type">
             <div class="play">
@@ -600,19 +650,6 @@
     }());
 </script>
 <style>
-    @font-face {
-      font-family: 'MapleMono';
-      src: url(http://localhost:1313/font/MapleMono.ttf) format('truetype');
-    }
-  
-    :root {
-      --base-font-family: 'MapleMono';
-      --code-font-family: 'MapleMono';
-    }
-
-</style>
-
-<style>
     #TableOfContents > ul, ol {
         ul, ol {
             display: none;
@@ -664,11 +701,17 @@
         display: none;
         position: fixed;
         bottom: 30px;
+        right: 375px;
         z-index: 99;
         cursor: pointer;
         width: 30px;
         height: 30px;
-        background-image: url(http://localhost:1313/icons/backtop.svg);
+        background-color: #666;
+        border-radius: 8px;
+        color: white;
+        text-align: center;
+        line-height: 30px;
+        font-size: 20px;
     }
 </style>
 
@@ -683,12 +726,13 @@
         
         let btn = document.createElement("div");
         btn.id = "backTopBtn";
-        btn.onclick = backToTop
-        rightSideBar.appendChild(btn)
+        btn.innerHTML = "↑";
+        btn.onclick = backToTop;
+        rightSideBar.appendChild(btn);
         
         window.onscroll = function() {
             
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
                 btn.style.display = "block";
             } else {
                 btn.style.display = "none";
@@ -703,6 +747,92 @@
     }
 
     initScrollTop();
+</script>
+
+<style>
+    .highlight {
+         
+        max-height: 1000px;
+        overflow: hidden;
+    }
+
+    .code-show {
+        max-height: none !important;
+    }
+
+    .code-more-box {
+        width: 100%;
+        padding-top: 120px;  
+        background-image: linear-gradient(
+            to bottom,
+            rgba(4, 6, 5, 0) 0%,
+            rgba(4, 6, 5, 0.4) 40%,
+            rgba(4, 6, 5, 0.8) 100%
+        );
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    .code-more-btn {
+        display: block;
+        margin: auto;
+        width: 44px;
+        height: 22px;
+        background: #5f5f5f;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        padding-top: 6px;
+        cursor: pointer;
+    }
+
+    .code-more-img {
+        cursor: pointer !important;
+        display: block;
+        margin: auto;
+        width: 22px;
+        height: 16px;
+    }
+</style>
+
+<script>
+  function initCodeMoreBox() {
+    let codeBlocks = document.querySelectorAll(".highlight");
+    if (!codeBlocks) {
+      return;
+    }
+    codeBlocks.forEach(codeBlock => {
+      
+      if (codeBlock.scrollHeight <= codeBlock.clientHeight) {
+        return;
+      }
+      
+      
+      let codeMoreBox = document.createElement('div');
+      codeMoreBox.classList.add('code-more-box');
+      
+      let codeMoreBtn = document.createElement('span');
+      codeMoreBtn.classList.add('code-more-btn');
+      codeMoreBtn.addEventListener('click', () => {
+        codeBlock.classList.add('code-show');
+        codeMoreBox.style.display = 'none';
+        
+        window.dispatchEvent(new Event('resize'))
+      })
+      
+      let img = document.createElement('img');
+      img.classList.add('code-more-img');
+      img.src = "http://localhost:1313/icons/down.png"
+      
+      codeMoreBtn.appendChild(img);
+      codeMoreBox.appendChild(codeMoreBtn);
+      codeBlock.appendChild(codeMoreBox)
+    })
+  }
+  
+  initCodeMoreBox();
 </script>
 
     </body>

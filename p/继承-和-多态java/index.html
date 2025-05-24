@@ -6,15 +6,17 @@
 
 <link rel='canonical' href='http://localhost:1313/p/%E7%BB%A7%E6%89%BF-%E5%92%8C-%E5%A4%9A%E6%80%81java/'>
 
-<link rel="stylesheet" href="/scss/style.min.8d934ad4bc016d1815207ceb7e43fb3eb6fedac5e3d051f641d6ce55cf579125.css"><meta property='og:title' content="继承 和 多态(java)">
+<link rel="stylesheet" href="/scss/style.min.834766163037abfea60cc11e71f0892ce0faca00461b8640b53145fdbf06b145.css"><meta property='og:title' content="继承 和 多态(java)">
 <meta property='og:description' content="专业课考试笔记">
 <meta property='og:url' content='http://localhost:1313/p/%E7%BB%A7%E6%89%BF-%E5%92%8C-%E5%A4%9A%E6%80%81java/'>
 <meta property='og:site_name' content='Henry Zhang'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='java' /><meta property='article:published_time' content='2025-05-24T21:05:41&#43;08:00'/><meta property='article:modified_time' content='2025-05-25T01:38:24&#43;08:00'/><meta property='og:image' content='http://localhost:1313/default.jpeg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='java' /><meta property='article:published_time' content='2025-05-24T21:05:41&#43;08:00'/><meta property='article:modified_time' content='2025-05-25T05:20:01&#43;08:00'/><meta property='og:image' content='http://localhost:1313/java.png' />
 <meta name="twitter:title" content="继承 和 多态(java)">
 <meta name="twitter:description" content="专业课考试笔记"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='http://localhost:1313/default.jpeg' />
+    <meta name="twitter:image" content='http://localhost:1313/java.png' />
     <link rel="shortcut icon" href="/favicon.ico" />
+<link rel='stylesheet' href='https://chinese-fonts-cdn.deno.dev/packages/dymh/dist/DouyinSansBold/result.css' />
+
 
     </head>
     <body class="
@@ -350,7 +352,7 @@
         <div class="article-image">
             <a href="/p/%E7%BB%A7%E6%89%BF-%E5%92%8C-%E5%A4%9A%E6%80%81java/">
                 
-                    <img src="/default.jpeg" loading="lazy" alt="Featured image of post 继承 和 多态(java)" />
+                    <img src="/java.png" loading="lazy" alt="Featured image of post 继承 和 多态(java)" />
                 
             </a>
         </div>
@@ -407,7 +409,7 @@
 
 
                 <time>
-                    May 25, 2025 01:38 CST
+                    May 25, 2025 05:20 CST
                 </time>
             </div>
     </footer>
@@ -424,7 +426,7 @@
     <h1 id="继承-和-多态java">继承 和 多态(java)
 </h1><p>这个章节是基于类的延伸</p>
 <h2 id="子类和父类">子类和父类
-</h2><p>在 java 中有一个关键字叫’extends’，意思是扩展， 这个关键字可以定义一个类的延伸类, 并具有所有原先类的方法(method)和变量(data field)。</p>
+</h2><p>在 java 中有一个关键字叫 &rsquo;extends&rsquo;，意思是扩展， 这个关键字可以定义一个类的延伸类, 并具有所有原先类的方法(method)和变量(data field)。</p>
 <blockquote>
 <p><code>for example:</code>
 定义一个类叫 person, 那么他的子类就可以是学生, 老师, 员工等.</p></blockquote>
@@ -480,8 +482,11 @@
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><blockquote>
-<p><code>tips:</code> 1. 如果这里的构造器没有调用父类的构造器, 那么编译器会会在编译的时候在该构造器的最前面先调用父类的无参构造器. 2. 当父类使用 final 关键字的时候, 则无法定义其子类</p></blockquote>
+</div><blockquote class="alert alert-tip">
+    <ol>
+<li>如果这里的构造器没有调用父类的构造器, 那么编译器会会在编译的时候在该构造器的最前面先调用父类的无参构造器.</li>
+<li>当父类使用 final 关键字的时候, 则无法定义其子类</li>
+</ol></blockquote>
 <h2 id="转型">转型
 </h2><p>在 Java 中，类型转换主要分为两种：向上转型（upcasting）和向下转型（downcasting）。
 转型可以改变原有实例的 data field. 但同时也伴随着风险.</p>
@@ -511,8 +516,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">Person</span><span class="w"> </span><span class="n">person2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">Person</span><span class="p">)</span><span class="n">student</span><span class="p">;</span><span class="w"> </span><span class="c1">// 效果相同</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><blockquote>
-<p><code>tips:</code> 当<code>子类</code>想临时使用<code>父类</code>的某个方法的时候可以仿照这个例子调用: &ldquo;((father)child).method();&rdquo;</p></blockquote>
+</div><blockquote class="alert alert-tip">
+    <p>当<code>子类</code>想临时使用<code>父类</code>的某个方法的时候可以仿照这个例子调用: &ldquo;((father)child).method();&rdquo;</p></blockquote>
 <h3 id="向下转型downcasting">向下转型（Downcasting）
 </h3><p>能够向下转型的几种情况.</p>
 <ol>
@@ -678,8 +683,8 @@
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>比如之前章节学的, 当我们使用<code>wrapper class</code>的时候, 不管是什么类型的类, 我们都可以使用相同的<code>compareTo</code>方法.</p>
-<blockquote>
-<p><code>tips:</code> 方法重写的前提是父类的方法没有使用 final 关键字. 使用 final 关键字的方法无法被子类重写, 这样做可以防止一些关键的方法被错误的重写, 能让子类的代码更加规范.</p></blockquote>
+<blockquote class="alert alert-tip">
+    <p>方法重写的前提是父类的方法没有使用 final 关键字. 使用 final 关键字的方法无法被子类重写, 这样做可以防止一些关键的方法被错误的重写, 能让子类的代码更加规范.</p></blockquote>
 <h3 id="overriding-vs-overloading">Overriding vs. Overloading
 </h3><h3 id="方法重写">方法重写
 </h3><p>方法重写是子类对与父类的方法的重新定义</p>
@@ -698,8 +703,8 @@
 <p>调用后会显示一些关于这个类的信息. 信息的构成为&lt;实例名称&gt;@&lt;哈希值&gt;</p>
 </li>
 </ol>
-<blockquote>
-<p><code>tips:</code> 当你使用 print 直接打印的类的时候, 类就会自动调用这个方法然后返回字符串.</p></blockquote>
+<blockquote class="alert alert-tip">
+    <p>当你使用 print 直接打印的类的时候, 类就会自动调用这个方法然后返回字符串.</p></blockquote>
 <h2 id="多态">多态
 </h2><p>这个章节主要讲类可以作为一个参数传入方法中使用.</p>
 <h3 id="dynamic-binding--动态绑定">Dynamic Binding | 动态绑定
@@ -757,8 +762,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Double</span><span class="o">&gt;</span><span class="w"> </span><span class="n">list3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">(</span><span class="n">Arrays</span><span class="p">.</span><span class="na">asList</span><span class="p">(</span><span class="n">1</span><span class="p">.</span><span class="na">1</span><span class="p">,</span><span class="w"> </span><span class="n">2</span><span class="p">.</span><span class="na">2</span><span class="p">,</span><span class="w"> </span><span class="n">3</span><span class="p">.</span><span class="na">3</span><span class="p">));</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><blockquote>
-<p>tips: &lsquo;&lt;&gt;&lsquo;是泛型, 目前知道知道括号里填什么类型的 wrapper 类, 这个数组就会存储什么类型的变量.</p></blockquote>
+</div><blockquote class="alert alert-tip">
+    <p>&lsquo;&lt;&gt;&lsquo;是泛型, 目前知道知道括号里填什么类型的 wrapper 类, 这个数组就会存储什么类型的变量.</p></blockquote>
 <h3 id="add">add
 </h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -906,8 +911,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">Collections</span><span class="p">.</span><span class="na">reverse</span><span class="p">(</span><span class="n">list</span><span class="p">);</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><blockquote>
-<p><code>tips:</code> 这个类并不线程安全, 这意味着当多个线程同时操作这个类的时候可能会出现一些问题. 另外虽然这个类的容量的可变的, 但还是尽量在一开始就把容量定义好. 因为当类需要自己扩增容量的时候会影响性能.</p></blockquote>
+</div><blockquote class="alert alert-tip">
+    <p>这个类并不线程安全, 这意味着当多个线程同时操作这个类的时候可能会出现一些问题. 另外虽然这个类的容量的可变的, 但还是尽量在一开始就把容量定义好. 因为当类需要自己扩增容量的时候会影响性能.</p></blockquote>
 
 </section>
 
@@ -976,6 +981,25 @@
     <h2 class="section-title">相关文章</h2>
     <div class="related-content">
         <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/stack-theme-hugo-%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="/hugo.jpeg" loading="lazy" data-key="" data-hash="/hugo.jpeg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Stack theme hugo 字体设置</h2>
+        </div>
+    </a>
+</article>
+
             
                 
 <article class="has-image">
@@ -1118,19 +1142,6 @@
     }());
 </script>
 <style>
-    @font-face {
-      font-family: 'MapleMono';
-      src: url(http://localhost:1313/font/MapleMono.ttf) format('truetype');
-    }
-  
-    :root {
-      --base-font-family: 'MapleMono';
-      --code-font-family: 'MapleMono';
-    }
-
-</style>
-
-<style>
     #TableOfContents > ul, ol {
         ul, ol {
             display: none;
@@ -1182,11 +1193,17 @@
         display: none;
         position: fixed;
         bottom: 30px;
+        right: 375px;
         z-index: 99;
         cursor: pointer;
         width: 30px;
         height: 30px;
-        background-image: url(http://localhost:1313/icons/backtop.svg);
+        background-color: #666;
+        border-radius: 8px;
+        color: white;
+        text-align: center;
+        line-height: 30px;
+        font-size: 20px;
     }
 </style>
 
@@ -1201,12 +1218,13 @@
         
         let btn = document.createElement("div");
         btn.id = "backTopBtn";
-        btn.onclick = backToTop
-        rightSideBar.appendChild(btn)
+        btn.innerHTML = "↑";
+        btn.onclick = backToTop;
+        rightSideBar.appendChild(btn);
         
         window.onscroll = function() {
             
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
                 btn.style.display = "block";
             } else {
                 btn.style.display = "none";
@@ -1221,6 +1239,92 @@
     }
 
     initScrollTop();
+</script>
+
+<style>
+    .highlight {
+         
+        max-height: 1000px;
+        overflow: hidden;
+    }
+
+    .code-show {
+        max-height: none !important;
+    }
+
+    .code-more-box {
+        width: 100%;
+        padding-top: 120px;  
+        background-image: linear-gradient(
+            to bottom,
+            rgba(4, 6, 5, 0) 0%,
+            rgba(4, 6, 5, 0.4) 40%,
+            rgba(4, 6, 5, 0.8) 100%
+        );
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    .code-more-btn {
+        display: block;
+        margin: auto;
+        width: 44px;
+        height: 22px;
+        background: #5f5f5f;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        padding-top: 6px;
+        cursor: pointer;
+    }
+
+    .code-more-img {
+        cursor: pointer !important;
+        display: block;
+        margin: auto;
+        width: 22px;
+        height: 16px;
+    }
+</style>
+
+<script>
+  function initCodeMoreBox() {
+    let codeBlocks = document.querySelectorAll(".highlight");
+    if (!codeBlocks) {
+      return;
+    }
+    codeBlocks.forEach(codeBlock => {
+      
+      if (codeBlock.scrollHeight <= codeBlock.clientHeight) {
+        return;
+      }
+      
+      
+      let codeMoreBox = document.createElement('div');
+      codeMoreBox.classList.add('code-more-box');
+      
+      let codeMoreBtn = document.createElement('span');
+      codeMoreBtn.classList.add('code-more-btn');
+      codeMoreBtn.addEventListener('click', () => {
+        codeBlock.classList.add('code-show');
+        codeMoreBox.style.display = 'none';
+        
+        window.dispatchEvent(new Event('resize'))
+      })
+      
+      let img = document.createElement('img');
+      img.classList.add('code-more-img');
+      img.src = "http://localhost:1313/icons/down.png"
+      
+      codeMoreBtn.appendChild(img);
+      codeMoreBox.appendChild(codeMoreBtn);
+      codeBlock.appendChild(codeMoreBox)
+    })
+  }
+  
+  initCodeMoreBox();
 </script>
 
     </body>

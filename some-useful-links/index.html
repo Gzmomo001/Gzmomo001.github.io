@@ -6,14 +6,16 @@
 
 <link rel='canonical' href='http://localhost:1313/some-useful-links/'>
 
-<link rel="stylesheet" href="/scss/style.min.8d934ad4bc016d1815207ceb7e43fb3eb6fedac5e3d051f641d6ce55cf579125.css"><meta property='og:title' content="Some Useful Links">
+<link rel="stylesheet" href="/scss/style.min.834766163037abfea60cc11e71f0892ce0faca00461b8640b53145fdbf06b145.css"><meta property='og:title' content="Some Useful Links">
 <meta property='og:description' content="这里有一些我认为比较实用, 并且常用的一些网站链接.\nFeel free to take it🥰.\n待完成 ">
 <meta property='og:url' content='http://localhost:1313/some-useful-links/'>
 <meta property='og:site_name' content='Henry Zhang'>
-<meta property='og:type' content='article'><meta property='article:section' content='Page' /><meta property='article:modified_time' content='2025-05-23T13:03:55&#43;08:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Page' /><meta property='article:modified_time' content='2025-05-25T05:17:44&#43;08:00'/>
 <meta name="twitter:title" content="Some Useful Links">
 <meta name="twitter:description" content="这里有一些我认为比较实用, 并且常用的一些网站链接.\nFeel free to take it🥰.\n待完成 ">
     <link rel="shortcut icon" href="/favicon.ico" />
+<link rel='stylesheet' href='https://chinese-fonts-cdn.deno.dev/packages/dymh/dist/DouyinSansBold/result.css' />
+
 
     </head>
     <body class="
@@ -385,6 +387,29 @@
         </article>
     
         <article>
+            <a href="https://www.iconfont.cn/" target="_blank" rel="noopener">
+                <div class="article-details">
+                    <h2 class="article-title">阿里巴巴图标集</h2>
+                    <footer class="article-time">
+                        
+                            这里有大量的图标素材, 对前端设计十分有帮助
+                        
+                    </footer>
+                </div>
+        
+                
+                    
+                    
+                        
+                    
+                    <div class="article-image">
+                        <img src="/some-useful-links/1688.png" loading="lazy">
+                    </div>
+                
+            </a>
+        </article>
+    
+        <article>
             <a href="https://www.typescriptlang.org" target="_blank" rel="noopener">
                 <div class="article-details">
                     <h2 class="article-title">TypeScript</h2>
@@ -528,19 +553,6 @@
     }());
 </script>
 <style>
-    @font-face {
-      font-family: 'MapleMono';
-      src: url(http://localhost:1313/font/MapleMono.ttf) format('truetype');
-    }
-  
-    :root {
-      --base-font-family: 'MapleMono';
-      --code-font-family: 'MapleMono';
-    }
-
-</style>
-
-<style>
     #TableOfContents > ul, ol {
         ul, ol {
             display: none;
@@ -592,11 +604,17 @@
         display: none;
         position: fixed;
         bottom: 30px;
+        right: 375px;
         z-index: 99;
         cursor: pointer;
         width: 30px;
         height: 30px;
-        background-image: url(http://localhost:1313/icons/backtop.svg);
+        background-color: #666;
+        border-radius: 8px;
+        color: white;
+        text-align: center;
+        line-height: 30px;
+        font-size: 20px;
     }
 </style>
 
@@ -611,12 +629,13 @@
         
         let btn = document.createElement("div");
         btn.id = "backTopBtn";
-        btn.onclick = backToTop
-        rightSideBar.appendChild(btn)
+        btn.innerHTML = "↑";
+        btn.onclick = backToTop;
+        rightSideBar.appendChild(btn);
         
         window.onscroll = function() {
             
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
                 btn.style.display = "block";
             } else {
                 btn.style.display = "none";
@@ -631,6 +650,92 @@
     }
 
     initScrollTop();
+</script>
+
+<style>
+    .highlight {
+         
+        max-height: 1000px;
+        overflow: hidden;
+    }
+
+    .code-show {
+        max-height: none !important;
+    }
+
+    .code-more-box {
+        width: 100%;
+        padding-top: 120px;  
+        background-image: linear-gradient(
+            to bottom,
+            rgba(4, 6, 5, 0) 0%,
+            rgba(4, 6, 5, 0.4) 40%,
+            rgba(4, 6, 5, 0.8) 100%
+        );
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    .code-more-btn {
+        display: block;
+        margin: auto;
+        width: 44px;
+        height: 22px;
+        background: #5f5f5f;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        padding-top: 6px;
+        cursor: pointer;
+    }
+
+    .code-more-img {
+        cursor: pointer !important;
+        display: block;
+        margin: auto;
+        width: 22px;
+        height: 16px;
+    }
+</style>
+
+<script>
+  function initCodeMoreBox() {
+    let codeBlocks = document.querySelectorAll(".highlight");
+    if (!codeBlocks) {
+      return;
+    }
+    codeBlocks.forEach(codeBlock => {
+      
+      if (codeBlock.scrollHeight <= codeBlock.clientHeight) {
+        return;
+      }
+      
+      
+      let codeMoreBox = document.createElement('div');
+      codeMoreBox.classList.add('code-more-box');
+      
+      let codeMoreBtn = document.createElement('span');
+      codeMoreBtn.classList.add('code-more-btn');
+      codeMoreBtn.addEventListener('click', () => {
+        codeBlock.classList.add('code-show');
+        codeMoreBox.style.display = 'none';
+        
+        window.dispatchEvent(new Event('resize'))
+      })
+      
+      let img = document.createElement('img');
+      img.classList.add('code-more-img');
+      img.src = "http://localhost:1313/icons/down.png"
+      
+      codeMoreBtn.appendChild(img);
+      codeMoreBox.appendChild(codeMoreBtn);
+      codeBlock.appendChild(codeMoreBox)
+    })
+  }
+  
+  initCodeMoreBox();
 </script>
 
     </body>
