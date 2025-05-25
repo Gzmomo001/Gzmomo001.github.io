@@ -7,7 +7,16 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>henryzhang070&#43;contact@gmail.com</copyright>
-        <lastBuildDate>Sun, 25 May 2025 05:20:01 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/java/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 25 May 2025 15:40:40 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/java/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Chapter12</title>
+        <link>http://localhost:1313/p/chapter12/</link>
+        <pubDate>Sun, 25 May 2025 15:21:54 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/chapter12/</guid>
+        <description>&lt;img src="http://localhost:1313/java.png" alt="Featured image of post Chapter12" /&gt;&lt;h2 id=&#34;什么是异常处理&#34;&gt;什么是异常处理
+&lt;/h2&gt;</description>
+        </item>
+        <item>
         <title>继承 和 多态(java)</title>
         <link>http://localhost:1313/p/%E7%BB%A7%E6%89%BF-%E5%92%8C-%E5%A4%9A%E6%80%81java/</link>
         <pubDate>Sat, 24 May 2025 21:05:41 +0800</pubDate>

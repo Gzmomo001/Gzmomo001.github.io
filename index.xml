@@ -12,7 +12,8 @@
         <pubDate>Sun, 25 May 2025 15:21:54 +0800</pubDate>
         
         <guid>http://localhost:1313/p/chapter12/</guid>
-        <description>&lt;img src="http://localhost:1313/java.png" alt="Featured image of post Chapter12" /&gt;</description>
+        <description>&lt;img src="http://localhost:1313/java.png" alt="Featured image of post Chapter12" /&gt;&lt;h2 id=&#34;什么是异常处理&#34;&gt;什么是异常处理
+&lt;/h2&gt;</description>
         </item>
         <item>
         <title>Stack theme hugo 字体设置</title>
@@ -862,6 +863,7 @@
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 博客和 widget 按钮圆角设置&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 添加 TODOwidgets&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 添加通过标签和分类筛选博客, 将搜索框和归档结合在一起.&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 删除代码框的行号&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;返回顶部按钮&#34;&gt;返回顶部按钮
 &lt;/h2&gt;&lt;h3 id=&#34;失败案例&#34;&gt;失败案例:
