@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>henryzhang070&#43;contact@gmail.com</copyright>
-        <lastBuildDate>Sun, 25 May 2025 05:18:38 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/hugo/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 25 May 2025 15:15:43 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/hugo/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Stack theme hugo 字体设置</title>
         <link>http://localhost:1313/p/stack-theme-hugo-%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE/</link>
         <pubDate>Sun, 25 May 2025 02:28:03 +0800</pubDate>
@@ -174,7 +174,8 @@
     &gt;又发现一位大佬&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;widgets&#34;&gt;widgets
 &lt;/h3&gt;&lt;p&gt;配置文件下的这个部分是控制博客主页右侧的一些小组件的, 我觉得视频中的音乐播放器挺不错.&lt;/p&gt;
-&lt;h3 id=&#34;add-links&#34;&gt;add links
+&lt;h3 id=&#34;博客的标题显示格式定义&#34;&gt;博客的标题显示格式定义
+&lt;/h3&gt;&lt;h3 id=&#34;add-links&#34;&gt;add links
 &lt;/h3&gt;&lt;p&gt;To use this feature, add &lt;code&gt;links&lt;/code&gt; section to frontmatter.&lt;/p&gt;
 &lt;p&gt;This page&amp;rsquo;s frontmatter:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -205,8 +206,8 @@
 &lt;h2 id=&#34;todo&#34;&gt;TODO
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 配置评论区, &lt;a class=&#34;link&#34; href=&#34;https://juejin.cn/post/6844903834712539150&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;方案链接&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; widgets 添加音乐播放器, &lt;a class=&#34;link&#34; href=&#34;&#34; &gt;方案链接&lt;/a&gt;&lt;/li&gt;
+    &gt;方案链接&lt;/a&gt;
+&lt;del&gt;- [ ] widgets 添加音乐播放器, &lt;a class=&#34;link&#34; href=&#34;&#34; &gt;方案链接&lt;/a&gt;&lt;/del&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 添加博客更新记录&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 添加 macos 版本代码框, &lt;a class=&#34;link&#34; href=&#34;https://blog.lufei.de/p/stack%E4%B8%BB%E9%A2%98%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89/#%E4%BB%A3%E7%A0%81%E5%9D%97%E5%BC%95%E5%85%A5macos%E7%AA%97%E5%8F%A3%E6%A0%B7%E5%BC%8F&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;参考博客&lt;/a&gt;. 圆框使用 AI 修改.&lt;/li&gt;
@@ -215,11 +216,14 @@
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 修复字体问题, 已完成. &lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/p/stack-theme-hugo-%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE/&#34; &gt;教程&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 返回顶部按钮&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 防止爬虫(&lt;a class=&#34;link&#34; href=&#34;https://blog.lufei.de/p/215/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://blog.lufei.de/p/215/&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 博客最底部显示不正确.&lt;/li&gt;
+    &gt;https://blog.lufei.de/p/215/&lt;/a&gt;)
+&lt;del&gt;- [ ] 博客最底部显示不正确.&lt;/del&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; html 代码框显示不正常&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 添加四种注释样式, &lt;a class=&#34;link&#34; href=&#34;https://letere-gzj.github.io/hugo-stack/p/hugo/custom-stack-theme/#8-%E8%87%AA%E5%AE%9A%E4%B9%89md%E5%BC%95%E7%94%A8%E5%9D%97%E9%A2%9C%E8%89%B2%E6%A8%A1%E6%9D%BF&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;参考博客&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 博客和 widget 按钮圆角设置&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 添加 TODOwidgets&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 添加通过标签和分类筛选博客&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;返回顶部按钮&#34;&gt;返回顶部按钮
 &lt;/h2&gt;&lt;h3 id=&#34;失败案例&#34;&gt;失败案例:
