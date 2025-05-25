@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>henryzhang070&#43;contact@gmail.com</copyright>
-        <lastBuildDate>Mon, 26 May 2025 03:05:57 +0800</lastBuildDate><atom:link href="https://Gzmomo001.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 26 May 2025 03:07:48 +0800</lastBuildDate><atom:link href="https://Gzmomo001.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Chapter13</title>
         <link>https://Gzmomo001.github.io/p/chapter13/</link>
         <pubDate>Mon, 26 May 2025 00:42:23 +0800</pubDate>
@@ -703,12 +703,12 @@
 </description>
         </item>
         <item>
-        <title>chapter11</title>
+        <title>Chapter11</title>
         <link>https://Gzmomo001.github.io/p/chapter11/</link>
         <pubDate>Sat, 24 May 2025 21:05:41 +0800</pubDate>
         
         <guid>https://Gzmomo001.github.io/p/chapter11/</guid>
-        <description>&lt;img src="https://Gzmomo001.github.io/java.png" alt="Featured image of post chapter11" /&gt;&lt;h1 id=&#34;继承-和-多态java&#34;&gt;继承 和 多态(java)
+        <description>&lt;img src="https://Gzmomo001.github.io/java.png" alt="Featured image of post Chapter11" /&gt;&lt;h1 id=&#34;继承-和-多态java&#34;&gt;继承 和 多态(java)
 &lt;/h1&gt;&lt;p&gt;这个章节是基于类的延伸&lt;/p&gt;
 &lt;h2 id=&#34;子类和父类&#34;&gt;子类和父类
 &lt;/h2&gt;&lt;p&gt;在 java 中有一个关键字叫 &amp;rsquo;extends&amp;rsquo;，意思是扩展， 这个关键字可以定义一个类的延伸类, 并具有所有原先类的方法(method)和变量(data field)。&lt;/p&gt;
