@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Shortcodes on Henry Zhang</title>
-        <link>https://Gzmomo001.github.io/tags/shortcodes/</link>
+        <link>http://localhost:1313/tags/shortcodes/</link>
         <description>Recent content in Shortcodes on Henry Zhang</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>henryzhang070&#43;contact@gmail.com</copyright>
-        <lastBuildDate>Fri, 24 Jan 2025 05:55:27 +0800</lastBuildDate><atom:link href="https://Gzmomo001.github.io/tags/shortcodes/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 24 Jan 2025 05:55:27 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/shortcodes/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Rich Content</title>
-        <link>https://Gzmomo001.github.io/p/rich-content/</link>
+        <link>http://localhost:1313/p/rich-content/</link>
         <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://Gzmomo001.github.io/p/rich-content/</guid>
+        <guid>http://localhost:1313/p/rich-content/</guid>
         <description>&lt;p&gt;Hugo ships with several &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;
@@ -93,24 +93,16 @@
           &lt;/a&gt;
         &lt;/div&gt;
 &lt;h2 id=&#34;bilibilibi-shortcode&#34;&gt;bilibilibi Shortcode
-&lt;/h2&gt;
-
-
-
-
-
-    
-
-
-&lt;div class=&#34;video-wrapper&#34;&gt;
-    &lt;iframe src=&#34;https://player.bilibili.com/player.html?as_wide=1&amp;amp;high_quality=1&amp;amp;page=1&amp;aid=498363026&#34;
-            scrolling=&#34;no&#34;
-            frameborder=&#34;no&#34;
-            framespacing=&#34;0&#34;
-            allowfullscreen=&#34;true&#34;
-    &gt;
-    &lt;/iframe&gt;
-&lt;/div&gt;
+&lt;/h2&gt;&lt;iframe src=&#34;&#34; 
+        width=&#34;750&#34; 
+        height=&#34;450&#34; 
+        scrolling=&#34;no&#34; 
+        border=&#34;0&#34; 
+        frameborder=&#34;no&#34; 
+        framespacing=&#34;0&#34; 
+        allowfullscreen=&#34;true&#34;
+        style=&#34;border-radius: 10px;&#34;&gt;
+&lt;/iframe&gt;
 
 &lt;h2 id=&#34;gist-shortcode&#34;&gt;Gist Shortcode
 &lt;/h2&gt;&lt;script src=&#34;https://gist.github.com/spf13/7896402.js&#34;&gt;&lt;/script&gt;
