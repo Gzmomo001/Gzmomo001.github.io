@@ -10,7 +10,7 @@
 <meta property='og:description' content="Driven by Wonder, Powered by Knowledge.🤓">
 <meta property='og:url' content='http://localhost:1313/tags/emoji/'>
 <meta property='og:site_name' content='Henry Zhang'>
-<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2025-05-30T03:27:13&#43;08:00 '/>
+<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2025-05-30T04:33:36&#43;08:00 '/>
 <meta name="twitter:title" content="Tag: Emoji - Henry Zhang">
 <meta name="twitter:description" content="Driven by Wonder, Powered by Knowledge.🤓"><link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/tags/emoji/index.xml">
     <link rel="shortcut icon" href="/favicon.ico" />
@@ -41,8 +41,13 @@
         height: 100%;
         z-index: 99;
         zoom: 3.0;
-        background-color: #f5f5fa;
+        background-color: #5b5b5b;
         display: none;
+        transition: opacity 1s ease-out; 
+    }
+
+    .loading.fade-out {
+        opacity: 0;
     }
 	
           
@@ -546,22 +551,16 @@
     function initLoading() {
         const isFirstVisit = !sessionStorage.getItem('visited');
         if (isFirstVisit) {
-            let loading = document.querySelector(".loading");
-            loading.style.display = "flex";
-
+            let loading = document.querySelector('.loading');
+            loading.style.display = 'flex';
             document.addEventListener('DOMContentLoaded', function() {
-            
-            
-                
-                loadFinish();
-                
                 setTimeout(() => {
-                    loading.style.display = "none";
-                }, 1500)
+                    loading.classList.add('fade-out'); 
+                    setTimeout(() => {
+                        loading.style.display = 'none';
+                    }, 1000); 
+                }, 1000); 
                 sessionStorage.setItem('visited', 'true');
-                
-                
-                
             });   
         }    
     }
