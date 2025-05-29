@@ -1208,7 +1208,25 @@
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 添加一些常用网站的链接&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 添加加载动画, &lt;a class=&#34;link&#34; href=&#34;https://letere-gzj.github.io/hugo-stack/p/hugo/page-loading/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;链接&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 添加一些动画效果&lt;/li&gt;
 &lt;/ul&gt;
+&lt;!-- ## Git 提交历史图
+
+&lt;div id=&#34;git-graph&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+  fetch(`https://api.github.com/repos/${encodeURIComponent($repo)}/commits?sha=${encodeURIComponent($branch)}&amp;per_page=${encodeURIComponent($depth)}`)
+    .then(response =&gt; response.json())
+    .then(data =&gt; {
+      const graphDiv = document.getElementById(&#39;git-graph&#39;);
+      data.forEach(commit =&gt; {
+        const commitDiv = document.createElement(&#39;div&#39;);
+        commitDiv.textContent = `${commit.commit.author.name}: ${commit.commit.message}`;
+        graphDiv.appendChild(commitDiv);
+      });
+    })
+    .catch(error =&gt; console.error(&#39;Error fetching commits:&#39;, error));
+&lt;/script&gt; --&gt;
 </description>
         </item>
         <item>
