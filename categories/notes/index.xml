@@ -7,7 +7,21 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>henryzhang070&#43;contact@gmail.com</copyright>
-        <lastBuildDate>Thu, 05 Jun 2025 19:00:07 +0800</lastBuildDate><atom:link href="https://Gzmomo001.github.io/categories/notes/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 09 Jun 2025 15:41:48 +0800</lastBuildDate><atom:link href="https://Gzmomo001.github.io/categories/notes/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>ubuntu远程桌面</title>
+        <link>https://Gzmomo001.github.io/p/ubuntu%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2/</link>
+        <pubDate>Sun, 08 Jun 2025 22:16:17 +0800</pubDate>
+        
+        <guid>https://Gzmomo001.github.io/p/ubuntu%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/default.jpeg" alt="Featured image of post ubuntu远程桌面" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
+&lt;/h2&gt;&lt;p&gt;本教程基于 ubuntu, 请确保的 ubuntu 系统大于 20.
+这里参考阿里提供的&lt;a class=&#34;link&#34; href=&#34;https://developer.aliyun.com/article/762186&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;方案&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;&#34;&gt;
+&lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt install vino
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+        </item>
+        <item>
         <title>如何diy自己的工作简历</title>
         <link>https://Gzmomo001.github.io/p/%E5%A6%82%E4%BD%95diy%E8%87%AA%E5%B7%B1%E7%9A%84%E5%B7%A5%E4%BD%9C%E7%AE%80%E5%8E%86/</link>
         <pubDate>Wed, 04 Jun 2025 18:19:09 +0800</pubDate>
