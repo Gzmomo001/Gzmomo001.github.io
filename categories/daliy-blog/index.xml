@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Daliy Blog on Henry Zhang</title>
-        <link>http://localhost:62197/categories/daliy-blog/</link>
+        <link>https://Gzmomo001.github.io/categories/daliy-blog/</link>
         <description>Recent content in Daliy Blog on Henry Zhang</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>henryzhang070&#43;contact@gmail.com</copyright>
-        <lastBuildDate>Mon, 09 Jun 2025 15:41:48 +0800</lastBuildDate><atom:link href="http://localhost:62197/categories/daliy-blog/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 10 Jun 2025 16:18:52 +0800</lastBuildDate><atom:link href="https://Gzmomo001.github.io/categories/daliy-blog/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>MC服务器搭建 &amp; 加入</title>
-        <link>http://localhost:62197/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/</link>
+        <link>https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/</link>
         <pubDate>Mon, 09 Jun 2025 14:01:06 +0800</pubDate>
         
-        <guid>http://localhost:62197/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/</guid>
-        <description>&lt;img src="http://localhost:62197/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/image.png" alt="Featured image of post MC服务器搭建 &amp; 加入" /&gt;&lt;h2 id=&#34;如何加入远程-mc-服务器&#34;&gt;如何加入远程 MC 服务器
+        <guid>https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/image.png" alt="Featured image of post MC服务器搭建 &amp; 加入" /&gt;&lt;h2 id=&#34;如何加入远程-mc-服务器&#34;&gt;如何加入远程 MC 服务器
 &lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;&lt;code&gt;安装 MC 启动器:&lt;/code&gt; 在市面上有很多款 MC 的启动器, 现在最常见的启动器就是官方启动器, 和 HMCL 启动器.&lt;/li&gt;
 &lt;/ol&gt;
@@ -29,38 +29,53 @@
 &lt;p&gt;&lt;code&gt;加入服务器:&lt;/code&gt; 点击多人游戏, 然后添加服务器. 输入服务器的 IP 和端口.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;如何加入我的模组服务器&#34;&gt;如何加入我的模组服务器
+&lt;h3 id=&#34;1-如何加入我的模组服务器&#34;&gt;1. 如何加入我的模组服务器
 &lt;/h3&gt;&lt;p&gt;首先这个是我的服务器地址: &lt;code&gt;3.tcp.vip.cpolar.cn:12578&lt;/code&gt;&lt;/p&gt;
 &lt;h4 id=&#34;安装-1182forge-4030-版本&#34;&gt;安装 1.18.2+forge 40.3.0 版本
 &lt;/h4&gt;&lt;p&gt;&lt;code&gt;点击下载&lt;/code&gt;
-&lt;img src=&#34;http://localhost:62197/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v1_hu_736a98c9bbf842a4.png&#34; width=&#34;1200&#34; height=&#34;898&#34; alt=&#34;exception types&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v1_hu_736a98c9bbf842a4.png&#34; width=&#34;1200&#34; height=&#34;898&#34; alt=&#34;exception types&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;选择18.2+forge 40.3.0版本&lt;/code&gt;&lt;/p&gt;
-&lt;img src=&#34;http://localhost:62197/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v2_hu_276dd84c915b4521.png&#34; width=&#34;1200&#34; height=&#34;905&#34; alt=&#34;exception types&#34;&gt;
-&lt;img src=&#34;http://localhost:62197/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v3_hu_2f591b8eca54f1be.png&#34; width=&#34;1200&#34; height=&#34;904&#34; alt=&#34;exception types&#34;&gt;
-&lt;img src=&#34;http://localhost:62197/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v4_hu_a75a7d96e3be6c51.png&#34; width=&#34;1200&#34; height=&#34;899&#34; alt=&#34;exception types&#34;&gt;
+&lt;img src=&#34;https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v2_hu_276dd84c915b4521.png&#34; width=&#34;1200&#34; height=&#34;905&#34; alt=&#34;exception types&#34;&gt;
+&lt;img src=&#34;https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v3_hu_2f591b8eca54f1be.png&#34; width=&#34;1200&#34; height=&#34;904&#34; alt=&#34;exception types&#34;&gt;
+&lt;img src=&#34;https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v4_hu_a75a7d96e3be6c51.png&#34; width=&#34;1200&#34; height=&#34;899&#34; alt=&#34;exception types&#34;&gt;
 &lt;h4 id=&#34;安装模组&#34;&gt;安装模组
 &lt;/h4&gt;&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;下载我的模组和材质包.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;对于在 WKU 的同学, 链接学校的 VPN 网络后可以使用这个链接&lt;a class=&#34;link&#34; href=&#34;http://192.168.51.21:12345/#/?code=23132&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;下载&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;压缩包下载后解压, 会有两种文件: zip, jar. zip 对应的是材质包, jar 是模组.
-点击版本管理&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;下载我的模组和材质包.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;img src=&#34;http://localhost:62197/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/main_hu_cd62cbf18f0f3bf5.png&#34; width=&#34;1200&#34; height=&#34;913&#34; alt=&#34;exception types&#34;&gt;
+&lt;p&gt;对于在 WKU 的同学, 链接学校的 VPN 网络后可以使用这个&lt;a class=&#34;link&#34; href=&#34;http://192.168.51.21:12345/#/?code=23132&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;链接下载&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;阿里云盘模组&lt;a class=&#34;link&#34; href=&#34;https://www.alipan.com/s/PUWmDJtAGhZ&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;链接&lt;/a&gt;. 这里阿里云盘无法分享 zip, 所以没有材质包, 但是不影响启动.&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;压缩包下载后解压, 会有两种文件: zip, jar. zip 对应的是材质包, jar 是模组.
+点击版本管理&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img src=&#34;https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/main_hu_cd62cbf18f0f3bf5.png&#34; width=&#34;1200&#34; height=&#34;913&#34; alt=&#34;exception types&#34;&gt;
 &lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;在模组拦选择添加模组, 选择刚刚下载的包里的&lt;code&gt;jar&lt;/code&gt;文件.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;img src=&#34;http://localhost:62197/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v5_hu_41c2e29e2930d7df.png&#34; width=&#34;1200&#34; height=&#34;911&#34; alt=&#34;exception types&#34;&gt;
+&lt;img src=&#34;https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v5_hu_41c2e29e2930d7df.png&#34; width=&#34;1200&#34; height=&#34;911&#34; alt=&#34;exception types&#34;&gt;
 &lt;h4 id=&#34;安装光影&#34;&gt;安装光影
 &lt;/h4&gt;&lt;p&gt;在浏览中选择打开资源包文件夹, 然后添加下载文件夹中的&lt;code&gt;zip&lt;/code&gt;文件.
-&lt;img src=&#34;http://localhost:62197/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v6_hu_a6b4669caa9893f7.png&#34; width=&#34;1200&#34; height=&#34;909&#34; alt=&#34;exception types&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v6_hu_a6b4669caa9893f7.png&#34; width=&#34;1200&#34; height=&#34;909&#34; alt=&#34;exception types&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;2-如何加入我的模组服务器整合包安装-傻瓜版&#34;&gt;2. 如何加入我的模组服务器(整合包安装-傻瓜版)
+&lt;/h3&gt;&lt;p&gt;使用 HMCL 的整合包安装功能, 直接一次性安装好所有模组和材质包.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;下载整合包&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;整合包链接: &lt;a class=&#34;link&#34; href=&#34;http://192.168.51.21:12345/#/?code=DVVQV&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;WKU 校园网版本&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote class=&#34;alert alert-warn&#34;&gt;
+    &lt;p&gt;因为阿里云盘不支持分享 zip 文件, 需要通过这个方法安装的需要联系我. 可以通过邮件或者其他方式发给你.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;点击安装整合包
+&lt;img src=&#34;https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/p1_hu_a3107bb23487123e.png&#34; width=&#34;1200&#34; height=&#34;901&#34; alt=&#34;exception types&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;从本地安装整合包, 并选择下载好的 zip 整合包.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 &lt;h2 id=&#34;如何搭建基于-forge-的-mc-服务器&#34;&gt;如何搭建基于 forge 的 MC 服务器
 &lt;/h2&gt;&lt;h3 id=&#34;为什么使用-forge-搭建&#34;&gt;为什么使用 forge 搭建
 &lt;/h3&gt;&lt;ol&gt;
@@ -85,7 +100,7 @@
 &lt;li&gt;选择版本.&lt;/li&gt;
 &lt;li&gt;点击 Installer 安装稳定版&lt;/li&gt;
 &lt;/ol&gt;
-&lt;img src=&#34;http://localhost:62197/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/d_hu_7c67ad27a83df608.png&#34; width=&#34;1200&#34; height=&#34;916&#34; alt=&#34;exception types&#34;&gt;
+&lt;img src=&#34;https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/d_hu_7c67ad27a83df608.png&#34; width=&#34;1200&#34; height=&#34;916&#34; alt=&#34;exception types&#34;&gt;
 &lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;下载完成之后看到 jar 结尾的文件说明成功下载.&lt;/li&gt;
 &lt;/ol&gt;
@@ -139,16 +154,17 @@
 &lt;h4 id=&#34;安装-cploar-服务&#34;&gt;安装 cploar 服务
 &lt;/h4&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://dashboard.cpolar.com/get-started&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;官网链接&lt;/a&gt;&lt;/p&gt;
-&lt;iframe src=&#34;//player.bilibili.com/player.html?isOutside=true&amp;amp;aid=241291869&amp;amp;bvid=BV1Ye411H7oZ&amp;amp;cid=1408229082&amp;amp;p=1&#34; 
-        width=&#34;750&#34; 
-        height=&#34;450&#34; 
+&lt;div class=&#34;video-container&#34; style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 10px;&#34;&gt;
+    &lt;iframe 
+        src=&#34;//player.bilibili.com/player.html?isOutside=true&amp;amp;aid=241291869&amp;amp;bvid=BV1Ye411H7oZ&amp;amp;cid=1408229082&amp;amp;p=1&#34;
+        style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34;
         scrolling=&#34;no&#34; 
         border=&#34;0&#34; 
         frameborder=&#34;no&#34; 
         framespacing=&#34;0&#34; 
-        allowfullscreen=&#34;true&#34;
-        style=&#34;border-radius: 10px;&#34;&gt;
-&lt;/iframe&gt;
+        allowfullscreen=&#34;true&#34;&gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
 
 &lt;p&gt;视频教程请跳转至 &lt;code&gt;9分钟&lt;/code&gt;开始观看.&lt;/p&gt;
 &lt;h4 id=&#34;内网穿透映射&#34;&gt;内网穿透映射
@@ -157,7 +173,7 @@
 &lt;li&gt;在 cploar 服务启动之后在网页中打开服务器的&lt;code&gt;9200&lt;/code&gt;端口.&lt;/li&gt;
 &lt;li&gt;设置映射.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:62197/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/port_hu_6ba287f842e76ffa.png&#34; width=&#34;1200&#34; height=&#34;472&#34; alt=&#34;exception types&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/port_hu_6ba287f842e76ffa.png&#34; width=&#34;1200&#34; height=&#34;472&#34; alt=&#34;exception types&#34;&gt;
 仿照图片中的设置配置映射.&lt;/p&gt;
 &lt;blockquote class=&#34;alert alert-note&#34;&gt;
     &lt;p&gt;对于 forge, 服务器开启后默认端口为 25565, 如果想修改监听端口可以修改 properties 里的端口设置.&lt;/p&gt;&lt;/blockquote&gt;
@@ -172,21 +188,22 @@
         </item>
         <item>
         <title>语言如何影响你的思维</title>
-        <link>http://localhost:62197/p/%E8%AF%AD%E8%A8%80%E5%A6%82%E4%BD%95%E5%BD%B1%E5%93%8D%E4%BD%A0%E7%9A%84%E6%80%9D%E7%BB%B4/</link>
+        <link>https://Gzmomo001.github.io/p/%E8%AF%AD%E8%A8%80%E5%A6%82%E4%BD%95%E5%BD%B1%E5%93%8D%E4%BD%A0%E7%9A%84%E6%80%9D%E7%BB%B4/</link>
         <pubDate>Thu, 29 May 2025 02:41:58 +0800</pubDate>
         
-        <guid>http://localhost:62197/p/%E8%AF%AD%E8%A8%80%E5%A6%82%E4%BD%95%E5%BD%B1%E5%93%8D%E4%BD%A0%E7%9A%84%E6%80%9D%E7%BB%B4/</guid>
-        <description>&lt;img src="http://localhost:62197/default.jpeg" alt="Featured image of post 语言如何影响你的思维" /&gt;&lt;h2 id=&#34;视频源&#34;&gt;视频源
-&lt;/h2&gt;&lt;iframe src=&#34;//player.bilibili.com/player.html?isOutside=true&amp;amp;aid=114524212431405&amp;amp;bvid=BV1CsJPznER1&amp;amp;cid=30013459007&amp;amp;p=1&#34; 
-        width=&#34;750&#34; 
-        height=&#34;450&#34; 
+        <guid>https://Gzmomo001.github.io/p/%E8%AF%AD%E8%A8%80%E5%A6%82%E4%BD%95%E5%BD%B1%E5%93%8D%E4%BD%A0%E7%9A%84%E6%80%9D%E7%BB%B4/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/default.jpeg" alt="Featured image of post 语言如何影响你的思维" /&gt;&lt;h2 id=&#34;视频源&#34;&gt;视频源
+&lt;/h2&gt;&lt;div class=&#34;video-container&#34; style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 10px;&#34;&gt;
+    &lt;iframe 
+        src=&#34;//player.bilibili.com/player.html?isOutside=true&amp;amp;aid=114524212431405&amp;amp;bvid=BV1CsJPznER1&amp;amp;cid=30013459007&amp;amp;p=1&#34;
+        style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34;
         scrolling=&#34;no&#34; 
         border=&#34;0&#34; 
         frameborder=&#34;no&#34; 
         framespacing=&#34;0&#34; 
-        allowfullscreen=&#34;true&#34;
-        style=&#34;border-radius: 10px;&#34;&gt;
-&lt;/iframe&gt;
+        allowfullscreen=&#34;true&#34;&gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
 
 &lt;h2 id=&#34;观后感&#34;&gt;观后感
 &lt;/h2&gt;&lt;p&gt;很多情况下你自己的话语很大程度上暗示你自己的思维方式. 比如当你觉得现在的就业环境不好的时候, 如果你说的是“现在的就业环境好差, 导致我们找不到工作”, 这样就会暗示自己把原因归结于外界, 从而减少了对自己的思考. 但如果我们把自己的话改成“现在就业市场环境不好, 这对我们来说是一个挑战.” 这样我们就更倾向于想办法去解决这个现有的问题.&lt;/p&gt;
@@ -223,11 +240,11 @@
         </item>
         <item>
         <title>Daliy_blog2025 05 24</title>
-        <link>http://localhost:62197/p/daliy_blog2025-05-24/</link>
+        <link>https://Gzmomo001.github.io/p/daliy_blog2025-05-24/</link>
         <pubDate>Sat, 24 May 2025 03:53:50 +0800</pubDate>
         
-        <guid>http://localhost:62197/p/daliy_blog2025-05-24/</guid>
-        <description>&lt;img src="http://localhost:62197/default.jpeg" alt="Featured image of post Daliy_blog2025 05 24" /&gt;&lt;h1 id=&#34;不知好歹的博主&#34;&gt;不知好歹的博主
+        <guid>https://Gzmomo001.github.io/p/daliy_blog2025-05-24/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/default.jpeg" alt="Featured image of post Daliy_blog2025 05 24" /&gt;&lt;h1 id=&#34;不知好歹的博主&#34;&gt;不知好歹的博主
 &lt;/h1&gt;&lt;p&gt;博主第二天要考高数, 现在还熬到快四点钟真的很有生活了.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 添加网页个性化鼠标指针&lt;/li&gt;
@@ -280,11 +297,11 @@
         </item>
         <item>
         <title>Daliy_blog2025 05 22</title>
-        <link>http://localhost:62197/p/daliy_blog2025-05-22/</link>
+        <link>https://Gzmomo001.github.io/p/daliy_blog2025-05-22/</link>
         <pubDate>Thu, 22 May 2025 23:40:31 +0800</pubDate>
         
-        <guid>http://localhost:62197/p/daliy_blog2025-05-22/</guid>
-        <description>&lt;img src="http://localhost:62197/default.gif" alt="Featured image of post Daliy_blog2025 05 22" /&gt;&lt;h1 id=&#34;日常记录&#34;&gt;日常记录
+        <guid>https://Gzmomo001.github.io/p/daliy_blog2025-05-22/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/default.gif" alt="Featured image of post Daliy_blog2025 05 22" /&gt;&lt;h1 id=&#34;日常记录&#34;&gt;日常记录
 &lt;/h1&gt;&lt;h2 id=&#34;关于自己&#34;&gt;关于自己
 &lt;/h2&gt;&lt;p&gt;昨天晚上搞博客搞的太上头, 一不小心又熬到 4.多 🥹. 然后今天睡到下午才起床, 真是得不偿失啊啊啊啊. 但我这种性格就是, 很多时候如果不把一件事做完就是不会停下来. 直到我把这件事做到某一个我想对满意的阶段的时候我可能才会开始休息. 简直就是先天牛马圣体.下周大大小小的考试就基本都考完了, 所以, 这几天再撑一下吧 🫠.&lt;/p&gt;
 &lt;h2 id=&#34;关于考试&#34;&gt;关于考试
@@ -310,11 +327,11 @@
         </item>
         <item>
         <title>Myfirstblog</title>
-        <link>http://localhost:62197/p/myfirstblog/</link>
+        <link>https://Gzmomo001.github.io/p/myfirstblog/</link>
         <pubDate>Thu, 22 May 2025 04:08:44 +0800</pubDate>
         
-        <guid>http://localhost:62197/p/myfirstblog/</guid>
-        <description>&lt;img src="http://localhost:62197/default.jpeg" alt="Featured image of post Myfirstblog" /&gt;&lt;h1 id=&#34;这个是我的第一个条博客准确来说是第二条-hhh&#34;&gt;这个是我的第一个条博客(准确来说是第二条 hhh)
+        <guid>https://Gzmomo001.github.io/p/myfirstblog/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/default.jpeg" alt="Featured image of post Myfirstblog" /&gt;&lt;h1 id=&#34;这个是我的第一个条博客准确来说是第二条-hhh&#34;&gt;这个是我的第一个条博客(准确来说是第二条 hhh)
 &lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;时间: 25 年 5 月 22 号&lt;/li&gt;
 &lt;/ul&gt;
