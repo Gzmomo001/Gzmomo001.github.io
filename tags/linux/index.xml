@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Linux on Henry Zhang</title>
+        <link>http://localhost:62524/tags/linux/</link>
+        <description>Recent content in Linux on Henry Zhang</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>henryzhang070&#43;contact@gmail.com</copyright>
+        <lastBuildDate>Fri, 13 Jun 2025 16:07:19 +0800</lastBuildDate><atom:link href="http://localhost:62524/tags/linux/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Linux_system_service | Linux 之 系统服务</title>
+        <link>http://localhost:62524/p/linux_system_service-linux-%E4%B9%8B-%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1/</link>
+        <pubDate>Fri, 13 Jun 2025 15:47:20 +0800</pubDate>
+        
+        <guid>http://localhost:62524/p/linux_system_service-linux-%E4%B9%8B-%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1/</guid>
+        <description>&lt;img src="http://localhost:62524/default.jpeg" alt="Featured image of post Linux_system_service | Linux 之 系统服务" /&gt;&lt;h2 id=&#34;什么是系统服务service&#34;&gt;什么是系统服务(service)
+&lt;/h2&gt;&lt;p&gt;简单理解就是开机自启动的程序或者脚本, 会常驻在系统的内存中.&lt;/p&gt;
+&lt;p&gt;对于现在的大部分的 linux 发行版, 系统服务通常使用 systemd 进行管理.&lt;/p&gt;
+&lt;h3 id=&#34;三种配置文件&#34;&gt;三种配置文件
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;系统:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;dir: &lt;code&gt;/usr/lib/systemd/system/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;这里存放着系统自带的服务单元, 如 apt. 一般不建议随便乱动这里的服务, 除非你知道自己在干什么.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;运行时:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;dir: &lt;code&gt;/run/systemd/system/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;临时服务, 一般可其他服务或者用户行为启动的临时服务. 在系统重启后清空&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;管理员:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;dir: &lt;code&gt;/etc/systemd/system/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;用户自定义的服务, 管理员系统服务优先级高于系统服务, 意味着它会覆盖系统中相同的服务.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote class=&#34;alert alert-note&#34;&gt;
+    &lt;p&gt;如果我们想添加自己的系统服务, 建议都放在管理员服务目录下.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;service-文件&#34;&gt;.service 文件
+&lt;/h2&gt;&lt;h3 id=&#34;为什么要定义这种文件格式&#34;&gt;为什么要定义这种文件格式
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;用于描述该服务的内容, 配置, 策略等&lt;/li&gt;
+&lt;li&gt;可以使用&lt;code&gt;systemctl&lt;/code&gt;命令来管理服务.&lt;/li&gt;
+&lt;li&gt;统一服务的管理.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;核心结构&#34;&gt;核心结构
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;Unit&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;用于定义服务的元信息(meta data)和依赖.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-service&#34; data-lang=&#34;service&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;[Unit]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;Description&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;My Service #&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;Documentation&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;https://example.org/docs/my-service&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;After&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;network.target&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;Wants&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;network.target&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;Requires&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;network.target&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;code&gt;Service&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;定义服务的行为&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;&lt;code&gt;Install&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;定义如何将服务安装到系统.&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
