@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Notes on Henry Zhang</title>
+        <link>http://localhost:1313/tags/notes/</link>
+        <description>Recent content in Notes on Henry Zhang</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>henryzhang070&#43;contact@gmail.com</copyright>
+        <lastBuildDate>Mon, 09 Jun 2025 15:41:48 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/notes/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>MC服务器搭建 &amp; 加入</title>
+        <link>http://localhost:1313/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/</link>
+        <pubDate>Mon, 09 Jun 2025 14:01:06 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/</guid>
+        <description>&lt;img src="http://localhost:1313/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/image.png" alt="Featured image of post MC服务器搭建 &amp; 加入" /&gt;&lt;h3 id=&#34;java-环境-&#34;&gt;java 环境 ✅
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;本教程的所有内容都是基于 java 环境已经安装好的前提下.&lt;/li&gt;
+&lt;li&gt;具体的教程可以去网上搜索.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;根据自己要玩的 mc 版本安装适合版本的 java, 如果不知道安装哪个版本可以问一下 chat 老师. 本教程基于 Java21.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote class=&#34;alert alert-tip&#34;&gt;
+    &lt;p&gt;如果没有特殊需求安装 JRE 版本即可.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;div id=&#34;confirm&#34;&gt;&lt;/div&gt;
+2. 安装好之后验证 java 是否成功安装并设置好了环境变量.
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;java --version
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div id=&#34;join&#34;&gt;&lt;/div&gt;
+&lt;h3 id=&#34;2-如何加入我的模组服务器傻瓜版&#34;&gt;2. 如何加入我的模组服务器(傻瓜版)‼️
+&lt;/h3&gt;&lt;h4 id=&#34;首先最好先确认系统安装了-java21-点击这里查看如何确认&#34;&gt;首先最好先确认系统安装了 Java21, &lt;a class=&#34;link&#34; href=&#34;#confirm&#34; &gt;点击这里查看如何确认&lt;/a&gt;.
+&lt;/h4&gt;&lt;h4 id=&#34;下载整合包&#34;&gt;下载整合包
+&lt;/h4&gt;&lt;p&gt;整合包链接:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;http://192.168.51.21:12345/#/?code=DVVQV&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;WKU 校园网(windows)版本&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;http://192.168.51.21:12345/#/?code=86889&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;WKU 校园网(mac/linux 版)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;安装新&#34;&gt;安装(新)
+&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;解压下载的整合包.&lt;/li&gt;
+&lt;li&gt;启动整合包:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;win: &lt;code&gt;双击&lt;/code&gt;整合包中我的世界图标的文件即可.&lt;/li&gt;
+&lt;li&gt;mac: 打开&lt;code&gt;终端&lt;/code&gt;, 在终端中进入&lt;code&gt;整合包文件夹&lt;/code&gt;, 输入下面的指令.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;java -jar HMCL-3.6.12.jar
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;加入&#34;&gt;加入
+&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;等待游戏安装完成后登陆自己的账号&lt;/li&gt;
+&lt;li&gt;启动游戏, 在多人游戏中添加服务器地址后就能加入我的服务器啦 🥰: &lt;code&gt;3.tcp.vip.cpolar.cn:12578&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;如何加入远程-mc-服务器&#34;&gt;如何加入远程 MC 服务器
+&lt;/h2&gt;&lt;blockquote class=&#34;alert alert-tip&#34;&gt;
+    &lt;p&gt;加入我的服务器直接跳转至整合包加入章节即可, &lt;a class=&#34;link&#34; href=&#34;#join&#34; &gt;点击这里跳转&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;安装 MC 启动器:&lt;/code&gt; 在市面上有很多款 MC 的启动器, 现在最常见的启动器就是官方启动器, 和 HMCL 启动器.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote class=&#34;alert alert-note&#34;&gt;
+    &lt;p&gt;第三方启动器不代表不需要 MC 账号, 账号怎么获得这里我相信网上已经提供了很多方法.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;这里提供 HMCL 启动器的&lt;a class=&#34;link&#34; href=&#34;https://hmcl.huangyuhui.net/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;链接&lt;/a&gt;.&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;下载与服务器对应的版本:&lt;/code&gt; HMCL 启动器下载好之后需要先选择要下载的版本.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;安装服务器要求的mod:&lt;/code&gt; 当你没有安装需要的 mod 的时候, 在进入服务器之前你会看到服务器要求你安装的包.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote class=&#34;alert alert-note&#34;&gt;
+    &lt;p&gt;模组安装的途径:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;使用 HMCL 自带的模组安装工具安装&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在&lt;a class=&#34;link&#34; href=&#34;https://www.curseforge.com/minecraft&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;forge 网站&lt;/a&gt;中下载模组之后吧&lt;code&gt;jar&lt;/code&gt;文件移动到游戏的&lt;code&gt;mod&lt;/code&gt;文件夹下&lt;/p&gt;
+&lt;p&gt;光影安装:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;首先确保现在的游戏版本安装了 OptFine 光影管理工具.&lt;/li&gt;
+&lt;li&gt;在&lt;a class=&#34;link&#34; href=&#34;https://modrinth.com/shaders&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;modrinth 官网&lt;/a&gt;可以下载喜欢的光影包.&lt;/li&gt;
+&lt;/ol&gt;&lt;/blockquote&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;&lt;code&gt;加入服务器:&lt;/code&gt; 点击多人游戏, 然后添加服务器. 输入服务器的 IP 和端口.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;1-如何加入我的模组服务器-建议直接使用后面的整合包安装-更稳定也更方便&#34;&gt;&lt;del&gt;1. 如何加入我的模组服务器&lt;/del&gt; 建议直接使用后面的整合包安装, 更稳定也更方便.
+&lt;/h3&gt;&lt;h4 id=&#34;安装-1182forge-4030-版本&#34;&gt;安装 1.18.2+forge 40.3.0 版本
+&lt;/h4&gt;&lt;p&gt;&lt;code&gt;点击下载&lt;/code&gt;
+&lt;img src=&#34;http://localhost:1313/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v1_hu_736a98c9bbf842a4.png&#34; width=&#34;1200&#34; height=&#34;898&#34; alt=&#34;exception types&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;选择18.2+forge 40.3.0版本&lt;/code&gt;&lt;/p&gt;
+&lt;img src=&#34;http://localhost:1313/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v2_hu_276dd84c915b4521.png&#34; width=&#34;1200&#34; height=&#34;905&#34; alt=&#34;exception types&#34;&gt;
+&lt;img src=&#34;http://localhost:1313/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v3_hu_2f591b8eca54f1be.png&#34; width=&#34;1200&#34; height=&#34;904&#34; alt=&#34;exception types&#34;&gt;
+&lt;img src=&#34;http://localhost:1313/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v4_hu_a75a7d96e3be6c51.png&#34; width=&#34;1200&#34; height=&#34;899&#34; alt=&#34;exception types&#34;&gt;
+&lt;h4 id=&#34;安装模组&#34;&gt;安装模组
+&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;下载我的模组和材质包.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;对于在 WKU 的同学, 链接学校的 VPN 网络后可以使用这个&lt;a class=&#34;link&#34; href=&#34;http://192.168.51.21:12345/#/?code=23132&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;链接下载&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;阿里云盘模组&lt;a class=&#34;link&#34; href=&#34;https://www.alipan.com/s/PUWmDJtAGhZ&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;链接&lt;/a&gt;. 这里阿里云盘无法分享 zip, 所以没有材质包, 但是不影响启动.&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;压缩包下载后解压, 会有两种文件: zip, jar. zip 对应的是材质包, jar 是模组.
+点击版本管理&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img src=&#34;http://localhost:1313/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/main_hu_cd62cbf18f0f3bf5.png&#34; width=&#34;1200&#34; height=&#34;913&#34; alt=&#34;exception types&#34;&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;在模组拦选择添加模组, 选择刚刚下载的包里的&lt;code&gt;jar&lt;/code&gt;文件.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img src=&#34;http://localhost:1313/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v5_hu_41c2e29e2930d7df.png&#34; width=&#34;1200&#34; height=&#34;911&#34; alt=&#34;exception types&#34;&gt;
+&lt;h4 id=&#34;安装光影&#34;&gt;安装光影
+&lt;/h4&gt;&lt;p&gt;在浏览中选择打开资源包文件夹, 然后添加下载文件夹中的&lt;code&gt;zip&lt;/code&gt;文件.
+&lt;img src=&#34;http://localhost:1313/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v6_hu_a6b4669caa9893f7.png&#34; width=&#34;1200&#34; height=&#34;909&#34; alt=&#34;exception types&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;整合包安装游戏不带启动器版本&#34;&gt;整合包安装游戏(不带启动器版本)
+&lt;/h4&gt;&lt;p&gt;&lt;code&gt;该方法已淘汰, 请勿使用该方法&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;使用 HMCL 的整合包安装功能, 直接一次性安装好所有模组和材质包.&lt;/p&gt;
+&lt;blockquote class=&#34;alert alert-warn&#34;&gt;
+    &lt;p&gt;因为阿里云盘不支持分享 zip 文件, 需要通过这个方法安装的需要联系我. 可以通过邮件或者其他方式发给你.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;点击安装整合包
+&lt;img src=&#34;http://localhost:1313/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/p1_hu_a3107bb23487123e.png&#34; width=&#34;1200&#34; height=&#34;901&#34; alt=&#34;exception types&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;从本地安装整合包, 并选择下载好的 zip 整合包.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;如何搭建基于-forge-的-mc-服务器&#34;&gt;如何搭建基于 forge 的 MC 服务器
+&lt;/h2&gt;&lt;h3 id=&#34;为什么使用-forge-搭建&#34;&gt;为什么使用 forge 搭建
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;很简单, forge 作为老牌的 mod 管理工具, 对很多 mods 兼容性都很好&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;如果输出了版本号则代表 java 已经安装好了.&lt;/p&gt;
+&lt;h3 id=&#34;下载-forge-服务器安装包&#34;&gt;下载 forge 服务器安装包
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;点击&lt;a class=&#34;link&#34; href=&#34;https://files.minecraftforge.net/net/minecraftforge/forge/index_1.18.2.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;链接&lt;/a&gt;进入网页.&lt;/li&gt;
+&lt;li&gt;选择版本.&lt;/li&gt;
+&lt;li&gt;点击 Installer 安装稳定版&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img src=&#34;http://localhost:1313/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/d_hu_7c67ad27a83df608.png&#34; width=&#34;1200&#34; height=&#34;916&#34; alt=&#34;exception types&#34;&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;下载完成之后看到 jar 结尾的文件说明成功下载.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;安装服务器&#34;&gt;安装服务器
+&lt;/h3&gt;&lt;p&gt;这里以 linux 的 bash 终端为例(window cmd 同理).&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;打开 bash 并进入到你的服务器安装目录下.&lt;/li&gt;
+&lt;li&gt;通过 java 安装服务器&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;java -jar &amp;lt;下载好的jar安装器文件名&amp;gt; --installServer
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# example&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;java -jar forge-1.18.2-40.3.0-installer.jar --installServer
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote class=&#34;alert alert-tip&#34;&gt;
+    &lt;p&gt;在&lt;code&gt;终端&lt;/code&gt;输入文件名的时候需要加上&lt;code&gt;后缀&lt;/code&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;安装的过程会收到网络的影响, 请耐心等待&lt;/p&gt;
+&lt;h3 id=&#34;初始化服务器&#34;&gt;初始化服务器
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;安装好之后在安装目录下会出现 run 启动脚本, 我们需要先运行一次脚本.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;./run.sh
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 如果是windows, 就运行 run.bat&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;初始化完成之后我们需要同意服务器的协议.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;打开&lt;code&gt;eula.txt&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;讲&lt;code&gt;false&lt;/code&gt;改为&lt;code&gt;true&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;再次运行启动脚本. 此时如果看到 log 中显示服务器成功启动, 则说明我们的服务器成功跑起来了.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;配置服务器&#34;&gt;配置服务器
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;当服务器成功启动之后安装目录下会出现一个&lt;code&gt;server.properties&lt;/code&gt;文件. 这个文件中包含了大部分游戏的规则如游戏模式难度等.
+每条配置对应是什么意思可以在&lt;a class=&#34;link&#34; href=&#34;https://zh.minecraft.wiki/w/%E6%9C%8D%E5%8A%A1%E7%AB%AF%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F?variant=zh-cn&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;MCWIKI&lt;/a&gt;中查看.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;对于要使用模组的服务器, 我们需要讲服务器的内存设置为至少 4G.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;打开&lt;code&gt;user_jvm_args.txt&lt;/code&gt;文件&lt;/li&gt;
+&lt;li&gt;根据文件中的提示设置自己服务器的内存.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;局域网外远程联机内网穿透&#34;&gt;局域网外远程联机(内网穿透)
+&lt;/h3&gt;&lt;p&gt;这里使用 cploar 的方案. 这个是一个提供内网穿透服务的平台.&lt;/p&gt;
+&lt;h4 id=&#34;安装-cploar-服务&#34;&gt;安装 cploar 服务
+&lt;/h4&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://dashboard.cpolar.com/get-started&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网链接&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;video-container&#34; style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 10px;&#34;&gt;
+    &lt;iframe 
+        src=&#34;//player.bilibili.com/player.html?isOutside=true&amp;amp;aid=241291869&amp;amp;bvid=BV1Ye411H7oZ&amp;amp;cid=1408229082&amp;amp;p=1&#34;
+        style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34;
+        scrolling=&#34;no&#34; 
+        border=&#34;0&#34; 
+        frameborder=&#34;no&#34; 
+        framespacing=&#34;0&#34; 
+        allowfullscreen=&#34;true&#34;&gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;视频教程请跳转至 &lt;code&gt;9分钟&lt;/code&gt;开始观看.&lt;/p&gt;
+&lt;h4 id=&#34;内网穿透映射&#34;&gt;内网穿透映射
+&lt;/h4&gt;&lt;p&gt;以 cpolar dashboard 举例.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;在 cploar 服务启动之后在网页中打开服务器的&lt;code&gt;9200&lt;/code&gt;端口.&lt;/li&gt;
+&lt;li&gt;设置映射.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/port_hu_6ba287f842e76ffa.png&#34; width=&#34;1200&#34; height=&#34;472&#34; alt=&#34;exception types&#34;&gt;
+仿照图片中的设置配置映射.&lt;/p&gt;
+&lt;blockquote class=&#34;alert alert-note&#34;&gt;
+    &lt;p&gt;对于 forge, 服务器开启后默认端口为 25565, 如果想修改监听端口可以修改 properties 里的端口设置.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;创建完成之后在在线列表的地方就能找到服务器地址.&lt;/p&gt;
+&lt;p&gt;e.g. 对于 &lt;code&gt;tcp://11.tcp.vip.cpolar.cn:11627&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;服务器地址就是 &lt;code&gt;tcp://11.tcp.vip.cpolar.cn:11627&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

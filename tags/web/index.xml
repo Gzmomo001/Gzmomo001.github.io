@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Web on Henry Zhang</title>
-        <link>https://Gzmomo001.github.io/tags/web/</link>
+        <link>http://localhost:60400/tags/web/</link>
         <description>Recent content in Web on Henry Zhang</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>henryzhang070&#43;contact@gmail.com</copyright>
-        <lastBuildDate>Mon, 26 May 2025 03:12:25 +0800</lastBuildDate><atom:link href="https://Gzmomo001.github.io/tags/web/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 26 May 2025 03:12:25 +0800</lastBuildDate><atom:link href="http://localhost:60400/tags/web/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>本地静态网站托管</title>
-        <link>https://Gzmomo001.github.io/p/%E6%9C%AC%E5%9C%B0%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1/</link>
+        <link>http://localhost:60400/p/%E6%9C%AC%E5%9C%B0%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1/</link>
         <pubDate>Sat, 24 May 2025 16:47:04 +0800</pubDate>
         
-        <guid>https://Gzmomo001.github.io/p/%E6%9C%AC%E5%9C%B0%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1/</guid>
-        <description>&lt;img src="https://Gzmomo001.github.io/default.jpeg" alt="Featured image of post 本地静态网站托管" /&gt;&lt;h1 id=&#34;如何在本地搭建类似-gihub-的静态网站托管服务&#34;&gt;如何在本地搭建类似 gihub 的静态网站托管服务
+        <guid>http://localhost:60400/p/%E6%9C%AC%E5%9C%B0%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1/</guid>
+        <description>&lt;img src="http://localhost:60400/default.jpeg" alt="Featured image of post 本地静态网站托管" /&gt;&lt;h1 id=&#34;如何在本地搭建类似-gihub-的静态网站托管服务&#34;&gt;如何在本地搭建类似 gihub 的静态网站托管服务
 &lt;/h1&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
 &lt;/h2&gt;&lt;p&gt;本博客的初衷是因为博主之前使用第三方的静态博客发现国内的网站对这些托管并不友好, 特别是 wx 经常会对我的博客域名封杀. 而且这个网页托管的速度也比较一般. 所以打算在本地搭建网页托管的服务, 使用内网穿透来实现外网访问. 这也算是一个填坑博客吧.🤓&lt;/p&gt;
 &lt;h2 id=&#34;requirements&#34;&gt;requirements
