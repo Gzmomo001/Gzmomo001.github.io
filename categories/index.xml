@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Categories on Henry Zhang</title>
-        <link>http://localhost:62524/categories/</link>
+        <link>https://Gzmomo001.github.io/categories/</link>
         <description>Recent content in Categories on Henry Zhang</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>henryzhang070&#43;contact@gmail.com</copyright>
-        <lastBuildDate>Fri, 13 Jun 2025 16:07:19 +0800</lastBuildDate><atom:link href="http://localhost:62524/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 13 Jun 2025 20:08:28 +0800</lastBuildDate><atom:link href="https://Gzmomo001.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Notes</title>
-        <link>http://localhost:62524/categories/notes/</link>
+        <link>https://Gzmomo001.github.io/categories/notes/</link>
         <pubDate>Fri, 13 Jun 2025 15:47:20 +0800</pubDate>
         
-        <guid>http://localhost:62524/categories/notes/</guid>
+        <guid>https://Gzmomo001.github.io/categories/notes/</guid>
         <description></description>
         </item>
         <item>
         <title>Daliy Blog</title>
-        <link>http://localhost:62524/categories/daliy-blog/</link>
+        <link>https://Gzmomo001.github.io/categories/daliy-blog/</link>
         <pubDate>Thu, 29 May 2025 02:41:58 +0800</pubDate>
         
-        <guid>http://localhost:62524/categories/daliy-blog/</guid>
+        <guid>https://Gzmomo001.github.io/categories/daliy-blog/</guid>
         <description></description>
         </item>
         <item>
         <title>测试</title>
-        <link>http://localhost:62524/categories/%E6%B5%8B%E8%AF%95/</link>
+        <link>https://Gzmomo001.github.io/categories/%E6%B5%8B%E8%AF%95/</link>
         <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:62524/categories/%E6%B5%8B%E8%AF%95/</guid>
+        <guid>https://Gzmomo001.github.io/categories/%E6%B5%8B%E8%AF%95/</guid>
         <description></description>
         </item>
         <item>
         <title>Syntax</title>
-        <link>http://localhost:62524/categories/syntax/</link>
+        <link>https://Gzmomo001.github.io/categories/syntax/</link>
         <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:62524/categories/syntax/</guid>
+        <guid>https://Gzmomo001.github.io/categories/syntax/</guid>
         <description></description>
         </item>
         <item>
         <title>Themes</title>
-        <link>http://localhost:62524/categories/themes/</link>
+        <link>https://Gzmomo001.github.io/categories/themes/</link>
         <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:62524/categories/themes/</guid>
+        <guid>https://Gzmomo001.github.io/categories/themes/</guid>
         <description></description>
         </item>
         <item>
         <title>Test With Whitespaces</title>
-        <link>http://localhost:62524/categories/test-with-whitespaces/</link>
+        <link>https://Gzmomo001.github.io/categories/test-with-whitespaces/</link>
         <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:62524/categories/test-with-whitespaces/</guid>
+        <guid>https://Gzmomo001.github.io/categories/test-with-whitespaces/</guid>
         <description></description>
         </item>
         <item>
         <title>Test</title>
-        <link>http://localhost:62524/categories/test/</link>
+        <link>https://Gzmomo001.github.io/categories/test/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:62524/categories/test/</guid>
-        <description>&lt;img src="http://localhost:62524/categories/test/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post Test" /&gt;</description>
+        <guid>https://Gzmomo001.github.io/categories/test/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/categories/test/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post Test" /&gt;</description>
         </item>
         
     </channel>

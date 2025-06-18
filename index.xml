@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Henry Zhang</title>
-        <link>http://localhost:62524/</link>
+        <link>https://Gzmomo001.github.io/</link>
         <description>Recent content on Henry Zhang</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <copyright>henryzhang070&#43;contact@gmail.com</copyright><atom:link href="http://localhost:62524/index.xml" rel="self" type="application/rss+xml" /><item>
+        <copyright>henryzhang070&#43;contact@gmail.com</copyright><atom:link href="https://Gzmomo001.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Linux_system_service | Linux 之 系统服务</title>
-        <link>http://localhost:62524/p/linux_system_service-linux-%E4%B9%8B-%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1/</link>
+        <link>https://Gzmomo001.github.io/p/linux_system_service-linux-%E4%B9%8B-%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1/</link>
         <pubDate>Fri, 13 Jun 2025 15:47:20 +0800</pubDate>
         
-        <guid>http://localhost:62524/p/linux_system_service-linux-%E4%B9%8B-%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1/</guid>
-        <description>&lt;img src="http://localhost:62524/p/linux_system_service-linux-%E4%B9%8B-%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1/image.png" alt="Featured image of post Linux_system_service | Linux 之 系统服务" /&gt;&lt;h2 id=&#34;什么是系统服务service&#34;&gt;什么是系统服务(service)
+        <guid>https://Gzmomo001.github.io/p/linux_system_service-linux-%E4%B9%8B-%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/p/linux_system_service-linux-%E4%B9%8B-%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1/image.png" alt="Featured image of post Linux_system_service | Linux 之 系统服务" /&gt;&lt;h2 id=&#34;什么是系统服务service&#34;&gt;什么是系统服务(service)
 &lt;/h2&gt;&lt;p&gt;简单理解就是开机自启动的程序或者脚本, 会常驻在系统的内存中.&lt;/p&gt;
 &lt;p&gt;对于现在的大部分的 linux 发行版, 系统服务通常使用 systemd 进行管理.&lt;/p&gt;
 &lt;h3 id=&#34;三种配置文件&#34;&gt;三种配置文件
@@ -249,11 +249,11 @@
         </item>
         <item>
         <title>MC服务器搭建 &amp; 加入</title>
-        <link>http://localhost:62524/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/</link>
+        <link>https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/</link>
         <pubDate>Mon, 09 Jun 2025 14:01:06 +0800</pubDate>
         
-        <guid>http://localhost:62524/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/</guid>
-        <description>&lt;img src="http://localhost:62524/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/image.png" alt="Featured image of post MC服务器搭建 &amp; 加入" /&gt;&lt;h3 id=&#34;java-环境-&#34;&gt;java 环境 ✅
+        <guid>https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/image.png" alt="Featured image of post MC服务器搭建 &amp; 加入" /&gt;&lt;h3 id=&#34;java-环境-&#34;&gt;java 环境 ✅
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;本教程的所有内容都是基于 java 环境已经安装好的前提下.&lt;/li&gt;
 &lt;li&gt;具体的教程可以去网上搜索.&lt;/li&gt;
@@ -270,12 +270,20 @@
 &lt;h3 id=&#34;2-如何加入我的模组服务器傻瓜版&#34;&gt;2. 如何加入我的模组服务器(傻瓜版)‼️
 &lt;/h3&gt;&lt;h4 id=&#34;首先最好先确认系统安装了-java21-点击这里查看如何确认&#34;&gt;首先最好先确认系统安装了 Java21, &lt;a class=&#34;link&#34; href=&#34;#confirm&#34; &gt;点击这里查看如何确认&lt;/a&gt;.
 &lt;/h4&gt;&lt;h4 id=&#34;下载整合包&#34;&gt;下载整合包
-&lt;/h4&gt;&lt;p&gt;整合包链接:&lt;/p&gt;
+&lt;/h4&gt;&lt;p&gt;整合包链接(一键启动版):&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;http://192.168.51.21:12345/#/?code=DVVQV&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;WKU 校园网(windows)版本&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;http://192.168.51.21:12345/#/?code=86889&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;WKU 校园网(mac/linux 版)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://192.168.51.21:12345/#/?code=93629&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;WKU 校园网(windows)版本&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://192.168.51.21:12345/#/?code=93629&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;WKU 校园网(mac/linux 版)&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;HCML &lt;a class=&#34;link&#34; href=&#34;http://192.168.51.21:12345/#/?code=62669&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;整合包导入版(教程见本文后面的部分)&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;安装新&#34;&gt;安装(新)
 &lt;/h4&gt;&lt;ol&gt;
@@ -333,11 +341,11 @@
 &lt;h3 id=&#34;1-如何加入我的模组服务器-建议直接使用后面的整合包安装-更稳定也更方便&#34;&gt;&lt;del&gt;1. 如何加入我的模组服务器&lt;/del&gt; 建议直接使用后面的整合包安装, 更稳定也更方便.
 &lt;/h3&gt;&lt;h4 id=&#34;安装-1182forge-4030-版本&#34;&gt;安装 1.18.2+forge 40.3.0 版本
 &lt;/h4&gt;&lt;p&gt;&lt;code&gt;点击下载&lt;/code&gt;
-&lt;img src=&#34;http://localhost:62524/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v1_hu_736a98c9bbf842a4.png&#34; width=&#34;1200&#34; height=&#34;898&#34; alt=&#34;exception types&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v1_hu_736a98c9bbf842a4.png&#34; width=&#34;1200&#34; height=&#34;898&#34; alt=&#34;exception types&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;选择18.2+forge 40.3.0版本&lt;/code&gt;&lt;/p&gt;
-&lt;img src=&#34;http://localhost:62524/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v2_hu_276dd84c915b4521.png&#34; width=&#34;1200&#34; height=&#34;905&#34; alt=&#34;exception types&#34;&gt;
-&lt;img src=&#34;http://localhost:62524/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v3_hu_2f591b8eca54f1be.png&#34; width=&#34;1200&#34; height=&#34;904&#34; alt=&#34;exception types&#34;&gt;
-&lt;img src=&#34;http://localhost:62524/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v4_hu_a75a7d96e3be6c51.png&#34; width=&#34;1200&#34; height=&#34;899&#34; alt=&#34;exception types&#34;&gt;
+&lt;img src=&#34;https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v2_hu_276dd84c915b4521.png&#34; width=&#34;1200&#34; height=&#34;905&#34; alt=&#34;exception types&#34;&gt;
+&lt;img src=&#34;https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v3_hu_2f591b8eca54f1be.png&#34; width=&#34;1200&#34; height=&#34;904&#34; alt=&#34;exception types&#34;&gt;
+&lt;img src=&#34;https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v4_hu_a75a7d96e3be6c51.png&#34; width=&#34;1200&#34; height=&#34;899&#34; alt=&#34;exception types&#34;&gt;
 &lt;h4 id=&#34;安装模组&#34;&gt;安装模组
 &lt;/h4&gt;&lt;ol&gt;
 &lt;li&gt;下载我的模组和材质包.&lt;/li&gt;
@@ -350,14 +358,14 @@
 &lt;li&gt;压缩包下载后解压, 会有两种文件: zip, jar. zip 对应的是材质包, jar 是模组.
 点击版本管理&lt;/li&gt;
 &lt;/ol&gt;
-&lt;img src=&#34;http://localhost:62524/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/main_hu_cd62cbf18f0f3bf5.png&#34; width=&#34;1200&#34; height=&#34;913&#34; alt=&#34;exception types&#34;&gt;
+&lt;img src=&#34;https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/main_hu_cd62cbf18f0f3bf5.png&#34; width=&#34;1200&#34; height=&#34;913&#34; alt=&#34;exception types&#34;&gt;
 &lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;在模组拦选择添加模组, 选择刚刚下载的包里的&lt;code&gt;jar&lt;/code&gt;文件.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;img src=&#34;http://localhost:62524/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v5_hu_41c2e29e2930d7df.png&#34; width=&#34;1200&#34; height=&#34;911&#34; alt=&#34;exception types&#34;&gt;
+&lt;img src=&#34;https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v5_hu_41c2e29e2930d7df.png&#34; width=&#34;1200&#34; height=&#34;911&#34; alt=&#34;exception types&#34;&gt;
 &lt;h4 id=&#34;安装光影&#34;&gt;安装光影
 &lt;/h4&gt;&lt;p&gt;在浏览中选择打开资源包文件夹, 然后添加下载文件夹中的&lt;code&gt;zip&lt;/code&gt;文件.
-&lt;img src=&#34;http://localhost:62524/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v6_hu_a6b4669caa9893f7.png&#34; width=&#34;1200&#34; height=&#34;909&#34; alt=&#34;exception types&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v6_hu_a6b4669caa9893f7.png&#34; width=&#34;1200&#34; height=&#34;909&#34; alt=&#34;exception types&#34;&gt;&lt;/p&gt;
 &lt;h4 id=&#34;整合包安装游戏不带启动器版本&#34;&gt;整合包安装游戏(不带启动器版本)
 &lt;/h4&gt;&lt;p&gt;&lt;code&gt;该方法已淘汰, 请勿使用该方法&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;使用 HMCL 的整合包安装功能, 直接一次性安装好所有模组和材质包.&lt;/p&gt;
@@ -366,7 +374,7 @@
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;
 &lt;p&gt;点击安装整合包
-&lt;img src=&#34;http://localhost:62524/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/p1_hu_a3107bb23487123e.png&#34; width=&#34;1200&#34; height=&#34;901&#34; alt=&#34;exception types&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/p1_hu_a3107bb23487123e.png&#34; width=&#34;1200&#34; height=&#34;901&#34; alt=&#34;exception types&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;从本地安装整合包, 并选择下载好的 zip 整合包.&lt;/p&gt;
@@ -385,7 +393,7 @@
 &lt;li&gt;选择版本.&lt;/li&gt;
 &lt;li&gt;点击 Installer 安装稳定版&lt;/li&gt;
 &lt;/ol&gt;
-&lt;img src=&#34;http://localhost:62524/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/d_hu_7c67ad27a83df608.png&#34; width=&#34;1200&#34; height=&#34;916&#34; alt=&#34;exception types&#34;&gt;
+&lt;img src=&#34;https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/d_hu_7c67ad27a83df608.png&#34; width=&#34;1200&#34; height=&#34;916&#34; alt=&#34;exception types&#34;&gt;
 &lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;下载完成之后看到 jar 结尾的文件说明成功下载.&lt;/li&gt;
 &lt;/ol&gt;
@@ -458,7 +466,7 @@
 &lt;li&gt;在 cploar 服务启动之后在网页中打开服务器的&lt;code&gt;9200&lt;/code&gt;端口.&lt;/li&gt;
 &lt;li&gt;设置映射.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:62524/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/port_hu_6ba287f842e76ffa.png&#34; width=&#34;1200&#34; height=&#34;472&#34; alt=&#34;exception types&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/port_hu_6ba287f842e76ffa.png&#34; width=&#34;1200&#34; height=&#34;472&#34; alt=&#34;exception types&#34;&gt;
 仿照图片中的设置配置映射.&lt;/p&gt;
 &lt;blockquote class=&#34;alert alert-note&#34;&gt;
     &lt;p&gt;对于 forge, 服务器开启后默认端口为 25565, 如果想修改监听端口可以修改 properties 里的端口设置.&lt;/p&gt;&lt;/blockquote&gt;
@@ -473,11 +481,11 @@
         </item>
         <item>
         <title>ubuntu远程桌面</title>
-        <link>http://localhost:62524/p/ubuntu%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2/</link>
+        <link>https://Gzmomo001.github.io/p/ubuntu%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2/</link>
         <pubDate>Sun, 08 Jun 2025 22:16:17 +0800</pubDate>
         
-        <guid>http://localhost:62524/p/ubuntu%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2/</guid>
-        <description>&lt;img src="http://localhost:62524/default.jpeg" alt="Featured image of post ubuntu远程桌面" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
+        <guid>https://Gzmomo001.github.io/p/ubuntu%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/default.jpeg" alt="Featured image of post ubuntu远程桌面" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
 &lt;/h2&gt;&lt;p&gt;本教程基于 ubuntu, 请确保的 ubuntu 系统大于 20.
 这里参考阿里提供的&lt;a class=&#34;link&#34; href=&#34;https://developer.aliyun.com/article/762186&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;方案&lt;/a&gt;&lt;/p&gt;
@@ -487,11 +495,11 @@
         </item>
         <item>
         <title>如何diy自己的工作简历</title>
-        <link>http://localhost:62524/p/%E5%A6%82%E4%BD%95diy%E8%87%AA%E5%B7%B1%E7%9A%84%E5%B7%A5%E4%BD%9C%E7%AE%80%E5%8E%86/</link>
+        <link>https://Gzmomo001.github.io/p/%E5%A6%82%E4%BD%95diy%E8%87%AA%E5%B7%B1%E7%9A%84%E5%B7%A5%E4%BD%9C%E7%AE%80%E5%8E%86/</link>
         <pubDate>Wed, 04 Jun 2025 18:19:09 +0800</pubDate>
         
-        <guid>http://localhost:62524/p/%E5%A6%82%E4%BD%95diy%E8%87%AA%E5%B7%B1%E7%9A%84%E5%B7%A5%E4%BD%9C%E7%AE%80%E5%8E%86/</guid>
-        <description>&lt;img src="http://localhost:62524/default.jpeg" alt="Featured image of post 如何diy自己的工作简历" /&gt;&lt;div class=&#34;video-container&#34; style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 10px;&#34;&gt;
+        <guid>https://Gzmomo001.github.io/p/%E5%A6%82%E4%BD%95diy%E8%87%AA%E5%B7%B1%E7%9A%84%E5%B7%A5%E4%BD%9C%E7%AE%80%E5%8E%86/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/default.jpeg" alt="Featured image of post 如何diy自己的工作简历" /&gt;&lt;div class=&#34;video-container&#34; style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 10px;&#34;&gt;
     &lt;iframe 
         src=&#34;//player.bilibili.com/player.html?isOutside=true&amp;amp;aid=760070089&amp;amp;bvid=BV1S64y1v7ur&amp;amp;cid=324514877&amp;amp;p=1&#34;
         style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34;
@@ -508,11 +516,11 @@
         </item>
         <item>
         <title>语言如何影响你的思维</title>
-        <link>http://localhost:62524/p/%E8%AF%AD%E8%A8%80%E5%A6%82%E4%BD%95%E5%BD%B1%E5%93%8D%E4%BD%A0%E7%9A%84%E6%80%9D%E7%BB%B4/</link>
+        <link>https://Gzmomo001.github.io/p/%E8%AF%AD%E8%A8%80%E5%A6%82%E4%BD%95%E5%BD%B1%E5%93%8D%E4%BD%A0%E7%9A%84%E6%80%9D%E7%BB%B4/</link>
         <pubDate>Thu, 29 May 2025 02:41:58 +0800</pubDate>
         
-        <guid>http://localhost:62524/p/%E8%AF%AD%E8%A8%80%E5%A6%82%E4%BD%95%E5%BD%B1%E5%93%8D%E4%BD%A0%E7%9A%84%E6%80%9D%E7%BB%B4/</guid>
-        <description>&lt;img src="http://localhost:62524/default.jpeg" alt="Featured image of post 语言如何影响你的思维" /&gt;&lt;h2 id=&#34;视频源&#34;&gt;视频源
+        <guid>https://Gzmomo001.github.io/p/%E8%AF%AD%E8%A8%80%E5%A6%82%E4%BD%95%E5%BD%B1%E5%93%8D%E4%BD%A0%E7%9A%84%E6%80%9D%E7%BB%B4/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/default.jpeg" alt="Featured image of post 语言如何影响你的思维" /&gt;&lt;h2 id=&#34;视频源&#34;&gt;视频源
 &lt;/h2&gt;&lt;div class=&#34;video-container&#34; style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 10px;&#34;&gt;
     &lt;iframe 
         src=&#34;//player.bilibili.com/player.html?isOutside=true&amp;amp;aid=114524212431405&amp;amp;bvid=BV1CsJPznER1&amp;amp;cid=30013459007&amp;amp;p=1&#34;
@@ -560,11 +568,11 @@
         </item>
         <item>
         <title>Chapter13</title>
-        <link>http://localhost:62524/p/chapter13/</link>
+        <link>https://Gzmomo001.github.io/p/chapter13/</link>
         <pubDate>Mon, 26 May 2025 00:42:23 +0800</pubDate>
         
-        <guid>http://localhost:62524/p/chapter13/</guid>
-        <description>&lt;img src="http://localhost:62524/java.png" alt="Featured image of post Chapter13" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
+        <guid>https://Gzmomo001.github.io/p/chapter13/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/java.png" alt="Featured image of post Chapter13" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
 &lt;/h2&gt;&lt;p&gt;回顾上上个章节当中讲到的遗产(inheritance)的概念, 我们可以通过创建一个类的子类来继承其 datafield 和 methods. 并且这个类也可以单独创建实例. 而抽象类就是一种特殊的父类.&lt;/p&gt;
 &lt;h2 id=&#34;抽象类&#34;&gt;抽象类
 &lt;/h2&gt;&lt;p&gt;就跟刚刚讲到的一样, 抽象类其实就是一个特殊的父类, 作为一个父类它无法实例化. 而是要通过创建其子类然后才能实例化.&lt;/p&gt;
@@ -738,11 +746,11 @@
         </item>
         <item>
         <title>Chapter12</title>
-        <link>http://localhost:62524/p/chapter12/</link>
+        <link>https://Gzmomo001.github.io/p/chapter12/</link>
         <pubDate>Sun, 25 May 2025 15:21:54 +0800</pubDate>
         
-        <guid>http://localhost:62524/p/chapter12/</guid>
-        <description>&lt;img src="http://localhost:62524/java.png" alt="Featured image of post Chapter12" /&gt;&lt;h2 id=&#34;情景&#34;&gt;情景
+        <guid>https://Gzmomo001.github.io/p/chapter12/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/java.png" alt="Featured image of post Chapter12" /&gt;&lt;h2 id=&#34;情景&#34;&gt;情景
 &lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;随着我们的代码复杂度的增长, 很多时候我们无法完全避免程序在运行的过程中出错. 很多时候会出现程序在执行某些不重要的代码的时候报错,然后整个程序直接停止.&lt;/li&gt;
 &lt;li&gt;整个项目的代码量过大导致使用 debug 功能修复代码的时候效率过低.&lt;/li&gt;
@@ -800,7 +808,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;exception-types--错误类型&#34;&gt;Exception Types | 错误类型
-&lt;/h2&gt;&lt;img src=&#34;http://localhost:62524/p/chapter12/exception_hu_821cfc0c383d1a10.png&#34; width=&#34;1200&#34; height=&#34;474&#34; alt=&#34;exception types&#34;&gt;
+&lt;/h2&gt;&lt;img src=&#34;https://Gzmomo001.github.io/p/chapter12/exception_hu_821cfc0c383d1a10.png&#34; width=&#34;1200&#34; height=&#34;474&#34; alt=&#34;exception types&#34;&gt;
 &lt;p&gt;在 Java 中， Throwable 是所有异常和错误的根类。所有通过 throw 抛出的异常必须继承自 Throwable 。其直接子类包括：&lt;/p&gt;
 &lt;h3 id=&#34;error&#34;&gt;Error
 &lt;/h3&gt;&lt;h4 id=&#34;linkageerror&#34;&gt;LinkageError
@@ -997,11 +1005,11 @@
         </item>
         <item>
         <title>Stack theme hugo 字体设置</title>
-        <link>http://localhost:62524/p/stack-theme-hugo-%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE/</link>
+        <link>https://Gzmomo001.github.io/p/stack-theme-hugo-%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE/</link>
         <pubDate>Sun, 25 May 2025 02:28:03 +0800</pubDate>
         
-        <guid>http://localhost:62524/p/stack-theme-hugo-%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE/</guid>
-        <description>&lt;img src="http://localhost:62524/hugo.jpeg" alt="Featured image of post Stack theme hugo 字体设置" /&gt;&lt;h2 id=&#34;参考链接&#34;&gt;参考链接
+        <guid>https://Gzmomo001.github.io/p/stack-theme-hugo-%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/hugo.jpeg" alt="Featured image of post Stack theme hugo 字体设置" /&gt;&lt;h2 id=&#34;参考链接&#34;&gt;参考链接
 &lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.lufei.de/p/ziti/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;博客教程&lt;/a&gt;
 &lt;a class=&#34;link&#34; href=&#34;https://chinese-font.netlify.app/cdn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -1055,11 +1063,11 @@
         </item>
         <item>
         <title>Chapter11</title>
-        <link>http://localhost:62524/p/chapter11/</link>
+        <link>https://Gzmomo001.github.io/p/chapter11/</link>
         <pubDate>Sat, 24 May 2025 21:05:41 +0800</pubDate>
         
-        <guid>http://localhost:62524/p/chapter11/</guid>
-        <description>&lt;img src="http://localhost:62524/java.png" alt="Featured image of post Chapter11" /&gt;&lt;h1 id=&#34;继承-和-多态java&#34;&gt;继承 和 多态(java)
+        <guid>https://Gzmomo001.github.io/p/chapter11/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/java.png" alt="Featured image of post Chapter11" /&gt;&lt;h1 id=&#34;继承-和-多态java&#34;&gt;继承 和 多态(java)
 &lt;/h1&gt;&lt;p&gt;这个章节是基于类的延伸&lt;/p&gt;
 &lt;h2 id=&#34;子类和父类&#34;&gt;子类和父类
 &lt;/h2&gt;&lt;p&gt;在 java 中有一个关键字叫 &amp;rsquo;extends&amp;rsquo;，意思是扩展， 这个关键字可以定义一个类的延伸类, 并具有所有原先类的方法(method)和变量(data field)。&lt;/p&gt;
@@ -1324,11 +1332,11 @@
         </item>
         <item>
         <title>本地静态网站托管</title>
-        <link>http://localhost:62524/p/%E6%9C%AC%E5%9C%B0%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1/</link>
+        <link>https://Gzmomo001.github.io/p/%E6%9C%AC%E5%9C%B0%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1/</link>
         <pubDate>Sat, 24 May 2025 16:47:04 +0800</pubDate>
         
-        <guid>http://localhost:62524/p/%E6%9C%AC%E5%9C%B0%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1/</guid>
-        <description>&lt;img src="http://localhost:62524/default.jpeg" alt="Featured image of post 本地静态网站托管" /&gt;&lt;h1 id=&#34;如何在本地搭建类似-gihub-的静态网站托管服务&#34;&gt;如何在本地搭建类似 gihub 的静态网站托管服务
+        <guid>https://Gzmomo001.github.io/p/%E6%9C%AC%E5%9C%B0%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/default.jpeg" alt="Featured image of post 本地静态网站托管" /&gt;&lt;h1 id=&#34;如何在本地搭建类似-gihub-的静态网站托管服务&#34;&gt;如何在本地搭建类似 gihub 的静态网站托管服务
 &lt;/h1&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
 &lt;/h2&gt;&lt;p&gt;本博客的初衷是因为博主之前使用第三方的静态博客发现国内的网站对这些托管并不友好, 特别是 wx 经常会对我的博客域名封杀. 而且这个网页托管的速度也比较一般. 所以打算在本地搭建网页托管的服务, 使用内网穿透来实现外网访问. 这也算是一个填坑博客吧.🤓&lt;/p&gt;
 &lt;h2 id=&#34;requirements&#34;&gt;requirements
@@ -1372,11 +1380,11 @@
         </item>
         <item>
         <title>Daliy_blog2025 05 24</title>
-        <link>http://localhost:62524/p/daliy_blog2025-05-24/</link>
+        <link>https://Gzmomo001.github.io/p/daliy_blog2025-05-24/</link>
         <pubDate>Sat, 24 May 2025 03:53:50 +0800</pubDate>
         
-        <guid>http://localhost:62524/p/daliy_blog2025-05-24/</guid>
-        <description>&lt;img src="http://localhost:62524/default.jpeg" alt="Featured image of post Daliy_blog2025 05 24" /&gt;&lt;h1 id=&#34;不知好歹的博主&#34;&gt;不知好歹的博主
+        <guid>https://Gzmomo001.github.io/p/daliy_blog2025-05-24/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/default.jpeg" alt="Featured image of post Daliy_blog2025 05 24" /&gt;&lt;h1 id=&#34;不知好歹的博主&#34;&gt;不知好歹的博主
 &lt;/h1&gt;&lt;p&gt;博主第二天要考高数, 现在还熬到快四点钟真的很有生活了.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 添加网页个性化鼠标指针&lt;/li&gt;
@@ -1429,11 +1437,11 @@
         </item>
         <item>
         <title>Daliy_blog2025 05 22</title>
-        <link>http://localhost:62524/p/daliy_blog2025-05-22/</link>
+        <link>https://Gzmomo001.github.io/p/daliy_blog2025-05-22/</link>
         <pubDate>Thu, 22 May 2025 23:40:31 +0800</pubDate>
         
-        <guid>http://localhost:62524/p/daliy_blog2025-05-22/</guid>
-        <description>&lt;img src="http://localhost:62524/default.gif" alt="Featured image of post Daliy_blog2025 05 22" /&gt;&lt;h1 id=&#34;日常记录&#34;&gt;日常记录
+        <guid>https://Gzmomo001.github.io/p/daliy_blog2025-05-22/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/default.gif" alt="Featured image of post Daliy_blog2025 05 22" /&gt;&lt;h1 id=&#34;日常记录&#34;&gt;日常记录
 &lt;/h1&gt;&lt;h2 id=&#34;关于自己&#34;&gt;关于自己
 &lt;/h2&gt;&lt;p&gt;昨天晚上搞博客搞的太上头, 一不小心又熬到 4.多 🥹. 然后今天睡到下午才起床, 真是得不偿失啊啊啊啊. 但我这种性格就是, 很多时候如果不把一件事做完就是不会停下来. 直到我把这件事做到某一个我想对满意的阶段的时候我可能才会开始休息. 简直就是先天牛马圣体.下周大大小小的考试就基本都考完了, 所以, 这几天再撑一下吧 🫠.&lt;/p&gt;
 &lt;h2 id=&#34;关于考试&#34;&gt;关于考试
@@ -1459,11 +1467,11 @@
         </item>
         <item>
         <title>Hugo_notes</title>
-        <link>http://localhost:62524/p/hugo_notes/</link>
+        <link>https://Gzmomo001.github.io/p/hugo_notes/</link>
         <pubDate>Thu, 22 May 2025 23:29:01 +0800</pubDate>
         
-        <guid>http://localhost:62524/p/hugo_notes/</guid>
-        <description>&lt;img src="http://localhost:62524/p/hugo_notes/1.jpeg" alt="Featured image of post Hugo_notes" /&gt;&lt;h1 id=&#34;hugo-笔记&#34;&gt;Hugo 笔记
+        <guid>https://Gzmomo001.github.io/p/hugo_notes/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/p/hugo_notes/1.jpeg" alt="Featured image of post Hugo_notes" /&gt;&lt;h1 id=&#34;hugo-笔记&#34;&gt;Hugo 笔记
 &lt;/h1&gt;&lt;p&gt;这里是我记录 Hugo 这个框架笔记的方法, 方便我以后忘记的时候能回来查看. 本 blog 会持续更新&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;当然这里很多笔记也会是基于 stack 这个主题, 不过 hugo 大部分语法应该是通用的. 应该也有一定的参考价值.&lt;/p&gt;&lt;/blockquote&gt;
@@ -1558,7 +1566,7 @@
     &gt;参考博客&lt;/a&gt;. 圆框使用 AI 修改.&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 代码框自动折叠功能,&lt;a class=&#34;link&#34; href=&#34;https://letere-gzj.github.io/hugo-stack/p/hugo/custom-stack-theme/#8-%E8%87%AA%E5%AE%9A%E4%B9%89md%E5%BC%95%E7%94%A8%E5%9D%97%E9%A2%9C%E8%89%B2%E6%A8%A1%E6%9D%BF&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;参考&lt;/a&gt;. 在原有的基础上修改了一下样式, 更加美观.&lt;/li&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 修复字体问题, 已完成. &lt;a class=&#34;link&#34; href=&#34;http://localhost:62524/p/stack-theme-hugo-%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE/&#34; &gt;教程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 修复字体问题, 已完成. &lt;a class=&#34;link&#34; href=&#34;https://Gzmomo001.github.io/p/stack-theme-hugo-%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE/&#34; &gt;教程&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 返回顶部按钮&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 防止爬虫(&lt;a class=&#34;link&#34; href=&#34;https://blog.lufei.de/p/215/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://blog.lufei.de/p/215/&lt;/a&gt;)
@@ -1639,11 +1647,11 @@
         </item>
         <item>
         <title>Myfirstblog</title>
-        <link>http://localhost:62524/p/myfirstblog/</link>
+        <link>https://Gzmomo001.github.io/p/myfirstblog/</link>
         <pubDate>Thu, 22 May 2025 04:08:44 +0800</pubDate>
         
-        <guid>http://localhost:62524/p/myfirstblog/</guid>
-        <description>&lt;img src="http://localhost:62524/default.jpeg" alt="Featured image of post Myfirstblog" /&gt;&lt;h1 id=&#34;这个是我的第一个条博客准确来说是第二条-hhh&#34;&gt;这个是我的第一个条博客(准确来说是第二条 hhh)
+        <guid>https://Gzmomo001.github.io/p/myfirstblog/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/default.jpeg" alt="Featured image of post Myfirstblog" /&gt;&lt;h1 id=&#34;这个是我的第一个条博客准确来说是第二条-hhh&#34;&gt;这个是我的第一个条博客(准确来说是第二条 hhh)
 &lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;时间: 25 年 5 月 22 号&lt;/li&gt;
 &lt;/ul&gt;
@@ -1675,10 +1683,10 @@
         </item>
         <item>
         <title>Update Logs</title>
-        <link>http://localhost:62524/update-logs/</link>
+        <link>https://Gzmomo001.github.io/update-logs/</link>
         <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:62524/update-logs/</guid>
+        <guid>https://Gzmomo001.github.io/update-logs/</guid>
         <description>&lt;h2 id=&#34;todo&#34;&gt;TODO
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 配置评论区, &lt;a class=&#34;link&#34; href=&#34;https://juejin.cn/post/6844903834712539150&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -1691,7 +1699,7 @@
     &gt;参考博客&lt;/a&gt;. 圆框使用 AI 修改.&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 代码框自动折叠功能,&lt;a class=&#34;link&#34; href=&#34;https://letere-gzj.github.io/hugo-stack/p/hugo/custom-stack-theme/#8-%E8%87%AA%E5%AE%9A%E4%B9%89md%E5%BC%95%E7%94%A8%E5%9D%97%E9%A2%9C%E8%89%B2%E6%A8%A1%E6%9D%BF&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;参考&lt;/a&gt;. 在原有的基础上修改了一下样式, 更加美观.&lt;/li&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 修复字体问题, 已完成. &lt;a class=&#34;link&#34; href=&#34;http://localhost:62524/p/stack-theme-hugo-%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE/&#34; &gt;教程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 修复字体问题, 已完成. &lt;a class=&#34;link&#34; href=&#34;https://Gzmomo001.github.io/p/stack-theme-hugo-%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE/&#34; &gt;教程&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 返回顶部按钮&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 防止爬虫(&lt;a class=&#34;link&#34; href=&#34;https://blog.lufei.de/p/215/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://blog.lufei.de/p/215/&lt;/a&gt;)&lt;/li&gt;
@@ -1732,11 +1740,11 @@
         </item>
         <item>
         <title>Chinese Test</title>
-        <link>http://localhost:62524/p/test-chinese/</link>
+        <link>https://Gzmomo001.github.io/p/test-chinese/</link>
         <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:62524/p/test-chinese/</guid>
-        <description>&lt;img src="http://localhost:62524/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg" alt="Featured image of post Chinese Test" /&gt;&lt;h2 id=&#34;正文测试&#34;&gt;正文测试
+        <guid>https://Gzmomo001.github.io/p/test-chinese/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg" alt="Featured image of post Chinese Test" /&gt;&lt;h2 id=&#34;正文测试&#34;&gt;正文测试
 &lt;/h2&gt;&lt;p&gt;而这些并不是完全重要，更加重要的问题是， 带着这些问题，我们来审视一下学生会退会。 既然如何， 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 我们不得不面对一个非常尴尬的事实，那就是， 可是，即使是这样，学生会退会的出现仍然代表了一定的意义。 学生会退会，发生了会如何，不发生又会如何。 经过上述讨论， 生活中，若学生会退会出现了，我们就不得不考虑它出现了的事实。 学生会退会，到底应该如何实现。 这样看来， 在这种困难的抉择下，本人思来想去，寝食难安。 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 就我个人来说，学生会退会对我的意义，不能不说非常重大。 莎士比亚曾经提到过，人的一生是短的，但如果卑劣地过这一生，就太长了。这似乎解答了我的疑惑。 莫扎特说过一句富有哲理的话，谁和我一样用功，谁就会和我一样成功。这启发了我， 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 学生会退会，到底应该如何实现。 一般来说， 从这个角度来看， 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 在这种困难的抉择下，本人思来想去，寝食难安。 了解清楚学生会退会到底是一种怎么样的存在，是解决一切问题的关键。 一般来说， 生活中，若学生会退会出现了，我们就不得不考虑它出现了的事实。 问题的关键究竟为何？ 而这些并不是完全重要，更加重要的问题是。&lt;/p&gt;
 &lt;p&gt;奥斯特洛夫斯基曾经说过，共同的事业，共同的斗争，可以使人们产生忍受一切的力量。　带着这句话，我们还要更加慎重的审视这个问题： 一般来讲，我们都必须务必慎重的考虑考虑。 既然如此， 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 带着这些问题，我们来审视一下学生会退会。 我认为， 我认为， 在这种困难的抉择下，本人思来想去，寝食难安。 问题的关键究竟为何？ 每个人都不得不面对这些问题。 在面对这种问题时， 要想清楚，学生会退会，到底是一种怎么样的存在。 我认为， 既然如此， 每个人都不得不面对这些问题。 在面对这种问题时， 那么， 我认为， 学生会退会因何而发生。&lt;/p&gt;
 &lt;h2 id=&#34;引用&#34;&gt;引用
@@ -1748,10 +1756,10 @@
 &lt;p&gt;&lt;em&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=3aypp_YlBzI&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;最暖的憂傷 - 田馥甄&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;图片&#34;&gt;图片
-&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:62524/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash.jpg&#34;
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://Gzmomo001.github.io/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash.jpg&#34;
 	width=&#34;667&#34;
 	height=&#34;1000&#34;
-	srcset=&#34;http://localhost:62524/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu_e98fca2b4272416e.jpg 480w, http://localhost:62524/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu_e3d37c9ded115b12.jpg 1024w&#34;
+	srcset=&#34;https://Gzmomo001.github.io/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu_e98fca2b4272416e.jpg 480w, https://Gzmomo001.github.io/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu_e3d37c9ded115b12.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Photo by Florian Klauer on Unsplash&#34;
@@ -1761,10 +1769,10 @@
 		data-flex-grow=&#34;66&#34;
 		data-flex-basis=&#34;160px&#34;
 	
-&gt;  &lt;img src=&#34;http://localhost:62524/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash.jpg&#34;
+&gt;  &lt;img src=&#34;https://Gzmomo001.github.io/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash.jpg&#34;
 	width=&#34;1000&#34;
 	height=&#34;667&#34;
-	srcset=&#34;http://localhost:62524/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu_e13c58d5189f892c.jpg 480w, http://localhost:62524/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu_8fc948b7ee525251.jpg 1024w&#34;
+	srcset=&#34;https://Gzmomo001.github.io/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu_e13c58d5189f892c.jpg 480w, https://Gzmomo001.github.io/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu_8fc948b7ee525251.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Photo by Luca Bravo on Unsplash&#34;
@@ -1775,10 +1783,10 @@
 		data-flex-basis=&#34;359px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:62524/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://Gzmomo001.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg&#34;
 	width=&#34;1000&#34;
 	height=&#34;750&#34;
-	srcset=&#34;http://localhost:62524/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu_503c0ebcc5245e10.jpg 480w, http://localhost:62524/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu_48c98de55fb3c999.jpg 1024w&#34;
+	srcset=&#34;https://Gzmomo001.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu_503c0ebcc5245e10.jpg 480w, https://Gzmomo001.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu_48c98de55fb3c999.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Photo by Helena Hertz on Unsplash&#34;
@@ -1788,10 +1796,10 @@
 		data-flex-grow=&#34;133&#34;
 		data-flex-basis=&#34;320px&#34;
 	
-&gt;  &lt;img src=&#34;http://localhost:62524/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash.jpg&#34;
+&gt;  &lt;img src=&#34;https://Gzmomo001.github.io/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash.jpg&#34;
 	width=&#34;667&#34;
 	height=&#34;1000&#34;
-	srcset=&#34;http://localhost:62524/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hu_f81a3588c5c4a663.jpg 480w, http://localhost:62524/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hu_1c52ba2a4ad7b9a0.jpg 1024w&#34;
+	srcset=&#34;https://Gzmomo001.github.io/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hu_f81a3588c5c4a663.jpg 480w, https://Gzmomo001.github.io/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hu_1c52ba2a4ad7b9a0.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Photo by Hudai Gayiran on Unsplash&#34;
@@ -1811,19 +1819,19 @@
         </item>
         <item>
         <title>Archives</title>
-        <link>http://localhost:62524/archives/</link>
+        <link>https://Gzmomo001.github.io/archives/</link>
         <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:62524/archives/</guid>
+        <guid>https://Gzmomo001.github.io/archives/</guid>
         <description></description>
         </item>
         <item>
         <title>Markdown Syntax Guide</title>
-        <link>http://localhost:62524/p/markdown-syntax-guide/</link>
+        <link>https://Gzmomo001.github.io/p/markdown-syntax-guide/</link>
         <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:62524/p/markdown-syntax-guide/</guid>
-        <description>&lt;img src="http://localhost:62524/p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg" alt="Featured image of post Markdown Syntax Guide" /&gt;&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;
+        <guid>https://Gzmomo001.github.io/p/markdown-syntax-guide/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg" alt="Featured image of post Markdown Syntax Guide" /&gt;&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;
 &lt;h2 id=&#34;headings&#34;&gt;Headings
 &lt;/h2&gt;&lt;p&gt;The following HTML &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;—&lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; elements represent six levels of section headings. &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; is the highest section level while &lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; is the lowest.&lt;/p&gt;
 &lt;h1 id=&#34;h1&#34;&gt;H1
@@ -2004,10 +2012,10 @@
         </item>
         <item>
         <title>Rich Content</title>
-        <link>http://localhost:62524/p/rich-content/</link>
+        <link>https://Gzmomo001.github.io/p/rich-content/</link>
         <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:62524/p/rich-content/</guid>
+        <guid>https://Gzmomo001.github.io/p/rich-content/</guid>
         <description>&lt;p&gt;Hugo ships with several &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;
@@ -2025,7 +2033,31 @@
 &lt;br&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;twitter-simple-shortcode&#34;&gt;Twitter Simple Shortcode
-&lt;/h2&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;“In addition to being more logical, asymmetry has the advantage that its complete appearance is far more optically effective than symmetry.”&lt;br&gt;— Jan Tschichold &lt;a href=&#34;https://t.co/gcv7SrhvJb&#34;&gt;pic.twitter.com/gcv7SrhvJb&lt;/a&gt;&lt;/p&gt;&amp;mdash; Design Reviewed | Graphic Design History (@DesignReviewed) &lt;a href=&#34;https://twitter.com/DesignReviewed/status/1085870671291310081?ref_src=twsrc%5Etfw&#34;&gt;January 17, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;/h2&gt;&lt;style type=&#34;text/css&#34;&gt;
+      .twitter-tweet {
+        font:
+          14px/1.45 -apple-system,
+          BlinkMacSystemFont,
+          &#34;Segoe UI&#34;,
+          Roboto,
+          Oxygen-Sans,
+          Ubuntu,
+          Cantarell,
+          &#34;Helvetica Neue&#34;,
+          sans-serif;
+        border-left: 4px solid #2b7bb9;
+        padding-left: 1.5em;
+        color: #555;
+      }
+      .twitter-tweet a {
+        color: #2b7bb9;
+        text-decoration: none;
+      }
+      blockquote.twitter-tweet a:hover,
+      blockquote.twitter-tweet a:focus {
+        text-decoration: underline;
+      }
+    &lt;/style&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;“In addition to being more logical, asymmetry has the advantage that its complete appearance is far more optically effective than symmetry.”&lt;br&gt;— Jan Tschichold &lt;a href=&#34;https://t.co/gcv7SrhvJb&#34;&gt;pic.twitter.com/gcv7SrhvJb&lt;/a&gt;&lt;/p&gt;&amp;mdash; Design Reviewed | Graphic Design History (@DesignReviewed) &lt;a href=&#34;https://twitter.com/DesignReviewed/status/1085870671291310081?ref_src=twsrc%5Etfw&#34;&gt;January 17, 2019&lt;/a&gt;&lt;/blockquote&gt;
 
 
 &lt;br&gt;
@@ -2063,11 +2095,11 @@
         </item>
         <item>
         <title>Placeholder Text</title>
-        <link>http://localhost:62524/p/placeholder-text/</link>
+        <link>https://Gzmomo001.github.io/p/placeholder-text/</link>
         <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:62524/p/placeholder-text/</guid>
-        <description>&lt;img src="http://localhost:62524/p/placeholder-text/matt-le-SJSpo9hQf7s-unsplash.jpg" alt="Featured image of post Placeholder Text" /&gt;&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;
+        <guid>https://Gzmomo001.github.io/p/placeholder-text/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/p/placeholder-text/matt-le-SJSpo9hQf7s-unsplash.jpg" alt="Featured image of post Placeholder Text" /&gt;&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;
 &lt;p&gt;Redit teque digerit hominumque toris verebor lumina non cervice subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc caluere tempus inhospita parcite confusaque translucet patri vestro qui optatis lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Exierant elisi ambit vivere dedere&lt;/li&gt;
@@ -2094,10 +2126,10 @@
         </item>
         <item>
         <title>Math Typesetting</title>
-        <link>http://localhost:62524/p/math-typesetting/</link>
+        <link>https://Gzmomo001.github.io/p/math-typesetting/</link>
         <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:62524/p/math-typesetting/</guid>
+        <guid>https://Gzmomo001.github.io/p/math-typesetting/</guid>
         <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;
 &lt;p&gt;In this example we will be using &lt;a class=&#34;link&#34; href=&#34;https://katex.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;KaTeX&lt;/a&gt;&lt;/p&gt;
@@ -2127,11 +2159,11 @@ $$</description>
         </item>
         <item>
         <title>Emoji Support</title>
-        <link>http://localhost:62524/p/emoji-support/</link>
+        <link>https://Gzmomo001.github.io/p/emoji-support/</link>
         <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:62524/p/emoji-support/</guid>
-        <description>&lt;img src="http://localhost:62524/p/emoji-support/the-creative-exchange-d2zvqp3fpro-unsplash.jpg" alt="Featured image of post Emoji Support" /&gt;&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;
+        <guid>https://Gzmomo001.github.io/p/emoji-support/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/p/emoji-support/the-creative-exchange-d2zvqp3fpro-unsplash.jpg" alt="Featured image of post Emoji Support" /&gt;&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;
 &lt;p&gt;The &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/functions/emojify/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;emojify&lt;/code&gt;&lt;/a&gt; function can be called directly in templates or &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/templates/shortcode-templates/#inline-shortcodes&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Inline Shortcodes&lt;/a&gt;.&lt;/p&gt;
@@ -2149,10 +2181,10 @@ $$</description>
         </item>
         <item>
         <title>About me</title>
-        <link>http://localhost:62524/about-me/</link>
+        <link>https://Gzmomo001.github.io/about-me/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:62524/about-me/</guid>
+        <guid>https://Gzmomo001.github.io/about-me/</guid>
         <description>&lt;p&gt;这里有关于我的一些信息.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 待完成&lt;/li&gt;
@@ -2202,18 +2234,18 @@ $$</description>
         </item>
         <item>
         <title>Search</title>
-        <link>http://localhost:62524/search/</link>
+        <link>https://Gzmomo001.github.io/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:62524/search/</guid>
+        <guid>https://Gzmomo001.github.io/search/</guid>
         <description></description>
         </item>
         <item>
         <title>Some Useful Links</title>
-        <link>http://localhost:62524/some-useful-links/</link>
+        <link>https://Gzmomo001.github.io/some-useful-links/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:62524/some-useful-links/</guid>
+        <guid>https://Gzmomo001.github.io/some-useful-links/</guid>
         <description>&lt;p&gt;这里有一些我认为比较实用, 并且常用的一些网站链接.&lt;/p&gt;
 &lt;p&gt;Feel free to take it🥰.&lt;/p&gt;
 &lt;ul&gt;

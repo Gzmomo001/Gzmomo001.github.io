@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Linux on Henry Zhang</title>
-        <link>http://localhost:62524/tags/linux/</link>
+        <link>https://Gzmomo001.github.io/tags/linux/</link>
         <description>Recent content in Linux on Henry Zhang</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>henryzhang070&#43;contact@gmail.com</copyright>
-        <lastBuildDate>Fri, 13 Jun 2025 16:07:19 +0800</lastBuildDate><atom:link href="http://localhost:62524/tags/linux/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 13 Jun 2025 20:08:28 +0800</lastBuildDate><atom:link href="https://Gzmomo001.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Linux_system_service | Linux 之 系统服务</title>
-        <link>http://localhost:62524/p/linux_system_service-linux-%E4%B9%8B-%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1/</link>
+        <link>https://Gzmomo001.github.io/p/linux_system_service-linux-%E4%B9%8B-%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1/</link>
         <pubDate>Fri, 13 Jun 2025 15:47:20 +0800</pubDate>
         
-        <guid>http://localhost:62524/p/linux_system_service-linux-%E4%B9%8B-%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1/</guid>
-        <description>&lt;img src="http://localhost:62524/default.jpeg" alt="Featured image of post Linux_system_service | Linux 之 系统服务" /&gt;&lt;h2 id=&#34;什么是系统服务service&#34;&gt;什么是系统服务(service)
+        <guid>https://Gzmomo001.github.io/p/linux_system_service-linux-%E4%B9%8B-%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/p/linux_system_service-linux-%E4%B9%8B-%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1/image.png" alt="Featured image of post Linux_system_service | Linux 之 系统服务" /&gt;&lt;h2 id=&#34;什么是系统服务service&#34;&gt;什么是系统服务(service)
 &lt;/h2&gt;&lt;p&gt;简单理解就是开机自启动的程序或者脚本, 会常驻在系统的内存中.&lt;/p&gt;
 &lt;p&gt;对于现在的大部分的 linux 发行版, 系统服务通常使用 systemd 进行管理.&lt;/p&gt;
 &lt;h3 id=&#34;三种配置文件&#34;&gt;三种配置文件
@@ -48,24 +48,204 @@
 &lt;li&gt;统一服务的管理.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;核心结构&#34;&gt;核心结构
-&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;Unit&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;用于定义服务的元信息(meta data)和依赖.&lt;/p&gt;
+&lt;/h3&gt;&lt;h4 id=&#34;unit&#34;&gt;&lt;code&gt;Unit&lt;/code&gt;
+&lt;/h4&gt;&lt;p&gt;用于定义服务的元信息(meta data)和依赖.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-service&#34; data-lang=&#34;service&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;[Unit]&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;Description&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;My Service #&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;Description&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;My Service&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;Documentation&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;https://example.org/docs/my-service&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;After&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;network.target #这里需要定义这个服务在哪个服务之后启动&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;Wants&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;network.target #弱依赖&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;Requires&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;network.target #强依赖&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;常见的系统服务目标（可以在 After 中使用）：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;basic.target&lt;/code&gt;: 基础系统初始化完成&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;network.target&lt;/code&gt;: 网络已启动&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;multi-user.target&lt;/code&gt;: 多用户模式（常规启动模式）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;graphical.target&lt;/code&gt;: 图形界面模式&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;remote-fs.target&lt;/code&gt;: 远程文件系统已挂载&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;syslog.target&lt;/code&gt;: 系统日志服务&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;time-sync.target&lt;/code&gt;: 系统时间已同步&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;nss-lookup.target&lt;/code&gt;: 网络名称解析服务&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sound.target&lt;/code&gt;: 声音系统&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;bluetooth.target&lt;/code&gt;: 蓝牙服务&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;也可以直接指定其他具体的服务，例如：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-service&#34; data-lang=&#34;service&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;After&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;mysql.service redis.service&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;服务依赖关系选项：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Requires=&lt;/code&gt;: 强依赖，如果依赖的服务启动失败，该服务也会失败&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Wants=&lt;/code&gt;: 弱依赖，依赖服务的启动状态不影响本服务&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;BindsTo=&lt;/code&gt;: 绑定依赖，依赖服务停止时，该服务也会停止&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;PartOf=&lt;/code&gt;: 部分依赖，依赖服务停止或重启时，该服务也会停止或重启&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Conflicts=&lt;/code&gt;: 冲突依赖，与指定服务冲突，不能同时运行&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Before=&lt;/code&gt;: 在指定服务之前启动&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;After=&lt;/code&gt;: 在指定服务之后启动&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-service&#34; data-lang=&#34;service&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;Wants&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;redis.service&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;After&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;network.target redis.service&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;Conflicts&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;apache2.service&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;service&#34;&gt;&lt;code&gt;Service&lt;/code&gt;
+&lt;/h4&gt;&lt;p&gt;定义服务的行为&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-service&#34; data-lang=&#34;service&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;[Service]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;Type &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt; simple&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;ExecStart &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt; /usr/bin/redis-server /etc/redis/redis.conf&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;Restart &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt; always&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;User &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt; redis&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;Group &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt; redis&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;Environment &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt; e.g. PATH=/usr/bin&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;WorkingDirectory &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt; /etc/redis&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Service 块的主要配置项：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;Type&lt;/code&gt;: 服务的启动类型&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;simple&lt;/code&gt;: 默认值，ExecStart 启动的进~程为主进程，启动后会持续运行。适用于持续运行的服务，如 web 服务器、数据库等。
+示例：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-service&#34; data-lang=&#34;service&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;[Service]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;Type&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;simple&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;ExecStart&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;/usr/bin/nginx -g &amp;#39;daemon off;&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;oneshot&lt;/code&gt;: 一次性进程，执行完就退出。适用于只需要执行一次的任务，如系统初始化脚本。通常需要配合 &lt;code&gt;RemainAfterExit=yes&lt;/code&gt; 使用，表示进程退出后服务仍然处于活动状态。比如我要执行一个脚本, 那么我可以通过关闭这个服务来关闭这个脚本.
+示例：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-service&#34; data-lang=&#34;service&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;[Service]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;Type&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;oneshot&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;RemainAfterExit&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;yes&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;ExecStart&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;/usr/local/bin/init-script.sh&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;forking&lt;/code&gt;: 服务会 fork，父进程退出后服务启动成功&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;notify&lt;/code&gt;: 服务启动完成后会通知 systemd&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;dbus&lt;/code&gt;: 通过 D-Bus 启动&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;idle&lt;/code&gt;: 等待其他任务处理完成后才启动~&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;ExecStart&lt;/code&gt;: 启动服务时执行的命令&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;ExecStop&lt;/code&gt;: 停止服务时执行的命令&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;ExecReload&lt;/code&gt;: 重载服务时执行的命令&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Restart&lt;/code&gt;: 服务重启策略&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;no&lt;/code&gt;: 不自动重启&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;always&lt;/code&gt;: 总是重启&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;on-success&lt;/code&gt;: 正常退出时重启&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;on-failure&lt;/code&gt;: 非正常退出时重启&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;on-abnormal&lt;/code&gt;: 被信号终止或超时时重启&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;on-abort&lt;/code&gt;: 收到未处理信号退出时重启&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;权限相关：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;User&lt;/code&gt;: 以某个用户身份运行&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Group&lt;/code&gt;: 以某个用户组运行&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Nice&lt;/code&gt;: 进程优先级，数值范围为 -20 到 19&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;7&#34;&gt;
+&lt;li&gt;环境相关：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Environment&lt;/code&gt;: 设置环境变量&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;EnvironmentFile&lt;/code&gt;: 环境变量配置文件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;WorkingDirectory&lt;/code&gt;: 工作目录&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;8&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;资源限制：&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;CPU 相关限制：&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;CPUQuota&lt;/code&gt;: CPU 时间配额限制，以百分比表示。100% 表示一个逻辑处理器的全部时间。例如：&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;CPUQuota=100%&lt;/code&gt;: 限制使用一个逻辑处理器的全部时间&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;CPUWeight&lt;/code&gt;: CPU 权重，范围 1-10000，默认 100&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;CPUAffinity&lt;/code&gt;: 指定进程可以运行在哪些 CPU 核心上，例如 &lt;code&gt;CPUAffinity=0,1,2&lt;/code&gt; 表示只能在前三个核心上运行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;code&gt;MemoryLimit&lt;/code&gt;: 内存使用限制，支持单位 K、M、G、T，如 &lt;code&gt;MemoryLimit=1G&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;LimitNOFILE&lt;/code&gt;: 文件描述符限制，如 &lt;code&gt;LimitNOFILE=65535&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;LimitNPROC&lt;/code&gt;: 进程数限制，如 &lt;code&gt;LimitNPROC=4096&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;TasksMax&lt;/code&gt;: 任务数限制，如 &lt;code&gt;TasksMax=100&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;IOWeight&lt;/code&gt;: IO 权重，范围 1-10000，默认 100&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;BlockIOWeight&lt;/code&gt;: 块设备 IO 权重，范围 10-1000&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;DeviceAllow&lt;/code&gt;: 设备访问控制，如 &lt;code&gt;DeviceAllow=/dev/sda r&lt;/code&gt; 表示只读访问&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-service&#34; data-lang=&#34;service&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;[Service]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;CPUQuota&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;200%&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;CPUWeight&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;500&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;CPUAffinity&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;0,1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;MemoryLimit&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;500M&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;LimitNOFILE&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;65535&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;TasksMax&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;200&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;IOWeight&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;500&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;install&#34;&gt;&lt;code&gt;Install&lt;/code&gt;
+&lt;/h4&gt;&lt;p&gt;定义如何将服务安装到系统，主要用于配置服务的自启动行为。常用配置项：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;WantedBy&lt;/code&gt;: 服务被启用时创建的符号链接的目标。最常用的值是：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;multi-user.target&lt;/code&gt;: 多用户命令行模式&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;graphical.target&lt;/code&gt;: 图形界面模式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;RequiredBy&lt;/code&gt;: 与 WantedBy 类似，但创建强依赖关系&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Also&lt;/code&gt;: 同时启用或停用的其他单元&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Alias&lt;/code&gt;: 为服务创建别名&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-service&#34; data-lang=&#34;service&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;[Install]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;WantedBy&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;multi-user.target&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;Alias&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;myapp.service&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;Also&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;myapp-logger.service&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;服务安装相关命令：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;systemctl enable &amp;lt;服务名&amp;gt;&lt;/code&gt;: 启用服务（开机自启）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;systemctl disable &amp;lt;服务名&amp;gt;&lt;/code&gt;: 停用服务&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;systemctl is-enabled &amp;lt;服务名&amp;gt;&lt;/code&gt;: 检查服务是否启用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;我的-mc-服务器系统服务实例&#34;&gt;我的 mc 服务器系统服务实例
+&lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-service&#34; data-lang=&#34;service&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;[Unit]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;Description&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;Minecraft Server&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;After&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;network.target&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;Wants&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;network.target&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;Requires&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;network.target&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;&lt;code&gt;Service&lt;/code&gt;&lt;/li&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;[Service]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;Type&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;oneshot&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;User&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;m&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;CPUQuota&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;10000%&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;WorkingDirectory&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;/home/m/桌面/mc_server&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;ExecStart&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;/bin/sh run.sh&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;ExecStop&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;/bin/sh run.sh stop&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;RemainAfterExit&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;yes&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;Restart&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;on-failure&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;[Install]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;WantedBy&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;multi-user.target&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;服务操作--service-operation&#34;&gt;服务操作 | Service Operation
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;启动服务 &lt;code&gt;systemctl start mc.service&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;开机启动服务 &lt;code&gt;systemctl enable mc.service&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;查看服务状态 &lt;code&gt;systemctl status mc.service&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;停止服务 &lt;code&gt;systemctl stop mc.service&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;定义服务的行为&lt;/p&gt;
-&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;&lt;code&gt;Install&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;定义如何将服务安装到系统.&lt;/p&gt;
 </description>
         </item>
         
