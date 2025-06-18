@@ -298,8 +298,12 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;加入&#34;&gt;加入
 &lt;/h4&gt;&lt;ol&gt;
 &lt;li&gt;等待游戏安装完成后登陆自己的账号&lt;/li&gt;
-&lt;li&gt;启动游戏, 在多人游戏中添加服务器地址后就能加入我的服务器啦 🥰: &lt;code&gt;3.tcp.vip.cpolar.cn:12578&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;启动游戏, 在多人游戏中添加服务器地址后就能加入我的服务器啦 🥰:&lt;/li&gt;
 &lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;校园 VPN 网络地址(推荐, 稳定速度快, 需要先连接 WKU—VPN 网络) &lt;code&gt;192.169.51.21:6000&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;樱花内网穿透(备用) &lt;code&gt;frp-mix.com:34068&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;如何加入远程-mc-服务器&#34;&gt;如何加入远程 MC 服务器
 &lt;/h2&gt;&lt;blockquote class=&#34;alert alert-tip&#34;&gt;
     &lt;p&gt;加入我的服务器直接跳转至整合包加入章节即可, &lt;a class=&#34;link&#34; href=&#34;#join&#34; &gt;点击这里跳转&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
