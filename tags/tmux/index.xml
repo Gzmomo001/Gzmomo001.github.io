@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Tmux on Henry Zhang</title>
+        <link>https://Gzmomo001.github.io/tags/tmux/</link>
+        <description>Recent content in Tmux on Henry Zhang</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>henryzhang070&#43;contact@gmail.com</copyright>
+        <lastBuildDate>Wed, 06 Aug 2025 03:38:22 +0800</lastBuildDate><atom:link href="https://Gzmomo001.github.io/tags/tmux/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Tmux</title>
+        <link>https://Gzmomo001.github.io/p/tmux/</link>
+        <pubDate>Wed, 06 Aug 2025 03:08:51 +0800</pubDate>
+        
+        <guid>https://Gzmomo001.github.io/p/tmux/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/tmux.jpeg" alt="Featured image of post Tmux" /&gt;&lt;h2 id=&#34;后台-shell-常驻工具&#34;&gt;后台 shell 常驻工具
+&lt;/h2&gt;&lt;h3 id=&#34;为什么使用-tmux&#34;&gt;为什么使用 tmux
+&lt;/h3&gt;&lt;p&gt;在我们日常使用 shell 运行命令的时候可能我们是使用 ssh 链接的服务器。而当 ssh 断开的时候终端也会随之中断。在 ubuntu 系统中我们可以使用 screen 来让 shell 命令挂在后台运行。而 tmux 作为 screen 的上位替代则比 screen 带来了更多的功能。&lt;/p&gt;
+&lt;h3 id=&#34;安装-tmux&#34;&gt;安装 tmux
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# ubuntu&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt install tmux
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;使用-tmux&#34;&gt;使用 tmux
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;启动 tmux&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;不带参数执行此命令会自动创建一个新的 session(在用户不主动关闭的情况在 session 即使在 tmux 关闭后仍然会继续运行)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;分屏:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;左右分屏: &amp;ldquo;ctrl&amp;rdquo; + &amp;quot; b + % &amp;quot;&lt;/li&gt;
+&lt;li&gt;上下分屏: &amp;ldquo;ctrl&amp;rdquo; + &amp;quot; b + &amp;quot; &amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;切换焦点（当你需要切换同一个 session 中不同的窗口时）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;ctrl&amp;rdquo; + &amp;quot; b + &amp;ldquo;&amp;lt;方向键&amp;gt;&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;创建新的 window: &amp;ldquo;ctrl&amp;rdquo; + &amp;quot; b + c &amp;quot;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;切换 window: &amp;ldquo;ctrl&amp;rdquo; + &amp;quot; b + &lt;num&gt; &amp;quot;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[TIPS]
+一个 session 可以包括多个 windows&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;退出 tmux: &amp;ldquo;ctrl&amp;rdquo; + &amp;quot; b + d &amp;quot;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;列出 session&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux ls
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;7&#34;&gt;
+&lt;li&gt;恢复 tmux:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux a&lt;span class=&#34;s2&#34;&gt;&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;8&#34;&gt;
+&lt;li&gt;删除 session:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux kill-session -t &amp;lt;session_name&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;tmux-配置文件&#34;&gt;tmux 配置文件
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;进入配置文件&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;nano ~/.tmux.conf
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;开启鼠标调整窗口大小的支持: &amp;ldquo;set -g mouse on&amp;rdquo;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;更改快捷键: &amp;ldquo;set -g prefix C-s&amp;rdquo;(意思是将原本用 ctrl+b 的快捷键改为用 ctrl+s)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

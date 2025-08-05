@@ -10,7 +10,7 @@
 <meta property='og:description' content="软连接 在系统中我们往往可能需要在一个项目中使用项目之外的一些文件，但是这个文件又不在这项目的根目录在。大部分人往往都选择直接将需要的文件拷贝到项目的路目中。但是这样既浪费时间又浪费系统的存储空间。尔软连接的出现就是为了解决这一问题。我们可以直接通过命令创建一个软连接。让目标文件或者文件夹的替身出现在我们的项目目录下。这样我们就可以在不使用绝对路径的情况下使用该路径了。\n">
 <meta property='og:url' content='https://Gzmomo001.github.io/p/soft_links/'>
 <meta property='og:site_name' content='Henry Zhang'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='system' /><meta property='article:tag' content='linux' /><meta property='article:published_time' content='2025-07-31T15:38:14&#43;08:00'/><meta property='article:modified_time' content='2025-07-31T15:53:01&#43;08:00'/><meta property='og:image' content='https://Gzmomo001.github.io/p/soft_links/link.png' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='system' /><meta property='article:tag' content='linux' /><meta property='article:published_time' content='2025-07-31T15:38:14&#43;08:00'/><meta property='article:modified_time' content='2025-07-31T15:53:44&#43;08:00'/><meta property='og:image' content='https://Gzmomo001.github.io/p/soft_links/link.png' />
 <meta name="twitter:title" content="Soft_links">
 <meta name="twitter:description" content="软连接 在系统中我们往往可能需要在一个项目中使用项目之外的一些文件，但是这个文件又不在这项目的根目录在。大部分人往往都选择直接将需要的文件拷贝到项目的路目中。但是这样既浪费时间又浪费系统的存储空间。尔软连接的出现就是为了解决这一问题。我们可以直接通过命令创建一个软连接。让目标文件或者文件夹的替身出现在我们的项目目录下。这样我们就可以在不使用绝对路径的情况下使用该路径了。\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://Gzmomo001.github.io/p/soft_links/link.png' />
@@ -950,6 +950,7 @@
 </ol>
 <p>这里列举一些常用的&rsquo;ln&rsquo; 命令</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Create a symbolic link to a file or directory:</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 会在路标路径下创建一个原路径同名的文件或者文件夹</span>
 </span></span><span class="line"><span class="cl">ln --symbolic /path/to/file_or_directory path/to/symlink
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">#Overwrite an existing symbolic link to point to a different file:</span>
@@ -957,8 +958,13 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># Create a hard link to a file:</span>
 </span></span><span class="line"><span class="cl">ln /path/to/file path/to/hardlink
-</span></span></code></pre></div><p>###<a class="link" href="https://www.gnu.org/software/coreutils/manual/html_node/ln-invocation.html"  target="_blank" rel="noopener"
-    >官方文档链接</a></p>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Delete a symbolic link:</span>
+</span></span><span class="line"><span class="cl">rm path/to/symlink
+</span></span></code></pre></div><blockquote class="alert alert-tips">
+    <p>如果链接是相对路径，那这个相对是路径应该是相对于软连接目标目录的路径
+###<a class="link" href="https://www.gnu.org/software/coreutils/manual/html_node/ln-invocation.html"  target="_blank" rel="noopener"
+    >官方文档链接</a></p></blockquote>
 
 </section>
 
@@ -1021,6 +1027,25 @@
     <h2 class="section-title">相关文章</h2>
     <div class="related-content">
         <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/tmux/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="/tmux.jpeg" loading="lazy" data-key="" data-hash="/tmux.jpeg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Tmux</h2>
+        </div>
+    </a>
+</article>
+
             
                 
 <article class="has-image">
