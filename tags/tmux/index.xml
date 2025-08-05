@@ -7,13 +7,13 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>henryzhang070&#43;contact@gmail.com</copyright>
-        <lastBuildDate>Wed, 06 Aug 2025 03:38:22 +0800</lastBuildDate><atom:link href="https://Gzmomo001.github.io/tags/tmux/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 06 Aug 2025 03:39:15 +0800</lastBuildDate><atom:link href="https://Gzmomo001.github.io/tags/tmux/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Tmux</title>
         <link>https://Gzmomo001.github.io/p/tmux/</link>
         <pubDate>Wed, 06 Aug 2025 03:08:51 +0800</pubDate>
         
         <guid>https://Gzmomo001.github.io/p/tmux/</guid>
-        <description>&lt;img src="https://Gzmomo001.github.io/tmux.jpeg" alt="Featured image of post Tmux" /&gt;&lt;h2 id=&#34;后台-shell-常驻工具&#34;&gt;后台 shell 常驻工具
+        <description>&lt;img src="https://Gzmomo001.github.io/p/tmux/tmux.png" alt="Featured image of post Tmux" /&gt;&lt;h2 id=&#34;后台-shell-常驻工具&#34;&gt;后台 shell 常驻工具
 &lt;/h2&gt;&lt;h3 id=&#34;为什么使用-tmux&#34;&gt;为什么使用 tmux
 &lt;/h3&gt;&lt;p&gt;在我们日常使用 shell 运行命令的时候可能我们是使用 ssh 链接的服务器。而当 ssh 断开的时候终端也会随之中断。在 ubuntu 系统中我们可以使用 screen 来让 shell 命令挂在后台运行。而 tmux 作为 screen 的上位替代则比 screen 带来了更多的功能。&lt;/p&gt;
 &lt;h3 id=&#34;安装-tmux&#34;&gt;安装 tmux
