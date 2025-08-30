@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>henryzhang070&#43;contact@gmail.com</copyright>
-        <lastBuildDate>Wed, 06 Aug 2025 03:39:15 +0800</lastBuildDate><atom:link href="https://Gzmomo001.github.io/tags/tmux/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 06 Aug 2025 03:42:20 +0800</lastBuildDate><atom:link href="https://Gzmomo001.github.io/tags/tmux/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Tmux</title>
         <link>https://Gzmomo001.github.io/p/tmux/</link>
         <pubDate>Wed, 06 Aug 2025 03:08:51 +0800</pubDate>
@@ -21,23 +21,21 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt install tmux
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;使用-tmux&#34;&gt;使用 tmux
 &lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;启动 tmux&lt;/p&gt;
+&lt;li&gt;启动 tmux&lt;/li&gt;
+&lt;/ol&gt;
 &lt;ul&gt;
 &lt;li&gt;不带参数执行此命令会自动创建一个新的 session(在用户不主动关闭的情况在 session 即使在 tmux 关闭后仍然会继续运行)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;分屏:&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;分屏:&lt;/li&gt;
+&lt;/ol&gt;
 &lt;ul&gt;
 &lt;li&gt;左右分屏: &amp;ldquo;ctrl&amp;rdquo; + &amp;quot; b + % &amp;quot;&lt;/li&gt;
 &lt;li&gt;上下分屏: &amp;ldquo;ctrl&amp;rdquo; + &amp;quot; b + &amp;quot; &amp;quot;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;切换焦点（当你需要切换同一个 session 中不同的窗口时）&lt;/p&gt;
-&lt;/li&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;切换焦点（当你需要切换同一个 session 中不同的窗口时）&lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
 &lt;li&gt;&amp;ldquo;ctrl&amp;rdquo; + &amp;quot; b + &amp;ldquo;&amp;lt;方向键&amp;gt;&amp;rdquo;&lt;/li&gt;
