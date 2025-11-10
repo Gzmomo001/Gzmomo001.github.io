@@ -7,7 +7,53 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>henryzhang070&#43;contact@gmail.com</copyright>
-        <lastBuildDate>Tue, 12 Aug 2025 08:25:07 +0800</lastBuildDate><atom:link href="https://Gzmomo001.github.io/categories/notes/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 24 Sep 2025 02:55:50 +0800</lastBuildDate><atom:link href="https://Gzmomo001.github.io/categories/notes/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>搭建clash 代理服务器实现科学上网</title>
+        <link>https://Gzmomo001.github.io/p/%E6%90%AD%E5%BB%BAclash-%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%9E%E7%8E%B0%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</link>
+        <pubDate>Wed, 24 Sep 2025 01:07:00 +0800</pubDate>
+        
+        <guid>https://Gzmomo001.github.io/p/%E6%90%AD%E5%BB%BAclash-%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%9E%E7%8E%B0%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/default.jpeg" alt="Featured image of post 搭建clash 代理服务器实现科学上网" /&gt;&lt;h2 id=&#34;购买服务器&#34;&gt;购买服务器
+&lt;/h2&gt;&lt;p&gt;在开始之前首先要确保你拥有一台能够访问外网的linux服务器，如果没有可以自行购买。博主这里推荐雨云家的服务器，这里已他家的日本大流量服务器为例子演示。
+系统: debain
+配置： 2 cores 2g 100/100mbps 90ping&lt;/p&gt;
+&lt;blockquote class=&#34;alert alert-notes&#34;&gt;
+    &lt;p&gt;在访问服务器的任何端口之前先保证服务器对应端口的防火墙打开，防火墙的端口建议按需开启。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;购买域名optional&#34;&gt;购买域名(optional)
+&lt;/h2&gt;&lt;p&gt;即使没有域名也可以直接通过 ip 访问，只不过会暴露公网 ip 并且没有 https。所以这里建议购买一个域名。&lt;/p&gt;
+&lt;p&gt;这里只推荐一个域名商： [namesilo.com]&lt;/p&gt;
+&lt;p&gt;域名购买之后可以将域名托管到 其他的 dns 厂商，来帮地解析你的域名。 我这里使用 cloudflare。 本帖子主要展示如何搭建代理服务器，所以如果想要了解域名托管相关的知识可以自行问 chat 老师或者搜相关的教程。&lt;/p&gt;
+&lt;h2 id=&#34;通过-bash-脚本安装-xray&#34;&gt;通过 bash 脚本安装 xray
+&lt;/h2&gt;&lt;p&gt;博主在这里找到了 github 上的一篇使用 xray 搭建代理服务器的&lt;a class=&#34;link&#34; href=&#34;https://github.com/XTLS/Xray-install/blob/main/README_zh-Hans.md&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;教程&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;本博客将会参考这篇教程搭建代理服务器。&lt;/p&gt;
+&lt;blockquote class=&#34;alert alert-notes&#34;&gt;
+    &lt;p&gt;在访问之前你需要先能够访问你的服务器终端。如使用服务器面板的终端，或者使用 openssh 等命令行工具进入服务器 bash shell。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;运行安装脚本:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;bash -c &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; @ install
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;安装x-ui, 使用 webui 来配置 xray。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;bash &amp;lt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;webui 启动之后可以通过域名或者ip+端口访问。&lt;/p&gt;
+&lt;blockquote class=&#34;alert alert-tips&#34;&gt;
+    &lt;p&gt;如果想要隐藏访问的端口，使用域名的433/80端口请求可以使用iopenresty/nginx反向代理到面板的端口。注意需要提前申请好 sll 证书不然 https 无法访问。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;del&gt;### &lt;a class=&#34;link&#34; href=&#34;https://clashhk.com/17688.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;x-ui配置参考博客&lt;/a&gt;&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;(发现这个教程很垃圾，转向chat老师)&lt;/p&gt;
+&lt;h3 id=&#34;s-ui-配置&#34;&gt;s-ui 配置
+&lt;/h3&gt;&lt;blockquote class=&#34;alert alert-notes&#34;&gt;
+    &lt;p&gt;x-ui 的二次开发板，支持了更多的功能&lt;/p&gt;&lt;/blockquote&gt;
+</description>
+        </item>
+        <item>
+        <title>Memo</title>
+        <link>https://Gzmomo001.github.io/p/memo/</link>
+        <pubDate>Tue, 09 Sep 2025 11:56:37 +0800</pubDate>
+        
+        <guid>https://Gzmomo001.github.io/p/memo/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/default.jpeg" alt="Featured image of post Memo" /&gt;&lt;h2 id=&#34;&#34;&gt;
+&lt;/h2&gt;</description>
+        </item>
+        <item>
         <title>JavaScript</title>
         <link>https://Gzmomo001.github.io/p/javascript/</link>
         <pubDate>Tue, 12 Aug 2025 07:44:31 +0800</pubDate>
