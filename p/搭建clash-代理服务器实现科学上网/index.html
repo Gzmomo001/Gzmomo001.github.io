@@ -10,7 +10,7 @@
 <meta property='og:description' content="购买服务器 在开始之前首先要确保你拥有一台能够访问外网的linux服务器，如果没有可以自行购买。博主这里推荐雨云家的服务器，这里已他家的日本大流量服务器为例子演示。 系统: debain 配置： 2 cores 2g 100/100mbps 90ping\n">
 <meta property='og:url' content='https://Gzmomo001.github.io/p/%E6%90%AD%E5%BB%BAclash-%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%9E%E7%8E%B0%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/'>
 <meta property='og:site_name' content='Henry Zhang'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='vpn' /><meta property='article:published_time' content='2025-09-24T01:07:00&#43;08:00'/><meta property='article:modified_time' content='2025-09-24T02:55:50&#43;08:00'/><meta property='og:image' content='https://Gzmomo001.github.io/default.jpeg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='vpn' /><meta property='article:published_time' content='2025-09-24T01:07:00&#43;08:00'/><meta property='article:modified_time' content='2025-11-10T13:41:18&#43;08:00'/><meta property='og:image' content='https://Gzmomo001.github.io/default.jpeg' />
 <meta name="twitter:title" content="搭建clash 代理服务器实现科学上网">
 <meta name="twitter:description" content="购买服务器 在开始之前首先要确保你拥有一台能够访问外网的linux服务器，如果没有可以自行购买。博主这里推荐雨云家的服务器，这里已他家的日本大流量服务器为例子演示。 系统: debain 配置： 2 cores 2g 100/100mbps 90ping\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://Gzmomo001.github.io/default.jpeg' />
@@ -828,8 +828,7 @@
             <nav id="TableOfContents">
   <ol>
     <li><a href="#购买服务器">购买服务器</a></li>
-    <li><a href="#购买域名optional">购买域名(optional)</a></li>
-    <li><a href="#通过-bash-脚本安装-xray">通过 bash 脚本安装 xray</a>
+    <li><a href="#购买域名optional">购买域名(optional)</a>
       <ol>
         <li><a href="#s-ui-配置">s-ui 配置</a></li>
       </ol>
@@ -919,7 +918,7 @@
 
 
                 <time>
-                    Sep 24, 2025 02:55 CST
+                    Nov 10, 2025 13:41 CST
                 </time>
             </div>
     </footer>
@@ -943,8 +942,8 @@
 </h2><p>即使没有域名也可以直接通过 ip 访问，只不过会暴露公网 ip 并且没有 https。所以这里建议购买一个域名。</p>
 <p>这里只推荐一个域名商： [namesilo.com]</p>
 <p>域名购买之后可以将域名托管到 其他的 dns 厂商，来帮地解析你的域名。 我这里使用 cloudflare。 本帖子主要展示如何搭建代理服务器，所以如果想要了解域名托管相关的知识可以自行问 chat 老师或者搜相关的教程。</p>
-<h2 id="通过-bash-脚本安装-xray">通过 bash 脚本安装 xray
-</h2><p>博主在这里找到了 github 上的一篇使用 xray 搭建代理服务器的<a class="link" href="https://github.com/XTLS/Xray-install/blob/main/README_zh-Hans.md"  target="_blank" rel="noopener"
+<p><del>## 通过 bash 脚本安装 xray</del>(xray 面板太吃服务器的资源了这里不推荐大家继续使用这个方法了。)</p>
+<p>博主在这里找到了 github 上的一篇使用 xray 搭建代理服务器的<a class="link" href="https://github.com/XTLS/Xray-install/blob/main/README_zh-Hans.md"  target="_blank" rel="noopener"
     >教程</a></p>
 <p>本博客将会参考这篇教程搭建代理服务器。</p>
 <blockquote class="alert alert-notes">

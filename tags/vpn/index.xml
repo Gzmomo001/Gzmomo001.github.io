@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>henryzhang070&#43;contact@gmail.com</copyright>
-        <lastBuildDate>Wed, 24 Sep 2025 02:55:50 +0800</lastBuildDate><atom:link href="https://Gzmomo001.github.io/tags/vpn/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 10 Nov 2025 13:41:18 +0800</lastBuildDate><atom:link href="https://Gzmomo001.github.io/tags/vpn/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>搭建clash 代理服务器实现科学上网</title>
         <link>https://Gzmomo001.github.io/p/%E6%90%AD%E5%BB%BAclash-%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%9E%E7%8E%B0%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</link>
         <pubDate>Wed, 24 Sep 2025 01:07:00 +0800</pubDate>
@@ -23,8 +23,8 @@
 &lt;/h2&gt;&lt;p&gt;即使没有域名也可以直接通过 ip 访问，只不过会暴露公网 ip 并且没有 https。所以这里建议购买一个域名。&lt;/p&gt;
 &lt;p&gt;这里只推荐一个域名商： [namesilo.com]&lt;/p&gt;
 &lt;p&gt;域名购买之后可以将域名托管到 其他的 dns 厂商，来帮地解析你的域名。 我这里使用 cloudflare。 本帖子主要展示如何搭建代理服务器，所以如果想要了解域名托管相关的知识可以自行问 chat 老师或者搜相关的教程。&lt;/p&gt;
-&lt;h2 id=&#34;通过-bash-脚本安装-xray&#34;&gt;通过 bash 脚本安装 xray
-&lt;/h2&gt;&lt;p&gt;博主在这里找到了 github 上的一篇使用 xray 搭建代理服务器的&lt;a class=&#34;link&#34; href=&#34;https://github.com/XTLS/Xray-install/blob/main/README_zh-Hans.md&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;p&gt;&lt;del&gt;## 通过 bash 脚本安装 xray&lt;/del&gt;(xray 面板太吃服务器的资源了这里不推荐大家继续使用这个方法了。)&lt;/p&gt;
+&lt;p&gt;博主在这里找到了 github 上的一篇使用 xray 搭建代理服务器的&lt;a class=&#34;link&#34; href=&#34;https://github.com/XTLS/Xray-install/blob/main/README_zh-Hans.md&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;教程&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;本博客将会参考这篇教程搭建代理服务器。&lt;/p&gt;
 &lt;blockquote class=&#34;alert alert-notes&#34;&gt;
