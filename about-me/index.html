@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
-    <head><meta charset='utf-8'>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="这里有关于我的一些信息.\n待完成 个人信息 姓名: 张梓墨 性别: 男 年龄: 20 专业: 计算机科学与技术(软件工程) 联系方式: +86 14748104903 邮箱: henryzhang070@gmail.com 技能掌握 编程语言: 精通 python, 掌握 java, sql. 算法架构: 熟悉 Transformer/BERT 等架构，掌握 PyTorch, TensorFlow. 工具链：git, docker, linux, vscode, pycharm, intellij idea, jupyter notebook, markdown, latex 项目能力: 能独立复现代码仓库, 修改代码架构. 对 agent, 和 MoE 相关的知识有一定的了解, 并且复现过相关的代码仓库. 能独立阅读英文文献和论文. 能自主完成远程服务器的部署(基于 linux), 和使用(包括 cuda 环境, ssh 服务, conda 环境安装, 环境变量配置等). 对 linux 命令行使用娴熟. 穿越机的组装, 调试, 和飞行 能自主组装服务器和个人 pc, 对基本的硬件知识了解基本全面. 能独立完成公路自行车对组装和简单的 fitting 调试. 对运动科学, 营养科学有一定的了解. 如何规划训练和饮食来达到如提高运动表现, 增加肌肉维度等目的. 项目经验 Bike-fitting | 自行车的飞艇 web 一个网站能帮助公路自行车手提供简单的 fitting 服务.\n">
 <title>About me</title>
 
-<link rel='canonical' href='https://Gzmomo001.github.io/about-me/'>
+<link rel='canonical' href='http://localhost:1313/about-me/'>
 
 <link rel="stylesheet" href="/scss/style.min.43e6f50eb4345fc6272a6d745a04c185428f36e78e18deb4c9633ba6f4377a9f.css"><meta property='og:title' content="About me">
 <meta property='og:description' content="这里有关于我的一些信息.\n待完成 个人信息 姓名: 张梓墨 性别: 男 年龄: 20 专业: 计算机科学与技术(软件工程) 联系方式: +86 14748104903 邮箱: henryzhang070@gmail.com 技能掌握 编程语言: 精通 python, 掌握 java, sql. 算法架构: 熟悉 Transformer/BERT 等架构，掌握 PyTorch, TensorFlow. 工具链：git, docker, linux, vscode, pycharm, intellij idea, jupyter notebook, markdown, latex 项目能力: 能独立复现代码仓库, 修改代码架构. 对 agent, 和 MoE 相关的知识有一定的了解, 并且复现过相关的代码仓库. 能独立阅读英文文献和论文. 能自主完成远程服务器的部署(基于 linux), 和使用(包括 cuda 环境, ssh 服务, conda 环境安装, 环境变量配置等). 对 linux 命令行使用娴熟. 穿越机的组装, 调试, 和飞行 能自主组装服务器和个人 pc, 对基本的硬件知识了解基本全面. 能独立完成公路自行车对组装和简单的 fitting 调试. 对运动科学, 营养科学有一定的了解. 如何规划训练和饮食来达到如提高运动表现, 增加肌肉维度等目的. 项目经验 Bike-fitting | 自行车的飞艇 web 一个网站能帮助公路自行车手提供简单的 fitting 服务.\n">
-<meta property='og:url' content='https://Gzmomo001.github.io/about-me/'>
+<meta property='og:url' content='http://localhost:1313/about-me/'>
 <meta property='og:site_name' content='Henry Zhang'>
 <meta property='og:type' content='article'><meta property='article:section' content='Page' /><meta property='article:modified_time' content='2025-06-05T19:00:07&#43;08:00'/>
 <meta name="twitter:title" content="About me">
@@ -1141,7 +1141,7 @@
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.afc006ea9bd8920c4b7cd9127cbd08958842accd71f27f27b34b6c0c77a82951.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');
@@ -1205,19 +1205,37 @@
         display: none;
         position: fixed;
         bottom: 30px;
-        right: 375px;
+         
         z-index: 99;
         cursor: pointer;
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         background-color: #666;
-        border-radius: 8px;
-        color: white;
+        border-radius: 50%;
         text-align: center;
-        line-height: 30px;
-        font-size: 20px;
+        line-height: 40px;
+        font-size: 25px;
+        color: white;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        transition: background-color 0.3s;
+    }
+    
+    #backTopBtn:hover {
+        background-color: #333;
+    }
+    
+    #backTopBtn .arrow-icon {
+        display: none;
+    }
+    
+    #backTopBtn .backtop-svg {
+        width: 24px;
+        height: 24px;
+        margin: 8px;
+        fill: white;
     }
 </style>
+
 
 <script>
     
@@ -1230,13 +1248,16 @@
         
         let btn = document.createElement("div");
         btn.id = "backTopBtn";
-        btn.innerHTML = "↑";
+        btn.innerHTML = '<span class="arrow-icon"></span>' +
+                        '<svg class="backtop-svg" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="15764">' +
+                        '<path d="M512 938.666667c-59.733333 0-123.733333-2.133333-185.6-4.266667l-32-2.133333c-108.8-6.4-194.133333-91.733333-200.533333-200.533334C87.466667 648.533333 85.333333 576 85.333333 512c0-59.733333 2.133333-125.866667 6.4-202.666667v-17.066666c6.4-108.8 91.733333-194.133333 200.533334-200.533334 76.8-4.266667 149.333333-6.4 219.733333-6.4 59.733333 0 123.733333 2.133333 185.6 4.266667l32 2.133333c108.8 6.4 194.133333 91.733333 200.533333 200.533334 6.4 83.2 8.533333 155.733333 8.533334 219.733333 0 59.733333-2.133333 125.866667-6.4 202.666667v17.066666c-6.4 108.8-91.733333 194.133333-200.533334 200.533334-76.8 4.266667-149.333333 6.4-219.733333 6.4z m0-224c17.066667 0 32-14.933333 32-32V430.933333l96 96c12.8 12.8 32 12.8 44.8 0 12.8-12.8 12.8-32 0-44.8l-153.6-153.6c-6.4-6.4-8.533333-8.533333-12.8-8.533333-4.266667-2.133333-8.533333-2.133333-10.666667 0-4.266667 0-6.4 2.133333-10.666666 6.4l-2.133334 2.133333-153.6 153.6c-12.8 12.8-12.8 32 0 44.8 12.8 12.8 32 12.8 44.8 0l96-96V682.666667c-2.133333 17.066667 12.8 32 29.866667 32z" fill="#ffffff" p-id="15765"></path>' +
+                        '</svg>';
         btn.onclick = backToTop;
         rightSideBar.appendChild(btn);
         
         window.onscroll = function() {
             
-            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+            if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
                 btn.style.display = "block";
             } else {
                 btn.style.display = "none";
@@ -1328,7 +1349,7 @@
       
       let img = document.createElement('img');
       img.classList.add('code-more-img');
-      img.src = "https://Gzmomo001.github.io/icons/down.png"
+      img.src = "http://localhost:1313/icons/down.png"
       
       codeMoreBtn.appendChild(img);
       codeMoreBox.appendChild(codeMoreBtn);
