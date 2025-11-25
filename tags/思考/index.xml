@@ -14,15 +14,23 @@
         
         <guid>http://localhost:1313/p/%E8%AF%AD%E8%A8%80%E5%A6%82%E4%BD%95%E5%BD%B1%E5%93%8D%E4%BD%A0%E7%9A%84%E6%80%9D%E7%BB%B4/</guid>
         <description>&lt;img src="http://localhost:1313/default.jpeg" alt="Featured image of post 语言如何影响你的思维" /&gt;&lt;h2 id=&#34;视频源&#34;&gt;视频源
-&lt;/h2&gt;&lt;div class=&#34;video-container&#34; style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 10px;&#34;&gt;
-    &lt;iframe 
-        src=&#34;//player.bilibili.com/player.html?isOutside=true&amp;amp;aid=114524212431405&amp;amp;bvid=BV1CsJPznER1&amp;amp;cid=30013459007&amp;amp;p=1&#34;
-        style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34;
-        scrolling=&#34;no&#34; 
-        border=&#34;0&#34; 
-        frameborder=&#34;no&#34; 
-        framespacing=&#34;0&#34; 
-        allowfullscreen=&#34;true&#34;&gt;
+&lt;/h2&gt;
+
+
+
+
+
+    &lt;p&gt;Bilibili 视频av号或BV号错误！请检查视频av号或BV号是否正确&lt;/p&gt;
+    &lt;p&gt;当前视频av或BV号：，视频分P：1&lt;/p&gt;
+
+
+&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe src=&#34;https://player.bilibili.com/player.html?as_wide=1&amp;amp;high_quality=1&amp;amp;page=1&amp;&#34;
+            scrolling=&#34;no&#34;
+            frameborder=&#34;no&#34;
+            framespacing=&#34;0&#34;
+            allowfullscreen=&#34;true&#34;
+    &gt;
     &lt;/iframe&gt;
 &lt;/div&gt;
 

@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
-    <head><meta charset='utf-8'>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="版本控制工具">
 <title>Git</title>
 
-<link rel='canonical' href='https://Gzmomo001.github.io/p/git/'>
+<link rel='canonical' href='http://localhost:1313/p/git/'>
 
 <link rel="stylesheet" href="/scss/style.min.43e6f50eb4345fc6272a6d745a04c185428f36e78e18deb4c9633ba6f4377a9f.css"><meta property='og:title' content="Git">
 <meta property='og:description' content="版本控制工具">
-<meta property='og:url' content='https://Gzmomo001.github.io/p/git/'>
+<meta property='og:url' content='http://localhost:1313/p/git/'>
 <meta property='og:site_name' content='Henry Zhang'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='git' /><meta property='article:published_time' content='2025-11-25T17:43:06&#43;08:00'/><meta property='article:modified_time' content='2025-11-25T18:19:13&#43;08:00'/><meta property='og:image' content='https://Gzmomo001.github.io/p/git/git.png' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='git' /><meta property='article:published_time' content='2025-11-25T17:43:06&#43;08:00'/><meta property='article:modified_time' content='2025-11-25T18:20:14&#43;08:00'/><meta property='og:image' content='http://localhost:1313/p/git/git.png' />
 <meta name="twitter:title" content="Git">
 <meta name="twitter:description" content="版本控制工具"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://Gzmomo001.github.io/p/git/git.png' />
+    <meta name="twitter:image" content='http://localhost:1313/p/git/git.png' />
     <link rel="shortcut icon" href="/favicon.ico" />
-<link rel='stylesheet' href='https://chinese-fonts-cdn.deno.dev/packages/dymh/dist/DouyinSansBold/result.css' /> 
+<link rel='stylesheet' href='https://chinese-fonts-cdn.deno.dev/packages/dymh/dist/DouyinSansBold/result.css' />
 
 <div class="loading">
      
@@ -661,26 +661,6 @@
         
         
         <li >
-            <a href='/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <polyline points="5 12 3 12 12 3 21 12 19 12" />
-  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
-  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
-</svg>
-
-
-
-                
-                <span>主页</span>
-            </a>
-        </li>
-        
-        
-        <li >
             <a href='/about-me/' >
                 
                 
@@ -831,6 +811,15 @@
       <ol>
         <li><a href="#hook">Hook</a></li>
         <li><a href="#feature">Feature</a></li>
+        <li><a href="#参考视频">参考视频</a></li>
+        <li><a href="#quick-start">Quick start</a></li>
+        <li><a href="#common-command">Common command</a></li>
+        <li><a href="#advance-command--feature">Advance command &amp; feature</a>
+          <ol>
+            <li><a href="#git-checkout">git checkout</a></li>
+            <li><a href="#git-stash">git stash</a></li>
+          </ol>
+        </li>
       </ol>
     </li>
   </ol>
@@ -926,7 +915,7 @@
 
 
                 <time>
-                    Nov 25, 2025 18:19 CST
+                    Nov 25, 2025 18:20 CST
                 </time>
             </div>
     </footer>
@@ -959,7 +948,105 @@
 		data-flex-basis="431px"
 	
 ></p>
+<h3 id="参考视频">参考视频
+</h3><div class="video-wrapper">
+    <iframe loading="lazy" 
+            src="https://www.youtube.com/embed/vA5TTz6BXhY" 
+            allowfullscreen 
+            title="YouTube Video"
+    >
+    </iframe>
+</div>
 
+<h3 id="quick-start">Quick start
+</h3><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># ubuntu/debian</span>
+</span></span><span class="line"><span class="cl">apt install git
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># mac</span>
+</span></span><span class="line"><span class="cl">brew install git
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Configuration</span>
+</span></span><span class="line"><span class="cl">git config --global user.name <span class="s2">&#34;Your Name&#34;</span>
+</span></span><span class="line"><span class="cl">git config --global user.email <span class="s2">&#34;your.email@example.com&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#initialization | it will create a hidden folder which is called .git</span>
+</span></span><span class="line"><span class="cl">git init
+</span></span></code></pre></div><h3 id="common-command">Common command
+</h3><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># check status</span>
+</span></span><span class="line"><span class="cl">git status
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># add all file of this folder</span>
+</span></span><span class="line"><span class="cl">git add .
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># simple commit</span>
+</span></span><span class="line"><span class="cl">git commit -m <span class="s2">&#34;&lt;commit info&gt;&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># check commit history | type q to quit</span>
+</span></span><span class="line"><span class="cl">git log
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># connet to remote repository | orgin: set the name of the remote repo</span>
+</span></span><span class="line"><span class="cl">git remote add origin &lt;url of remote repository&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># switch to the main branch</span>
+</span></span><span class="line"><span class="cl">git branch -M main
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># push to the remote repo | when you use git push it will push to the defualt repo that your pulled before.</span>
+</span></span><span class="line"><span class="cl">git push -u origin main <span class="p">|</span> git push
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># pull the latest version of the remote repo</span>
+</span></span><span class="line"><span class="cl">git pull
+</span></span></code></pre></div><blockquote class="alert alert-note">
+    <p>.gitignore: you can create a this file and fill the files or dict that you do not want to push on remote.</p></blockquote>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># add all the changes to the this commit and commit it with only one line code</span>
+</span></span><span class="line"><span class="cl">git commit -am <span class="s2">&#34;args&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># clone a remote repo | clone a remote repo</span>
+</span></span><span class="line"><span class="cl">git clone &lt;url&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># fetch</span>
+</span></span><span class="line"><span class="cl">git fetch &lt;url&gt;
+</span></span></code></pre></div><p>当你要使用私有远程仓库的时候,就需要验证你的个人信息,确保你有权利访问这个远程仓库. 这个时候就需要使用ssh生成一对密钥对, 然后将公钥放在远程仓库上. 有关这方面的知识如果不是很明白可以先去学学ssh相关的内容.</p>
+<h3 id="advance-command--feature">Advance command &amp; feature
+</h3><h4 id="git-checkout">git checkout
+</h4><ol>
+<li>切换分支 | 创建切换到新分支</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git checkout -b &lt;branch_name&gt;
+</span></span><span class="line"><span class="cl"><span class="c1"># 创建并移动到新分支</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">git branch &lt;branch_name&gt;
+</span></span><span class="line"><span class="cl">git checkout &lt;branch_name&gt;
+</span></span><span class="line"><span class="cl"><span class="c1"># 这两行等等效上面这行</span>
+</span></span></code></pre></div><ol start="3">
+<li>放弃当前未保存的修改</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git checkout -- &lt;file_name&gt;
+</span></span><span class="line"><span class="cl"><span class="c1"># 放弃该文件的修改并回滚到上一次提交的状态</span>
+</span></span></code></pre></div><ol start="4">
+<li>查看历史提交</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git checkout -b &lt;commit_id&gt;
+</span></span><span class="line"><span class="cl"><span class="c1"># 提交历史id 可以通过git log 查看或者gui查看</span>
+</span></span></code></pre></div><h4 id="git-stash">git stash
+</h4><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git stash
+</span></span><span class="line"><span class="cl">git stash save <span class="s2">&#34;&lt;comment&gt;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 存档当前的更改并回到最新一次提交的状态 | archive the modification and roll back to the latest commit</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">git stash list
+</span></span><span class="line"><span class="cl">git stash list 
+</span></span><span class="line"><span class="cl"><span class="c1"># 查看存档</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">git stash pop stach@<span class="o">{</span>&lt;id&gt;<span class="o">}</span> 
+</span></span><span class="line"><span class="cl">git stash pop
+</span></span><span class="line"><span class="cl"><span class="c1"># 将缓存剪切出来</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">git stash apply stach@<span class="o">{</span>&lt;id&gt;<span class="o">}</span>
+</span></span><span class="line"><span class="cl">git stash apply
+</span></span><span class="line"><span class="cl"><span class="c1"># 将缓存复制出来</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">git stash clear
+</span></span><span class="line"><span class="cl"><span class="c1">#清空缓存</span>
+</span></span></code></pre></div>
 </section>
 
 
@@ -1297,7 +1384,7 @@
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.afc006ea9bd8920c4b7cd9127cbd08958842accd71f27f27b34b6c0c77a82951.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');
@@ -1505,7 +1592,7 @@
       
       let img = document.createElement('img');
       img.classList.add('code-more-img');
-      img.src = "https://Gzmomo001.github.io/icons/down.png"
+      img.src = "http://localhost:1313/icons/down.png"
       
       codeMoreBtn.appendChild(img);
       codeMoreBox.appendChild(codeMoreBtn);

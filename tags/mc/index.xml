@@ -211,15 +211,42 @@
 &lt;h4 id=&#34;安装-cploar-服务&#34;&gt;安装 cploar 服务
 &lt;/h4&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://dashboard.cpolar.com/get-started&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;官网链接&lt;/a&gt;&lt;/p&gt;
-&lt;div class=&#34;video-container&#34; style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 10px;&#34;&gt;
-    &lt;iframe 
-        src=&#34;//player.bilibili.com/player.html?isOutside=true&amp;amp;aid=241291869&amp;amp;bvid=BV1Ye411H7oZ&amp;amp;cid=1408229082&amp;amp;p=1&#34;
-        style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34;
-        scrolling=&#34;no&#34; 
-        border=&#34;0&#34; 
-        frameborder=&#34;no&#34; 
-        framespacing=&#34;0&#34; 
-        allowfullscreen=&#34;true&#34;&gt;
+&lt;!-- 
+
+
+
+
+
+    &lt;p&gt;Bilibili 视频av号或BV号错误！请检查视频av号或BV号是否正确&lt;/p&gt;
+    &lt;p&gt;当前视频av或BV号：，视频分P：1&lt;/p&gt;
+
+
+&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe src=&#34;https://player.bilibili.com/player.html?as_wide=1&amp;amp;high_quality=1&amp;amp;page=1&amp;&#34;
+            scrolling=&#34;no&#34;
+            frameborder=&#34;no&#34;
+            framespacing=&#34;0&#34;
+            allowfullscreen=&#34;true&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+ --&gt;
+
+
+
+
+
+
+    
+
+
+&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe src=&#34;https://player.bilibili.com/player.html?as_wide=1&amp;amp;high_quality=1&amp;amp;page=1&amp;bvid=BV1Ye411H7oZ&#34;
+            scrolling=&#34;no&#34;
+            frameborder=&#34;no&#34;
+            framespacing=&#34;0&#34;
+            allowfullscreen=&#34;true&#34;
+    &gt;
     &lt;/iframe&gt;
 &lt;/div&gt;
 
