@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Vpn on Henry Zhang</title>
-        <link>https://Gzmomo001.github.io/tags/vpn/</link>
+        <link>http://localhost:1313/tags/vpn/</link>
         <description>Recent content in Vpn on Henry Zhang</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>henryzhang070&#43;contact@gmail.com</copyright>
-        <lastBuildDate>Sun, 23 Nov 2025 06:14:08 +0800</lastBuildDate><atom:link href="https://Gzmomo001.github.io/tags/vpn/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 25 Nov 2025 18:20:14 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/vpn/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>搭建vmless 代理服务器实现科学上网</title>
-        <link>https://Gzmomo001.github.io/p/%E6%90%AD%E5%BB%BAvmless-%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%9E%E7%8E%B0%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</link>
+        <link>http://localhost:1313/p/%E6%90%AD%E5%BB%BAvmless-%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%9E%E7%8E%B0%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</link>
         <pubDate>Sun, 23 Nov 2025 05:53:10 +0800</pubDate>
         
-        <guid>https://Gzmomo001.github.io/p/%E6%90%AD%E5%BB%BAvmless-%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%9E%E7%8E%B0%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</guid>
-        <description>&lt;img src="https://Gzmomo001.github.io/default.jpeg" alt="Featured image of post 搭建vmless 代理服务器实现科学上网" /&gt;&lt;h2 id=&#34;购买服务器&#34;&gt;购买服务器
+        <guid>http://localhost:1313/p/%E6%90%AD%E5%BB%BAvmless-%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%9E%E7%8E%B0%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</guid>
+        <description>&lt;img src="http://localhost:1313/default.jpeg" alt="Featured image of post 搭建vmless 代理服务器实现科学上网" /&gt;&lt;h2 id=&#34;购买服务器&#34;&gt;购买服务器
 &lt;/h2&gt;&lt;p&gt;在开始之前首先要确保你拥有一台能够访问外网的linux服务器，如果没有可以自行购买。博主这里推荐雨云家的服务器，这里已他家的日本大流量服务器为例子演示。
 系统: debain
 配置： 2 cores 2g 100/100mbps 90ping&lt;/p&gt;
