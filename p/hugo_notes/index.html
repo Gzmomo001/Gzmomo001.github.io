@@ -839,6 +839,7 @@
     </li>
     <li><a href="#创建新的博客">创建新的博客</a></li>
     <li><a href="#刷新静态文件">刷新静态文件</a></li>
+    <li><a href="#md-语法">md 语法</a></li>
     <li><a href="#stack-主题设置">stack 主题设置</a>
       <ol>
         <li><a href="#widgets">widgets</a></li>
@@ -1020,7 +1021,26 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">hugo server -D
 </span></span><span class="line"><span class="cl"><span class="c1"># 这个指令会打开本地hugo服务, 并在你有修改的时候自动刷新静态文件</span>
-</span></span></code></pre></div><h2 id="stack-主题设置">stack 主题设置
+</span></span></code></pre></div><h2 id="md-语法">md 语法
+</h2><ol>
+<li>插入一张图片</li>
+</ol>
+<p>&ldquo;![notation](image_location)&rdquo;</p>
+<ol start="2">
+<li>插入油管视频(如果需要添加b站视频参考这篇<a class="link" href="https://blog.lufei.de/p/hugo%E4%BD%BF%E7%94%A8shortcode%E6%8F%92%E5%85%A5bilibiliyoutube%E8%A7%86%E9%A2%91/"  target="_blank" rel="noopener"
+    >博客</a>)</li>
+</ol>
+<p>&ldquo;{{&lt;youtube ZFL09qhKi5I&gt;}}&rdquo;</p>
+<div class="video-wrapper">
+    <iframe loading="lazy" 
+            src="https://www.youtube.com/embed/ZFL09qhKi5I" 
+            allowfullscreen 
+            title="YouTube Video"
+    >
+    </iframe>
+</div>
+
+<h2 id="stack-主题设置">stack 主题设置
 </h2><p><a class="link" href="https://stack.jimmycai.com/"  target="_blank" rel="noopener"
     >点击这里进入官方文档</a></p>
 <p>b 站有个 up 已经发了 stack 主题比较详细的配置教程了, 所以我都在这个<a class="link" href="https://www.bilibili.com/video/BV1bovfeaEtQ?spm_id_from=333.788.videopod.episodes&amp;vd_source=5677f4a9840d40a9506c647b6c360e84&amp;p=2"  target="_blank" rel="noopener"

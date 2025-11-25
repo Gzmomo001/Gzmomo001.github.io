@@ -131,7 +131,26 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo server -D
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 这个指令会打开本地hugo服务, 并在你有修改的时候自动刷新静态文件&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;stack-主题设置&#34;&gt;stack 主题设置
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;md-语法&#34;&gt;md 语法
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;插入一张图片&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&amp;ldquo;![notation](image_location)&amp;rdquo;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;插入油管视频(如果需要添加b站视频参考这篇&lt;a class=&#34;link&#34; href=&#34;https://blog.lufei.de/p/hugo%E4%BD%BF%E7%94%A8shortcode%E6%8F%92%E5%85%A5bilibiliyoutube%E8%A7%86%E9%A2%91/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;博客&lt;/a&gt;)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&amp;ldquo;{{&amp;lt;youtube ZFL09qhKi5I&amp;gt;}}&amp;rdquo;&lt;/p&gt;
+&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe loading=&#34;lazy&#34; 
+            src=&#34;https://www.youtube.com/embed/ZFL09qhKi5I&#34; 
+            allowfullscreen 
+            title=&#34;YouTube Video&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;stack-主题设置&#34;&gt;stack 主题设置
 &lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;点击这里进入官方文档&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;b 站有个 up 已经发了 stack 主题比较详细的配置教程了, 所以我都在这个&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1bovfeaEtQ?spm_id_from=333.788.videopod.episodes&amp;amp;vd_source=5677f4a9840d40a9506c647b6c360e84&amp;amp;p=2&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;

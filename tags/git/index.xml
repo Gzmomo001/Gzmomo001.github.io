@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Git on Henry Zhang</title>
+        <link>https://Gzmomo001.github.io/tags/git/</link>
+        <description>Recent content in Git on Henry Zhang</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>henryzhang070&#43;contact@gmail.com</copyright>
+        <lastBuildDate>Tue, 25 Nov 2025 18:19:13 +0800</lastBuildDate><atom:link href="https://Gzmomo001.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Git</title>
+        <link>https://Gzmomo001.github.io/p/git/</link>
+        <pubDate>Tue, 25 Nov 2025 17:43:06 +0800</pubDate>
+        
+        <guid>https://Gzmomo001.github.io/p/git/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/p/git/git.png" alt="Featured image of post Git" /&gt;&lt;h2 id=&#34;什么是git&#34;&gt;什么是git
+&lt;/h2&gt;&lt;h3 id=&#34;hook&#34;&gt;Hook
+&lt;/h3&gt;&lt;p&gt;想象你写了一晚上的论文, 但是不小心被小组成员改坏了. 或者debug发现bug越来越多以至于无法修复, 整个项目基本要推倒重来. 上诉这种类似的情况其实屡见不鲜. 不只是计算机专业的同学会遇到, 其他非专业同学在编辑ppt, word, 或者设计工程图的时候也一样会遇到类似的问题. 而git的出现就是为了解决这一类的问题.&lt;/p&gt;
+&lt;h3 id=&#34;feature&#34;&gt;Feature
+&lt;/h3&gt;&lt;p&gt;git 作为版本控制工具最基本的功能就是管理文件版本. 可以将每一次文件的修改都记录起来. 当项目发生不可挽回的错误的时候. 只要.git文件夹还在就能发动败者食尘功能直接将时间会回滚到上一次提交的时候. 除此之外还提供了团队协作的功能. 不同的团队成员可以在同一个仓库下的不同brach对项目进行迭代又不会相互影响.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Gzmomo001.github.io/p/git/jojos-killer.gif&#34;
+	width=&#34;464&#34;
+	height=&#34;258&#34;
+	srcset=&#34;https://Gzmomo001.github.io/p/git/jojos-killer_hu_113ff57fcf33b172.gif 480w, https://Gzmomo001.github.io/p/git/jojos-killer_hu_49e2041d9bb05d24.gif 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;败者食尘&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;179&#34;
+		data-flex-basis=&#34;431px&#34;
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

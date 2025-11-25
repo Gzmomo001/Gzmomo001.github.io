@@ -7,7 +7,34 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>henryzhang070&#43;contact@gmail.com</copyright>
-        <lastBuildDate>Sun, 23 Nov 2025 05:58:49 +0800</lastBuildDate><atom:link href="https://Gzmomo001.github.io/categories/notes/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 25 Nov 2025 18:19:13 +0800</lastBuildDate><atom:link href="https://Gzmomo001.github.io/categories/notes/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Git</title>
+        <link>https://Gzmomo001.github.io/p/git/</link>
+        <pubDate>Tue, 25 Nov 2025 17:43:06 +0800</pubDate>
+        
+        <guid>https://Gzmomo001.github.io/p/git/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/p/git/git.png" alt="Featured image of post Git" /&gt;&lt;h2 id=&#34;什么是git&#34;&gt;什么是git
+&lt;/h2&gt;&lt;h3 id=&#34;hook&#34;&gt;Hook
+&lt;/h3&gt;&lt;p&gt;想象你写了一晚上的论文, 但是不小心被小组成员改坏了. 或者debug发现bug越来越多以至于无法修复, 整个项目基本要推倒重来. 上诉这种类似的情况其实屡见不鲜. 不只是计算机专业的同学会遇到, 其他非专业同学在编辑ppt, word, 或者设计工程图的时候也一样会遇到类似的问题. 而git的出现就是为了解决这一类的问题.&lt;/p&gt;
+&lt;h3 id=&#34;feature&#34;&gt;Feature
+&lt;/h3&gt;&lt;p&gt;git 作为版本控制工具最基本的功能就是管理文件版本. 可以将每一次文件的修改都记录起来. 当项目发生不可挽回的错误的时候. 只要.git文件夹还在就能发动败者食尘功能直接将时间会回滚到上一次提交的时候. 除此之外还提供了团队协作的功能. 不同的团队成员可以在同一个仓库下的不同brach对项目进行迭代又不会相互影响.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Gzmomo001.github.io/p/git/jojos-killer.gif&#34;
+	width=&#34;464&#34;
+	height=&#34;258&#34;
+	srcset=&#34;https://Gzmomo001.github.io/p/git/jojos-killer_hu_113ff57fcf33b172.gif 480w, https://Gzmomo001.github.io/p/git/jojos-killer_hu_49e2041d9bb05d24.gif 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;败者食尘&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;179&#34;
+		data-flex-basis=&#34;431px&#34;
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>搭建vmless 代理服务器实现科学上网</title>
         <link>https://Gzmomo001.github.io/p/%E6%90%AD%E5%BB%BAvmless-%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%9E%E7%8E%B0%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</link>
         <pubDate>Sun, 23 Nov 2025 05:53:10 +0800</pubDate>
@@ -581,12 +608,28 @@
         
         <guid>https://Gzmomo001.github.io/p/tmux/</guid>
         <description>&lt;img src="https://Gzmomo001.github.io/p/tmux/tmux.png" alt="Featured image of post Tmux" /&gt;&lt;h2 id=&#34;后台-shell-常驻工具&#34;&gt;后台 shell 常驻工具
-&lt;/h2&gt;&lt;h3 id=&#34;为什么使用-tmux&#34;&gt;为什么使用 tmux
+&lt;/h2&gt;&lt;p&gt;Reference: &lt;a class=&#34;link&#34; href=&#34;https://github.com/tmux/tmux/wiki&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;tmux wiki&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Fully tutorial
+&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe loading=&#34;lazy&#34; 
+            src=&#34;https://www.youtube.com/embed/nTqu6w2wc68&#34; 
+            allowfullscreen 
+            title=&#34;YouTube Video&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;为什么使用-tmux&#34;&gt;为什么使用 tmux
 &lt;/h3&gt;&lt;p&gt;在我们日常使用 shell 运行命令的时候可能我们是使用 ssh 链接的服务器。而当 ssh 断开的时候终端也会随之中断。在 ubuntu 系统中我们可以使用 screen 来让 shell 命令挂在后台运行。而 tmux 作为 screen 的上位替代则比 screen 带来了更多的功能。&lt;/p&gt;
-&lt;h3 id=&#34;安装-tmux&#34;&gt;安装 tmux
+&lt;h3 id=&#34;feature&#34;&gt;Feature
+&lt;/h3&gt;&lt;p&gt;tmux 的结构逻辑跟linux系统很像. 如果你对linux系统熟悉的话可以简单将tmux的session理解为用户. windows 就是用户桌面环境. 分屏功能就像是你在一个window中可以同时打开多个软件.&lt;/p&gt;
+&lt;h3 id=&#34;installation--安装-tmux&#34;&gt;Installation | 安装 tmux
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# ubuntu&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt install tmux
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;使用-tmux&#34;&gt;使用 tmux
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# macos&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;brew install tmux
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;quick-start&#34;&gt;quick start
 &lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;启动 tmux&lt;/li&gt;
 &lt;/ol&gt;
@@ -598,8 +641,8 @@
 &lt;li&gt;分屏:&lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
-&lt;li&gt;左右分屏: &amp;ldquo;ctrl&amp;rdquo; + &amp;quot; b + % &amp;quot;&lt;/li&gt;
-&lt;li&gt;上下分屏: &amp;ldquo;ctrl&amp;rdquo; + &amp;quot; b + &amp;quot; &amp;quot;&lt;/li&gt;
+&lt;li&gt;左右分屏: &amp;ldquo;ctrlb + % &amp;quot;&lt;/li&gt;
+&lt;li&gt;上下分屏: &amp;ldquo;ctrlb + &amp;quot; &amp;quot;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;切换焦点（当你需要切换同一个 session 中不同的窗口时）&lt;/li&gt;
@@ -609,17 +652,17 @@
 &lt;/ul&gt;
 &lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;
-&lt;p&gt;创建新的 window: &amp;ldquo;ctrl&amp;rdquo; + &amp;quot; b + c &amp;quot;&lt;/p&gt;
+&lt;p&gt;创建新的 window: &amp;ldquo;ctrlb + c&amp;rdquo;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;切换 window: &amp;ldquo;ctrl&amp;rdquo; + &amp;quot; b + &lt;num&gt; &amp;quot;&lt;/p&gt;
+&lt;p&gt;切换 window: &amp;ldquo;ctrlb + &lt;num&gt; &amp;quot; | 切换到下一个window: &amp;ldquo;ctrlb + n&amp;rdquo;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote class=&#34;alert alert-tips&#34;&gt;
     &lt;p&gt;一个 session 可以包括多个 windows&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ol start=&#34;6&#34;&gt;
 &lt;li&gt;
-&lt;p&gt;退出 tmux: &amp;ldquo;ctrl&amp;rdquo; + &amp;quot; b + d &amp;quot;&lt;/p&gt;
+&lt;p&gt;退出 tmux: &amp;ldquo;ctrlb&amp;rdquo; + &amp;ldquo;d&amp;rdquo;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;列出 session&lt;/p&gt;
@@ -629,13 +672,26 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;7&#34;&gt;
 &lt;li&gt;恢复 tmux:&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux a&lt;span class=&#34;s2&#34;&gt;&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;8&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux a
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;8&#34;&gt;
 &lt;li&gt;删除 session:&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux kill-session -t &amp;lt;session_name&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;tmux-配置文件&#34;&gt;tmux 配置文件
-&lt;/h3&gt;&lt;ol&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;advance-setting&#34;&gt;Advance setting
+&lt;/h3&gt;&lt;h4 id=&#34;session&#34;&gt;session
+&lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 创建制定名称的session&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux new -s &amp;lt;session_name&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 回复到指定的session&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux a -t &amp;lt;session_name&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 窗口分屏快速切换聚焦(摁下q的时候会看到分屏序号)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# &amp;#34;ctrlb + q + &amp;lt;index&amp;gt;&amp;#34; &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# tmux 概览(你会看到当前系统中所有的sesion和窗口,通过方向键就能快速预览窗口,enter就能直接切换到聚焦的window)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# “ctrlb + w”&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;tmux-配置文件-解锁鼠标控制&#34;&gt;tmux 配置文件 (解锁鼠标控制
+&lt;/h4&gt;&lt;ol&gt;
 &lt;li&gt;进入配置文件&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;nano ~/.tmux.conf
@@ -647,7 +703,9 @@
 &lt;p&gt;更改快捷键: &amp;ldquo;set -g prefix C-s&amp;rdquo;(意思是将原本用 ctrl+b 的快捷键改为用 ctrl+s)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-</description>
+&lt;h3 id=&#34;cheetsheet&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://tmuxcheatsheet.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cheetsheet&lt;/a&gt;
+&lt;/h3&gt;</description>
         </item>
         <item>
         <title>Soft_links</title>
@@ -1830,7 +1888,26 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo server -D
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 这个指令会打开本地hugo服务, 并在你有修改的时候自动刷新静态文件&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;stack-主题设置&#34;&gt;stack 主题设置
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;md-语法&#34;&gt;md 语法
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;插入一张图片&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&amp;ldquo;![notation](image_location)&amp;rdquo;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;插入油管视频(如果需要添加b站视频参考这篇&lt;a class=&#34;link&#34; href=&#34;https://blog.lufei.de/p/hugo%E4%BD%BF%E7%94%A8shortcode%E6%8F%92%E5%85%A5bilibiliyoutube%E8%A7%86%E9%A2%91/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;博客&lt;/a&gt;)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&amp;ldquo;{{&amp;lt;youtube ZFL09qhKi5I&amp;gt;}}&amp;rdquo;&lt;/p&gt;
+&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe loading=&#34;lazy&#34; 
+            src=&#34;https://www.youtube.com/embed/ZFL09qhKi5I&#34; 
+            allowfullscreen 
+            title=&#34;YouTube Video&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;stack-主题设置&#34;&gt;stack 主题设置
 &lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;点击这里进入官方文档&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;b 站有个 up 已经发了 stack 主题比较详细的配置教程了, 所以我都在这个&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1bovfeaEtQ?spm_id_from=333.788.videopod.episodes&amp;amp;vd_source=5677f4a9840d40a9506c647b6c360e84&amp;amp;p=2&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
