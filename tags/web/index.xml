@@ -2,28 +2,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Web on Henry Zhang</title>
-        <link>http://localhost:53880/tags/web/</link>
+        <link>https://Gzmomo001.github.io/tags/web/</link>
         <description>Recent content in Web on Henry Zhang</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>henryzhang070&#43;contact@gmail.com</copyright>
-        <lastBuildDate>Sun, 23 Nov 2025 00:53:48 +0800</lastBuildDate><atom:link href="http://localhost:53880/tags/web/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 23 Nov 2025 00:53:48 +0800</lastBuildDate><atom:link href="https://Gzmomo001.github.io/tags/web/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>JavaScript</title>
-        <link>http://localhost:53880/p/javascript/</link>
+        <link>https://Gzmomo001.github.io/p/javascript/</link>
         <pubDate>Tue, 12 Aug 2025 07:44:31 +0800</pubDate>
         
-        <guid>http://localhost:53880/p/javascript/</guid>
-        <description>&lt;img src="http://localhost:53880/default.jpeg" alt="Featured image of post JavaScript" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=hdI2bqOjy3c&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+        <guid>https://Gzmomo001.github.io/p/javascript/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/default.jpeg" alt="Featured image of post JavaScript" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=hdI2bqOjy3c&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;review link&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>CSS</title>
-        <link>http://localhost:53880/p/css/</link>
+        <link>https://Gzmomo001.github.io/p/css/</link>
         <pubDate>Sun, 10 Aug 2025 09:04:48 +0800</pubDate>
         
-        <guid>http://localhost:53880/p/css/</guid>
-        <description>&lt;img src="http://localhost:53880/p/css/css.png" alt="Featured image of post CSS" /&gt;&lt;h3 id=&#34;cheat-sheet-of-css&#34;&gt;Cheat Sheet of CSS
+        <guid>https://Gzmomo001.github.io/p/css/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/p/css/css.png" alt="Featured image of post CSS" /&gt;&lt;h3 id=&#34;cheat-sheet-of-css&#34;&gt;Cheat Sheet of CSS
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
@@ -354,11 +354,11 @@
         </item>
         <item>
         <title>HTML</title>
-        <link>http://localhost:53880/p/html/</link>
+        <link>https://Gzmomo001.github.io/p/html/</link>
         <pubDate>Sun, 10 Aug 2025 07:31:20 +0800</pubDate>
         
-        <guid>http://localhost:53880/p/html/</guid>
-        <description>&lt;img src="http://localhost:53880/p/html/html.png" alt="Featured image of post HTML" /&gt;&lt;h2 id=&#34;cheat-sheet-of-html&#34;&gt;Cheat Sheet of HTML
+        <guid>https://Gzmomo001.github.io/p/html/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/p/html/html.png" alt="Featured image of post HTML" /&gt;&lt;h2 id=&#34;cheat-sheet-of-html&#34;&gt;Cheat Sheet of HTML
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; 
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
@@ -541,11 +541,11 @@
         </item>
         <item>
         <title>本地静态网站托管</title>
-        <link>http://localhost:53880/p/%E6%9C%AC%E5%9C%B0%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1/</link>
+        <link>https://Gzmomo001.github.io/p/%E6%9C%AC%E5%9C%B0%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1/</link>
         <pubDate>Sat, 24 May 2025 16:47:04 +0800</pubDate>
         
-        <guid>http://localhost:53880/p/%E6%9C%AC%E5%9C%B0%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1/</guid>
-        <description>&lt;img src="http://localhost:53880/default.jpeg" alt="Featured image of post 本地静态网站托管" /&gt;&lt;h1 id=&#34;如何在本地搭建类似-gihub-的静态网站托管服务&#34;&gt;如何在本地搭建类似 gihub 的静态网站托管服务
+        <guid>https://Gzmomo001.github.io/p/%E6%9C%AC%E5%9C%B0%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/default.jpeg" alt="Featured image of post 本地静态网站托管" /&gt;&lt;h1 id=&#34;如何在本地搭建类似-gihub-的静态网站托管服务&#34;&gt;如何在本地搭建类似 gihub 的静态网站托管服务
 &lt;/h1&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
 &lt;/h2&gt;&lt;p&gt;本博客的初衷是因为博主之前使用第三方的静态博客发现国内的网站对这些托管并不友好, 特别是 wx 经常会对我的博客域名封杀. 而且这个网页托管的速度也比较一般. 所以打算在本地搭建网页托管的服务, 使用内网穿透来实现外网访问. 这也算是一个填坑博客吧.🤓&lt;/p&gt;
 &lt;h2 id=&#34;requirements&#34;&gt;requirements

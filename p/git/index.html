@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=53880&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+    <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="版本控制工具">
 <title>Git</title>
 
-<link rel='canonical' href='http://localhost:53880/p/git/'>
+<link rel='canonical' href='https://Gzmomo001.github.io/p/git/'>
 
-<link rel="stylesheet" href="/scss/style.min.ee2ac029fd62cdc5cf323f1dea21f3391d253f72e816d4c4677ce6a93f0dee5d.css"><meta property='og:title' content="Git">
+<link rel="stylesheet" href="/scss/style.min.f0d856d8a5610b3c0c2069a79146122abf2acb30a6b00e2bbb69c2113678b2e3.css"><meta property='og:title' content="Git">
 <meta property='og:description' content="版本控制工具">
-<meta property='og:url' content='http://localhost:53880/p/git/'>
+<meta property='og:url' content='https://Gzmomo001.github.io/p/git/'>
 <meta property='og:site_name' content='Henry Zhang'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='git' /><meta property='article:published_time' content='2025-11-25T17:43:06&#43;08:00'/><meta property='article:modified_time' content='2025-11-25T22:17:34&#43;08:00'/><meta property='og:image' content='http://localhost:53880/p/git/git.png' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='git' /><meta property='article:published_time' content='2025-11-25T17:43:06&#43;08:00'/><meta property='article:modified_time' content='2025-11-26T18:15:34&#43;08:00'/><meta property='og:image' content='https://Gzmomo001.github.io/p/git/git.png' />
 <meta name="twitter:title" content="Git">
 <meta name="twitter:description" content="版本控制工具"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='http://localhost:53880/p/git/git.png' />
+    <meta name="twitter:image" content='https://Gzmomo001.github.io/p/git/git.png' />
     <link rel="shortcut icon" href="/favicon.ico" />
 <link rel='stylesheet' href='https://chinese-fonts-cdn.deno.dev/packages/dymh/dist/DouyinSansBold/result.css' />
 
@@ -807,8 +807,15 @@
 
     <aside class="sidebar right-sidebar sticky">
         
+        
+            
+        
+
+        
+        
             
                 
+                    
     <section class="widget archives">
         <div class="widget-icon">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -836,6 +843,8 @@
       <ol>
         <li><a href="#git-checkout">git checkout</a></li>
         <li><a href="#git-stash">git stash</a></li>
+        <li><a href="#git-reset">git reset</a></li>
+        <li><a href="#git-merge">git merge</a></li>
       </ol>
     </li>
   </ol>
@@ -843,9 +852,11 @@
         </div>
     </section>
 
+                
             
         
     </aside>
+
 
 
             <main class="main full-width">
@@ -931,7 +942,7 @@
 
 
                 <time>
-                    Nov 25, 2025 22:17 CST
+                    Nov 26, 2025 18:15 CST
                 </time>
             </div>
     </footer>
@@ -1051,17 +1062,68 @@
 </span></span><span class="line"><span class="cl">git stash list 
 </span></span><span class="line"><span class="cl"><span class="c1"># 查看存档</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">git stash pop stach@<span class="o">{</span>&lt;id&gt;<span class="o">}</span> 
+</span></span><span class="line"><span class="cl">git stash pop stash@<span class="o">{</span>&lt;id&gt;<span class="o">}</span> 
 </span></span><span class="line"><span class="cl">git stash pop
 </span></span><span class="line"><span class="cl"><span class="c1"># 将缓存剪切出来</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">git stash apply stach@<span class="o">{</span>&lt;id&gt;<span class="o">}</span>
+</span></span><span class="line"><span class="cl">git stash apply stash@<span class="o">{</span>&lt;id&gt;<span class="o">}</span>
 </span></span><span class="line"><span class="cl">git stash apply
 </span></span><span class="line"><span class="cl"><span class="c1"># 将缓存复制出来</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">git stash clear
 </span></span><span class="line"><span class="cl"><span class="c1">#清空缓存</span>
-</span></span></code></pre></div>
+</span></span></code></pre></div><h3 id="git-reset">git reset
+</h3><p><code>git reset</code> 命令用于将当前分支的HEAD指针重置到指定的提交状态。它有三种常用模式：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 软重置 - 保留工作区和暂存区的更改</span>
+</span></span><span class="line"><span class="cl">git reset --soft &lt;commit_id&gt;
+</span></span><span class="line"><span class="cl"><span class="c1"># 仅移动HEAD指针到指定提交，不改变工作区和暂存区</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 混合重置(默认) - 保留工作区更改，但清空暂存区</span>
+</span></span><span class="line"><span class="cl">git reset --mixed &lt;commit_id&gt;
+</span></span><span class="line"><span class="cl"><span class="c1"># 或者简写为</span>
+</span></span><span class="line"><span class="cl">git reset &lt;commit_id&gt;
+</span></span><span class="line"><span class="cl"><span class="c1"># 移动HEAD指针，并重置暂存区，但保留工作区更改</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 硬重置 - 丢弃所有更改</span>
+</span></span><span class="line"><span class="cl">git reset --hard &lt;commit_id&gt;
+</span></span><span class="line"><span class="cl"><span class="c1"># 移动HEAD指针，重置暂存区和工作区，丢弃所有更改</span>
+</span></span></code></pre></div><p>使用场景：</p>
+<ul>
+<li>撤销最近的提交</li>
+<li>合并多个提交为一个</li>
+<li>彻底撤销错误的更改</li>
+</ul>
+<h3 id="git-merge">git merge
+</h3><p><code>git merge</code> 命令用于将一个或多个分支的更改合并到当前分支：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 合并指定分支到当前分支</span>
+</span></span><span class="line"><span class="cl">git merge &lt;branch_name&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 创建合并提交，即使快进合并可用</span>
+</span></span><span class="line"><span class="cl">git merge --no-ff &lt;branch_name&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 合并时产生一个squash提交，不保留原分支的提交历史</span>
+</span></span><span class="line"><span class="cl">git merge --squash &lt;branch_name&gt;
+</span></span></code></pre></div><p>合并冲突处理：
+当两个分支修改了同一部分内容时，会发生合并冲突：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 当出现冲突时，手动编辑冲突文件解决冲突</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 冲突标记：</span>
+</span></span><span class="line"><span class="cl"><span class="o">&lt;&lt;&lt;&lt;&lt;&lt;</span>&lt; HEAD
+</span></span><span class="line"><span class="cl"><span class="nv">当前分支的内容</span>
+</span></span><span class="line"><span class="cl"><span class="o">=======</span>
+</span></span><span class="line"><span class="cl">要合并分支的内容
+</span></span><span class="line"><span class="cl">&gt;&gt;&gt;&gt;&gt;&gt;&gt; branch-name
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 解决冲突后，添加解决后的文件</span>
+</span></span><span class="line"><span class="cl">git add &lt;file_name&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 完成合并提交</span>
+</span></span><span class="line"><span class="cl">git commit
+</span></span></code></pre></div><p>合并策略：</p>
+<ul>
+<li>Fast-forward：当目标分支是当前分支的直接上游时，直接移动指针</li>
+<li>Three-way merge：创建新的合并提交，包含两个分支的历史</li>
+</ul>
+
 </section>
 
 
@@ -1399,7 +1461,7 @@
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.afc006ea9bd8920c4b7cd9127cbd08958842accd71f27f27b34b6c0c77a82951.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');
@@ -1607,7 +1669,7 @@
       
       let img = document.createElement('img');
       img.classList.add('code-more-img');
-      img.src = "http://localhost:53880/icons/down.png"
+      img.src = "https://Gzmomo001.github.io/icons/down.png"
       
       codeMoreBtn.appendChild(img);
       codeMoreBox.appendChild(codeMoreBtn);

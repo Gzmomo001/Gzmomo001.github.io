@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="软连接 在系统中我们往往可能需要在一个项目中使用项目之外的一些文件，但是这个文件又不在这项目的根目录在。大部分人往往都选择直接将需要的文件拷贝到项目的路目中。但是这样既浪费时间又浪费系统的存储空间。尔软连接的出现就是为了解决这一问题。我们可以直接通过命令创建一个软连接。让目标文件或者文件夹的替身出现在我们的项目目录下。这样我们就可以在不使用绝对路径的情况下使用该路径了。\n">
+<title>Soft_links</title>
+
+<link rel='canonical' href='http://localhost:1313/zh-cn/p/soft_links/'>
+
+<link rel="stylesheet" href="/scss/style.min.f0d856d8a5610b3c0c2069a79146122abf2acb30a6b00e2bbb69c2113678b2e3.css"><meta property='og:title' content="Soft_links">
+<meta property='og:description' content="软连接 在系统中我们往往可能需要在一个项目中使用项目之外的一些文件，但是这个文件又不在这项目的根目录在。大部分人往往都选择直接将需要的文件拷贝到项目的路目中。但是这样既浪费时间又浪费系统的存储空间。尔软连接的出现就是为了解决这一问题。我们可以直接通过命令创建一个软连接。让目标文件或者文件夹的替身出现在我们的项目目录下。这样我们就可以在不使用绝对路径的情况下使用该路径了。\n">
+<meta property='og:url' content='http://localhost:1313/zh-cn/p/soft_links/'>
+<meta property='og:site_name' content='Henry Zhang'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='system' /><meta property='article:tag' content='linux' /><meta property='article:published_time' content='2025-07-31T15:38:14&#43;08:00'/><meta property='article:modified_time' content='2025-11-26T17:17:16&#43;08:00'/><meta property='og:image' content='http://localhost:1313/p/soft_links/link.png' />
+<meta name="twitter:title" content="Soft_links">
+<meta name="twitter:description" content="软连接 在系统中我们往往可能需要在一个项目中使用项目之外的一些文件，但是这个文件又不在这项目的根目录在。大部分人往往都选择直接将需要的文件拷贝到项目的路目中。但是这样既浪费时间又浪费系统的存储空间。尔软连接的出现就是为了解决这一问题。我们可以直接通过命令创建一个软连接。让目标文件或者文件夹的替身出现在我们的项目目录下。这样我们就可以在不使用绝对路径的情况下使用该路径了。\n"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='http://localhost:1313/p/soft_links/link.png' />
+    <link rel="shortcut icon" href="/favicon.ico" />
+<link rel='stylesheet' href='https://chinese-fonts-cdn.deno.dev/packages/dymh/dist/DouyinSansBold/result.css' />
+
+<div class="loading">
+     
+    <div class="banter-loader">
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+    </div>
+</div>
+
+<style>
+    .loading {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+        zoom: 3.0;
+        background-color: #5b5b5b;
+        display: none;
+        transition: opacity 1s ease-out; 
+    }
+
+    .loading.fade-out {
+        opacity: 0;
+    }
+	
+          
+    .banter-loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 72px;
+    height: 72px;
+    margin-left: -36px;
+    margin-top: -36px;
+    }
+
+    .banter-loader__box {
+    float: left;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+    }
+
+    .banter-loader__box:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    }
+
+    .banter-loader__box:nth-child(3n) {
+    margin-right: 0;
+    margin-bottom: 6px;
+    }
+
+    .banter-loader__box:nth-child(1):before, .banter-loader__box:nth-child(4):before {
+    margin-left: 26px;
+    }
+
+    .banter-loader__box:nth-child(3):before {
+    margin-top: 52px;
+    }
+
+    .banter-loader__box:last-child {
+    margin-bottom: 0;
+    }
+
+    @keyframes moveBox-1 {
+    9.0909090909% {
+        transform: translate(-26px, 0);
+    }
+
+    18.1818181818% {
+        transform: translate(0px, 0);
+    }
+
+    27.2727272727% {
+        transform: translate(0px, 0);
+    }
+
+    36.3636363636% {
+        transform: translate(26px, 0);
+    }
+
+    45.4545454545% {
+        transform: translate(26px, 26px);
+    }
+
+    54.5454545455% {
+        transform: translate(26px, 26px);
+    }
+
+    63.6363636364% {
+        transform: translate(26px, 26px);
+    }
+
+    72.7272727273% {
+        transform: translate(26px, 0px);
+    }
+
+    81.8181818182% {
+        transform: translate(0px, 0px);
+    }
+
+    90.9090909091% {
+        transform: translate(-26px, 0px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+    }
+
+    .banter-loader__box:nth-child(1) {
+    animation: moveBox-1 4s infinite;
+    }
+
+    @keyframes moveBox-2 {
+    9.0909090909% {
+        transform: translate(0, 0);
+    }
+
+    18.1818181818% {
+        transform: translate(26px, 0);
+    }
+
+    27.2727272727% {
+        transform: translate(0px, 0);
+    }
+
+    36.3636363636% {
+        transform: translate(26px, 0);
+    }
+
+    45.4545454545% {
+        transform: translate(26px, 26px);
+    }
+
+    54.5454545455% {
+        transform: translate(26px, 26px);
+    }
+
+    63.6363636364% {
+        transform: translate(26px, 26px);
+    }
+
+    72.7272727273% {
+        transform: translate(26px, 26px);
+    }
+
+    81.8181818182% {
+        transform: translate(0px, 26px);
+    }
+
+    90.9090909091% {
+        transform: translate(0px, 26px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+    }
+
+    .banter-loader__box:nth-child(2) {
+    animation: moveBox-2 4s infinite;
+    }
+
+    @keyframes moveBox-3 {
+    9.0909090909% {
+        transform: translate(-26px, 0);
+    }
+
+    18.1818181818% {
+        transform: translate(-26px, 0);
+    }
+
+    27.2727272727% {
+        transform: translate(0px, 0);
+    }
+
+    36.3636363636% {
+        transform: translate(-26px, 0);
+    }
+
+    45.4545454545% {
+        transform: translate(-26px, 0);
+    }
+
+    54.5454545455% {
+        transform: translate(-26px, 0);
+    }
+
+    63.6363636364% {
+        transform: translate(-26px, 0);
+    }
+
+    72.7272727273% {
+        transform: translate(-26px, 0);
+    }
+
+    81.8181818182% {
+        transform: translate(-26px, -26px);
+    }
+
+    90.9090909091% {
+        transform: translate(0px, -26px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+    }
+
+    .banter-loader__box:nth-child(3) {
+    animation: moveBox-3 4s infinite;
+    }
+
+    @keyframes moveBox-4 {
+    9.0909090909% {
+        transform: translate(-26px, 0);
+    }
+
+    18.1818181818% {
+        transform: translate(-26px, 0);
+    }
+
+    27.2727272727% {
+        transform: translate(-26px, -26px);
+    }
+
+    36.3636363636% {
+        transform: translate(0px, -26px);
+    }
+
+    45.4545454545% {
+        transform: translate(0px, 0px);
+    }
+
+    54.5454545455% {
+        transform: translate(0px, -26px);
+    }
+
+    63.6363636364% {
+        transform: translate(0px, -26px);
+    }
+
+    72.7272727273% {
+        transform: translate(0px, -26px);
+    }
+
+    81.8181818182% {
+        transform: translate(-26px, -26px);
+    }
+
+    90.9090909091% {
+        transform: translate(-26px, 0px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+    }
+
+    .banter-loader__box:nth-child(4) {
+    animation: moveBox-4 4s infinite;
+    }
+
+    @keyframes moveBox-5 {
+    9.0909090909% {
+        transform: translate(0, 0);
+    }
+
+    18.1818181818% {
+        transform: translate(0, 0);
+    }
+
+    27.2727272727% {
+        transform: translate(0, 0);
+    }
+
+    36.3636363636% {
+        transform: translate(26px, 0);
+    }
+
+    45.4545454545% {
+        transform: translate(26px, 0);
+    }
+
+    54.5454545455% {
+        transform: translate(26px, 0);
+    }
+
+    63.6363636364% {
+        transform: translate(26px, 0);
+    }
+
+    72.7272727273% {
+        transform: translate(26px, 0);
+    }
+
+    81.8181818182% {
+        transform: translate(26px, -26px);
+    }
+
+    90.9090909091% {
+        transform: translate(0px, -26px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+    }
+
+    .banter-loader__box:nth-child(5) {
+    animation: moveBox-5 4s infinite;
+    }
+
+    @keyframes moveBox-6 {
+    9.0909090909% {
+        transform: translate(0, 0);
+    }
+
+    18.1818181818% {
+        transform: translate(-26px, 0);
+    }
+
+    27.2727272727% {
+        transform: translate(-26px, 0);
+    }
+
+    36.3636363636% {
+        transform: translate(0px, 0);
+    }
+
+    45.4545454545% {
+        transform: translate(0px, 0);
+    }
+
+    54.5454545455% {
+        transform: translate(0px, 0);
+    }
+
+    63.6363636364% {
+        transform: translate(0px, 0);
+    }
+
+    72.7272727273% {
+        transform: translate(0px, 26px);
+    }
+
+    81.8181818182% {
+        transform: translate(-26px, 26px);
+    }
+
+    90.9090909091% {
+        transform: translate(-26px, 0px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+    }
+
+    .banter-loader__box:nth-child(6) {
+    animation: moveBox-6 4s infinite;
+    }
+
+    @keyframes moveBox-7 {
+    9.0909090909% {
+        transform: translate(26px, 0);
+    }
+
+    18.1818181818% {
+        transform: translate(26px, 0);
+    }
+
+    27.2727272727% {
+        transform: translate(26px, 0);
+    }
+
+    36.3636363636% {
+        transform: translate(0px, 0);
+    }
+
+    45.4545454545% {
+        transform: translate(0px, -26px);
+    }
+
+    54.5454545455% {
+        transform: translate(26px, -26px);
+    }
+
+    63.6363636364% {
+        transform: translate(0px, -26px);
+    }
+
+    72.7272727273% {
+        transform: translate(0px, -26px);
+    }
+
+    81.8181818182% {
+        transform: translate(0px, 0px);
+    }
+
+    90.9090909091% {
+        transform: translate(26px, 0px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+    }
+
+    .banter-loader__box:nth-child(7) {
+    animation: moveBox-7 4s infinite;
+    }
+
+    @keyframes moveBox-8 {
+    9.0909090909% {
+        transform: translate(0, 0);
+    }
+
+    18.1818181818% {
+        transform: translate(-26px, 0);
+    }
+
+    27.2727272727% {
+        transform: translate(-26px, -26px);
+    }
+
+    36.3636363636% {
+        transform: translate(0px, -26px);
+    }
+
+    45.4545454545% {
+        transform: translate(0px, -26px);
+    }
+
+    54.5454545455% {
+        transform: translate(0px, -26px);
+    }
+
+    63.6363636364% {
+        transform: translate(0px, -26px);
+    }
+
+    72.7272727273% {
+        transform: translate(0px, -26px);
+    }
+
+    81.8181818182% {
+        transform: translate(26px, -26px);
+    }
+
+    90.9090909091% {
+        transform: translate(26px, 0px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+    }
+
+    .banter-loader__box:nth-child(8) {
+    animation: moveBox-8 4s infinite;
+    }
+
+    @keyframes moveBox-9 {
+    9.0909090909% {
+        transform: translate(-26px, 0);
+    }
+
+    18.1818181818% {
+        transform: translate(-26px, 0);
+    }
+
+    27.2727272727% {
+        transform: translate(0px, 0);
+    }
+
+    36.3636363636% {
+        transform: translate(-26px, 0);
+    }
+
+    45.4545454545% {
+        transform: translate(0px, 0);
+    }
+
+    54.5454545455% {
+        transform: translate(0px, 0);
+    }
+
+    63.6363636364% {
+        transform: translate(-26px, 0);
+    }
+
+    72.7272727273% {
+        transform: translate(-26px, 0);
+    }
+
+    81.8181818182% {
+        transform: translate(-52px, 0);
+    }
+
+    90.9090909091% {
+        transform: translate(-26px, 0);
+    }
+
+    100% {
+        transform: translate(0px, 0);
+    }
+    }
+
+    .banter-loader__box:nth-child(9) {
+    animation: moveBox-9 4s infinite;
+    }
+</style>
+
+<script>	
+    function initLoading() {
+        const isFirstVisit = !sessionStorage.getItem('visited');
+        if (isFirstVisit) {
+            let loading = document.querySelector('.loading');
+            loading.style.display = 'flex';
+            document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(() => {
+                    loading.classList.add('fade-out'); 
+                    setTimeout(() => {
+                        loading.style.display = 'none';
+                    }, 1000); 
+                }, 1000); 
+                sessionStorage.setItem('visited', 'true');
+            });   
+        }    
+    }
+
+    initLoading();
+</script>
+
+
+<link rel='stylesheet' href='https://chinese-fonts-cdn.deno.dev/packages/dymh/dist/DouyinSansBold/result.css' />
+
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/zh-cn/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_9c50848f93c56cbf.jpeg" width="300"
+                            height="296" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🤓</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/zh-cn">Henry Zhang</a></h1>
+            <h2 class="site-description">Driven by Wonder, Powered by Knowledge.🤓</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/Gzmomo001'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/zh-cn/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/zh-cn/about-me/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About me</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/zh-cn/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/zh-cn/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/zh-cn/some-useful-links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Some Useful Links</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/zh-cn/update-logs/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                
+                <span>Update Logs</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+                    
+                        <li id="i18n-switch">  
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                            <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
+                                
+                                    <option value="http://localhost:1313/" >English</option>
+                                
+                                    <option value="http://localhost:1313/zh-cn/" selected>简体中文</option>
+                                
+                            </select>
+                        </li>
+                    
+                
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+        
+            
+        
+
+        
+        
+            
+                
+                    
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#软连接">软连接</a>
+      <ol>
+        <li><a href="#如何使用软连接ln">如何使用软连接（ln</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+                
+            
+        
+    </aside>
+
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/zh-cn/p/soft_links/">
+                <img src="/p/soft_links/link_hu_bc6cd4d2edb2c0ab.png"
+                        srcset="/p/soft_links/link_hu_bc6cd4d2edb2c0ab.png 800w, /p/soft_links/link_hu_966cbcc918bd386f.png 1600w"
+                        width="800" 
+                        height="800" 
+                        loading="lazy"
+                        alt="Featured image of post Soft_links" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/zh-cn/p/soft_links/">Soft_links</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        <div class="article-metadata">
+            
+            <div class="article-category">
+                
+                    
+                    
+                    <a href="/zh-cn/categories/notes/" class="category-link" style="background-color: #704400; color: #ffffff;">
+                        Notes
+                    </a>
+                
+            </div>
+            
+
+            
+            <div class="article-tags">
+                
+                    
+                    
+                    <a href="/zh-cn/tags/system/" class="tag-link" style="color: #ffffff; border: 1px solid #bc0792; background-color: #bc079220;">
+                        #System
+                    </a>
+                
+                    
+                    
+                    <a href="/zh-cn/tags/linux/" class="tag-link" style="color: #ffffff; border: 1px solid #83ad85; background-color: #83ad8520;">
+                        #Linux
+                    </a>
+                
+            </div>
+            
+        </div>
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2025-07-31</time>
+            </div>
+        <div class="article-lastmod">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time>
+                    Nov 26, 2025 17:17 CST
+                </time>
+            </div>
+    </footer>
+    
+
+    
+        <footer class="article-translations">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+            <div>
+                
+                    <a href="http://localhost:1313/p/soft_links/" class="link">English</a>
+                
+            </div>
+        </footer>
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="软连接">软连接
+</h2><p>在系统中我们往往可能需要在一个项目中使用项目之外的一些文件，但是这个文件又不在这项目的根目录在。大部分人往往都选择直接将需要的文件拷贝到项目的路目中。但是这样既浪费时间又浪费系统的存储空间。尔软连接的出现就是为了解决这一问题。我们可以直接通过命令创建一个软连接。让目标文件或者文件夹的替身出现在我们的项目目录下。这样我们就可以在不使用绝对路径的情况下使用该路径了。</p>
+<h3 id="如何使用软连接ln">如何使用软连接（ln
+</h3><p>在 linux 中软连接的是由&rsquo;ln&rsquo;这一指令完成的。</p>
+<ol>
+<li>在 linux 我们可以使用&rsquo;man ln&rsquo;就能查看 ln 的使用手册</li>
+</ol>
+<p>这里列举一些常用的&rsquo;ln&rsquo; 命令</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Create a symbolic link to a file or directory:</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 会在路标路径下创建一个原路径同名的文件或者文件夹</span>
+</span></span><span class="line"><span class="cl">ln --symbolic /path/to/file_or_directory path/to/symlink
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#Overwrite an existing symbolic link to point to a different file:</span>
+</span></span><span class="line"><span class="cl">ln --symbolic --force /path/to/new_file path/to/symlink
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Create a hard link to a file:</span>
+</span></span><span class="line"><span class="cl">ln /path/to/file path/to/hardlink
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Delete a symbolic link:</span>
+</span></span><span class="line"><span class="cl">rm path/to/symlink
+</span></span></code></pre></div><blockquote class="alert alert-tips">
+    <p>如果链接是相对路径，那这个相对是路径应该是相对于软连接目标目录的路径
+###<a class="link" href="https://www.gnu.org/software/coreutils/manual/html_node/ln-invocation.html"  target="_blank" rel="noopener"
+    >官方文档链接</a></p></blockquote>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>A winner is just a loser who tried one more time.</span>
+    </section>
+    
+
+    
+</footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+	const mainArticleElement = document.querySelector(".main-article");
+        renderMathInElement(mainArticleElement, {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/zh-cn/p/chapter11/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="/java.png" loading="lazy" data-key="" data-hash="/java.png"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Chapter11</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="Gzmomo001/Gzmomo001.github.io"
+    data-repo-id="R_kgDOOuLpRA"
+    data-category="General"
+    data-category-id="DIC_kwDOOuLpRM4Cr0Pz"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="en"
+    data-loading=""
+    crossorigin="anonymous"
+    async
+></script>
+<script>
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
+        }
+    }
+
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('light');
+            } else {
+                setGiscusTheme('dark_dimmed');
+            }
+        }
+    })();
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2025 henryzhang070&#43;contact@gmail.com
+    </section>
+    
+    <section class="powerby">
+        
+            Robust AI <br/>
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.afc006ea9bd8920c4b7cd9127cbd08958842accd71f27f27b34b6c0c77a82951.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+<style>
+    #TableOfContents > ul, ol {
+        ul, ol {
+            display: none;
+        }
+        .open {
+            display: block;
+        }
+    }
+</style>
+
+<script>
+    function initTocHide() {
+        
+        let toc = document.querySelector(".widget--toc");
+        if (!toc) {
+            return;
+        }
+        
+        window.addEventListener('scroll', function() {
+            
+            let openUl = document.querySelectorAll(".open");
+            if (openUl.length > 0) {
+              openUl.forEach((ul) => {
+                ul.classList.remove("open")
+              })
+            }
+            
+            let currentLi = document.querySelector(".active-class");
+            if (!currentLi) {
+                return
+            }
+            
+            if (currentLi.children.length > 1) {
+                currentLi.children[1].classList.add("open")
+            }
+            
+            let ul = currentLi.parentElement;
+            do {
+                ul.classList.add("open");
+                ul = ul.parentElement.parentElement
+            } while (ul !== undefined && (ul.localName === 'ul' || ul.localName === 'ol'))
+        });
+    }
+    initTocHide()
+</script>
+
+<style>
+    #backTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+         
+        z-index: 99;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        background-color: #666;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 40px;
+        font-size: 25px;
+        color: white;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        transition: background-color 0.3s;
+    }
+    
+    #backTopBtn:hover {
+        background-color: #333;
+    }
+    
+    #backTopBtn .arrow-icon {
+        display: none;
+    }
+    
+    #backTopBtn .backtop-svg {
+        width: 24px;
+        height: 24px;
+        margin: 8px;
+        fill: white;
+    }
+</style>
+
+
+<script>
+    
+
+    function initScrollTop() {
+        let rightSideBar = document.querySelector(".right-sidebar");
+        if (!rightSideBar) {
+            return;
+        }
+        
+        let btn = document.createElement("div");
+        btn.id = "backTopBtn";
+        btn.innerHTML = '<span class="arrow-icon"></span>' +
+                        '<svg class="backtop-svg" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="15764">' +
+                        '<path d="M512 938.666667c-59.733333 0-123.733333-2.133333-185.6-4.266667l-32-2.133333c-108.8-6.4-194.133333-91.733333-200.533333-200.533334C87.466667 648.533333 85.333333 576 85.333333 512c0-59.733333 2.133333-125.866667 6.4-202.666667v-17.066666c6.4-108.8 91.733333-194.133333 200.533334-200.533334 76.8-4.266667 149.333333-6.4 219.733333-6.4 59.733333 0 123.733333 2.133333 185.6 4.266667l32 2.133333c108.8 6.4 194.133333 91.733333 200.533333 200.533334 6.4 83.2 8.533333 155.733333 8.533334 219.733333 0 59.733333-2.133333 125.866667-6.4 202.666667v17.066666c-6.4 108.8-91.733333 194.133333-200.533334 200.533334-76.8 4.266667-149.333333 6.4-219.733333 6.4z m0-224c17.066667 0 32-14.933333 32-32V430.933333l96 96c12.8 12.8 32 12.8 44.8 0 12.8-12.8 12.8-32 0-44.8l-153.6-153.6c-6.4-6.4-8.533333-8.533333-12.8-8.533333-4.266667-2.133333-8.533333-2.133333-10.666667 0-4.266667 0-6.4 2.133333-10.666666 6.4l-2.133334 2.133333-153.6 153.6c-12.8 12.8-12.8 32 0 44.8 12.8 12.8 32 12.8 44.8 0l96-96V682.666667c-2.133333 17.066667 12.8 32 29.866667 32z" fill="#ffffff" p-id="15765"></path>' +
+                        '</svg>';
+        btn.onclick = backToTop;
+        rightSideBar.appendChild(btn);
+        
+        window.onscroll = function() {
+            
+            if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+    }
+
+    
+
+    function backToTop(){
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+
+    initScrollTop();
+</script>
+
+<style>
+    .highlight {
+         
+        max-height: 1000px;
+        overflow: hidden;
+    }
+
+    .code-show {
+        max-height: none !important;
+    }
+
+    .code-more-box {
+        width: 100%;
+        padding-top: 120px;  
+        background-image: linear-gradient(
+            to bottom,
+            rgba(4, 6, 5, 0) 0%,
+            rgba(4, 6, 5, 0.4) 40%,
+            rgba(4, 6, 5, 0.8) 100%
+        );
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    .code-more-btn {
+        display: block;
+        margin: auto;
+        width: 44px;
+        height: 22px;
+        background: #5f5f5f;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        padding-top: 6px;
+        cursor: pointer;
+    }
+
+    .code-more-img {
+        cursor: pointer !important;
+        display: block;
+        margin: auto;
+        width: 22px;
+        height: 16px;
+    }
+</style>
+
+<script>
+  function initCodeMoreBox() {
+    let codeBlocks = document.querySelectorAll(".highlight");
+    if (!codeBlocks) {
+      return;
+    }
+    codeBlocks.forEach(codeBlock => {
+      
+      if (codeBlock.scrollHeight <= codeBlock.clientHeight) {
+        return;
+      }
+      
+      
+      let codeMoreBox = document.createElement('div');
+      codeMoreBox.classList.add('code-more-box');
+      
+      let codeMoreBtn = document.createElement('span');
+      codeMoreBtn.classList.add('code-more-btn');
+      codeMoreBtn.addEventListener('click', () => {
+        codeBlock.classList.add('code-show');
+        codeMoreBox.style.display = 'none';
+        
+        window.dispatchEvent(new Event('resize'))
+      })
+      
+      let img = document.createElement('img');
+      img.classList.add('code-more-img');
+      img.src = "http://localhost:1313/icons/down.png"
+      
+      codeMoreBtn.appendChild(img);
+      codeMoreBox.appendChild(codeMoreBtn);
+      codeBlock.appendChild(codeMoreBox)
+    })
+  }
+  
+  initCodeMoreBox();
+</script>
+
+
+
+    </body>
+</html>
