@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
-    <head><meta charset='utf-8'>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="继承 和 多态(java)">
 <title>Chapter11</title>
 
-<link rel='canonical' href='https://Gzmomo001.github.io/p/chapter11/'>
+<link rel='canonical' href='http://localhost:1313/p/chapter11/'>
 
-<link rel="stylesheet" href="/scss/style.min.f0d856d8a5610b3c0c2069a79146122abf2acb30a6b00e2bbb69c2113678b2e3.css"><meta property='og:title' content="Chapter11">
+<link rel="stylesheet" href="/scss/style.min.4f85505e041cb3cd46cb7a31eaa6a3076349b9e7ad36a2c9093cc6fa5d2dc5b2.css"><meta property='og:title' content="Chapter11">
 <meta property='og:description' content="继承 和 多态(java)">
-<meta property='og:url' content='https://Gzmomo001.github.io/p/chapter11/'>
+<meta property='og:url' content='http://localhost:1313/p/chapter11/'>
 <meta property='og:site_name' content='Henry Zhang'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='java' /><meta property='article:published_time' content='2025-05-24T21:05:41&#43;08:00'/><meta property='article:modified_time' content='2025-05-26T03:12:25&#43;08:00'/><meta property='og:image' content='https://Gzmomo001.github.io/java.png' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='java' /><meta property='article:published_time' content='2025-05-24T21:05:41&#43;08:00'/><meta property='article:modified_time' content='2025-05-26T03:12:25&#43;08:00'/><meta property='og:image' content='http://localhost:1313/java.png' />
 <meta name="twitter:title" content="Chapter11">
 <meta name="twitter:description" content="继承 和 多态(java)"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://Gzmomo001.github.io/java.png' />
+    <meta name="twitter:image" content='http://localhost:1313/java.png' />
     <link rel="shortcut icon" href="/favicon.ico" />
+
+  
+
 <link rel='stylesheet' href='https://chinese-fonts-cdn.deno.dev/packages/dymh/dist/DouyinSansBold/result.css' />
 
 <div class="loading">
@@ -618,7 +621,7 @@
                     
                     
                         
-                        <img src="/img/avatar_hu_9c50848f93c56cbf.jpeg" width="300"
+                        <img src="/img/avatar_hu15501804078002305690.jpeg" width="300"
                             height="296" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -988,7 +991,7 @@
 
 
                 <time>
-                    May 26, 2025 03:12 CST
+                    May 26, 2025 03:12 &#43;0800
                 </time>
             </div>
     </footer>
@@ -1036,11 +1039,13 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">major</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">major</span><span class="p">;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
-</span></span></span></code></pre></div><blockquote class="alert alert-tip">
-    <ol>
+</span></span></span></code></pre></div><blockquote>
+<p>[!tip]</p>
+<ol>
 <li>如果这里的构造器没有调用父类的构造器, 那么编译器会会在编译的时候在该构造器的最前面先调用父类的无参构造器.</li>
 <li>当父类使用 final 关键字的时候, 则无法定义其子类</li>
-</ol></blockquote>
+</ol>
+</blockquote>
 <h2 id="转型">转型
 </h2><p>在 Java 中，类型转换主要分为两种：向上转型（upcasting）和向下转型（downcasting）。
 转型可以改变原有实例的 data field. 但同时也伴随着风险.</p>
@@ -1059,8 +1064,10 @@
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">Person</span><span class="w"> </span><span class="n">person</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">student</span><span class="p">;</span><span class="w"> </span><span class="c1">// 自动向上转型</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">// 或者显式写法</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">Person</span><span class="w"> </span><span class="n">person2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">Person</span><span class="p">)</span><span class="n">student</span><span class="p">;</span><span class="w"> </span><span class="c1">// 效果相同</span><span class="w">
-</span></span></span></code></pre></div><blockquote class="alert alert-tip">
-    <p>当<code>子类</code>想临时使用<code>父类</code>的某个方法的时候可以仿照这个例子调用: &ldquo;((father)child).method();&rdquo;</p></blockquote>
+</span></span></span></code></pre></div><blockquote>
+<p>[!tip]
+当<code>子类</code>想临时使用<code>父类</code>的某个方法的时候可以仿照这个例子调用: &ldquo;((father)child).method();&rdquo;</p>
+</blockquote>
 <h3 id="向下转型downcasting">向下转型（Downcasting）
 </h3><p>能够向下转型的几种情况.</p>
 <ol>
@@ -1150,8 +1157,10 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
 </span></span></span></code></pre></div><p>比如之前章节学的, 当我们使用<code>wrapper class</code>的时候, 不管是什么类型的类, 我们都可以使用相同的<code>compareTo</code>方法.</p>
-<blockquote class="alert alert-tip">
-    <p>方法重写的前提是父类的方法没有使用 final 关键字. 使用 final 关键字的方法无法被子类重写, 这样做可以防止一些关键的方法被错误的重写, 能让子类的代码更加规范.</p></blockquote>
+<blockquote>
+<p>[!tip]
+方法重写的前提是父类的方法没有使用 final 关键字. 使用 final 关键字的方法无法被子类重写, 这样做可以防止一些关键的方法被错误的重写, 能让子类的代码更加规范.</p>
+</blockquote>
 <h3 id="overriding-vs-overloading">Overriding vs. Overloading
 </h3><h3 id="方法重写">方法重写
 </h3><p>方法重写是子类对与父类的方法的重新定义</p>
@@ -1171,8 +1180,10 @@
 <p>调用后会显示一些关于这个类的信息. 信息的构成为&lt;实例名称&gt;@&lt;哈希值&gt;</p>
 </li>
 </ol>
-<blockquote class="alert alert-tip">
-    <p>当你使用 print 直接打印的类的时候, 类就会自动调用这个方法然后返回字符串.</p></blockquote>
+<blockquote>
+<p>[!tip]
+当你使用 print 直接打印的类的时候, 类就会自动调用这个方法然后返回字符串.</p>
+</blockquote>
 <h2 id="多态">多态
 </h2><p>这个章节主要讲类可以作为一个参数传入方法中使用.</p>
 <h3 id="dynamic-binding--动态绑定">Dynamic Binding | 动态绑定
@@ -1206,8 +1217,10 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">// 从其他集合创建 ArrayList</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Double</span><span class="o">&gt;</span><span class="w"> </span><span class="n">list3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">(</span><span class="n">Arrays</span><span class="p">.</span><span class="na">asList</span><span class="p">(</span><span class="n">1</span><span class="p">.</span><span class="na">1</span><span class="p">,</span><span class="w"> </span><span class="n">2</span><span class="p">.</span><span class="na">2</span><span class="p">,</span><span class="w"> </span><span class="n">3</span><span class="p">.</span><span class="na">3</span><span class="p">));</span><span class="w">
-</span></span></span></code></pre></div><blockquote class="alert alert-tip">
-    <p>&lsquo;&lt;&gt;&lsquo;是泛型, 目前知道知道括号里填什么类型的 wrapper 类, 这个数组就会存储什么类型的变量.</p></blockquote>
+</span></span></span></code></pre></div><blockquote>
+<p>[!tip]
+&lsquo;&lt;&gt;&lsquo;是泛型, 目前知道知道括号里填什么类型的 wrapper 类, 这个数组就会存储什么类型的变量.</p>
+</blockquote>
 <h3 id="add">add
 </h3><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">// 在列表末尾添加元素</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">list</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">element</span><span class="p">);</span><span class="w">           </span><span class="c1">// 返回 boolean</span><span class="w">
@@ -1264,8 +1277,10 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">// 反转列表</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">Collections</span><span class="p">.</span><span class="na">reverse</span><span class="p">(</span><span class="n">list</span><span class="p">);</span><span class="w">
-</span></span></span></code></pre></div><blockquote class="alert alert-tip">
-    <p>这个类并不线程安全, 这意味着当多个线程同时操作这个类的时候可能会出现一些问题. 另外虽然这个类的容量的可变的, 但还是尽量在一开始就把容量定义好. 因为当类需要自己扩增容量的时候会影响性能.</p></blockquote>
+</span></span></span></code></pre></div><blockquote>
+<p>[!tip]
+这个类并不线程安全, 这意味着当多个线程同时操作这个类的时候可能会出现一些问题. 另外虽然这个类的容量的可变的, 但还是尽量在一开始就把容量定义好. 因为当类需要自己扩增容量的时候会影响性能.</p>
+</blockquote>
 
 </section>
 
@@ -1335,7 +1350,7 @@
         
         
             <div class="article-image">
-                <img src="/p/git/git.15ec746a9c4d697d225e45e5e01ec1ae_hu_7f8f8f2193143e06.png" 
+                <img src="/p/git/git.15ec746a9c4d697d225e45e5e01ec1ae_hu1843522996614573508.png" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -1378,7 +1393,7 @@
         
         
             <div class="article-image">
-                <img src="/p/css/css.b848d5d9bb221592064de0f356f61676_hu_b7c3baf7be297be1.png" 
+                <img src="/p/css/css.b848d5d9bb221592064de0f356f61676_hu8815389983082477814.png" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -1402,7 +1417,7 @@
         
         
             <div class="article-image">
-                <img src="/p/html/html.c573ff5552d6da9a1d28ec4e27cd1445_hu_b1fc89d438b41297.png" 
+                <img src="/p/html/html.c573ff5552d6da9a1d28ec4e27cd1445_hu1256893839522032658.png" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -1426,7 +1441,7 @@
         
         
             <div class="article-image">
-                <img src="/p/tmux/tmux.00602e252a4818bc11a9ae8ab6c10b66_hu_34b39c5011ca5304.png" 
+                <img src="/p/tmux/tmux.00602e252a4818bc11a9ae8ab6c10b66_hu10850764819627465507.png" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -1604,7 +1619,7 @@
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.28c2c4358049e244b117bc9fe2da6f8fb58222eaabec7ef928f966622ba27f85.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');
@@ -1812,7 +1827,7 @@
       
       let img = document.createElement('img');
       img.classList.add('code-more-img');
-      img.src = "https://Gzmomo001.github.io/icons/down.png"
+      img.src = "http://localhost:1313/icons/down.png"
       
       codeMoreBtn.appendChild(img);
       codeMoreBox.appendChild(codeMoreBtn);

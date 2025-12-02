@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Java on Henry Zhang</title>
-        <link>https://Gzmomo001.github.io/tags/java/</link>
+        <link>http://localhost:1313/tags/java/</link>
         <description>Recent content in Java on Henry Zhang</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>henryzhang070&#43;contact@gmail.com</copyright>
-        <lastBuildDate>Mon, 26 May 2025 03:12:25 +0800</lastBuildDate><atom:link href="https://Gzmomo001.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 26 May 2025 03:12:25 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/java/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Chapter13</title>
-        <link>https://Gzmomo001.github.io/p/chapter13/</link>
+        <link>http://localhost:1313/p/chapter13/</link>
         <pubDate>Mon, 26 May 2025 00:42:23 +0800</pubDate>
         
-        <guid>https://Gzmomo001.github.io/p/chapter13/</guid>
-        <description>&lt;img src="https://Gzmomo001.github.io/java.png" alt="Featured image of post Chapter13" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
+        <guid>http://localhost:1313/p/chapter13/</guid>
+        <description>&lt;img src="http://localhost:1313/java.png" alt="Featured image of post Chapter13" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
 &lt;/h2&gt;&lt;p&gt;回顾上上个章节当中讲到的遗产(inheritance)的概念, 我们可以通过创建一个类的子类来继承其 datafield 和 methods. 并且这个类也可以单独创建实例. 而抽象类就是一种特殊的父类.&lt;/p&gt;
 &lt;h2 id=&#34;抽象类&#34;&gt;抽象类
 &lt;/h2&gt;&lt;p&gt;就跟刚刚讲到的一样, 抽象类其实就是一个特殊的父类, 作为一个父类它无法实例化. 而是要通过创建其子类然后才能实例化.&lt;/p&gt;
@@ -90,8 +90,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;out&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;println&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Programming class ended at &amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;courseTime&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote class=&#34;alert alert-note&#34;&gt;
-    &lt;p&gt;这里有一些课本中零碎的细节&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;[!NOTE]
+这里有一些课本中零碎的细节&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;抽象类的子类必须要完成父类的抽象方法, 除非它自己也是抽象的. 📚&lt;/li&gt;
 &lt;li&gt;抽象类无法实例化(这是基本概念). 🛑&lt;/li&gt;
@@ -99,7 +100,8 @@
 &lt;li&gt;抽象子类可以将父类的&lt;code&gt;非抽象方法&lt;/code&gt;重写为&lt;code&gt;抽象方法&lt;/code&gt;. 🔧&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;抽象子类&lt;/code&gt;的父类可以是&lt;code&gt;非抽象的&lt;/code&gt;. 🔄&lt;/li&gt;
 &lt;li&gt;虽然抽象类并不能实例化, 但是依然可以最为一种数据类型. 📊&lt;/li&gt;
-&lt;/ol&gt;&lt;/blockquote&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
 &lt;h3 id=&#34;generics--范型的首次引入大纲外&#34;&gt;generics | 范型的首次引入(大纲外)
 &lt;/h3&gt;&lt;p&gt;范型是 java 中的一种机制, 它允许你可以对某些类的类型不做定义, 等到需要实例化类的时候再定义其类型.&lt;/p&gt;
 &lt;h4 id=&#34;优势&#34;&gt;优势
@@ -126,8 +128,9 @@
 &lt;li&gt;不能有构造器&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;🌰 举个栗子：接口就像是一个纯抽象的模板，只定义规范不实现细节。&lt;/p&gt;
-&lt;blockquote class=&#34;alert alert-tip&#34;&gt;
-    &lt;p&gt;📌 重要提示&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!TIP]
+📌 重要提示&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;🔄 &lt;strong&gt;静态方法特性&lt;/strong&gt;：所有类中的静态方法都是类方法，无法被子类重写。&lt;/li&gt;
 &lt;/ol&gt;
@@ -141,7 +144,8 @@
 &lt;ul&gt;
 &lt;li&gt;💡 接口本质上是一个纯抽象模板&lt;/li&gt;
 &lt;li&gt;🚫 与抽象类不同，接口完全不能包含任何实现细节（除非使用 default 方法）&lt;/li&gt;
-&lt;/ul&gt;&lt;/blockquote&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
 &lt;h3 id=&#34;如果我们要在接口中定义默认方法的实现怎么办&#34;&gt;如果我们要在接口中定义默认方法的实现怎么办
 &lt;/h3&gt;&lt;p&gt;这个时候我们就可以使用&lt;code&gt;default&lt;/code&gt;关键字定义这个方法的默认实现.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;interface&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;A&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
@@ -187,11 +191,11 @@
         </item>
         <item>
         <title>Chapter12</title>
-        <link>https://Gzmomo001.github.io/p/chapter12/</link>
+        <link>http://localhost:1313/p/chapter12/</link>
         <pubDate>Sun, 25 May 2025 15:21:54 +0800</pubDate>
         
-        <guid>https://Gzmomo001.github.io/p/chapter12/</guid>
-        <description>&lt;img src="https://Gzmomo001.github.io/java.png" alt="Featured image of post Chapter12" /&gt;&lt;h2 id=&#34;情景&#34;&gt;情景
+        <guid>http://localhost:1313/p/chapter12/</guid>
+        <description>&lt;img src="http://localhost:1313/java.png" alt="Featured image of post Chapter12" /&gt;&lt;h2 id=&#34;情景&#34;&gt;情景
 &lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;随着我们的代码复杂度的增长, 很多时候我们无法完全避免程序在运行的过程中出错. 很多时候会出现程序在执行某些不重要的代码的时候报错,然后整个程序直接停止.&lt;/li&gt;
 &lt;li&gt;整个项目的代码量过大导致使用 debug 功能修复代码的时候效率过低.&lt;/li&gt;
@@ -249,7 +253,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;exception-types--错误类型&#34;&gt;Exception Types | 错误类型
-&lt;/h2&gt;&lt;img src=&#34;https://Gzmomo001.github.io/p/chapter12/exception_hu_821cfc0c383d1a10.png&#34; width=&#34;1200&#34; height=&#34;474&#34; alt=&#34;exception types&#34;&gt;
+&lt;/h2&gt;&lt;img src=&#34;http://localhost:1313/p/chapter12/exception_hu871153257450387973.png&#34; width=&#34;1200&#34; height=&#34;474&#34; alt=&#34;exception types&#34;&gt;
 &lt;p&gt;在 Java 中， Throwable 是所有异常和错误的根类。所有通过 throw 抛出的异常必须继承自 Throwable 。其直接子类包括：&lt;/p&gt;
 &lt;h3 id=&#34;error&#34;&gt;Error
 &lt;/h3&gt;&lt;h4 id=&#34;linkageerror&#34;&gt;LinkageError
@@ -276,8 +280,9 @@
 &lt;/li&gt;
 &lt;li&gt;这些错误通常无法恢复，程序应该终止&lt;/li&gt;
 &lt;/ul&gt;
-&lt;blockquote class=&#34;alert alert-note&#34;&gt;
-    &lt;p&gt;栈溢出(Stack Overflow)是指程序调用栈的内存空间被耗尽的情况，属于一种运行时错误。主要特点包括：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!NOTE]
+栈溢出(Stack Overflow)是指程序调用栈的内存空间被耗尽的情况，属于一种运行时错误。主要特点包括：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;产生原因 ：&lt;/li&gt;
 &lt;/ol&gt;
@@ -285,7 +290,8 @@
 &lt;li&gt;递归调用没有正确的终止条件&lt;/li&gt;
 &lt;li&gt;函数调用层次过深&lt;/li&gt;
 &lt;li&gt;局部变量占用过多栈空间&lt;/li&gt;
-&lt;/ul&gt;&lt;/blockquote&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
 &lt;h3 id=&#34;exception&#34;&gt;Exception
 &lt;/h3&gt;&lt;h4 id=&#34;classnotfoundexception&#34;&gt;ClassNotFoundException
 &lt;/h4&gt;&lt;ul&gt;
@@ -312,8 +318,10 @@
 &lt;li&gt;也是检查型异&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;runtimeexception&#34;&gt;RuntimeException
-&lt;/h4&gt;&lt;blockquote class=&#34;alert alert-warn&#34;&gt;
-    &lt;p&gt;运行时错误是比较重点的 Exception 类&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;[!WARN]
+运行时错误是比较重点的 Exception 类&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h5 id=&#34;arithmeticexception&#34;&gt;ArithmeticException
 &lt;/h5&gt;&lt;ul&gt;
 &lt;li&gt;算术运算错误，如除以零&lt;/li&gt;
@@ -365,8 +373,10 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;throw&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;new&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Exception&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote class=&#34;alert alert-note&#34;&gt;
-    &lt;p&gt;当你我们使用 try catch 语句的时候, 如果要定义多个 catch, 那么前面的 catch 的异常类型必须是后面的异常类型的子类, 或者同级.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;[!NOTE]
+当你我们使用 try catch 语句的时候, 如果要定义多个 catch, 那么前面的 catch 的异常类型必须是后面的异常类型的子类, 或者同级.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h3 id=&#34;rethrowing-exceptions--重新抛出异常&#34;&gt;Rethrowing Exceptions | 重新抛出异常
 &lt;/h3&gt;&lt;p&gt;当我们在某处代码中捕获到异常的时候, 但是在此处并无法处理异常, 或者想要在这里先记录异常信息, 方便维护. 我们就能在捕获到异常后, 进行一些操作后将异常重新抛出.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;try&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
@@ -398,11 +408,13 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;File&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;file&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;new&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;File&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;parent&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;File&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;child&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// parent is file class&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote class=&#34;alert alert-note&#34;&gt;
-    &lt;ol&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;[!NOTE]&lt;/p&gt;
+&lt;ol&gt;
 &lt;li&gt;使用第一种的构造器的时候主要是创建的文件单一, 功能简单, 或者目录明确.&lt;/li&gt;
 &lt;li&gt;对于第二第三种构造器主要是用于需要在某一个目录下进行多次的文件编辑时使用.&lt;/li&gt;
-&lt;/ol&gt;&lt;/blockquote&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;file&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;exists&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// + boolean&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;file&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;isDirectory&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// + boolean&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;file&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;isFile&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// + boolean&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
@@ -436,21 +448,25 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;writer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;flush&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// 强制刷新缓冲区&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;writer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;close&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// 关闭流&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;writer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;checkError&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// 检查是否有错误发生&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote class=&#34;alert alert-note&#34;&gt;
-    &lt;p&gt;有了这些知识, 结合之前学到了 Scanner 类, 我们只需要将构造器的参数改为 File 类传入 Scanner 类就能使用之前所学的方法.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;[!NOTE]
+有了这些知识, 结合之前学到了 Scanner 类, 我们只需要将构造器的参数改为 File 类传入 Scanner 类就能使用之前所学的方法.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;reading-data-from-the-web&#34;&gt;Reading Data from the web
 &lt;/h2&gt;&lt;p&gt;这里包含了一些爬虫知识&lt;/p&gt;
-&lt;blockquote class=&#34;alert alert-error&#34;&gt;
-    &lt;p&gt;暂时不看, 估计不是考试重点&lt;/p&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!ERROR]
+暂时不看, 估计不是考试重点&lt;/p&gt;
+&lt;/blockquote&gt;
 </description>
         </item>
         <item>
         <title>Chapter11</title>
-        <link>https://Gzmomo001.github.io/p/chapter11/</link>
+        <link>http://localhost:1313/p/chapter11/</link>
         <pubDate>Sat, 24 May 2025 21:05:41 +0800</pubDate>
         
-        <guid>https://Gzmomo001.github.io/p/chapter11/</guid>
-        <description>&lt;img src="https://Gzmomo001.github.io/java.png" alt="Featured image of post Chapter11" /&gt;&lt;h1 id=&#34;继承-和-多态java&#34;&gt;继承 和 多态(java)
+        <guid>http://localhost:1313/p/chapter11/</guid>
+        <description>&lt;img src="http://localhost:1313/java.png" alt="Featured image of post Chapter11" /&gt;&lt;h1 id=&#34;继承-和-多态java&#34;&gt;继承 和 多态(java)
 &lt;/h1&gt;&lt;p&gt;这个章节是基于类的延伸&lt;/p&gt;
 &lt;h2 id=&#34;子类和父类&#34;&gt;子类和父类
 &lt;/h2&gt;&lt;p&gt;在 java 中有一个关键字叫 &amp;rsquo;extends&amp;rsquo;，意思是扩展， 这个关键字可以定义一个类的延伸类, 并具有所有原先类的方法(method)和变量(data field)。&lt;/p&gt;
@@ -484,11 +500,13 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;major&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;major&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote class=&#34;alert alert-tip&#34;&gt;
-    &lt;ol&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;[!tip]&lt;/p&gt;
+&lt;ol&gt;
 &lt;li&gt;如果这里的构造器没有调用父类的构造器, 那么编译器会会在编译的时候在该构造器的最前面先调用父类的无参构造器.&lt;/li&gt;
 &lt;li&gt;当父类使用 final 关键字的时候, 则无法定义其子类&lt;/li&gt;
-&lt;/ol&gt;&lt;/blockquote&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;转型&#34;&gt;转型
 &lt;/h2&gt;&lt;p&gt;在 Java 中，类型转换主要分为两种：向上转型（upcasting）和向下转型（downcasting）。
 转型可以改变原有实例的 data field. 但同时也伴随着风险.&lt;/p&gt;
@@ -507,8 +525,10 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Person&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;person&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;student&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// 自动向上转型&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// 或者显式写法&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Person&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;person2&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Person&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;student&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// 效果相同&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote class=&#34;alert alert-tip&#34;&gt;
-    &lt;p&gt;当&lt;code&gt;子类&lt;/code&gt;想临时使用&lt;code&gt;父类&lt;/code&gt;的某个方法的时候可以仿照这个例子调用: &amp;ldquo;((father)child).method();&amp;rdquo;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;[!tip]
+当&lt;code&gt;子类&lt;/code&gt;想临时使用&lt;code&gt;父类&lt;/code&gt;的某个方法的时候可以仿照这个例子调用: &amp;ldquo;((father)child).method();&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h3 id=&#34;向下转型downcasting&#34;&gt;向下转型（Downcasting）
 &lt;/h3&gt;&lt;p&gt;能够向下转型的几种情况.&lt;/p&gt;
 &lt;ol&gt;
@@ -598,8 +618,10 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;比如之前章节学的, 当我们使用&lt;code&gt;wrapper class&lt;/code&gt;的时候, 不管是什么类型的类, 我们都可以使用相同的&lt;code&gt;compareTo&lt;/code&gt;方法.&lt;/p&gt;
-&lt;blockquote class=&#34;alert alert-tip&#34;&gt;
-    &lt;p&gt;方法重写的前提是父类的方法没有使用 final 关键字. 使用 final 关键字的方法无法被子类重写, 这样做可以防止一些关键的方法被错误的重写, 能让子类的代码更加规范.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!tip]
+方法重写的前提是父类的方法没有使用 final 关键字. 使用 final 关键字的方法无法被子类重写, 这样做可以防止一些关键的方法被错误的重写, 能让子类的代码更加规范.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h3 id=&#34;overriding-vs-overloading&#34;&gt;Overriding vs. Overloading
 &lt;/h3&gt;&lt;h3 id=&#34;方法重写&#34;&gt;方法重写
 &lt;/h3&gt;&lt;p&gt;方法重写是子类对与父类的方法的重新定义&lt;/p&gt;
@@ -619,8 +641,10 @@
 &lt;p&gt;调用后会显示一些关于这个类的信息. 信息的构成为&amp;lt;实例名称&amp;gt;@&amp;lt;哈希值&amp;gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;blockquote class=&#34;alert alert-tip&#34;&gt;
-    &lt;p&gt;当你使用 print 直接打印的类的时候, 类就会自动调用这个方法然后返回字符串.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!tip]
+当你使用 print 直接打印的类的时候, 类就会自动调用这个方法然后返回字符串.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;多态&#34;&gt;多态
 &lt;/h2&gt;&lt;p&gt;这个章节主要讲类可以作为一个参数传入方法中使用.&lt;/p&gt;
 &lt;h3 id=&#34;dynamic-binding--动态绑定&#34;&gt;Dynamic Binding | 动态绑定
@@ -654,8 +678,10 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// 从其他集合创建 ArrayList&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ArrayList&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Double&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;list3&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;new&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ArrayList&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Arrays&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;asList&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;));&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote class=&#34;alert alert-tip&#34;&gt;
-    &lt;p&gt;&amp;lsquo;&amp;lt;&amp;gt;&amp;lsquo;是泛型, 目前知道知道括号里填什么类型的 wrapper 类, 这个数组就会存储什么类型的变量.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;[!tip]
+&amp;lsquo;&amp;lt;&amp;gt;&amp;lsquo;是泛型, 目前知道知道括号里填什么类型的 wrapper 类, 这个数组就会存储什么类型的变量.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h3 id=&#34;add&#34;&gt;add
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;// 在列表末尾添加元素&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;list&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;add&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;element&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;           &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// 返回 boolean&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
@@ -712,8 +738,10 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// 反转列表&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Collections&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;reverse&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;list&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote class=&#34;alert alert-tip&#34;&gt;
-    &lt;p&gt;这个类并不线程安全, 这意味着当多个线程同时操作这个类的时候可能会出现一些问题. 另外虽然这个类的容量的可变的, 但还是尽量在一开始就把容量定义好. 因为当类需要自己扩增容量的时候会影响性能.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;[!tip]
+这个类并不线程安全, 这意味着当多个线程同时操作这个类的时候可能会出现一些问题. 另外虽然这个类的容量的可变的, 但还是尽量在一开始就把容量定义好. 因为当类需要自己扩增容量的时候会影响性能.&lt;/p&gt;
+&lt;/blockquote&gt;
 </description>
         </item>
         

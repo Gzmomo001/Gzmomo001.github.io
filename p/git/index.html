@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
-    <head><meta charset='utf-8'>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="版本控制工具">
 <title>Git</title>
 
-<link rel='canonical' href='https://Gzmomo001.github.io/p/git/'>
+<link rel='canonical' href='http://localhost:1313/p/git/'>
 
-<link rel="stylesheet" href="/scss/style.min.f0d856d8a5610b3c0c2069a79146122abf2acb30a6b00e2bbb69c2113678b2e3.css"><meta property='og:title' content="Git">
+<link rel="stylesheet" href="/scss/style.min.4f85505e041cb3cd46cb7a31eaa6a3076349b9e7ad36a2c9093cc6fa5d2dc5b2.css"><meta property='og:title' content="Git">
 <meta property='og:description' content="版本控制工具">
-<meta property='og:url' content='https://Gzmomo001.github.io/p/git/'>
+<meta property='og:url' content='http://localhost:1313/p/git/'>
 <meta property='og:site_name' content='Henry Zhang'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='git' /><meta property='article:published_time' content='2025-11-25T17:43:06&#43;08:00'/><meta property='article:modified_time' content='2025-11-26T18:15:34&#43;08:00'/><meta property='og:image' content='https://Gzmomo001.github.io/p/git/git.png' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='git' /><meta property='article:published_time' content='2025-11-25T17:43:06&#43;08:00'/><meta property='article:modified_time' content='2025-11-26T18:15:34&#43;08:00'/><meta property='og:image' content='http://localhost:1313/p/git/git.png' />
 <meta name="twitter:title" content="Git">
 <meta name="twitter:description" content="版本控制工具"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://Gzmomo001.github.io/p/git/git.png' />
+    <meta name="twitter:image" content='http://localhost:1313/p/git/git.png' />
     <link rel="shortcut icon" href="/favicon.ico" />
+
+  
+
 <link rel='stylesheet' href='https://chinese-fonts-cdn.deno.dev/packages/dymh/dist/DouyinSansBold/result.css' />
 
 <div class="loading">
@@ -618,7 +621,7 @@
                     
                     
                         
-                        <img src="/img/avatar_hu_9c50848f93c56cbf.jpeg" width="300"
+                        <img src="/img/avatar_hu15501804078002305690.jpeg" width="300"
                             height="296" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -864,8 +867,8 @@
     <header class="article-header">
         <div class="article-image">
             <a href="/p/git/">
-                <img src="/p/git/git_hu_f98e014342dae49.png"
-                        srcset="/p/git/git_hu_f98e014342dae49.png 800w, /p/git/git_hu_f0ae85bade81d2cc.png 1600w"
+                <img src="/p/git/git_hu4550712785129976797.png"
+                        srcset="/p/git/git_hu4550712785129976797.png 800w, /p/git/git_hu9432213353771053391.png 1600w"
                         width="800" 
                         height="800" 
                         loading="lazy"
@@ -942,7 +945,7 @@
 
 
                 <time>
-                    Nov 26, 2025 18:15 CST
+                    Nov 26, 2025 18:15 &#43;0800
                 </time>
             </div>
     </footer>
@@ -963,7 +966,7 @@
 <p><img src="/p/git/jojos-killer.gif"
 	width="464"
 	height="258"
-	srcset="/p/git/jojos-killer_hu_113ff57fcf33b172.gif 480w, /p/git/jojos-killer_hu_49e2041d9bb05d24.gif 1024w"
+	srcset="/p/git/jojos-killer_hu4835421799670992788.gif 480w, /p/git/jojos-killer_hu18354979973675417943.gif 1024w"
 	loading="lazy"
 	
 		alt="败者食尘"
@@ -1021,8 +1024,10 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># pull the latest version of the remote repo</span>
 </span></span><span class="line"><span class="cl">git pull
-</span></span></code></pre></div><blockquote class="alert alert-note">
-    <p>.gitignore: you can create a this file and fill the files or dict that you do not want to push on remote.</p></blockquote>
+</span></span></code></pre></div><blockquote>
+<p>[!NOTE]
+.gitignore: you can create a this file and fill the files or dict that you do not want to push on remote.</p>
+</blockquote>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># add all the changes to the this commit and commit it with only one line code</span>
 </span></span><span class="line"><span class="cl">git commit -am <span class="s2">&#34;args&#34;</span>
 </span></span><span class="line"><span class="cl">
@@ -1063,9 +1068,11 @@
 </span></span><span class="line"><span class="cl"><span class="c1"># 查看存档</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">git stash pop stash@<span class="o">{</span>&lt;id&gt;<span class="o">}</span> 
+</span></span><span class="line"><span class="cl">git stash pop stash@<span class="o">{</span>&lt;id&gt;<span class="o">}</span> 
 </span></span><span class="line"><span class="cl">git stash pop
 </span></span><span class="line"><span class="cl"><span class="c1"># 将缓存剪切出来</span>
 </span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">git stash apply stash@<span class="o">{</span>&lt;id&gt;<span class="o">}</span>
 </span></span><span class="line"><span class="cl">git stash apply stash@<span class="o">{</span>&lt;id&gt;<span class="o">}</span>
 </span></span><span class="line"><span class="cl">git stash apply
 </span></span><span class="line"><span class="cl"><span class="c1"># 将缓存复制出来</span>
@@ -1103,27 +1110,7 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># 合并时产生一个squash提交，不保留原分支的提交历史</span>
 </span></span><span class="line"><span class="cl">git merge --squash &lt;branch_name&gt;
-</span></span></code></pre></div><p>合并冲突处理：
-当两个分支修改了同一部分内容时，会发生合并冲突：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 当出现冲突时，手动编辑冲突文件解决冲突</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 冲突标记：</span>
-</span></span><span class="line"><span class="cl"><span class="o">&lt;&lt;&lt;&lt;&lt;&lt;</span>&lt; HEAD
-</span></span><span class="line"><span class="cl"><span class="nv">当前分支的内容</span>
-</span></span><span class="line"><span class="cl"><span class="o">=======</span>
-</span></span><span class="line"><span class="cl">要合并分支的内容
-</span></span><span class="line"><span class="cl">&gt;&gt;&gt;&gt;&gt;&gt;&gt; branch-name
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 解决冲突后，添加解决后的文件</span>
-</span></span><span class="line"><span class="cl">git add &lt;file_name&gt;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 完成合并提交</span>
-</span></span><span class="line"><span class="cl">git commit
-</span></span></code></pre></div><p>合并策略：</p>
-<ul>
-<li>Fast-forward：当目标分支是当前分支的直接上游时，直接移动指针</li>
-<li>Three-way merge：创建新的合并提交，包含两个分支的历史</li>
-</ul>
-
+</span></span></code></pre></div>
 </section>
 
 
@@ -1211,7 +1198,7 @@
         
         
             <div class="article-image">
-                <img src="/p/css/css.b848d5d9bb221592064de0f356f61676_hu_b7c3baf7be297be1.png" 
+                <img src="/p/css/css.b848d5d9bb221592064de0f356f61676_hu8815389983082477814.png" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -1235,7 +1222,7 @@
         
         
             <div class="article-image">
-                <img src="/p/html/html.c573ff5552d6da9a1d28ec4e27cd1445_hu_b1fc89d438b41297.png" 
+                <img src="/p/html/html.c573ff5552d6da9a1d28ec4e27cd1445_hu1256893839522032658.png" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -1259,7 +1246,7 @@
         
         
             <div class="article-image">
-                <img src="/p/tmux/tmux.00602e252a4818bc11a9ae8ab6c10b66_hu_34b39c5011ca5304.png" 
+                <img src="/p/tmux/tmux.00602e252a4818bc11a9ae8ab6c10b66_hu10850764819627465507.png" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -1283,7 +1270,7 @@
         
         
             <div class="article-image">
-                <img src="/p/soft_links/link.afca8fbf3d162954516aed971529f126_hu_6ac054ff77e0466.png" 
+                <img src="/p/soft_links/link.afca8fbf3d162954516aed971529f126_hu12335052707688836991.png" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -1461,7 +1448,7 @@
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.28c2c4358049e244b117bc9fe2da6f8fb58222eaabec7ef928f966622ba27f85.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');
@@ -1669,7 +1656,7 @@
       
       let img = document.createElement('img');
       img.classList.add('code-more-img');
-      img.src = "https://Gzmomo001.github.io/icons/down.png"
+      img.src = "http://localhost:1313/icons/down.png"
       
       codeMoreBtn.appendChild(img);
       codeMoreBox.appendChild(codeMoreBtn);

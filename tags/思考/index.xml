@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>思考 on Henry Zhang</title>
-        <link>https://Gzmomo001.github.io/tags/%E6%80%9D%E8%80%83/</link>
+        <link>http://localhost:1313/tags/%E6%80%9D%E8%80%83/</link>
         <description>Recent content in 思考 on Henry Zhang</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>henryzhang070&#43;contact@gmail.com</copyright>
-        <lastBuildDate>Fri, 30 May 2025 06:30:33 +0800</lastBuildDate><atom:link href="https://Gzmomo001.github.io/tags/%E6%80%9D%E8%80%83/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 30 May 2025 06:30:33 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E6%80%9D%E8%80%83/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>语言如何影响你的思维</title>
-        <link>https://Gzmomo001.github.io/p/%E8%AF%AD%E8%A8%80%E5%A6%82%E4%BD%95%E5%BD%B1%E5%93%8D%E4%BD%A0%E7%9A%84%E6%80%9D%E7%BB%B4/</link>
+        <link>http://localhost:1313/p/%E8%AF%AD%E8%A8%80%E5%A6%82%E4%BD%95%E5%BD%B1%E5%93%8D%E4%BD%A0%E7%9A%84%E6%80%9D%E7%BB%B4/</link>
         <pubDate>Thu, 29 May 2025 02:41:58 +0800</pubDate>
         
-        <guid>https://Gzmomo001.github.io/p/%E8%AF%AD%E8%A8%80%E5%A6%82%E4%BD%95%E5%BD%B1%E5%93%8D%E4%BD%A0%E7%9A%84%E6%80%9D%E7%BB%B4/</guid>
-        <description>&lt;img src="https://Gzmomo001.github.io/default.jpeg" alt="Featured image of post 语言如何影响你的思维" /&gt;&lt;h2 id=&#34;视频源&#34;&gt;视频源
+        <guid>http://localhost:1313/p/%E8%AF%AD%E8%A8%80%E5%A6%82%E4%BD%95%E5%BD%B1%E5%93%8D%E4%BD%A0%E7%9A%84%E6%80%9D%E7%BB%B4/</guid>
+        <description>&lt;img src="http://localhost:1313/default.jpeg" alt="Featured image of post 语言如何影响你的思维" /&gt;&lt;h2 id=&#34;视频源&#34;&gt;视频源
 &lt;/h2&gt;
 
 
@@ -36,9 +36,11 @@
 
 &lt;h2 id=&#34;观后感&#34;&gt;观后感
 &lt;/h2&gt;&lt;p&gt;很多情况下你自己的话语很大程度上暗示你自己的思维方式. 比如当你觉得现在的就业环境不好的时候, 如果你说的是“现在的就业环境好差, 导致我们找不到工作”, 这样就会暗示自己把原因归结于外界, 从而减少了对自己的思考. 但如果我们把自己的话改成“现在就业市场环境不好, 这对我们来说是一个挑战.” 这样我们就更倾向于想办法去解决这个现有的问题.&lt;/p&gt;
-&lt;blockquote class=&#34;alert alert-tip&#34;&gt;
-    &lt;p&gt;语言的边界, 就是世界的边界&lt;/p&gt;
-&lt;p&gt;&amp;ndash;维特根斯坦&lt;/p&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!TIP]
+语言的边界, 就是世界的边界&lt;/p&gt;
+&lt;p&gt;&amp;ndash;维特根斯坦&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h3 id=&#34;两大语言陷阱&#34;&gt;两大语言陷阱
 &lt;/h3&gt;&lt;h4 id=&#34;标签化&#34;&gt;标签化:
 &lt;/h4&gt;&lt;ul&gt;
@@ -55,16 +57,20 @@
 &lt;/h4&gt;&lt;p&gt;找你认为你想成为的那种人, 学习模仿他们讲话的方式. 很多时候就会潜移默化的影响自己的思维方式. 并且很多情况下, 你在描述一个事情的时候, 你的词汇约丰富, 表达越多样很大程度上会增强你的思维深度.(所以如果要用英文表达还是得多背单词)&lt;/p&gt;
 &lt;h4 id=&#34;适当沉默&#34;&gt;适当沉默
 &lt;/h4&gt;&lt;p&gt;虽然很多时候会表达意味着思维更加灵活, 但人类的本性就是会给自己说过的话合理化解释, 这就导致了脑子被嘴巴牵着走的情况. 所以有些时候, 在交流当中适当的沉默和留白就是给我们大脑一个思考的机会. 能解决问题固然聪明, 但能找到关键根本的问题并解决的才是智慧.&lt;/p&gt;
-&lt;blockquote class=&#34;alert alert-note&#34;&gt;
-    &lt;p&gt;筌者所在鱼, 得鱼而忘筌&lt;/p&gt;
-&lt;p&gt;言者所在意, 得意而忘言.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!NOTE]
+筌者所在鱼, 得鱼而忘筌&lt;/p&gt;
+&lt;p&gt;言者所在意, 得意而忘言.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;不要太执着于手段本身, 而是要关注我们的目标和本质.&lt;/p&gt;
 &lt;h4 id=&#34;续写发牢骚&#34;&gt;续写发牢骚
 &lt;/h4&gt;&lt;p&gt;继承上述语言就像是我们思维的指针, 很多时候最好的话会影响我们的思维. 所哟当我们发完牢骚也就是提出问题的时候, 我们可以再补上一句我们的解决方案, 或者暗示我们要去解决这个问题. 那么我们的思维就会延续为怎么解决这个问题上, 而不是对问题本身执着太多.&lt;/p&gt;
-&lt;blockquote class=&#34;alert alert-note&#34;&gt;
-    &lt;p&gt;语言不是世界的反应, 而是思想的工具.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!NOTE]
+语言不是世界的反应, 而是思想的工具.&lt;/p&gt;
 &lt;p&gt;被篡改的语言不是无用的, 而是危险的&lt;/p&gt;
-&lt;p&gt;人类唯一的思想自由就在鱼警觉语言, 因为语言无法污染世界, 但是却能污染思想.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;人类唯一的思想自由就在鱼警觉语言, 因为语言无法污染世界, 但是却能污染思想.&lt;/p&gt;
+&lt;/blockquote&gt;
 </description>
         </item>
         

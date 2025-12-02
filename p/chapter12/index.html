@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
-    <head><meta charset='utf-8'>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Exception handling and text I/O">
 <title>Chapter12</title>
 
-<link rel='canonical' href='https://Gzmomo001.github.io/p/chapter12/'>
+<link rel='canonical' href='http://localhost:1313/p/chapter12/'>
 
-<link rel="stylesheet" href="/scss/style.min.f0d856d8a5610b3c0c2069a79146122abf2acb30a6b00e2bbb69c2113678b2e3.css"><meta property='og:title' content="Chapter12">
+<link rel="stylesheet" href="/scss/style.min.4f85505e041cb3cd46cb7a31eaa6a3076349b9e7ad36a2c9093cc6fa5d2dc5b2.css"><meta property='og:title' content="Chapter12">
 <meta property='og:description' content="Exception handling and text I/O">
-<meta property='og:url' content='https://Gzmomo001.github.io/p/chapter12/'>
+<meta property='og:url' content='http://localhost:1313/p/chapter12/'>
 <meta property='og:site_name' content='Henry Zhang'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='java' /><meta property='article:published_time' content='2025-05-25T15:21:54&#43;08:00'/><meta property='article:modified_time' content='2025-05-26T03:12:25&#43;08:00'/><meta property='og:image' content='https://Gzmomo001.github.io/java.png' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='java' /><meta property='article:published_time' content='2025-05-25T15:21:54&#43;08:00'/><meta property='article:modified_time' content='2025-05-26T03:12:25&#43;08:00'/><meta property='og:image' content='http://localhost:1313/java.png' />
 <meta name="twitter:title" content="Chapter12">
 <meta name="twitter:description" content="Exception handling and text I/O"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://Gzmomo001.github.io/java.png' />
+    <meta name="twitter:image" content='http://localhost:1313/java.png' />
     <link rel="shortcut icon" href="/favicon.ico" />
+
+  
+
 <link rel='stylesheet' href='https://chinese-fonts-cdn.deno.dev/packages/dymh/dist/DouyinSansBold/result.css' />
 
 <div class="loading">
@@ -618,7 +621,7 @@
                     
                     
                         
-                        <img src="/img/avatar_hu_9c50848f93c56cbf.jpeg" width="300"
+                        <img src="/img/avatar_hu15501804078002305690.jpeg" width="300"
                             height="296" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -968,7 +971,7 @@
 
 
                 <time>
-                    May 26, 2025 03:12 CST
+                    May 26, 2025 03:12 &#43;0800
                 </time>
             </div>
     </footer>
@@ -1040,7 +1043,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
 </span></span></span></code></pre></div><h2 id="exception-types--错误类型">Exception Types | 错误类型
-</h2><img src="/p/chapter12/exception_hu_821cfc0c383d1a10.png" width="1200" height="474" alt="exception types">
+</h2><img src="/p/chapter12/exception_hu871153257450387973.png" width="1200" height="474" alt="exception types">
 <p>在 Java 中， Throwable 是所有异常和错误的根类。所有通过 throw 抛出的异常必须继承自 Throwable 。其直接子类包括：</p>
 <h3 id="error">Error
 </h3><h4 id="linkageerror">LinkageError
@@ -1067,8 +1070,9 @@
 </li>
 <li>这些错误通常无法恢复，程序应该终止</li>
 </ul>
-<blockquote class="alert alert-note">
-    <p>栈溢出(Stack Overflow)是指程序调用栈的内存空间被耗尽的情况，属于一种运行时错误。主要特点包括：</p>
+<blockquote>
+<p>[!NOTE]
+栈溢出(Stack Overflow)是指程序调用栈的内存空间被耗尽的情况，属于一种运行时错误。主要特点包括：</p>
 <ol>
 <li>产生原因 ：</li>
 </ol>
@@ -1076,7 +1080,8 @@
 <li>递归调用没有正确的终止条件</li>
 <li>函数调用层次过深</li>
 <li>局部变量占用过多栈空间</li>
-</ul></blockquote>
+</ul>
+</blockquote>
 <h3 id="exception">Exception
 </h3><h4 id="classnotfoundexception">ClassNotFoundException
 </h4><ul>
@@ -1103,8 +1108,10 @@
 <li>也是检查型异</li>
 </ul>
 <h4 id="runtimeexception">RuntimeException
-</h4><blockquote class="alert alert-warn">
-    <p>运行时错误是比较重点的 Exception 类</p></blockquote>
+</h4><blockquote>
+<p>[!WARN]
+运行时错误是比较重点的 Exception 类</p>
+</blockquote>
 <h5 id="arithmeticexception">ArithmeticException
 </h5><ul>
 <li>算术运算错误，如除以零</li>
@@ -1156,8 +1163,10 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">throw</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Exception</span><span class="p">();</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
-</span></span></span></code></pre></div><blockquote class="alert alert-note">
-    <p>当你我们使用 try catch 语句的时候, 如果要定义多个 catch, 那么前面的 catch 的异常类型必须是后面的异常类型的子类, 或者同级.</p></blockquote>
+</span></span></span></code></pre></div><blockquote>
+<p>[!NOTE]
+当你我们使用 try catch 语句的时候, 如果要定义多个 catch, 那么前面的 catch 的异常类型必须是后面的异常类型的子类, 或者同级.</p>
+</blockquote>
 <h3 id="rethrowing-exceptions--重新抛出异常">Rethrowing Exceptions | 重新抛出异常
 </h3><p>当我们在某处代码中捕获到异常的时候, 但是在此处并无法处理异常, 或者想要在这里先记录异常信息, 方便维护. 我们就能在捕获到异常后, 进行一些操作后将异常重新抛出.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="k">try</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -1189,11 +1198,13 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">File</span><span class="w"> </span><span class="n">file</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">File</span><span class="p">(</span><span class="n">parent</span><span class="p">:</span><span class="w"> </span><span class="n">File</span><span class="p">,</span><span class="w"> </span><span class="n">child</span><span class="p">:</span><span class="w"> </span><span class="n">String</span><span class="p">);</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">// parent is file class</span><span class="w">
-</span></span></span></code></pre></div><blockquote class="alert alert-note">
-    <ol>
+</span></span></span></code></pre></div><blockquote>
+<p>[!NOTE]</p>
+<ol>
 <li>使用第一种的构造器的时候主要是创建的文件单一, 功能简单, 或者目录明确.</li>
 <li>对于第二第三种构造器主要是用于需要在某一个目录下进行多次的文件编辑时使用.</li>
-</ol></blockquote>
+</ol>
+</blockquote>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">file</span><span class="p">.</span><span class="na">exists</span><span class="p">();</span><span class="w"> </span><span class="c1">// + boolean</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">file</span><span class="p">.</span><span class="na">isDirectory</span><span class="p">();</span><span class="w"> </span><span class="c1">// + boolean</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">file</span><span class="p">.</span><span class="na">isFile</span><span class="p">();</span><span class="w"> </span><span class="c1">// + boolean</span><span class="w">
@@ -1227,12 +1238,16 @@
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">writer</span><span class="p">.</span><span class="na">flush</span><span class="p">();</span><span class="w"> </span><span class="c1">// 强制刷新缓冲区</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">writer</span><span class="p">.</span><span class="na">close</span><span class="p">();</span><span class="w"> </span><span class="c1">// 关闭流</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">writer</span><span class="p">.</span><span class="na">checkError</span><span class="p">();</span><span class="w"> </span><span class="c1">// 检查是否有错误发生</span><span class="w">
-</span></span></span></code></pre></div><blockquote class="alert alert-note">
-    <p>有了这些知识, 结合之前学到了 Scanner 类, 我们只需要将构造器的参数改为 File 类传入 Scanner 类就能使用之前所学的方法.</p></blockquote>
+</span></span></span></code></pre></div><blockquote>
+<p>[!NOTE]
+有了这些知识, 结合之前学到了 Scanner 类, 我们只需要将构造器的参数改为 File 类传入 Scanner 类就能使用之前所学的方法.</p>
+</blockquote>
 <h2 id="reading-data-from-the-web">Reading Data from the web
 </h2><p>这里包含了一些爬虫知识</p>
-<blockquote class="alert alert-error">
-    <p>暂时不看, 估计不是考试重点</p></blockquote>
+<blockquote>
+<p>[!ERROR]
+暂时不看, 估计不是考试重点</p>
+</blockquote>
 
 </section>
 
@@ -1336,11 +1351,35 @@
             
                 
 <article class="has-image">
+    <a href="/p/linux_system_service-linux-%E4%B9%8B-%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1/">
+        
+        
+            <div class="article-image">
+                <img src="/p/linux_system_service-linux-%E4%B9%8B-%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1/image.a0523778934542ff44b5192a799567da_hu2104103095202039928.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Linux_system_service | Linux 之 系统服务"
+                        
+                        data-hash="md5-oFI3eJNFQv9EtRkqeZVn2g==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Linux_system_service | Linux 之 系统服务</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
     <a href="/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/">
         
         
             <div class="article-image">
-                <img src="/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/image.c12f1808aab9c5464ee244812cb30b95_hu_86d91d7056630acc.png" 
+                <img src="/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/image.c12f1808aab9c5464ee244812cb30b95_hu8667949493280124655.png" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -1360,30 +1399,11 @@
             
                 
 <article class="has-image">
-    <a href="/p/ubuntu%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2/">
-        
-        
-            <div class="article-image">
-                
-                    <img src="/default.jpeg" loading="lazy" data-key="" data-hash="/default.jpeg"/>
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">ubuntu远程桌面</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="has-image">
     <a href="/p/hugo_notes/">
         
         
             <div class="article-image">
-                <img src="/p/hugo_notes/1.8e7fe11288f3247c5acac91e5854cb03_hu_7e558d0f1d225d98.jpeg" 
+                <img src="/p/hugo_notes/1.8e7fe11288f3247c5acac91e5854cb03_hu5960877066419784974.jpeg" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -1561,7 +1581,7 @@
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.28c2c4358049e244b117bc9fe2da6f8fb58222eaabec7ef928f966622ba27f85.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');
@@ -1769,7 +1789,7 @@
       
       let img = document.createElement('img');
       img.classList.add('code-more-img');
-      img.src = "https://Gzmomo001.github.io/icons/down.png"
+      img.src = "http://localhost:1313/icons/down.png"
       
       codeMoreBtn.appendChild(img);
       codeMoreBox.appendChild(codeMoreBtn);

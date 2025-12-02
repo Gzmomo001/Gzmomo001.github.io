@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
-    <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="购买服务器 在开始之前首先要确保你拥有一台能够访问外网的linux服务器，如果没有可以自行购买。博主这里推荐雨云家的服务器，这里已他家的日本大流量服务器为例子演示。 系统: debain 配置： 2 cores 2g 100/100mbps 90ping\n">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="购买服务器 在开始之前首先要确保你拥有一台能够访问外网的linux服务器，如果没有可以自行购买。博主这里推荐雨云家的服务器，这里已他家的日本大">
 <title>搭建vmless 代理服务器实现科学上网</title>
 
-<link rel='canonical' href='https://Gzmomo001.github.io/p/%E6%90%AD%E5%BB%BAvmless-%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%9E%E7%8E%B0%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/'>
+<link rel='canonical' href='http://localhost:1313/p/%E6%90%AD%E5%BB%BAvmless-%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%9E%E7%8E%B0%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/'>
 
-<link rel="stylesheet" href="/scss/style.min.f0d856d8a5610b3c0c2069a79146122abf2acb30a6b00e2bbb69c2113678b2e3.css"><meta property='og:title' content="搭建vmless 代理服务器实现科学上网">
-<meta property='og:description' content="购买服务器 在开始之前首先要确保你拥有一台能够访问外网的linux服务器，如果没有可以自行购买。博主这里推荐雨云家的服务器，这里已他家的日本大流量服务器为例子演示。 系统: debain 配置： 2 cores 2g 100/100mbps 90ping\n">
-<meta property='og:url' content='https://Gzmomo001.github.io/p/%E6%90%AD%E5%BB%BAvmless-%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%9E%E7%8E%B0%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/'>
+<link rel="stylesheet" href="/scss/style.min.4f85505e041cb3cd46cb7a31eaa6a3076349b9e7ad36a2c9093cc6fa5d2dc5b2.css"><meta property='og:title' content="搭建vmless 代理服务器实现科学上网">
+<meta property='og:description' content="购买服务器 在开始之前首先要确保你拥有一台能够访问外网的linux服务器，如果没有可以自行购买。博主这里推荐雨云家的服务器，这里已他家的日本大">
+<meta property='og:url' content='http://localhost:1313/p/%E6%90%AD%E5%BB%BAvmless-%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%9E%E7%8E%B0%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/'>
 <meta property='og:site_name' content='Henry Zhang'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='vpn' /><meta property='article:published_time' content='2025-11-23T05:53:10&#43;08:00'/><meta property='article:modified_time' content='2025-11-25T18:20:14&#43;08:00'/><meta property='og:image' content='https://Gzmomo001.github.io/default.jpeg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='vpn' /><meta property='article:published_time' content='2025-11-23T05:53:10&#43;08:00'/><meta property='article:modified_time' content='2025-11-25T18:20:14&#43;08:00'/><meta property='og:image' content='http://localhost:1313/default.jpeg' />
 <meta name="twitter:title" content="搭建vmless 代理服务器实现科学上网">
-<meta name="twitter:description" content="购买服务器 在开始之前首先要确保你拥有一台能够访问外网的linux服务器，如果没有可以自行购买。博主这里推荐雨云家的服务器，这里已他家的日本大流量服务器为例子演示。 系统: debain 配置： 2 cores 2g 100/100mbps 90ping\n"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://Gzmomo001.github.io/default.jpeg' />
+<meta name="twitter:description" content="购买服务器 在开始之前首先要确保你拥有一台能够访问外网的linux服务器，如果没有可以自行购买。博主这里推荐雨云家的服务器，这里已他家的日本大"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='http://localhost:1313/default.jpeg' />
     <link rel="shortcut icon" href="/favicon.ico" />
+
+  
+
 <link rel='stylesheet' href='https://chinese-fonts-cdn.deno.dev/packages/dymh/dist/DouyinSansBold/result.css' />
 
 <div class="loading">
@@ -618,7 +621,7 @@
                     
                     
                         
-                        <img src="/img/avatar_hu_9c50848f93c56cbf.jpeg" width="300"
+                        <img src="/img/avatar_hu15501804078002305690.jpeg" width="300"
                             height="296" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -923,7 +926,7 @@
 
 
                 <time>
-                    Nov 25, 2025 18:20 CST
+                    Nov 25, 2025 18:20 &#43;0800
                 </time>
             </div>
     </footer>
@@ -941,8 +944,10 @@
 </h2><p>在开始之前首先要确保你拥有一台能够访问外网的linux服务器，如果没有可以自行购买。博主这里推荐雨云家的服务器，这里已他家的日本大流量服务器为例子演示。
 系统: debain
 配置： 2 cores 2g 100/100mbps 90ping</p>
-<blockquote class="alert alert-tips">
-    <p>在访问服务器的任何端口之前先保证服务器对应端口的防火墙打开，防火墙的端口建议按需开启。</p></blockquote>
+<blockquote>
+<p>[!TIPS]
+在访问服务器的任何端口之前先保证服务器对应端口的防火墙打开，防火墙的端口建议按需开启。</p>
+</blockquote>
 <h2 id="购买域名optional">购买域名(optional)
 </h2><p>即使没有域名也可以直接通过 ip 访问，只不过会暴露公网 ip 平并且没有 https。所以这里建议购买一个域名。</p>
 <p>这里只推荐一个域名商： <a class="link" href="https://namesilo.com"  target="_blank" rel="noopener"
@@ -952,15 +957,19 @@
 <p>博主在这里找到了 github 上的一篇使用 xray 搭建代理服务器的<a class="link" href="https://github.com/XTLS/Xray-install/blob/main/README_zh-Hans.md"  target="_blank" rel="noopener"
     >教程</a></p>
 <p>本博客将会参考这篇教程搭建代理服务器。</p>
-<blockquote class="alert alert-note">
-    <p>在访问之前你需要先能够访问你的服务器终端。如使用服务器面板的终端，或者使用 openssh 等命令行工具进入服务器 bash shell。</p></blockquote>
+<blockquote>
+<p>[!NOTE]
+在访问之前你需要先能够访问你的服务器终端。如使用服务器面板的终端，或者使用 openssh 等命令行工具进入服务器 bash shell。</p>
+</blockquote>
 <p>运行安装脚本:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">bash -c <span class="s2">&#34;</span><span class="k">$(</span>curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh<span class="k">)</span><span class="s2">&#34;</span> @ install
 </span></span></code></pre></div><p>安装x-ui, 使用 webui 来配置 xray。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">bash &lt;<span class="o">(</span>curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh<span class="o">)</span>
 </span></span></code></pre></div><p>webui 启动之后可以通过域名或者ip+端口访问。</p>
-<blockquote class="alert alert-tips">
-    <p>如果想要隐藏访问的端口，使用域名的433/80端口请求可以使用iopenresty/nginx反向代理到面板的端口。注意需要提前申请好 sll 证书不然 https 无法访问。</p></blockquote>
+<blockquote>
+<p>[!TIPS]
+如果想要隐藏访问的端口，使用域名的433/80端口请求可以使用iopenresty/nginx反向代理到面板的端口。注意需要提前申请好 sll 证书不然 https 无法访问。</p>
+</blockquote>
 <p><del>### <a class="link" href="https://clashhk.com/17688.html"  target="_blank" rel="noopener"
     >x-ui配置参考博客</a></del></p>
 <p>(发现这个教程很垃圾，转向chat老师)</p>
@@ -1029,11 +1038,35 @@
             
                 
 <article class="has-image">
+    <a href="/p/linux_system_service-linux-%E4%B9%8B-%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1/">
+        
+        
+            <div class="article-image">
+                <img src="/p/linux_system_service-linux-%E4%B9%8B-%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1/image.a0523778934542ff44b5192a799567da_hu2104103095202039928.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Linux_system_service | Linux 之 系统服务"
+                        
+                        data-hash="md5-oFI3eJNFQv9EtRkqeZVn2g==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Linux_system_service | Linux 之 系统服务</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
     <a href="/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/">
         
         
             <div class="article-image">
-                <img src="/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/image.c12f1808aab9c5464ee244812cb30b95_hu_86d91d7056630acc.png" 
+                <img src="/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/image.c12f1808aab9c5464ee244812cb30b95_hu8667949493280124655.png" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -1046,25 +1079,6 @@
 
         <div class="article-details">
             <h2 class="article-title">MC服务器搭建 &amp; 加入</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="has-image">
-    <a href="/p/ubuntu%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2/">
-        
-        
-            <div class="article-image">
-                
-                    <img src="/default.jpeg" loading="lazy" data-key="" data-hash="/default.jpeg"/>
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">ubuntu远程桌面</h2>
         </div>
     </a>
 </article>
@@ -1114,7 +1128,7 @@
         
         
             <div class="article-image">
-                <img src="/p/hugo_notes/1.8e7fe11288f3247c5acac91e5854cb03_hu_7e558d0f1d225d98.jpeg" 
+                <img src="/p/hugo_notes/1.8e7fe11288f3247c5acac91e5854cb03_hu5960877066419784974.jpeg" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -1292,7 +1306,7 @@
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.28c2c4358049e244b117bc9fe2da6f8fb58222eaabec7ef928f966622ba27f85.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');
@@ -1500,7 +1514,7 @@
       
       let img = document.createElement('img');
       img.classList.add('code-more-img');
-      img.src = "https://Gzmomo001.github.io/icons/down.png"
+      img.src = "http://localhost:1313/icons/down.png"
       
       codeMoreBtn.appendChild(img);
       codeMoreBox.appendChild(codeMoreBtn);
