@@ -1,23 +1,20 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
-    <head><meta charset='utf-8'>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="版本控制工具">
 <title>Git</title>
 
-<link rel='canonical' href='https://Gzmomo001.github.io/p/git/'>
+<link rel='canonical' href='http://localhost:1313/p/git/'>
 
 <link rel="stylesheet" href="/scss/style.min.4f85505e041cb3cd46cb7a31eaa6a3076349b9e7ad36a2c9093cc6fa5d2dc5b2.css"><meta property='og:title' content="Git">
 <meta property='og:description' content="版本控制工具">
-<meta property='og:url' content='https://Gzmomo001.github.io/p/git/'>
+<meta property='og:url' content='http://localhost:1313/p/git/'>
 <meta property='og:site_name' content='Henry Zhang'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='git' /><meta property='article:published_time' content='2025-11-25T17:43:06&#43;08:00'/><meta property='article:modified_time' content='2025-11-26T18:15:34&#43;08:00'/><meta property='og:image' content='https://Gzmomo001.github.io/p/git/git.png' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='git' /><meta property='article:published_time' content='2025-11-25T17:43:06&#43;08:00'/><meta property='article:modified_time' content='2025-12-05T02:15:12-05:00'/><meta property='og:image' content='http://localhost:1313/p/git/git.png' />
 <meta name="twitter:title" content="Git">
 <meta name="twitter:description" content="版本控制工具"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://Gzmomo001.github.io/p/git/git.png' />
+    <meta name="twitter:image" content='http://localhost:1313/p/git/git.png' />
     <link rel="shortcut icon" href="/favicon.ico" />
-
-  
-
 <link rel='stylesheet' href='https://chinese-fonts-cdn.deno.dev/packages/dymh/dist/DouyinSansBold/result.css' />
 
 <div class="loading">
@@ -621,7 +618,7 @@
                     
                     
                         
-                        <img src="/img/avatar_hu15501804078002305690.jpeg" width="300"
+                        <img src="/img/avatar_hu_9c50848f93c56cbf.jpeg" width="300"
                             height="296" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -847,8 +844,8 @@
         <li><a href="#git-checkout">git checkout</a></li>
         <li><a href="#git-stash">git stash</a></li>
         <li><a href="#git-reset">git reset</a></li>
-        <li><a href="#git-merge--官方文档httpsgit-scmcomdocsgit-merge">git merge | <a href="https://git-scm.com/docs/git-merge">官方文档</a></a></li>
-        <li><a href="#git-rebase--官方文档httpsgit-scmcomdocsgit-rebase">git rebase | <a href="https://git-scm.com/docs/git-rebase">官方文档</a></a></li>
+        <li><a href="#git-merge--官方文档">git merge | 官方文档</a></li>
+        <li><a href="#git-rebase--官方文档">git rebase | 官方文档</a></li>
         <li><a href="#git-merge-vs-git-rebase">Git Merge vs. Git Rebase</a>
           <ol>
             <li><a href="#git-merge">Git Merge</a></li>
@@ -856,11 +853,19 @@
             <li><a href="#总结">总结</a></li>
           </ol>
         </li>
-        <li><a href="#冲突处理-conflict-resolution--官方文档httpsgit-scmcombookzhv2git-e5b7a5e585b7-e9ab98e7baa7e59088e5b9b6">冲突处理 (Conflict Resolution) | <a href="https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E9%AB%98%E7%BA%A7%E5%90%88%E5%B9%B6">官方文档</a></a>
+        <li><a href="#冲突处理-conflict-resolution--官方文档">冲突处理 (Conflict Resolution) | 官方文档</a>
           <ol>
             <li><a href="#如何识别冲突">如何识别冲突</a></li>
             <li><a href="#解决冲突的步骤">解决冲突的步骤</a></li>
             <li><a href="#常用辅助命令">常用辅助命令</a></li>
+          </ol>
+        </li>
+        <li><a href="#分支管理最佳实践-branch-management-best-practices">分支管理最佳实践 (Branch Management Best Practices)</a>
+          <ol>
+            <li><a href="#1-为什么要删除旧分支">1. 为什么要删除旧分支？</a></li>
+            <li><a href="#2-标准操作流程">2. 标准操作流程</a></li>
+            <li><a href="#3-如何给分支起个好名字">3. 如何给分支起个好名字？</a></li>
+            <li><a href="#4-只有一种情况可以复用分支">4. 只有一种情况可以&quot;复用&quot;分支</a></li>
           </ol>
         </li>
       </ol>
@@ -882,8 +887,8 @@
     <header class="article-header">
         <div class="article-image">
             <a href="/p/git/">
-                <img src="/p/git/git_hu4550712785129976797.png"
-                        srcset="/p/git/git_hu4550712785129976797.png 800w, /p/git/git_hu9432213353771053391.png 1600w"
+                <img src="/p/git/git_hu_f98e014342dae49.png"
+                        srcset="/p/git/git_hu_f98e014342dae49.png 800w, /p/git/git_hu_f0ae85bade81d2cc.png 1600w"
                         width="800" 
                         height="800" 
                         loading="lazy"
@@ -960,7 +965,7 @@
 
 
                 <time>
-                    Nov 26, 2025 18:15 &#43;0800
+                    Dec 05, 2025 02:15 EST
                 </time>
             </div>
     </footer>
@@ -981,7 +986,7 @@
 <p><img src="/p/git/jojos-killer.gif"
 	width="464"
 	height="258"
-	srcset="/p/git/jojos-killer_hu4835421799670992788.gif 480w, /p/git/jojos-killer_hu18354979973675417943.gif 1024w"
+	srcset="/p/git/jojos-killer_hu_113ff57fcf33b172.gif 480w, /p/git/jojos-killer_hu_49e2041d9bb05d24.gif 1024w"
 	loading="lazy"
 	
 		alt="败者食尘"
@@ -1039,10 +1044,8 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># pull the latest version of the remote repo</span>
 </span></span><span class="line"><span class="cl">git pull
-</span></span></code></pre></div><blockquote>
-<p>[!NOTE]
-.gitignore: you can create a this file and fill the files or dict that you do not want to push on remote.</p>
-</blockquote>
+</span></span></code></pre></div><blockquote class="alert alert-note">
+    <p>.gitignore: you can create a this file and fill the files or dict that you do not want to push on remote.</p></blockquote>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># add all the changes to the this commit and commit it with only one line code</span>
 </span></span><span class="line"><span class="cl">git commit -am <span class="s2">&#34;args&#34;</span>
 </span></span><span class="line"><span class="cl">
@@ -1050,7 +1053,7 @@
 </span></span><span class="line"><span class="cl">git clone &lt;url&gt;
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># fetch</span>
-</span></span><span class="line"><span class="cl">git fetch &lt;url&gt;
+</span></span><span class="line"><span class="cl">git fetch &lt;url&gt; 
 </span></span></code></pre></div><p>当你要使用私有远程仓库的时候,就需要验证你的个人信息,确保你有权利访问这个远程仓库. 这个时候就需要使用ssh生成一对密钥对, 然后将公钥放在远程仓库上. 有关这方面的知识如果不是很明白可以先去学学ssh相关的内容.</p>
 <h2 id="advance-command--feature">Advance command &amp; feature
 </h2><h3 id="git-checkout">git checkout
@@ -1118,7 +1121,7 @@
 <li>合并多个提交为一个</li>
 <li>彻底撤销错误的更改</li>
 </ul>
-<h3 id="git-merge--官方文档httpsgit-scmcomdocsgit-merge">git merge | <a class="link" href="https://git-scm.com/docs/git-merge"  target="_blank" rel="noopener"
+<h3 id="git-merge--官方文档">git merge | <a class="link" href="https://git-scm.com/docs/git-merge"  target="_blank" rel="noopener"
     >官方文档</a>
 </h3><p><code>git merge</code> 命令用于将一个或多个分支的更改合并到当前分支：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 合并指定分支到当前分支</span>
@@ -1129,9 +1132,9 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># 合并时产生一个squash提交，不保留原分支的提交历史</span>
 </span></span><span class="line"><span class="cl">git merge --squash &lt;branch_name&gt;
-</span></span></code></pre></div><h3 id="git-rebase--官方文档httpsgit-scmcomdocsgit-rebase">git rebase | <a class="link" href="https://git-scm.com/docs/git-rebase"  target="_blank" rel="noopener"
+</span></span></code></pre></div><h3 id="git-rebase--官方文档">git rebase | <a class="link" href="https://git-scm.com/docs/git-rebase"  target="_blank" rel="noopener"
     >官方文档</a>
-</h3><p><code>git rebase</code> 用于将一系列提交“变基”到另一个基础提交上。通俗地说，它会把你的提交历史“移动”到另一个分支的最新提交之后，使得提交历史看起来更线性、更整洁。</p>
+</h3><p><code>git rebase</code> 用于将一系列提交&quot;变基&quot;到另一个基础提交上。通俗地说，它会把你的提交历史&quot;移动&quot;到另一个分支的最新提交之后，使得提交历史看起来更线性、更整洁。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 将当前分支的提交应用到 &lt;base_branch&gt; 的顶部</span>
 </span></span><span class="line"><span class="cl">git rebase &lt;base_branch&gt;
 </span></span><span class="line"><span class="cl">
@@ -1156,14 +1159,14 @@
 <h4 id="git-merge">Git Merge
 </h4><ul>
 <li><strong>保留历史</strong>：<code>merge</code> 会保留原始分支的完整、精确的提交历史。</li>
-<li><strong>合并提交</strong>：它会在目标分支上创建一个新的“合并提交”，这个提交有两个父提交，分别指向两个被合并的分支。</li>
+<li><strong>合并提交</strong>：它会在目标分支上创建一个新的&quot;合并提交&quot;，这个提交有两个父提交，分别指向两个被合并的分支。</li>
 <li><strong>非线性历史</strong>：这会导致提交历史图谱看起来像一个分叉再汇合的图形，可以清晰地看到分支从哪里来，又在哪里合并。</li>
 <li><strong>优点</strong>：简单直接，保留了真实的开发轨迹，便于追溯。</li>
 <li><strong>缺点</strong>：如果分支活动频繁，合并提交会非常多，导致主分支历史变得混乱。</li>
 </ul>
 <h4 id="git-rebase">Git Rebase
 </h4><ul>
-<li><strong>重写历史</strong>：<code>rebase</code> 会找到两个分支的共同祖先，然后将当前分支的所有提交“重放”（replay）到目标分支的顶部。</li>
+<li><strong>重写历史</strong>：<code>rebase</code> 会找到两个分支的共同祖先，然后将当前分支的所有提交&quot;重放&quot;（replay）到目标分支的顶部。</li>
 <li><strong>线性历史</strong>：它会创建一个线性的、干净的提交历史，看起来就像所有开发都是在一条直线上完成的。</li>
 <li><strong>优点</strong>：历史记录非常整洁，没有不必要的合并提交，易于阅读和理解。</li>
 <li><strong>缺点</strong>：
@@ -1175,44 +1178,44 @@
 </ul>
 <h4 id="总结">总结
 </h4><div class="table-wrapper"><table>
-<thead>
-<tr>
-<th>特性</th>
-<th><code>git merge</code></th>
-<th><code>git rebase</code></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>历史记录</strong></td>
-<td>非线性，保留分叉</td>
-<td>线性，整洁</td>
-</tr>
-<tr>
-<td><strong>易用性</strong></td>
-<td>简单，不易出错</td>
-<td>相对复杂，有风险</td>
-</tr>
-<tr>
-<td><strong>协作</strong></td>
-<td>安全，适合公共分支</td>
-<td><strong>危险</strong>，只应在私有分支上使用</td>
-</tr>
-<tr>
-<td><strong>结果</strong></td>
-<td>产生一个合并提交</td>
-<td>不产生合并提交，但会创建新的提交</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>特性</th>
+          <th><code>git merge</code></th>
+          <th><code>git rebase</code></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>历史记录</strong></td>
+          <td>非线性，保留分叉</td>
+          <td>线性，整洁</td>
+      </tr>
+      <tr>
+          <td><strong>易用性</strong></td>
+          <td>简单，不易出错</td>
+          <td>相对复杂，有风险</td>
+      </tr>
+      <tr>
+          <td><strong>协作</strong></td>
+          <td>安全，适合公共分支</td>
+          <td><strong>危险</strong>，只应在私有分支上使用</td>
+      </tr>
+      <tr>
+          <td><strong>结果</strong></td>
+          <td>产生一个合并提交</td>
+          <td>不产生合并提交，但会创建新的提交</td>
+      </tr>
+  </tbody>
 </table></div>
 <p><strong>何时使用？</strong></p>
 <ul>
 <li>使用 <code>git merge</code> 将功能分支合并到 <code>main</code> 或 <code>develop</code> 等主分支上。</li>
 <li>使用 <code>git rebase</code> 在将你的功能分支合并到主分支之前，用来同步主分支的最新更改，保持你的分支历史干净。</li>
 </ul>
-<h3 id="冲突处理-conflict-resolution--官方文档httpsgit-scmcombookzhv2git-e5b7a5e585b7-e9ab98e7baa7e59088e5b9b6">冲突处理 (Conflict Resolution) | <a class="link" href="https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E9%AB%98%E7%BA%A7%E5%90%88%E5%B9%B6"  target="_blank" rel="noopener"
+<h3 id="冲突处理-conflict-resolution--官方文档">冲突处理 (Conflict Resolution) | <a class="link" href="https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E9%AB%98%E7%BA%A7%E5%90%88%E5%B9%B6"  target="_blank" rel="noopener"
     >官方文档</a>
-</h3><p>在使用 Git 进行合并 (<code>git merge</code>) 或变基 (<code>git rebase</code>) 操作时，如果两个分支修改了同一个文件的同一部分，或者一个分支修改了文件而另一个分支删除了它，Git 无法自动解决这些差异，就会发生“冲突”（Conflict）。</p>
+</h3><p>在使用 Git 进行合并 (<code>git merge</code>) 或变基 (<code>git rebase</code>) 操作时，如果两个分支修改了同一个文件的同一部分，或者一个分支修改了文件而另一个分支删除了它，Git 无法自动解决这些差异，就会发生&quot;冲突&quot;（Conflict）。</p>
 <h4 id="如何识别冲突">如何识别冲突
 </h4><p>当冲突发生时，Git 会停止当前操作并通知你。你可以通过 <code>git status</code> 命令查看哪些文件处于冲突状态。</p>
 <p>在冲突的文件中，Git 会插入特殊的标记来指示冲突的部分：</p>
@@ -1250,10 +1253,85 @@
 <li><code>git checkout --ours &lt;filename&gt;</code>：如果你想保留当前分支对 <code>&lt;filename&gt;</code> 的所有更改，而丢弃传入分支的更改。</li>
 <li><code>git checkout --theirs &lt;filename&gt;</code>：如果你想保留传入分支对 <code>&lt;filename&gt;</code> 的所有更改，而丢弃当前分支的更改。</li>
 </ul>
-<blockquote>
-<p>[!TIP]
-记住，解决冲突是一个需要仔细和耐心的过程</p>
-</blockquote>
+<blockquote class="alert alert-tip">
+    <p>记住，解决冲突是一个需要仔细和耐心的过程</p></blockquote>
+<h3 id="分支管理最佳实践-branch-management-best-practices">分支管理最佳实践 (Branch Management Best Practices)
+</h3><p>当我们需要给一个仓库实现新的功能或者修复bug的时候,最标准的做法就是创建一个新的分支.然后在分支上进行修改. 完成修改之后再使用it rebase 或者 git merge 来将新的修改合并到主分支上.</p>
+<p>虽然技术上你可以重复使用同一个分支名，但在实际开发和团队协作中，<strong>&ldquo;一次性分支（Feature Branch）&rdquo;</strong> 是行业标准做法。</p>
+<p>以下是为什么要&quot;删了重开&quot;的详细理由和最佳实践：</p>
+<h4 id="1-为什么要删除旧分支">1. 为什么要删除旧分支？
+</h4><ul>
+<li>
+<p><strong>避免历史混乱（最重要）</strong>
+如果你一直复用 <code>dev</code> 或 <code>feature</code> 这个名字：</p>
+<ul>
+<li>第1次开发合并了功能 A。</li>
+<li>第2次开发合并了功能 B。</li>
+<li>半年后如果你想回头看&quot;功能 A&quot;的代码是从哪里分出来的，在这个复用的分支上会很难理清。</li>
+<li>如果你每次都起新名字（如 <code>feat/add-login</code>, <code>fix/navbar-bug</code>），Git 的历史线会非常清晰，一眼就能看出你在某个时间段是为了什么目的而改代码。</li>
+</ul>
+</li>
+<li>
+<p><strong>防止&quot;不干净&quot;的起点</strong>
+如果你复用旧分支，很容易忘记把该分支更新到 <code>main</code> 的最新状态就开始写新代码。这会导致你基于&quot;旧代码&quot;开发，最后合并时产生大量不必要的冲突。</p>
+<ul>
+<li><em>创建新分支</em> 强制你必须基于最新的 <code>main</code> 开始，保证起跑线是干净的。</li>
+</ul>
+</li>
+<li>
+<p><strong>心理上的&quot;完成感&quot;</strong>
+删掉一个分支代表&quot;这个任务彻底搞定了&quot;。保持分支列表清爽，只留下 <code>main</code> 和当前正在做的任务，能减少心智负担。</p>
+</li>
+</ul>
+<h4 id="2-标准操作流程">2. 标准操作流程
+</h4><p>在你把 <code>aider</code> 分支合并到 <code>main</code> 之后，标准的下一轮开发动作如下：</p>
+<h5 id="step-1-删除旧分支-清理战场">Step 1: 删除旧分支 (清理战场)
+</h5><p>既然 <code>aider</code> 里的代码已经进 <code>main</code> 了，它就没用了。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git branch -d aider
+</span></span></code></pre></div><p><em>(注：如果代码还没合并，Git 会阻止你删除。如果已合并，<code>-d</code> 会安全删除。)</em></p>
+<h5 id="step-2-创建新分支-开始新征程">Step 2: 创建新分支 (开始新征程)
+</h5><p>根据你要做的新任务，起一个有意义的名字。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git checkout -b feat/add-search-bar  <span class="c1"># 比如你要做搜索功能</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 或者</span>
+</span></span><span class="line"><span class="cl">git checkout -b fix/image-loading    <span class="c1"># 比如你要修 bug</span>
+</span></span></code></pre></div><h4 id="3-如何给分支起个好名字">3. 如何给分支起个好名字？
+</h4><p>既然要频繁创建新分支，起名就很关键。推荐使用 <code>前缀/描述</code> 的格式：</p>
+<ul>
+<li><strong>feat/</strong> (feature): 开发新功能
+<ul>
+<li><code>feat/user-login</code></li>
+<li><code>feat/dark-mode</code></li>
+</ul>
+</li>
+<li><strong>fix/</strong>: 修复 Bug
+<ul>
+<li><code>fix/header-alignment</code></li>
+<li><code>fix/typo-in-readme</code></li>
+</ul>
+</li>
+<li><strong>docs/</strong>: 仅仅修改文档
+<ul>
+<li><code>docs/update-install-guide</code></li>
+</ul>
+</li>
+<li><strong>refactor/</strong>: 代码重构（不改变功能）
+<ul>
+<li><code>refactor/optimize-loop</code></li>
+</ul>
+</li>
+</ul>
+<h4 id="4-只有一种情况可以复用分支">4. 只有一种情况可以&quot;复用&quot;分支
+</h4><p>如果你维护的是一个 <strong>长期存在的开发分支</strong>（通常叫 <code>develop</code> 或 <code>dev</code>），这种分支是不会删除的。</p>
+<ul>
+<li><code>main</code>: 存放随时可以发布的稳定代码。</li>
+<li><code>develop</code>: 存放最新的开发进度（可能不太稳定）。</li>
+</ul>
+<p>在这种模式下，你依然不会直接在 <code>develop</code> 上写代码，而是：</p>
+<ol>
+<li>从 <code>develop</code> 切出一个 <code>feat/xxx</code> 分支。</li>
+<li>开发完合并回 <code>develop</code>。</li>
+<li>删掉 <code>feat/xxx</code>。</li>
+</ol>
 
 </section>
 
@@ -1319,6 +1397,25 @@
             
                 
 <article class="has-image">
+    <a href="/p/apt/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="/default.jpeg" loading="lazy" data-key="" data-hash="/default.jpeg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Apt</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
     <a href="/p/javascript/">
         
         
@@ -1342,7 +1439,7 @@
         
         
             <div class="article-image">
-                <img src="/p/css/css.b848d5d9bb221592064de0f356f61676_hu8815389983082477814.png" 
+                <img src="/p/css/css.b848d5d9bb221592064de0f356f61676_hu_b7c3baf7be297be1.png" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -1366,7 +1463,7 @@
         
         
             <div class="article-image">
-                <img src="/p/html/html.c573ff5552d6da9a1d28ec4e27cd1445_hu1256893839522032658.png" 
+                <img src="/p/html/html.c573ff5552d6da9a1d28ec4e27cd1445_hu_b1fc89d438b41297.png" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -1390,7 +1487,7 @@
         
         
             <div class="article-image">
-                <img src="/p/tmux/tmux.00602e252a4818bc11a9ae8ab6c10b66_hu10850764819627465507.png" 
+                <img src="/p/tmux/tmux.00602e252a4818bc11a9ae8ab6c10b66_hu_34b39c5011ca5304.png" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -1403,30 +1500,6 @@
 
         <div class="article-details">
             <h2 class="article-title">Tmux</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="has-image">
-    <a href="/p/soft_links/">
-        
-        
-            <div class="article-image">
-                <img src="/p/soft_links/link.afca8fbf3d162954516aed971529f126_hu12335052707688836991.png" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy"
-                        alt="Featured image of post Soft_links"
-                        
-                        data-hash="md5-r8qPvz0WKVRRau2XFSnxJg==">
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">Soft_links</h2>
         </div>
     </a>
 </article>
@@ -1592,7 +1665,7 @@
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.c922af694cc257bf1ecc41c0dd7b0430f9114ec280ccf67cd2c6ad55f5316c4e.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.1f868a1e43a655a108dcac854f25b0e9620fa49bd725f8484d78bb6c730fbe01.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');
@@ -1800,7 +1873,7 @@
       
       let img = document.createElement('img');
       img.classList.add('code-more-img');
-      img.src = "https://Gzmomo001.github.io/icons/down.png"
+      img.src = "http://localhost:1313/icons/down.png"
       
       codeMoreBtn.appendChild(img);
       codeMoreBox.appendChild(codeMoreBtn);

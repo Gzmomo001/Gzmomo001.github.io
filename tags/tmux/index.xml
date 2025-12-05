@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Tmux on Henry Zhang</title>
-        <link>https://Gzmomo001.github.io/tags/tmux/</link>
+        <link>http://localhost:1313/tags/tmux/</link>
         <description>Recent content in Tmux on Henry Zhang</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>henryzhang070&#43;contact@gmail.com</copyright>
-        <lastBuildDate>Tue, 25 Nov 2025 18:20:14 +0800</lastBuildDate><atom:link href="https://Gzmomo001.github.io/tags/tmux/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 25 Nov 2025 18:20:14 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/tmux/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Tmux</title>
-        <link>https://Gzmomo001.github.io/p/tmux/</link>
+        <link>http://localhost:1313/p/tmux/</link>
         <pubDate>Wed, 06 Aug 2025 03:08:51 +0800</pubDate>
         
-        <guid>https://Gzmomo001.github.io/p/tmux/</guid>
-        <description>&lt;img src="https://Gzmomo001.github.io/p/tmux/tmux.png" alt="Featured image of post Tmux" /&gt;&lt;h2 id=&#34;后台-shell-常驻工具&#34;&gt;后台 shell 常驻工具
+        <guid>http://localhost:1313/p/tmux/</guid>
+        <description>&lt;img src="http://localhost:1313/p/tmux/tmux.png" alt="Featured image of post Tmux" /&gt;&lt;h2 id=&#34;后台-shell-常驻工具&#34;&gt;后台 shell 常驻工具
 &lt;/h2&gt;&lt;p&gt;Reference: &lt;a class=&#34;link&#34; href=&#34;https://github.com/tmux/tmux/wiki&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;tmux wiki&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Fully tutorial
@@ -64,10 +64,8 @@
 &lt;p&gt;切换 window: &amp;ldquo;ctrlb + &lt;num&gt; &amp;quot; | 切换到下一个window: &amp;ldquo;ctrlb + n&amp;rdquo;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;[!TIPS]
-一个 session 可以包括多个 windows&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;blockquote class=&#34;alert alert-tips&#34;&gt;
+    &lt;p&gt;一个 session 可以包括多个 windows&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ol start=&#34;6&#34;&gt;
 &lt;li&gt;
 &lt;p&gt;退出 tmux: &amp;ldquo;ctrlb&amp;rdquo; + &amp;ldquo;d&amp;rdquo;&lt;/p&gt;
@@ -111,7 +109,7 @@
 &lt;p&gt;更改快捷键: &amp;ldquo;set -g prefix C-s&amp;rdquo;(意思是将原本用 ctrl+b 的快捷键改为用 ctrl+s)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;cheetsheethttpstmuxcheatsheetcom&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://tmuxcheatsheet.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;h3 id=&#34;cheetsheet&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://tmuxcheatsheet.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Cheetsheet&lt;/a&gt;
 &lt;/h3&gt;</description>
         </item>

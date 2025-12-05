@@ -2,24 +2,224 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Henry Zhang</title>
-        <link>https://Gzmomo001.github.io/</link>
+        <link>http://localhost:1313/</link>
         <description>Recent content on Henry Zhang</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <copyright>henryzhang070&#43;contact@gmail.com</copyright><atom:link href="https://Gzmomo001.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <copyright>henryzhang070&#43;contact@gmail.com</copyright><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Apt</title>
+        <link>http://localhost:1313/p/apt/</link>
+        <pubDate>Fri, 05 Dec 2025 01:27:47 -0500</pubDate>
+        
+        <guid>http://localhost:1313/p/apt/</guid>
+        <description>&lt;img src="http://localhost:1313/default.jpeg" alt="Featured image of post Apt" /&gt;&lt;h2 id=&#34;reference&#34;&gt;Reference
+&lt;/h2&gt;&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe loading=&#34;lazy&#34; 
+            src=&#34;https://www.youtube.com/embed/j3fOfBwom5k&#34; 
+            allowfullscreen 
+            title=&#34;YouTube Video&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;hook&#34;&gt;Hook
+&lt;/h2&gt;&lt;p&gt;Imagine you&amp;rsquo;re trying to install a new software on your Linux system, but you have to manually download packages, resolve dependencies, and configure everything by hand. This process can quickly become overwhelming and error-prone. The Advanced Package Tool (APT) was created to solve these problems by providing an easy and automated way to manage software packages on Debian-based systems.&lt;/p&gt;
+&lt;h2 id=&#34;feature&#34;&gt;Feature
+&lt;/h2&gt;&lt;p&gt;APT (Advanced Package Tool) is a powerful command-line package management system used in Debian and its derivatives like Ubuntu. It simplifies the process of installing, updating, and removing software packages while automatically handling dependencies. APT maintains a database of available packages from configured repositories and ensures system integrity by resolving dependencies and conflicts.&lt;/p&gt;
+&lt;h2 id=&#34;reference-1&#34;&gt;Reference
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://wiki.debian.org/Apt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Debian APT Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://help.ubuntu.com/community/AptGet/Howto&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Ubuntu APT Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;quick-start&#34;&gt;Quick Start
+&lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Update package index (downloads latest package information)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt update
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Upgrade all installed packages to their latest versions&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt upgrade
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Install a package / include local deb docs&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt install &amp;lt;package_name&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Remove a package (keeps configuration files)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt remove &amp;lt;package_name&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Completely remove a package and its configuration files&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt purge &amp;lt;package_name&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Search for packages&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;apt search &amp;lt;keyword&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;common-commands&#34;&gt;Common Commands
+&lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Update package list and upgrade all packages&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt update &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt upgrade -y
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Install multiple packages&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt install package1 package2 package3
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Install a package without confirmation prompts&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt install -y &amp;lt;package_name&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Show package information&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;apt show &amp;lt;package_name&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# List all installed packages&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;apt list --installed
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# List upgradable packages&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;apt list --upgradable
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Remove unused dependencies&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt autoremove
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Clean package cache (removes downloaded .deb files)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt clean
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Clean package cache (removes outdated .deb files)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt autoclean
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote class=&#34;alert alert-note&#34;&gt;
+    &lt;p&gt;Always run &lt;code&gt;sudo apt update&lt;/code&gt; before installing new packages to ensure you&amp;rsquo;re getting the latest versions.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;advanced-commands--features&#34;&gt;Advanced Commands &amp;amp; Features
+&lt;/h2&gt;&lt;h3 id=&#34;package-search-and-information&#34;&gt;Package Search and Information
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Search for packages by name or description&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;apt search &amp;lt;keyword&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Show detailed information about a package&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;apt show &amp;lt;package_name&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# List all available versions of a package&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;apt list -a &amp;lt;package_name&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Show installed packages matching a pattern&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;apt list --installed &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; grep &amp;lt;pattern&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;package-installation-options&#34;&gt;Package Installation Options
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Install a specific version of a package&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt install &amp;lt;package_name&amp;gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;lt;version&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Reinstall a package&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt reinstall &amp;lt;package_name&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Simulate an installation (dry run)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt install --dry-run &amp;lt;package_name&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Install recommended packages automatically&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt install --install-recommends &amp;lt;package_name&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Install without recommended packages&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt install --no-install-recommends &amp;lt;package_name&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;system-maintenance&#34;&gt;System Maintenance
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Full system upgrade (may remove/install packages)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt full-upgrade
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Fix broken dependencies&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt --fix-broken install
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Fix missing packages&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt --fix-missing update
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Download package files without installing&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt download &amp;lt;package_name&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Check for broken dependencies&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt check
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;repository-management&#34;&gt;Repository Management
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Add a repository&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo add-apt-repository &amp;lt;repository&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Add a repository without prompting&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo add-apt-repository -y &amp;lt;repository&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Remove a repository&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo add-apt-repository --remove &amp;lt;repository&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# List all configured repositories&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;apt policy
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Update package list for a specific repository&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt update -o Dir::Etc::sourcelist&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;sources.list.d/&amp;lt;repo&amp;gt;.list&amp;#34;&lt;/span&gt; &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;                -o Dir::Etc::sourceparts&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;-&amp;#34;&lt;/span&gt; &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;                -o APT::Get::List-Cleanup&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;0&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;package-pinning-holding-package-versions&#34;&gt;Package Pinning (Holding Package Versions)
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Hold a package at its current version (prevent upgrades)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt-mark hold &amp;lt;package_name&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Unhold a package (allow upgrades again)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt-mark unhold &amp;lt;package_name&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Show held packages&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;apt-mark showhold
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Mark a package as automatically installed&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt-mark auto &amp;lt;package_name&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Mark a package as manually installed&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt-mark manual &amp;lt;package_name&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;configuration-files&#34;&gt;Configuration Files
+&lt;/h2&gt;&lt;p&gt;APT configuration files are located in &lt;code&gt;/etc/apt/&lt;/code&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;/etc/apt/sources.list&lt;/code&gt; - Main repository configuration&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/etc/apt/sources.list.d/&lt;/code&gt; - Additional repository files&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/etc/apt/apt.conf&lt;/code&gt; - Main APT configuration&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/etc/apt/apt.conf.d/&lt;/code&gt; - Configuration snippets&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/etc/apt/preferences&lt;/code&gt; - Package pinning preferences&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/etc/apt/preferences.d/&lt;/code&gt; - Additional pinning files&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;best-practices&#34;&gt;Best Practices
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Regular Updates&lt;/strong&gt;: Run &lt;code&gt;sudo apt update&lt;/code&gt; regularly to keep package information current&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;System Upgrades&lt;/strong&gt;: Use &lt;code&gt;sudo apt full-upgrade&lt;/code&gt; instead of &lt;code&gt;upgrade&lt;/code&gt; for major system updates&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Clean Cache&lt;/strong&gt;: Periodically run &lt;code&gt;sudo apt autoclean&lt;/code&gt; to free disk space&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Remove Unused Packages&lt;/strong&gt;: Run &lt;code&gt;sudo apt autoremove&lt;/code&gt; to remove unnecessary dependencies&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Backup Configuration&lt;/strong&gt;: Before major upgrades, backup important configuration files&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Check Before Installing&lt;/strong&gt;: Use &lt;code&gt;apt show&lt;/code&gt; to review package details before installation&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;troubleshooting&#34;&gt;Troubleshooting
+&lt;/h2&gt;&lt;h3 id=&#34;common-issues-and-solutions&#34;&gt;Common Issues and Solutions
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;GPG Errors&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Fix missing GPG keys&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys &amp;lt;KEY_ID&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Repository Issues&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Fix repository errors&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt clean
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt update --fix-missing
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Broken Packages&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Fix broken dependencies&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt --fix-broken install
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo dpkg --configure -a
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Lock Errors&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Remove lock files (only if no other apt process is running)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo rm /var/lib/apt/lists/lock
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo rm /var/cache/apt/archives/lock
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo rm /var/lib/dpkg/lock*
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote class=&#34;alert alert-tip&#34;&gt;
+    &lt;p&gt;Always be cautious when removing lock files. Make sure no other package manager is running.&lt;/p&gt;&lt;/blockquote&gt;
+</description>
+        </item>
+        <item>
         <title>Git</title>
-        <link>https://Gzmomo001.github.io/p/git/</link>
+        <link>http://localhost:1313/p/git/</link>
         <pubDate>Tue, 25 Nov 2025 17:43:06 +0800</pubDate>
         
-        <guid>https://Gzmomo001.github.io/p/git/</guid>
-        <description>&lt;img src="https://Gzmomo001.github.io/p/git/git.png" alt="Featured image of post Git" /&gt;&lt;h2 id=&#34;hook&#34;&gt;Hook
+        <guid>http://localhost:1313/p/git/</guid>
+        <description>&lt;img src="http://localhost:1313/p/git/git.png" alt="Featured image of post Git" /&gt;&lt;h2 id=&#34;hook&#34;&gt;Hook
 &lt;/h2&gt;&lt;p&gt;想象你写了一晚上的论文, 但是不小心被小组成员改坏了. 或者debug发现bug越来越多以至于无法修复, 整个项目基本要推倒重来. 上诉这种类似的情况其实屡见不鲜. 不只是计算机专业的同学会遇到, 其他非专业同学在编辑ppt, word, 或者设计工程图的时候也一样会遇到类似的问题. 而git的出现就是为了解决这一类的问题.&lt;/p&gt;
 &lt;h2 id=&#34;feature&#34;&gt;Feature
 &lt;/h2&gt;&lt;p&gt;git 作为版本控制工具最基本的功能就是管理文件版本. 可以将每一次文件的修改都记录起来. 当项目发生不可挽回的错误的时候. 只要.git文件夹还在就能发动败者食尘功能直接将时间会回滚到上一次提交的时候. 除此之外还提供了团队协作的功能. 不同的团队成员可以在同一个仓库下的不同brach对项目进行迭代又不会相互影响.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Gzmomo001.github.io/p/git/jojos-killer.gif&#34;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/git/jojos-killer.gif&#34;
 	width=&#34;464&#34;
 	height=&#34;258&#34;
-	srcset=&#34;https://Gzmomo001.github.io/p/git/jojos-killer_hu4835421799670992788.gif 480w, https://Gzmomo001.github.io/p/git/jojos-killer_hu18354979973675417943.gif 1024w&#34;
+	srcset=&#34;http://localhost:1313/p/git/jojos-killer_hu_113ff57fcf33b172.gif 480w, http://localhost:1313/p/git/jojos-killer_hu_49e2041d9bb05d24.gif 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;败者食尘&#34;
@@ -77,10 +277,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# pull the latest version of the remote repo&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git pull
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;[!NOTE]
-.gitignore: you can create a this file and fill the files or dict that you do not want to push on remote.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote class=&#34;alert alert-note&#34;&gt;
+    &lt;p&gt;.gitignore: you can create a this file and fill the files or dict that you do not want to push on remote.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# add all the changes to the this commit and commit it with only one line code&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git commit -am &lt;span class=&#34;s2&#34;&gt;&amp;#34;args&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
@@ -88,7 +286,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone &amp;lt;url&amp;gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# fetch&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git fetch &amp;lt;url&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git fetch &amp;lt;url&amp;gt; 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;当你要使用私有远程仓库的时候,就需要验证你的个人信息,确保你有权利访问这个远程仓库. 这个时候就需要使用ssh生成一对密钥对, 然后将公钥放在远程仓库上. 有关这方面的知识如果不是很明白可以先去学学ssh相关的内容.&lt;/p&gt;
 &lt;h2 id=&#34;advance-command--feature&#34;&gt;Advance command &amp;amp; feature
 &lt;/h2&gt;&lt;h3 id=&#34;git-checkout&#34;&gt;git checkout
@@ -156,7 +354,7 @@
 &lt;li&gt;合并多个提交为一个&lt;/li&gt;
 &lt;li&gt;彻底撤销错误的更改&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;git-merge--官方文档httpsgit-scmcomdocsgit-merge&#34;&gt;git merge | &lt;a class=&#34;link&#34; href=&#34;https://git-scm.com/docs/git-merge&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;h3 id=&#34;git-merge--官方文档&#34;&gt;git merge | &lt;a class=&#34;link&#34; href=&#34;https://git-scm.com/docs/git-merge&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;官方文档&lt;/a&gt;
 &lt;/h3&gt;&lt;p&gt;&lt;code&gt;git merge&lt;/code&gt; 命令用于将一个或多个分支的更改合并到当前分支：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 合并指定分支到当前分支&lt;/span&gt;
@@ -167,9 +365,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 合并时产生一个squash提交，不保留原分支的提交历史&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git merge --squash &amp;lt;branch_name&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;git-rebase--官方文档httpsgit-scmcomdocsgit-rebase&#34;&gt;git rebase | &lt;a class=&#34;link&#34; href=&#34;https://git-scm.com/docs/git-rebase&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;git-rebase--官方文档&#34;&gt;git rebase | &lt;a class=&#34;link&#34; href=&#34;https://git-scm.com/docs/git-rebase&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;官方文档&lt;/a&gt;
-&lt;/h3&gt;&lt;p&gt;&lt;code&gt;git rebase&lt;/code&gt; 用于将一系列提交“变基”到另一个基础提交上。通俗地说，它会把你的提交历史“移动”到另一个分支的最新提交之后，使得提交历史看起来更线性、更整洁。&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;git rebase&lt;/code&gt; 用于将一系列提交&amp;quot;变基&amp;quot;到另一个基础提交上。通俗地说，它会把你的提交历史&amp;quot;移动&amp;quot;到另一个分支的最新提交之后，使得提交历史看起来更线性、更整洁。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 将当前分支的提交应用到 &amp;lt;base_branch&amp;gt; 的顶部&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git rebase &amp;lt;base_branch&amp;gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
@@ -194,14 +392,14 @@
 &lt;h4 id=&#34;git-merge&#34;&gt;Git Merge
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;保留历史&lt;/strong&gt;：&lt;code&gt;merge&lt;/code&gt; 会保留原始分支的完整、精确的提交历史。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;合并提交&lt;/strong&gt;：它会在目标分支上创建一个新的“合并提交”，这个提交有两个父提交，分别指向两个被合并的分支。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;合并提交&lt;/strong&gt;：它会在目标分支上创建一个新的&amp;quot;合并提交&amp;quot;，这个提交有两个父提交，分别指向两个被合并的分支。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;非线性历史&lt;/strong&gt;：这会导致提交历史图谱看起来像一个分叉再汇合的图形，可以清晰地看到分支从哪里来，又在哪里合并。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;优点&lt;/strong&gt;：简单直接，保留了真实的开发轨迹，便于追溯。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;缺点&lt;/strong&gt;：如果分支活动频繁，合并提交会非常多，导致主分支历史变得混乱。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;git-rebase&#34;&gt;Git Rebase
 &lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;重写历史&lt;/strong&gt;：&lt;code&gt;rebase&lt;/code&gt; 会找到两个分支的共同祖先，然后将当前分支的所有提交“重放”（replay）到目标分支的顶部。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;重写历史&lt;/strong&gt;：&lt;code&gt;rebase&lt;/code&gt; 会找到两个分支的共同祖先，然后将当前分支的所有提交&amp;quot;重放&amp;quot;（replay）到目标分支的顶部。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;线性历史&lt;/strong&gt;：它会创建一个线性的、干净的提交历史，看起来就像所有开发都是在一条直线上完成的。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;优点&lt;/strong&gt;：历史记录非常整洁，没有不必要的合并提交，易于阅读和理解。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;缺点&lt;/strong&gt;：
@@ -213,44 +411,44 @@
 &lt;/ul&gt;
 &lt;h4 id=&#34;总结&#34;&gt;总结
 &lt;/h4&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;特性&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;git merge&lt;/code&gt;&lt;/th&gt;
-&lt;th&gt;&lt;code&gt;git rebase&lt;/code&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;历史记录&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;非线性，保留分叉&lt;/td&gt;
-&lt;td&gt;线性，整洁&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;易用性&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;简单，不易出错&lt;/td&gt;
-&lt;td&gt;相对复杂，有风险&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;协作&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;安全，适合公共分支&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;危险&lt;/strong&gt;，只应在私有分支上使用&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;结果&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;产生一个合并提交&lt;/td&gt;
-&lt;td&gt;不产生合并提交，但会创建新的提交&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;特性&lt;/th&gt;
+          &lt;th&gt;&lt;code&gt;git merge&lt;/code&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;code&gt;git rebase&lt;/code&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;历史记录&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;非线性，保留分叉&lt;/td&gt;
+          &lt;td&gt;线性，整洁&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;易用性&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;简单，不易出错&lt;/td&gt;
+          &lt;td&gt;相对复杂，有风险&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;协作&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;安全，适合公共分支&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;危险&lt;/strong&gt;，只应在私有分支上使用&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;结果&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;产生一个合并提交&lt;/td&gt;
+          &lt;td&gt;不产生合并提交，但会创建新的提交&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;&lt;strong&gt;何时使用？&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;使用 &lt;code&gt;git merge&lt;/code&gt; 将功能分支合并到 &lt;code&gt;main&lt;/code&gt; 或 &lt;code&gt;develop&lt;/code&gt; 等主分支上。&lt;/li&gt;
 &lt;li&gt;使用 &lt;code&gt;git rebase&lt;/code&gt; 在将你的功能分支合并到主分支之前，用来同步主分支的最新更改，保持你的分支历史干净。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;冲突处理-conflict-resolution--官方文档httpsgit-scmcombookzhv2git-e5b7a5e585b7-e9ab98e7baa7e59088e5b9b6&#34;&gt;冲突处理 (Conflict Resolution) | &lt;a class=&#34;link&#34; href=&#34;https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E9%AB%98%E7%BA%A7%E5%90%88%E5%B9%B6&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;h3 id=&#34;冲突处理-conflict-resolution--官方文档&#34;&gt;冲突处理 (Conflict Resolution) | &lt;a class=&#34;link&#34; href=&#34;https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E9%AB%98%E7%BA%A7%E5%90%88%E5%B9%B6&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;官方文档&lt;/a&gt;
-&lt;/h3&gt;&lt;p&gt;在使用 Git 进行合并 (&lt;code&gt;git merge&lt;/code&gt;) 或变基 (&lt;code&gt;git rebase&lt;/code&gt;) 操作时，如果两个分支修改了同一个文件的同一部分，或者一个分支修改了文件而另一个分支删除了它，Git 无法自动解决这些差异，就会发生“冲突”（Conflict）。&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;在使用 Git 进行合并 (&lt;code&gt;git merge&lt;/code&gt;) 或变基 (&lt;code&gt;git rebase&lt;/code&gt;) 操作时，如果两个分支修改了同一个文件的同一部分，或者一个分支修改了文件而另一个分支删除了它，Git 无法自动解决这些差异，就会发生&amp;quot;冲突&amp;quot;（Conflict）。&lt;/p&gt;
 &lt;h4 id=&#34;如何识别冲突&#34;&gt;如何识别冲突
 &lt;/h4&gt;&lt;p&gt;当冲突发生时，Git 会停止当前操作并通知你。你可以通过 &lt;code&gt;git status&lt;/code&gt; 命令查看哪些文件处于冲突状态。&lt;/p&gt;
 &lt;p&gt;在冲突的文件中，Git 会插入特殊的标记来指示冲突的部分：&lt;/p&gt;
@@ -288,26 +486,99 @@
 &lt;li&gt;&lt;code&gt;git checkout --ours &amp;lt;filename&amp;gt;&lt;/code&gt;：如果你想保留当前分支对 &lt;code&gt;&amp;lt;filename&amp;gt;&lt;/code&gt; 的所有更改，而丢弃传入分支的更改。&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;git checkout --theirs &amp;lt;filename&amp;gt;&lt;/code&gt;：如果你想保留传入分支对 &lt;code&gt;&amp;lt;filename&amp;gt;&lt;/code&gt; 的所有更改，而丢弃当前分支的更改。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;[!TIP]
-记住，解决冲突是一个需要仔细和耐心的过程&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;blockquote class=&#34;alert alert-tip&#34;&gt;
+    &lt;p&gt;记住，解决冲突是一个需要仔细和耐心的过程&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;分支管理最佳实践-branch-management-best-practices&#34;&gt;分支管理最佳实践 (Branch Management Best Practices)
+&lt;/h3&gt;&lt;p&gt;当我们需要给一个仓库实现新的功能或者修复bug的时候,最标准的做法就是创建一个新的分支.然后在分支上进行修改. 完成修改之后再使用it rebase 或者 git merge 来将新的修改合并到主分支上.&lt;/p&gt;
+&lt;p&gt;虽然技术上你可以重复使用同一个分支名，但在实际开发和团队协作中，&lt;strong&gt;&amp;ldquo;一次性分支（Feature Branch）&amp;rdquo;&lt;/strong&gt; 是行业标准做法。&lt;/p&gt;
+&lt;p&gt;以下是为什么要&amp;quot;删了重开&amp;quot;的详细理由和最佳实践：&lt;/p&gt;
+&lt;h4 id=&#34;1-为什么要删除旧分支&#34;&gt;1. 为什么要删除旧分支？
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;避免历史混乱（最重要）&lt;/strong&gt;
+如果你一直复用 &lt;code&gt;dev&lt;/code&gt; 或 &lt;code&gt;feature&lt;/code&gt; 这个名字：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;第1次开发合并了功能 A。&lt;/li&gt;
+&lt;li&gt;第2次开发合并了功能 B。&lt;/li&gt;
+&lt;li&gt;半年后如果你想回头看&amp;quot;功能 A&amp;quot;的代码是从哪里分出来的，在这个复用的分支上会很难理清。&lt;/li&gt;
+&lt;li&gt;如果你每次都起新名字（如 &lt;code&gt;feat/add-login&lt;/code&gt;, &lt;code&gt;fix/navbar-bug&lt;/code&gt;），Git 的历史线会非常清晰，一眼就能看出你在某个时间段是为了什么目的而改代码。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;防止&amp;quot;不干净&amp;quot;的起点&lt;/strong&gt;
+如果你复用旧分支，很容易忘记把该分支更新到 &lt;code&gt;main&lt;/code&gt; 的最新状态就开始写新代码。这会导致你基于&amp;quot;旧代码&amp;quot;开发，最后合并时产生大量不必要的冲突。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;创建新分支&lt;/em&gt; 强制你必须基于最新的 &lt;code&gt;main&lt;/code&gt; 开始，保证起跑线是干净的。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;心理上的&amp;quot;完成感&amp;quot;&lt;/strong&gt;
+删掉一个分支代表&amp;quot;这个任务彻底搞定了&amp;quot;。保持分支列表清爽，只留下 &lt;code&gt;main&lt;/code&gt; 和当前正在做的任务，能减少心智负担。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;2-标准操作流程&#34;&gt;2. 标准操作流程
+&lt;/h4&gt;&lt;p&gt;在你把 &lt;code&gt;aider&lt;/code&gt; 分支合并到 &lt;code&gt;main&lt;/code&gt; 之后，标准的下一轮开发动作如下：&lt;/p&gt;
+&lt;h5 id=&#34;step-1-删除旧分支-清理战场&#34;&gt;Step 1: 删除旧分支 (清理战场)
+&lt;/h5&gt;&lt;p&gt;既然 &lt;code&gt;aider&lt;/code&gt; 里的代码已经进 &lt;code&gt;main&lt;/code&gt; 了，它就没用了。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git branch -d aider
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;em&gt;(注：如果代码还没合并，Git 会阻止你删除。如果已合并，&lt;code&gt;-d&lt;/code&gt; 会安全删除。)&lt;/em&gt;&lt;/p&gt;
+&lt;h5 id=&#34;step-2-创建新分支-开始新征程&#34;&gt;Step 2: 创建新分支 (开始新征程)
+&lt;/h5&gt;&lt;p&gt;根据你要做的新任务，起一个有意义的名字。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git checkout -b feat/add-search-bar  &lt;span class=&#34;c1&#34;&gt;# 比如你要做搜索功能&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 或者&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git checkout -b fix/image-loading    &lt;span class=&#34;c1&#34;&gt;# 比如你要修 bug&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;3-如何给分支起个好名字&#34;&gt;3. 如何给分支起个好名字？
+&lt;/h4&gt;&lt;p&gt;既然要频繁创建新分支，起名就很关键。推荐使用 &lt;code&gt;前缀/描述&lt;/code&gt; 的格式：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;feat/&lt;/strong&gt; (feature): 开发新功能
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;feat/user-login&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;feat/dark-mode&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;fix/&lt;/strong&gt;: 修复 Bug
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;fix/header-alignment&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;fix/typo-in-readme&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;docs/&lt;/strong&gt;: 仅仅修改文档
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;docs/update-install-guide&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;refactor/&lt;/strong&gt;: 代码重构（不改变功能）
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;refactor/optimize-loop&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;4-只有一种情况可以复用分支&#34;&gt;4. 只有一种情况可以&amp;quot;复用&amp;quot;分支
+&lt;/h4&gt;&lt;p&gt;如果你维护的是一个 &lt;strong&gt;长期存在的开发分支&lt;/strong&gt;（通常叫 &lt;code&gt;develop&lt;/code&gt; 或 &lt;code&gt;dev&lt;/code&gt;），这种分支是不会删除的。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;main&lt;/code&gt;: 存放随时可以发布的稳定代码。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;develop&lt;/code&gt;: 存放最新的开发进度（可能不太稳定）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;在这种模式下，你依然不会直接在 &lt;code&gt;develop&lt;/code&gt; 上写代码，而是：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;从 &lt;code&gt;develop&lt;/code&gt; 切出一个 &lt;code&gt;feat/xxx&lt;/code&gt; 分支。&lt;/li&gt;
+&lt;li&gt;开发完合并回 &lt;code&gt;develop&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;删掉 &lt;code&gt;feat/xxx&lt;/code&gt;。&lt;/li&gt;
+&lt;/ol&gt;
 </description>
         </item>
         <item>
         <title>搭建vmless 代理服务器实现科学上网</title>
-        <link>https://Gzmomo001.github.io/p/%E6%90%AD%E5%BB%BAvmless-%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%9E%E7%8E%B0%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</link>
+        <link>http://localhost:1313/p/%E6%90%AD%E5%BB%BAvmless-%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%9E%E7%8E%B0%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</link>
         <pubDate>Sun, 23 Nov 2025 05:53:10 +0800</pubDate>
         
-        <guid>https://Gzmomo001.github.io/p/%E6%90%AD%E5%BB%BAvmless-%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%9E%E7%8E%B0%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</guid>
-        <description>&lt;img src="https://Gzmomo001.github.io/default.jpeg" alt="Featured image of post 搭建vmless 代理服务器实现科学上网" /&gt;&lt;h2 id=&#34;购买服务器&#34;&gt;购买服务器
+        <guid>http://localhost:1313/p/%E6%90%AD%E5%BB%BAvmless-%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%9E%E7%8E%B0%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</guid>
+        <description>&lt;img src="http://localhost:1313/default.jpeg" alt="Featured image of post 搭建vmless 代理服务器实现科学上网" /&gt;&lt;h2 id=&#34;购买服务器&#34;&gt;购买服务器
 &lt;/h2&gt;&lt;p&gt;在开始之前首先要确保你拥有一台能够访问外网的linux服务器，如果没有可以自行购买。博主这里推荐雨云家的服务器，这里已他家的日本大流量服务器为例子演示。
 系统: debain
 配置： 2 cores 2g 100/100mbps 90ping&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;[!TIPS]
-在访问服务器的任何端口之前先保证服务器对应端口的防火墙打开，防火墙的端口建议按需开启。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;blockquote class=&#34;alert alert-tips&#34;&gt;
+    &lt;p&gt;在访问服务器的任何端口之前先保证服务器对应端口的防火墙打开，防火墙的端口建议按需开启。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;购买域名optional&#34;&gt;购买域名(optional)
 &lt;/h2&gt;&lt;p&gt;即使没有域名也可以直接通过 ip 访问，只不过会暴露公网 ip 平并且没有 https。所以这里建议购买一个域名。&lt;/p&gt;
 &lt;p&gt;这里只推荐一个域名商： &lt;a class=&#34;link&#34; href=&#34;https://namesilo.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -317,19 +588,15 @@
 &lt;p&gt;博主在这里找到了 github 上的一篇使用 xray 搭建代理服务器的&lt;a class=&#34;link&#34; href=&#34;https://github.com/XTLS/Xray-install/blob/main/README_zh-Hans.md&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;教程&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;本博客将会参考这篇教程搭建代理服务器。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;[!NOTE]
-在访问之前你需要先能够访问你的服务器终端。如使用服务器面板的终端，或者使用 openssh 等命令行工具进入服务器 bash shell。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;blockquote class=&#34;alert alert-note&#34;&gt;
+    &lt;p&gt;在访问之前你需要先能够访问你的服务器终端。如使用服务器面板的终端，或者使用 openssh 等命令行工具进入服务器 bash shell。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;运行安装脚本:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;bash -c &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; @ install
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;安装x-ui, 使用 webui 来配置 xray。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;bash &amp;lt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;webui 启动之后可以通过域名或者ip+端口访问。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;[!TIPS]
-如果想要隐藏访问的端口，使用域名的433/80端口请求可以使用iopenresty/nginx反向代理到面板的端口。注意需要提前申请好 sll 证书不然 https 无法访问。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;blockquote class=&#34;alert alert-tips&#34;&gt;
+    &lt;p&gt;如果想要隐藏访问的端口，使用域名的433/80端口请求可以使用iopenresty/nginx反向代理到面板的端口。注意需要提前申请好 sll 证书不然 https 无法访问。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;del&gt;### &lt;a class=&#34;link&#34; href=&#34;https://clashhk.com/17688.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;x-ui配置参考博客&lt;/a&gt;&lt;/del&gt;&lt;/p&gt;
 &lt;p&gt;(发现这个教程很垃圾，转向chat老师)&lt;/p&gt;
@@ -337,21 +604,21 @@
         </item>
         <item>
         <title>JavaScript</title>
-        <link>https://Gzmomo001.github.io/p/javascript/</link>
+        <link>http://localhost:1313/p/javascript/</link>
         <pubDate>Tue, 12 Aug 2025 07:44:31 +0800</pubDate>
         
-        <guid>https://Gzmomo001.github.io/p/javascript/</guid>
-        <description>&lt;img src="https://Gzmomo001.github.io/default.jpeg" alt="Featured image of post JavaScript" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=hdI2bqOjy3c&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+        <guid>http://localhost:1313/p/javascript/</guid>
+        <description>&lt;img src="http://localhost:1313/default.jpeg" alt="Featured image of post JavaScript" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=hdI2bqOjy3c&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;review link&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>CSS</title>
-        <link>https://Gzmomo001.github.io/p/css/</link>
+        <link>http://localhost:1313/p/css/</link>
         <pubDate>Sun, 10 Aug 2025 09:04:48 +0800</pubDate>
         
-        <guid>https://Gzmomo001.github.io/p/css/</guid>
-        <description>&lt;img src="https://Gzmomo001.github.io/p/css/css.png" alt="Featured image of post CSS" /&gt;&lt;h3 id=&#34;cheat-sheet-of-css&#34;&gt;Cheat Sheet of CSS
+        <guid>http://localhost:1313/p/css/</guid>
+        <description>&lt;img src="http://localhost:1313/p/css/css.png" alt="Featured image of post CSS" /&gt;&lt;h3 id=&#34;cheat-sheet-of-css&#34;&gt;Cheat Sheet of CSS
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
@@ -682,11 +949,11 @@
         </item>
         <item>
         <title>HTML</title>
-        <link>https://Gzmomo001.github.io/p/html/</link>
+        <link>http://localhost:1313/p/html/</link>
         <pubDate>Sun, 10 Aug 2025 07:31:20 +0800</pubDate>
         
-        <guid>https://Gzmomo001.github.io/p/html/</guid>
-        <description>&lt;img src="https://Gzmomo001.github.io/p/html/html.png" alt="Featured image of post HTML" /&gt;&lt;h2 id=&#34;cheat-sheet-of-html&#34;&gt;Cheat Sheet of HTML
+        <guid>http://localhost:1313/p/html/</guid>
+        <description>&lt;img src="http://localhost:1313/p/html/html.png" alt="Featured image of post HTML" /&gt;&lt;h2 id=&#34;cheat-sheet-of-html&#34;&gt;Cheat Sheet of HTML
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; 
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
@@ -869,11 +1136,11 @@
         </item>
         <item>
         <title>Tmux</title>
-        <link>https://Gzmomo001.github.io/p/tmux/</link>
+        <link>http://localhost:1313/p/tmux/</link>
         <pubDate>Wed, 06 Aug 2025 03:08:51 +0800</pubDate>
         
-        <guid>https://Gzmomo001.github.io/p/tmux/</guid>
-        <description>&lt;img src="https://Gzmomo001.github.io/p/tmux/tmux.png" alt="Featured image of post Tmux" /&gt;&lt;h2 id=&#34;后台-shell-常驻工具&#34;&gt;后台 shell 常驻工具
+        <guid>http://localhost:1313/p/tmux/</guid>
+        <description>&lt;img src="http://localhost:1313/p/tmux/tmux.png" alt="Featured image of post Tmux" /&gt;&lt;h2 id=&#34;后台-shell-常驻工具&#34;&gt;后台 shell 常驻工具
 &lt;/h2&gt;&lt;p&gt;Reference: &lt;a class=&#34;link&#34; href=&#34;https://github.com/tmux/tmux/wiki&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;tmux wiki&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Fully tutorial
@@ -924,10 +1191,8 @@
 &lt;p&gt;切换 window: &amp;ldquo;ctrlb + &lt;num&gt; &amp;quot; | 切换到下一个window: &amp;ldquo;ctrlb + n&amp;rdquo;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;[!TIPS]
-一个 session 可以包括多个 windows&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;blockquote class=&#34;alert alert-tips&#34;&gt;
+    &lt;p&gt;一个 session 可以包括多个 windows&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ol start=&#34;6&#34;&gt;
 &lt;li&gt;
 &lt;p&gt;退出 tmux: &amp;ldquo;ctrlb&amp;rdquo; + &amp;ldquo;d&amp;rdquo;&lt;/p&gt;
@@ -971,17 +1236,17 @@
 &lt;p&gt;更改快捷键: &amp;ldquo;set -g prefix C-s&amp;rdquo;(意思是将原本用 ctrl+b 的快捷键改为用 ctrl+s)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;cheetsheethttpstmuxcheatsheetcom&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://tmuxcheatsheet.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;h3 id=&#34;cheetsheet&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://tmuxcheatsheet.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Cheetsheet&lt;/a&gt;
 &lt;/h3&gt;</description>
         </item>
         <item>
         <title>Soft_links</title>
-        <link>https://Gzmomo001.github.io/p/soft_links/</link>
+        <link>http://localhost:1313/p/soft_links/</link>
         <pubDate>Thu, 31 Jul 2025 15:38:14 +0800</pubDate>
         
-        <guid>https://Gzmomo001.github.io/p/soft_links/</guid>
-        <description>&lt;img src="https://Gzmomo001.github.io/p/soft_links/link.png" alt="Featured image of post Soft_links" /&gt;&lt;h2 id=&#34;软连接&#34;&gt;软连接
+        <guid>http://localhost:1313/p/soft_links/</guid>
+        <description>&lt;img src="http://localhost:1313/p/soft_links/link.png" alt="Featured image of post Soft_links" /&gt;&lt;h2 id=&#34;软连接&#34;&gt;软连接
 &lt;/h2&gt;&lt;p&gt;在系统中我们往往可能需要在一个项目中使用项目之外的一些文件，但是这个文件又不在这项目的根目录在。大部分人往往都选择直接将需要的文件拷贝到项目的路目中。但是这样既浪费时间又浪费系统的存储空间。尔软连接的出现就是为了解决这一问题。我们可以直接通过命令创建一个软连接。让目标文件或者文件夹的替身出现在我们的项目目录下。这样我们就可以在不使用绝对路径的情况下使用该路径了。&lt;/p&gt;
 &lt;h3 id=&#34;如何使用软连接ln&#34;&gt;如何使用软连接（ln
 &lt;/h3&gt;&lt;p&gt;在 linux 中软连接的是由&amp;rsquo;ln&amp;rsquo;这一指令完成的。&lt;/p&gt;
@@ -1001,30 +1266,28 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Delete a symbolic link:&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;rm path/to/symlink
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;[!TIPS]
-如果链接是相对路径，那这个相对是路径应该是相对于软连接目标目录的路径
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote class=&#34;alert alert-tips&#34;&gt;
+    &lt;p&gt;如果链接是相对路径，那这个相对是路径应该是相对于软连接目标目录的路径
 ###&lt;a class=&#34;link&#34; href=&#34;https://www.gnu.org/software/coreutils/manual/html_node/ln-invocation.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;官方文档链接&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+    &gt;官方文档链接&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
 </description>
         </item>
         <item>
         <title>How2ReadArticle</title>
-        <link>https://Gzmomo001.github.io/p/how2readarticle/</link>
+        <link>http://localhost:1313/p/how2readarticle/</link>
         <pubDate>Mon, 30 Jun 2025 23:02:15 +0800</pubDate>
         
-        <guid>https://Gzmomo001.github.io/p/how2readarticle/</guid>
-        <description>&lt;img src="https://Gzmomo001.github.io/default.png" alt="Featured image of post How2ReadArticle" /&gt;&lt;h1 id=&#34;如何正确的打开文献阅读之路&#34;&gt;如何正确的打开文献阅读之路
+        <guid>http://localhost:1313/p/how2readarticle/</guid>
+        <description>&lt;img src="http://localhost:1313/default.png" alt="Featured image of post How2ReadArticle" /&gt;&lt;h1 id=&#34;如何正确的打开文献阅读之路&#34;&gt;如何正确的打开文献阅读之路
 &lt;/h1&gt;</description>
         </item>
         <item>
         <title>Linux_system_service | Linux 之 系统服务</title>
-        <link>https://Gzmomo001.github.io/p/linux_system_service-linux-%E4%B9%8B-%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1/</link>
+        <link>http://localhost:1313/p/linux_system_service-linux-%E4%B9%8B-%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1/</link>
         <pubDate>Fri, 13 Jun 2025 15:47:20 +0800</pubDate>
         
-        <guid>https://Gzmomo001.github.io/p/linux_system_service-linux-%E4%B9%8B-%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1/</guid>
-        <description>&lt;img src="https://Gzmomo001.github.io/p/linux_system_service-linux-%E4%B9%8B-%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1/image.png" alt="Featured image of post Linux_system_service | Linux 之 系统服务" /&gt;&lt;h2 id=&#34;什么是系统服务service&#34;&gt;什么是系统服务(service)
+        <guid>http://localhost:1313/p/linux_system_service-linux-%E4%B9%8B-%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1/</guid>
+        <description>&lt;img src="http://localhost:1313/p/linux_system_service-linux-%E4%B9%8B-%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1/image.png" alt="Featured image of post Linux_system_service | Linux 之 系统服务" /&gt;&lt;h2 id=&#34;什么是系统服务service&#34;&gt;什么是系统服务(service)
 &lt;/h2&gt;&lt;p&gt;简单理解就是开机自启动的程序或者脚本, 会常驻在系统的内存中.&lt;/p&gt;
 &lt;p&gt;对于现在的大部分的 linux 发行版, 系统服务通常使用 systemd 进行管理.&lt;/p&gt;
 &lt;h3 id=&#34;三种配置文件&#34;&gt;三种配置文件
@@ -1049,10 +1312,8 @@
 &lt;li&gt;dir: &lt;code&gt;/etc/systemd/system/&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;用户自定义的服务, 管理员系统服务优先级高于系统服务, 意味着它会覆盖系统中相同的服务.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;[!NOTE]
-如果我们想添加自己的系统服务, 建议都放在管理员服务目录下.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;blockquote class=&#34;alert alert-note&#34;&gt;
+    &lt;p&gt;如果我们想添加自己的系统服务, 建议都放在管理员服务目录下.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;service-文件&#34;&gt;.service 文件
 &lt;/h2&gt;&lt;h3 id=&#34;为什么要定义这种文件格式&#34;&gt;为什么要定义这种文件格式
 &lt;/h3&gt;&lt;ol&gt;
@@ -1263,11 +1524,11 @@
         </item>
         <item>
         <title>MC服务器搭建 &amp; 加入</title>
-        <link>https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/</link>
+        <link>http://localhost:1313/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/</link>
         <pubDate>Mon, 09 Jun 2025 14:01:06 +0800</pubDate>
         
-        <guid>https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/</guid>
-        <description>&lt;img src="https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/image.png" alt="Featured image of post MC服务器搭建 &amp; 加入" /&gt;&lt;h3 id=&#34;java-环境-&#34;&gt;java 环境 ✅
+        <guid>http://localhost:1313/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/</guid>
+        <description>&lt;img src="http://localhost:1313/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/image.png" alt="Featured image of post MC服务器搭建 &amp; 加入" /&gt;&lt;h3 id=&#34;java-环境-&#34;&gt;java 环境 ✅
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;本教程的所有内容都是基于 java 环境已经安装好的前提下.&lt;/li&gt;
 &lt;li&gt;具体的教程可以去网上搜索.&lt;/li&gt;
@@ -1275,16 +1536,14 @@
 &lt;ol&gt;
 &lt;li&gt;根据自己要玩的 mc 版本安装适合版本的 java, 如果不知道安装哪个版本可以问一下 chat 老师. 本教程基于 Java21.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;[!TIP]
-如果没有特殊需求安装 JRE 版本即可.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;blockquote class=&#34;alert alert-tip&#34;&gt;
+    &lt;p&gt;如果没有特殊需求安装 JRE 版本即可.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;div id=&#34;confirm&#34;&gt;&lt;/div&gt;
 2. 安装好之后验证 java 是否成功安装并设置好了环境变量.
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;java --version
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div id=&#34;join&#34;&gt;&lt;/div&gt;
 &lt;h3 id=&#34;2-如何加入我的模组服务器傻瓜版&#34;&gt;2. 如何加入我的模组服务器(傻瓜版)‼️
-&lt;/h3&gt;&lt;h4 id=&#34;首先最好先确认系统安装了-java21-点击这里查看如何确认confirm&#34;&gt;首先最好先确认系统安装了 Java21, &lt;a class=&#34;link&#34; href=&#34;#confirm&#34; &gt;点击这里查看如何确认&lt;/a&gt;.
+&lt;/h3&gt;&lt;h4 id=&#34;首先最好先确认系统安装了-java21-点击这里查看如何确认&#34;&gt;首先最好先确认系统安装了 Java21, &lt;a class=&#34;link&#34; href=&#34;#confirm&#34; &gt;点击这里查看如何确认&lt;/a&gt;.
 &lt;/h4&gt;&lt;h4 id=&#34;下载整合包&#34;&gt;下载整合包
 &lt;/h4&gt;&lt;p&gt;整合包链接(一键启动版):&lt;/p&gt;
 &lt;ul&gt;
@@ -1321,17 +1580,13 @@
 &lt;li&gt;樱花内网穿透(备用) &lt;code&gt;frp-mix.com:34068&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;如何加入远程-mc-服务器&#34;&gt;如何加入远程 MC 服务器
-&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;[!TIP]
-加入我的服务器直接跳转至整合包加入章节即可, &lt;a class=&#34;link&#34; href=&#34;#join&#34; &gt;点击这里跳转&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;/h2&gt;&lt;blockquote class=&#34;alert alert-tip&#34;&gt;
+    &lt;p&gt;加入我的服务器直接跳转至整合包加入章节即可, &lt;a class=&#34;link&#34; href=&#34;#join&#34; &gt;点击这里跳转&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;安装 MC 启动器:&lt;/code&gt; 在市面上有很多款 MC 的启动器, 现在最常见的启动器就是官方启动器, 和 HMCL 启动器.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;[!NOTE]
-第三方启动器不代表不需要 MC 账号, 账号怎么获得这里我相信网上已经提供了很多方法.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;blockquote class=&#34;alert alert-note&#34;&gt;
+    &lt;p&gt;第三方启动器不代表不需要 MC 账号, 账号怎么获得这里我相信网上已经提供了很多方法.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;这里提供 HMCL 启动器的&lt;a class=&#34;link&#34; href=&#34;https://hmcl.huangyuhui.net/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;链接&lt;/a&gt;.&lt;/p&gt;
 &lt;ol start=&#34;2&#34;&gt;
@@ -1342,9 +1597,8 @@
 &lt;p&gt;&lt;code&gt;安装服务器要求的mod:&lt;/code&gt; 当你没有安装需要的 mod 的时候, 在进入服务器之前你会看到服务器要求你安装的包.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;[!NOTE]
-模组安装的途径:&lt;/p&gt;
+&lt;blockquote class=&#34;alert alert-note&#34;&gt;
+    &lt;p&gt;模组安装的途径:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;使用 HMCL 自带的模组安装工具安装&lt;/p&gt;
@@ -1359,19 +1613,18 @@
 &lt;li&gt;首先确保现在的游戏版本安装了 OptFine 光影管理工具.&lt;/li&gt;
 &lt;li&gt;在&lt;a class=&#34;link&#34; href=&#34;https://modrinth.com/shaders&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;modrinth 官网&lt;/a&gt;可以下载喜欢的光影包.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
+&lt;/ol&gt;&lt;/blockquote&gt;
 &lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;&lt;code&gt;加入服务器:&lt;/code&gt; 点击多人游戏, 然后添加服务器. 输入服务器的 IP 和端口.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;1-如何加入我的模组服务器-建议直接使用后面的整合包安装-更稳定也更方便&#34;&gt;&lt;del&gt;1. 如何加入我的模组服务器&lt;/del&gt; 建议直接使用后面的整合包安装, 更稳定也更方便.
 &lt;/h3&gt;&lt;h4 id=&#34;安装-1182forge-4030-版本&#34;&gt;安装 1.18.2+forge 40.3.0 版本
 &lt;/h4&gt;&lt;p&gt;&lt;code&gt;点击下载&lt;/code&gt;
-&lt;img src=&#34;https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v1_hu11307909348039157497.png&#34; width=&#34;1200&#34; height=&#34;898&#34; alt=&#34;exception types&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;http://localhost:1313/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v1_hu_736a98c9bbf842a4.png&#34; width=&#34;1200&#34; height=&#34;898&#34; alt=&#34;exception types&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;选择18.2+forge 40.3.0版本&lt;/code&gt;&lt;/p&gt;
-&lt;img src=&#34;https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v2_hu9730724547502014699.png&#34; width=&#34;1200&#34; height=&#34;905&#34; alt=&#34;exception types&#34;&gt;
-&lt;img src=&#34;https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v3_hu9070505738919046390.png&#34; width=&#34;1200&#34; height=&#34;904&#34; alt=&#34;exception types&#34;&gt;
-&lt;img src=&#34;https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v4_hu13235322723176748228.png&#34; width=&#34;1200&#34; height=&#34;899&#34; alt=&#34;exception types&#34;&gt;
+&lt;img src=&#34;http://localhost:1313/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v2_hu_276dd84c915b4521.png&#34; width=&#34;1200&#34; height=&#34;905&#34; alt=&#34;exception types&#34;&gt;
+&lt;img src=&#34;http://localhost:1313/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v3_hu_2f591b8eca54f1be.png&#34; width=&#34;1200&#34; height=&#34;904&#34; alt=&#34;exception types&#34;&gt;
+&lt;img src=&#34;http://localhost:1313/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v4_hu_a75a7d96e3be6c51.png&#34; width=&#34;1200&#34; height=&#34;899&#34; alt=&#34;exception types&#34;&gt;
 &lt;h4 id=&#34;安装模组&#34;&gt;安装模组
 &lt;/h4&gt;&lt;ol&gt;
 &lt;li&gt;下载我的模组和材质包.&lt;/li&gt;
@@ -1384,25 +1637,23 @@
 &lt;li&gt;压缩包下载后解压, 会有两种文件: zip, jar. zip 对应的是材质包, jar 是模组.
 点击版本管理&lt;/li&gt;
 &lt;/ol&gt;
-&lt;img src=&#34;https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/main_hu2433375552736350487.png&#34; width=&#34;1200&#34; height=&#34;913&#34; alt=&#34;exception types&#34;&gt;
+&lt;img src=&#34;http://localhost:1313/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/main_hu_cd62cbf18f0f3bf5.png&#34; width=&#34;1200&#34; height=&#34;913&#34; alt=&#34;exception types&#34;&gt;
 &lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;在模组拦选择添加模组, 选择刚刚下载的包里的&lt;code&gt;jar&lt;/code&gt;文件.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;img src=&#34;https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v5_hu510907905864025682.png&#34; width=&#34;1200&#34; height=&#34;911&#34; alt=&#34;exception types&#34;&gt;
+&lt;img src=&#34;http://localhost:1313/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v5_hu_41c2e29e2930d7df.png&#34; width=&#34;1200&#34; height=&#34;911&#34; alt=&#34;exception types&#34;&gt;
 &lt;h4 id=&#34;安装光影&#34;&gt;安装光影
 &lt;/h4&gt;&lt;p&gt;在浏览中选择打开资源包文件夹, 然后添加下载文件夹中的&lt;code&gt;zip&lt;/code&gt;文件.
-&lt;img src=&#34;https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v6_hu4377234306863140533.png&#34; width=&#34;1200&#34; height=&#34;909&#34; alt=&#34;exception types&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;http://localhost:1313/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v6_hu_a6b4669caa9893f7.png&#34; width=&#34;1200&#34; height=&#34;909&#34; alt=&#34;exception types&#34;&gt;&lt;/p&gt;
 &lt;h4 id=&#34;整合包安装游戏不带启动器版本&#34;&gt;整合包安装游戏(不带启动器版本)
 &lt;/h4&gt;&lt;p&gt;&lt;code&gt;该方法已淘汰, 请勿使用该方法&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;使用 HMCL 的整合包安装功能, 直接一次性安装好所有模组和材质包.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;[!WARN]
-因为阿里云盘不支持分享 zip 文件, 需要通过这个方法安装的需要联系我. 可以通过邮件或者其他方式发给你.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;blockquote class=&#34;alert alert-warn&#34;&gt;
+    &lt;p&gt;因为阿里云盘不支持分享 zip 文件, 需要通过这个方法安装的需要联系我. 可以通过邮件或者其他方式发给你.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;
 &lt;p&gt;点击安装整合包
-&lt;img src=&#34;https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/p1_hu13800069040352963668.png&#34; width=&#34;1200&#34; height=&#34;901&#34; alt=&#34;exception types&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;http://localhost:1313/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/p1_hu_a3107bb23487123e.png&#34; width=&#34;1200&#34; height=&#34;901&#34; alt=&#34;exception types&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;从本地安装整合包, 并选择下载好的 zip 整合包.&lt;/p&gt;
@@ -1421,7 +1672,7 @@
 &lt;li&gt;选择版本.&lt;/li&gt;
 &lt;li&gt;点击 Installer 安装稳定版&lt;/li&gt;
 &lt;/ol&gt;
-&lt;img src=&#34;https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/d_hu15389960313341040227.png&#34; width=&#34;1200&#34; height=&#34;916&#34; alt=&#34;exception types&#34;&gt;
+&lt;img src=&#34;http://localhost:1313/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/d_hu_7c67ad27a83df608.png&#34; width=&#34;1200&#34; height=&#34;916&#34; alt=&#34;exception types&#34;&gt;
 &lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;下载完成之后看到 jar 结尾的文件说明成功下载.&lt;/li&gt;
 &lt;/ol&gt;
@@ -1434,10 +1685,8 @@
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;java -jar &amp;lt;下载好的jar安装器文件名&amp;gt; --installServer
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# example&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;java -jar forge-1.18.2-40.3.0-installer.jar --installServer
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;[!TIP]
-在&lt;code&gt;终端&lt;/code&gt;输入文件名的时候需要加上&lt;code&gt;后缀&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote class=&#34;alert alert-tip&#34;&gt;
+    &lt;p&gt;在&lt;code&gt;终端&lt;/code&gt;输入文件名的时候需要加上&lt;code&gt;后缀&lt;/code&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;安装的过程会收到网络的影响, 请耐心等待&lt;/p&gt;
 &lt;h3 id=&#34;初始化服务器&#34;&gt;初始化服务器
 &lt;/h3&gt;&lt;ol&gt;
@@ -1523,12 +1772,10 @@
 &lt;li&gt;在 cploar 服务启动之后在网页中打开服务器的&lt;code&gt;9200&lt;/code&gt;端口.&lt;/li&gt;
 &lt;li&gt;设置映射.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/port_hu17429992450020156615.png&#34; width=&#34;1200&#34; height=&#34;472&#34; alt=&#34;exception types&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/port_hu_6ba287f842e76ffa.png&#34; width=&#34;1200&#34; height=&#34;472&#34; alt=&#34;exception types&#34;&gt;
 仿照图片中的设置配置映射.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;[!NOTE]
-对于 forge, 服务器开启后默认端口为 25565, 如果想修改监听端口可以修改 properties 里的端口设置.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;blockquote class=&#34;alert alert-note&#34;&gt;
+    &lt;p&gt;对于 forge, 服务器开启后默认端口为 25565, 如果想修改监听端口可以修改 properties 里的端口设置.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;
 &lt;p&gt;创建完成之后在在线列表的地方就能找到服务器地址.&lt;/p&gt;
@@ -1540,25 +1787,25 @@
         </item>
         <item>
         <title>ubuntu远程桌面</title>
-        <link>https://Gzmomo001.github.io/p/ubuntu%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2/</link>
+        <link>http://localhost:1313/p/ubuntu%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2/</link>
         <pubDate>Sun, 08 Jun 2025 22:16:17 +0800</pubDate>
         
-        <guid>https://Gzmomo001.github.io/p/ubuntu%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2/</guid>
-        <description>&lt;img src="https://Gzmomo001.github.io/default.jpeg" alt="Featured image of post ubuntu远程桌面" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
+        <guid>http://localhost:1313/p/ubuntu%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2/</guid>
+        <description>&lt;img src="http://localhost:1313/default.jpeg" alt="Featured image of post ubuntu远程桌面" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
 &lt;/h2&gt;&lt;p&gt;本教程基于 ubuntu, 请确保的 ubuntu 系统大于 20.
 这里参考阿里提供的&lt;a class=&#34;link&#34; href=&#34;https://developer.aliyun.com/article/762186&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;方案&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;heading&#34;&gt;
+&lt;h2 id=&#34;&#34;&gt;
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt install vino
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         </item>
         <item>
         <title>如何diy自己的工作简历</title>
-        <link>https://Gzmomo001.github.io/p/%E5%A6%82%E4%BD%95diy%E8%87%AA%E5%B7%B1%E7%9A%84%E5%B7%A5%E4%BD%9C%E7%AE%80%E5%8E%86/</link>
+        <link>http://localhost:1313/p/%E5%A6%82%E4%BD%95diy%E8%87%AA%E5%B7%B1%E7%9A%84%E5%B7%A5%E4%BD%9C%E7%AE%80%E5%8E%86/</link>
         <pubDate>Wed, 04 Jun 2025 18:19:09 +0800</pubDate>
         
-        <guid>https://Gzmomo001.github.io/p/%E5%A6%82%E4%BD%95diy%E8%87%AA%E5%B7%B1%E7%9A%84%E5%B7%A5%E4%BD%9C%E7%AE%80%E5%8E%86/</guid>
-        <description>&lt;img src="https://Gzmomo001.github.io/default.jpeg" alt="Featured image of post 如何diy自己的工作简历" /&gt;
+        <guid>http://localhost:1313/p/%E5%A6%82%E4%BD%95diy%E8%87%AA%E5%B7%B1%E7%9A%84%E5%B7%A5%E4%BD%9C%E7%AE%80%E5%8E%86/</guid>
+        <description>&lt;img src="http://localhost:1313/default.jpeg" alt="Featured image of post 如何diy自己的工作简历" /&gt;
 
 
 
@@ -1583,11 +1830,11 @@
         </item>
         <item>
         <title>语言如何影响你的思维</title>
-        <link>https://Gzmomo001.github.io/p/%E8%AF%AD%E8%A8%80%E5%A6%82%E4%BD%95%E5%BD%B1%E5%93%8D%E4%BD%A0%E7%9A%84%E6%80%9D%E7%BB%B4/</link>
+        <link>http://localhost:1313/p/%E8%AF%AD%E8%A8%80%E5%A6%82%E4%BD%95%E5%BD%B1%E5%93%8D%E4%BD%A0%E7%9A%84%E6%80%9D%E7%BB%B4/</link>
         <pubDate>Thu, 29 May 2025 02:41:58 +0800</pubDate>
         
-        <guid>https://Gzmomo001.github.io/p/%E8%AF%AD%E8%A8%80%E5%A6%82%E4%BD%95%E5%BD%B1%E5%93%8D%E4%BD%A0%E7%9A%84%E6%80%9D%E7%BB%B4/</guid>
-        <description>&lt;img src="https://Gzmomo001.github.io/default.jpeg" alt="Featured image of post 语言如何影响你的思维" /&gt;&lt;h2 id=&#34;视频源&#34;&gt;视频源
+        <guid>http://localhost:1313/p/%E8%AF%AD%E8%A8%80%E5%A6%82%E4%BD%95%E5%BD%B1%E5%93%8D%E4%BD%A0%E7%9A%84%E6%80%9D%E7%BB%B4/</guid>
+        <description>&lt;img src="http://localhost:1313/default.jpeg" alt="Featured image of post 语言如何影响你的思维" /&gt;&lt;h2 id=&#34;视频源&#34;&gt;视频源
 &lt;/h2&gt;
 
 
@@ -1610,11 +1857,9 @@
 
 &lt;h2 id=&#34;观后感&#34;&gt;观后感
 &lt;/h2&gt;&lt;p&gt;很多情况下你自己的话语很大程度上暗示你自己的思维方式. 比如当你觉得现在的就业环境不好的时候, 如果你说的是“现在的就业环境好差, 导致我们找不到工作”, 这样就会暗示自己把原因归结于外界, 从而减少了对自己的思考. 但如果我们把自己的话改成“现在就业市场环境不好, 这对我们来说是一个挑战.” 这样我们就更倾向于想办法去解决这个现有的问题.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;[!TIP]
-语言的边界, 就是世界的边界&lt;/p&gt;
-&lt;p&gt;&amp;ndash;维特根斯坦&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;blockquote class=&#34;alert alert-tip&#34;&gt;
+    &lt;p&gt;语言的边界, 就是世界的边界&lt;/p&gt;
+&lt;p&gt;&amp;ndash;维特根斯坦&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;两大语言陷阱&#34;&gt;两大语言陷阱
 &lt;/h3&gt;&lt;h4 id=&#34;标签化&#34;&gt;标签化:
 &lt;/h4&gt;&lt;ul&gt;
@@ -1631,29 +1876,25 @@
 &lt;/h4&gt;&lt;p&gt;找你认为你想成为的那种人, 学习模仿他们讲话的方式. 很多时候就会潜移默化的影响自己的思维方式. 并且很多情况下, 你在描述一个事情的时候, 你的词汇约丰富, 表达越多样很大程度上会增强你的思维深度.(所以如果要用英文表达还是得多背单词)&lt;/p&gt;
 &lt;h4 id=&#34;适当沉默&#34;&gt;适当沉默
 &lt;/h4&gt;&lt;p&gt;虽然很多时候会表达意味着思维更加灵活, 但人类的本性就是会给自己说过的话合理化解释, 这就导致了脑子被嘴巴牵着走的情况. 所以有些时候, 在交流当中适当的沉默和留白就是给我们大脑一个思考的机会. 能解决问题固然聪明, 但能找到关键根本的问题并解决的才是智慧.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;[!NOTE]
-筌者所在鱼, 得鱼而忘筌&lt;/p&gt;
-&lt;p&gt;言者所在意, 得意而忘言.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;blockquote class=&#34;alert alert-note&#34;&gt;
+    &lt;p&gt;筌者所在鱼, 得鱼而忘筌&lt;/p&gt;
+&lt;p&gt;言者所在意, 得意而忘言.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;不要太执着于手段本身, 而是要关注我们的目标和本质.&lt;/p&gt;
 &lt;h4 id=&#34;续写发牢骚&#34;&gt;续写发牢骚
 &lt;/h4&gt;&lt;p&gt;继承上述语言就像是我们思维的指针, 很多时候最好的话会影响我们的思维. 所哟当我们发完牢骚也就是提出问题的时候, 我们可以再补上一句我们的解决方案, 或者暗示我们要去解决这个问题. 那么我们的思维就会延续为怎么解决这个问题上, 而不是对问题本身执着太多.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;[!NOTE]
-语言不是世界的反应, 而是思想的工具.&lt;/p&gt;
+&lt;blockquote class=&#34;alert alert-note&#34;&gt;
+    &lt;p&gt;语言不是世界的反应, 而是思想的工具.&lt;/p&gt;
 &lt;p&gt;被篡改的语言不是无用的, 而是危险的&lt;/p&gt;
-&lt;p&gt;人类唯一的思想自由就在鱼警觉语言, 因为语言无法污染世界, 但是却能污染思想.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;人类唯一的思想自由就在鱼警觉语言, 因为语言无法污染世界, 但是却能污染思想.&lt;/p&gt;&lt;/blockquote&gt;
 </description>
         </item>
         <item>
         <title>Chapter13</title>
-        <link>https://Gzmomo001.github.io/p/chapter13/</link>
+        <link>http://localhost:1313/p/chapter13/</link>
         <pubDate>Mon, 26 May 2025 00:42:23 +0800</pubDate>
         
-        <guid>https://Gzmomo001.github.io/p/chapter13/</guid>
-        <description>&lt;img src="https://Gzmomo001.github.io/java.png" alt="Featured image of post Chapter13" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
+        <guid>http://localhost:1313/p/chapter13/</guid>
+        <description>&lt;img src="http://localhost:1313/java.png" alt="Featured image of post Chapter13" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
 &lt;/h2&gt;&lt;p&gt;回顾上上个章节当中讲到的遗产(inheritance)的概念, 我们可以通过创建一个类的子类来继承其 datafield 和 methods. 并且这个类也可以单独创建实例. 而抽象类就是一种特殊的父类.&lt;/p&gt;
 &lt;h2 id=&#34;抽象类&#34;&gt;抽象类
 &lt;/h2&gt;&lt;p&gt;就跟刚刚讲到的一样, 抽象类其实就是一个特殊的父类, 作为一个父类它无法实例化. 而是要通过创建其子类然后才能实例化.&lt;/p&gt;
@@ -1730,9 +1971,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;out&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;println&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Programming class ended at &amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;courseTime&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;[!NOTE]
-这里有一些课本中零碎的细节&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote class=&#34;alert alert-note&#34;&gt;
+    &lt;p&gt;这里有一些课本中零碎的细节&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;抽象类的子类必须要完成父类的抽象方法, 除非它自己也是抽象的. 📚&lt;/li&gt;
 &lt;li&gt;抽象类无法实例化(这是基本概念). 🛑&lt;/li&gt;
@@ -1740,8 +1980,7 @@
 &lt;li&gt;抽象子类可以将父类的&lt;code&gt;非抽象方法&lt;/code&gt;重写为&lt;code&gt;抽象方法&lt;/code&gt;. 🔧&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;抽象子类&lt;/code&gt;的父类可以是&lt;code&gt;非抽象的&lt;/code&gt;. 🔄&lt;/li&gt;
 &lt;li&gt;虽然抽象类并不能实例化, 但是依然可以最为一种数据类型. 📊&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
+&lt;/ol&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;generics--范型的首次引入大纲外&#34;&gt;generics | 范型的首次引入(大纲外)
 &lt;/h3&gt;&lt;p&gt;范型是 java 中的一种机制, 它允许你可以对某些类的类型不做定义, 等到需要实例化类的时候再定义其类型.&lt;/p&gt;
 &lt;h4 id=&#34;优势&#34;&gt;优势
@@ -1768,9 +2007,8 @@
 &lt;li&gt;不能有构造器&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;🌰 举个栗子：接口就像是一个纯抽象的模板，只定义规范不实现细节。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;[!TIP]
-📌 重要提示&lt;/p&gt;
+&lt;blockquote class=&#34;alert alert-tip&#34;&gt;
+    &lt;p&gt;📌 重要提示&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;🔄 &lt;strong&gt;静态方法特性&lt;/strong&gt;：所有类中的静态方法都是类方法，无法被子类重写。&lt;/li&gt;
 &lt;/ol&gt;
@@ -1784,8 +2022,7 @@
 &lt;ul&gt;
 &lt;li&gt;💡 接口本质上是一个纯抽象模板&lt;/li&gt;
 &lt;li&gt;🚫 与抽象类不同，接口完全不能包含任何实现细节（除非使用 default 方法）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
+&lt;/ul&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;如果我们要在接口中定义默认方法的实现怎么办&#34;&gt;如果我们要在接口中定义默认方法的实现怎么办
 &lt;/h3&gt;&lt;p&gt;这个时候我们就可以使用&lt;code&gt;default&lt;/code&gt;关键字定义这个方法的默认实现.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;interface&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;A&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
@@ -1831,11 +2068,11 @@
         </item>
         <item>
         <title>Chapter12</title>
-        <link>https://Gzmomo001.github.io/p/chapter12/</link>
+        <link>http://localhost:1313/p/chapter12/</link>
         <pubDate>Sun, 25 May 2025 15:21:54 +0800</pubDate>
         
-        <guid>https://Gzmomo001.github.io/p/chapter12/</guid>
-        <description>&lt;img src="https://Gzmomo001.github.io/java.png" alt="Featured image of post Chapter12" /&gt;&lt;h2 id=&#34;情景&#34;&gt;情景
+        <guid>http://localhost:1313/p/chapter12/</guid>
+        <description>&lt;img src="http://localhost:1313/java.png" alt="Featured image of post Chapter12" /&gt;&lt;h2 id=&#34;情景&#34;&gt;情景
 &lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;随着我们的代码复杂度的增长, 很多时候我们无法完全避免程序在运行的过程中出错. 很多时候会出现程序在执行某些不重要的代码的时候报错,然后整个程序直接停止.&lt;/li&gt;
 &lt;li&gt;整个项目的代码量过大导致使用 debug 功能修复代码的时候效率过低.&lt;/li&gt;
@@ -1893,7 +2130,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;exception-types--错误类型&#34;&gt;Exception Types | 错误类型
-&lt;/h2&gt;&lt;img src=&#34;https://Gzmomo001.github.io/p/chapter12/exception_hu871153257450387973.png&#34; width=&#34;1200&#34; height=&#34;474&#34; alt=&#34;exception types&#34;&gt;
+&lt;/h2&gt;&lt;img src=&#34;http://localhost:1313/p/chapter12/exception_hu_821cfc0c383d1a10.png&#34; width=&#34;1200&#34; height=&#34;474&#34; alt=&#34;exception types&#34;&gt;
 &lt;p&gt;在 Java 中， Throwable 是所有异常和错误的根类。所有通过 throw 抛出的异常必须继承自 Throwable 。其直接子类包括：&lt;/p&gt;
 &lt;h3 id=&#34;error&#34;&gt;Error
 &lt;/h3&gt;&lt;h4 id=&#34;linkageerror&#34;&gt;LinkageError
@@ -1920,9 +2157,8 @@
 &lt;/li&gt;
 &lt;li&gt;这些错误通常无法恢复，程序应该终止&lt;/li&gt;
 &lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;[!NOTE]
-栈溢出(Stack Overflow)是指程序调用栈的内存空间被耗尽的情况，属于一种运行时错误。主要特点包括：&lt;/p&gt;
+&lt;blockquote class=&#34;alert alert-note&#34;&gt;
+    &lt;p&gt;栈溢出(Stack Overflow)是指程序调用栈的内存空间被耗尽的情况，属于一种运行时错误。主要特点包括：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;产生原因 ：&lt;/li&gt;
 &lt;/ol&gt;
@@ -1930,8 +2166,7 @@
 &lt;li&gt;递归调用没有正确的终止条件&lt;/li&gt;
 &lt;li&gt;函数调用层次过深&lt;/li&gt;
 &lt;li&gt;局部变量占用过多栈空间&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
+&lt;/ul&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;exception&#34;&gt;Exception
 &lt;/h3&gt;&lt;h4 id=&#34;classnotfoundexception&#34;&gt;ClassNotFoundException
 &lt;/h4&gt;&lt;ul&gt;
@@ -1958,10 +2193,8 @@
 &lt;li&gt;也是检查型异&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;runtimeexception&#34;&gt;RuntimeException
-&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;[!WARN]
-运行时错误是比较重点的 Exception 类&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;/h4&gt;&lt;blockquote class=&#34;alert alert-warn&#34;&gt;
+    &lt;p&gt;运行时错误是比较重点的 Exception 类&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h5 id=&#34;arithmeticexception&#34;&gt;ArithmeticException
 &lt;/h5&gt;&lt;ul&gt;
 &lt;li&gt;算术运算错误，如除以零&lt;/li&gt;
@@ -2013,10 +2246,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;throw&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;new&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Exception&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;[!NOTE]
-当你我们使用 try catch 语句的时候, 如果要定义多个 catch, 那么前面的 catch 的异常类型必须是后面的异常类型的子类, 或者同级.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote class=&#34;alert alert-note&#34;&gt;
+    &lt;p&gt;当你我们使用 try catch 语句的时候, 如果要定义多个 catch, 那么前面的 catch 的异常类型必须是后面的异常类型的子类, 或者同级.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;rethrowing-exceptions--重新抛出异常&#34;&gt;Rethrowing Exceptions | 重新抛出异常
 &lt;/h3&gt;&lt;p&gt;当我们在某处代码中捕获到异常的时候, 但是在此处并无法处理异常, 或者想要在这里先记录异常信息, 方便维护. 我们就能在捕获到异常后, 进行一些操作后将异常重新抛出.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;try&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
@@ -2048,13 +2279,11 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;File&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;file&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;new&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;File&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;parent&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;File&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;child&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// parent is file class&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;[!NOTE]&lt;/p&gt;
-&lt;ol&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote class=&#34;alert alert-note&#34;&gt;
+    &lt;ol&gt;
 &lt;li&gt;使用第一种的构造器的时候主要是创建的文件单一, 功能简单, 或者目录明确.&lt;/li&gt;
 &lt;li&gt;对于第二第三种构造器主要是用于需要在某一个目录下进行多次的文件编辑时使用.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
+&lt;/ol&gt;&lt;/blockquote&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;file&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;exists&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// + boolean&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;file&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;isDirectory&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// + boolean&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;file&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;isFile&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// + boolean&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
@@ -2088,25 +2317,21 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;writer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;flush&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// 强制刷新缓冲区&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;writer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;close&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// 关闭流&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;writer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;checkError&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// 检查是否有错误发生&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;[!NOTE]
-有了这些知识, 结合之前学到了 Scanner 类, 我们只需要将构造器的参数改为 File 类传入 Scanner 类就能使用之前所学的方法.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote class=&#34;alert alert-note&#34;&gt;
+    &lt;p&gt;有了这些知识, 结合之前学到了 Scanner 类, 我们只需要将构造器的参数改为 File 类传入 Scanner 类就能使用之前所学的方法.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;reading-data-from-the-web&#34;&gt;Reading Data from the web
 &lt;/h2&gt;&lt;p&gt;这里包含了一些爬虫知识&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;[!ERROR]
-暂时不看, 估计不是考试重点&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;blockquote class=&#34;alert alert-error&#34;&gt;
+    &lt;p&gt;暂时不看, 估计不是考试重点&lt;/p&gt;&lt;/blockquote&gt;
 </description>
         </item>
         <item>
         <title>Stack theme hugo 字体设置</title>
-        <link>https://Gzmomo001.github.io/p/stack-theme-hugo-%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE/</link>
+        <link>http://localhost:1313/p/stack-theme-hugo-%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE/</link>
         <pubDate>Sun, 25 May 2025 02:28:03 +0800</pubDate>
         
-        <guid>https://Gzmomo001.github.io/p/stack-theme-hugo-%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE/</guid>
-        <description>&lt;img src="https://Gzmomo001.github.io/hugo.jpeg" alt="Featured image of post Stack theme hugo 字体设置" /&gt;&lt;h2 id=&#34;参考链接&#34;&gt;参考链接
+        <guid>http://localhost:1313/p/stack-theme-hugo-%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE/</guid>
+        <description>&lt;img src="http://localhost:1313/hugo.jpeg" alt="Featured image of post Stack theme hugo 字体设置" /&gt;&lt;h2 id=&#34;参考链接&#34;&gt;参考链接
 &lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.lufei.de/p/ziti/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;博客教程&lt;/a&gt;
 &lt;a class=&#34;link&#34; href=&#34;https://chinese-font.netlify.app/cdn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -2160,11 +2385,11 @@
         </item>
         <item>
         <title>Chapter11</title>
-        <link>https://Gzmomo001.github.io/p/chapter11/</link>
+        <link>http://localhost:1313/p/chapter11/</link>
         <pubDate>Sat, 24 May 2025 21:05:41 +0800</pubDate>
         
-        <guid>https://Gzmomo001.github.io/p/chapter11/</guid>
-        <description>&lt;img src="https://Gzmomo001.github.io/java.png" alt="Featured image of post Chapter11" /&gt;&lt;h1 id=&#34;继承-和-多态java&#34;&gt;继承 和 多态(java)
+        <guid>http://localhost:1313/p/chapter11/</guid>
+        <description>&lt;img src="http://localhost:1313/java.png" alt="Featured image of post Chapter11" /&gt;&lt;h1 id=&#34;继承-和-多态java&#34;&gt;继承 和 多态(java)
 &lt;/h1&gt;&lt;p&gt;这个章节是基于类的延伸&lt;/p&gt;
 &lt;h2 id=&#34;子类和父类&#34;&gt;子类和父类
 &lt;/h2&gt;&lt;p&gt;在 java 中有一个关键字叫 &amp;rsquo;extends&amp;rsquo;，意思是扩展， 这个关键字可以定义一个类的延伸类, 并具有所有原先类的方法(method)和变量(data field)。&lt;/p&gt;
@@ -2198,13 +2423,11 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;major&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;major&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;[!tip]&lt;/p&gt;
-&lt;ol&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote class=&#34;alert alert-tip&#34;&gt;
+    &lt;ol&gt;
 &lt;li&gt;如果这里的构造器没有调用父类的构造器, 那么编译器会会在编译的时候在该构造器的最前面先调用父类的无参构造器.&lt;/li&gt;
 &lt;li&gt;当父类使用 final 关键字的时候, 则无法定义其子类&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
+&lt;/ol&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;转型&#34;&gt;转型
 &lt;/h2&gt;&lt;p&gt;在 Java 中，类型转换主要分为两种：向上转型（upcasting）和向下转型（downcasting）。
 转型可以改变原有实例的 data field. 但同时也伴随着风险.&lt;/p&gt;
@@ -2223,10 +2446,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Person&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;person&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;student&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// 自动向上转型&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// 或者显式写法&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Person&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;person2&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Person&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;student&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// 效果相同&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;[!tip]
-当&lt;code&gt;子类&lt;/code&gt;想临时使用&lt;code&gt;父类&lt;/code&gt;的某个方法的时候可以仿照这个例子调用: &amp;ldquo;((father)child).method();&amp;rdquo;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote class=&#34;alert alert-tip&#34;&gt;
+    &lt;p&gt;当&lt;code&gt;子类&lt;/code&gt;想临时使用&lt;code&gt;父类&lt;/code&gt;的某个方法的时候可以仿照这个例子调用: &amp;ldquo;((father)child).method();&amp;rdquo;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;向下转型downcasting&#34;&gt;向下转型（Downcasting）
 &lt;/h3&gt;&lt;p&gt;能够向下转型的几种情况.&lt;/p&gt;
 &lt;ol&gt;
@@ -2316,10 +2537,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;比如之前章节学的, 当我们使用&lt;code&gt;wrapper class&lt;/code&gt;的时候, 不管是什么类型的类, 我们都可以使用相同的&lt;code&gt;compareTo&lt;/code&gt;方法.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;[!tip]
-方法重写的前提是父类的方法没有使用 final 关键字. 使用 final 关键字的方法无法被子类重写, 这样做可以防止一些关键的方法被错误的重写, 能让子类的代码更加规范.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;blockquote class=&#34;alert alert-tip&#34;&gt;
+    &lt;p&gt;方法重写的前提是父类的方法没有使用 final 关键字. 使用 final 关键字的方法无法被子类重写, 这样做可以防止一些关键的方法被错误的重写, 能让子类的代码更加规范.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;overriding-vs-overloading&#34;&gt;Overriding vs. Overloading
 &lt;/h3&gt;&lt;h3 id=&#34;方法重写&#34;&gt;方法重写
 &lt;/h3&gt;&lt;p&gt;方法重写是子类对与父类的方法的重新定义&lt;/p&gt;
@@ -2339,10 +2558,8 @@
 &lt;p&gt;调用后会显示一些关于这个类的信息. 信息的构成为&amp;lt;实例名称&amp;gt;@&amp;lt;哈希值&amp;gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;[!tip]
-当你使用 print 直接打印的类的时候, 类就会自动调用这个方法然后返回字符串.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;blockquote class=&#34;alert alert-tip&#34;&gt;
+    &lt;p&gt;当你使用 print 直接打印的类的时候, 类就会自动调用这个方法然后返回字符串.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;多态&#34;&gt;多态
 &lt;/h2&gt;&lt;p&gt;这个章节主要讲类可以作为一个参数传入方法中使用.&lt;/p&gt;
 &lt;h3 id=&#34;dynamic-binding--动态绑定&#34;&gt;Dynamic Binding | 动态绑定
@@ -2376,10 +2593,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// 从其他集合创建 ArrayList&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ArrayList&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Double&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;list3&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;new&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ArrayList&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Arrays&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;asList&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;));&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;[!tip]
-&amp;lsquo;&amp;lt;&amp;gt;&amp;lsquo;是泛型, 目前知道知道括号里填什么类型的 wrapper 类, 这个数组就会存储什么类型的变量.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote class=&#34;alert alert-tip&#34;&gt;
+    &lt;p&gt;&amp;lsquo;&amp;lt;&amp;gt;&amp;lsquo;是泛型, 目前知道知道括号里填什么类型的 wrapper 类, 这个数组就会存储什么类型的变量.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;add&#34;&gt;add
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;// 在列表末尾添加元素&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;list&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;add&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;element&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;           &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// 返回 boolean&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
@@ -2436,19 +2651,17 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// 反转列表&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Collections&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;reverse&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;list&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;[!tip]
-这个类并不线程安全, 这意味着当多个线程同时操作这个类的时候可能会出现一些问题. 另外虽然这个类的容量的可变的, 但还是尽量在一开始就把容量定义好. 因为当类需要自己扩增容量的时候会影响性能.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote class=&#34;alert alert-tip&#34;&gt;
+    &lt;p&gt;这个类并不线程安全, 这意味着当多个线程同时操作这个类的时候可能会出现一些问题. 另外虽然这个类的容量的可变的, 但还是尽量在一开始就把容量定义好. 因为当类需要自己扩增容量的时候会影响性能.&lt;/p&gt;&lt;/blockquote&gt;
 </description>
         </item>
         <item>
         <title>本地静态网站托管</title>
-        <link>https://Gzmomo001.github.io/p/%E6%9C%AC%E5%9C%B0%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1/</link>
+        <link>http://localhost:1313/p/%E6%9C%AC%E5%9C%B0%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1/</link>
         <pubDate>Sat, 24 May 2025 16:47:04 +0800</pubDate>
         
-        <guid>https://Gzmomo001.github.io/p/%E6%9C%AC%E5%9C%B0%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1/</guid>
-        <description>&lt;img src="https://Gzmomo001.github.io/default.jpeg" alt="Featured image of post 本地静态网站托管" /&gt;&lt;h1 id=&#34;如何在本地搭建类似-gihub-的静态网站托管服务&#34;&gt;如何在本地搭建类似 gihub 的静态网站托管服务
+        <guid>http://localhost:1313/p/%E6%9C%AC%E5%9C%B0%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1/</guid>
+        <description>&lt;img src="http://localhost:1313/default.jpeg" alt="Featured image of post 本地静态网站托管" /&gt;&lt;h1 id=&#34;如何在本地搭建类似-gihub-的静态网站托管服务&#34;&gt;如何在本地搭建类似 gihub 的静态网站托管服务
 &lt;/h1&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
 &lt;/h2&gt;&lt;p&gt;本博客的初衷是因为博主之前使用第三方的静态博客发现国内的网站对这些托管并不友好, 特别是 wx 经常会对我的博客域名封杀. 而且这个网页托管的速度也比较一般. 所以打算在本地搭建网页托管的服务, 使用内网穿透来实现外网访问. 这也算是一个填坑博客吧.🤓&lt;/p&gt;
 &lt;h2 id=&#34;requirements&#34;&gt;requirements
@@ -2492,11 +2705,11 @@
         </item>
         <item>
         <title>Daliy_blog2025 05 24</title>
-        <link>https://Gzmomo001.github.io/p/daliy_blog2025-05-24/</link>
+        <link>http://localhost:1313/p/daliy_blog2025-05-24/</link>
         <pubDate>Sat, 24 May 2025 03:53:50 +0800</pubDate>
         
-        <guid>https://Gzmomo001.github.io/p/daliy_blog2025-05-24/</guid>
-        <description>&lt;img src="https://Gzmomo001.github.io/default.jpeg" alt="Featured image of post Daliy_blog2025 05 24" /&gt;&lt;h1 id=&#34;不知好歹的博主&#34;&gt;不知好歹的博主
+        <guid>http://localhost:1313/p/daliy_blog2025-05-24/</guid>
+        <description>&lt;img src="http://localhost:1313/default.jpeg" alt="Featured image of post Daliy_blog2025 05 24" /&gt;&lt;h1 id=&#34;不知好歹的博主&#34;&gt;不知好歹的博主
 &lt;/h1&gt;&lt;p&gt;博主第二天要考高数, 现在还熬到快四点钟真的很有生活了.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 添加网页个性化鼠标指针&lt;/li&gt;
@@ -2549,11 +2762,11 @@
         </item>
         <item>
         <title>Daliy_blog2025 05 22</title>
-        <link>https://Gzmomo001.github.io/p/daliy_blog2025-05-22/</link>
+        <link>http://localhost:1313/p/daliy_blog2025-05-22/</link>
         <pubDate>Thu, 22 May 2025 23:40:31 +0800</pubDate>
         
-        <guid>https://Gzmomo001.github.io/p/daliy_blog2025-05-22/</guid>
-        <description>&lt;img src="https://Gzmomo001.github.io/default.gif" alt="Featured image of post Daliy_blog2025 05 22" /&gt;&lt;h1 id=&#34;日常记录&#34;&gt;日常记录
+        <guid>http://localhost:1313/p/daliy_blog2025-05-22/</guid>
+        <description>&lt;img src="http://localhost:1313/default.gif" alt="Featured image of post Daliy_blog2025 05 22" /&gt;&lt;h1 id=&#34;日常记录&#34;&gt;日常记录
 &lt;/h1&gt;&lt;h2 id=&#34;关于自己&#34;&gt;关于自己
 &lt;/h2&gt;&lt;p&gt;昨天晚上搞博客搞的太上头, 一不小心又熬到 4.多 🥹. 然后今天睡到下午才起床, 真是得不偿失啊啊啊啊. 但我这种性格就是, 很多时候如果不把一件事做完就是不会停下来. 直到我把这件事做到某一个我想对满意的阶段的时候我可能才会开始休息. 简直就是先天牛马圣体.下周大大小小的考试就基本都考完了, 所以, 这几天再撑一下吧 🫠.&lt;/p&gt;
 &lt;h2 id=&#34;关于考试&#34;&gt;关于考试
@@ -2579,11 +2792,11 @@
         </item>
         <item>
         <title>Hugo_notes</title>
-        <link>https://Gzmomo001.github.io/p/hugo_notes/</link>
+        <link>http://localhost:1313/p/hugo_notes/</link>
         <pubDate>Thu, 22 May 2025 23:29:01 +0800</pubDate>
         
-        <guid>https://Gzmomo001.github.io/p/hugo_notes/</guid>
-        <description>&lt;img src="https://Gzmomo001.github.io/p/hugo_notes/1.jpeg" alt="Featured image of post Hugo_notes" /&gt;&lt;h1 id=&#34;hugo-笔记&#34;&gt;Hugo 笔记
+        <guid>http://localhost:1313/p/hugo_notes/</guid>
+        <description>&lt;img src="http://localhost:1313/p/hugo_notes/1.jpeg" alt="Featured image of post Hugo_notes" /&gt;&lt;h1 id=&#34;hugo-笔记&#34;&gt;Hugo 笔记
 &lt;/h1&gt;&lt;p&gt;这里是我记录 Hugo 这个框架笔记的方法, 方便我以后忘记的时候能回来查看. 本 blog 会持续更新&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;当然这里很多笔记也会是基于 stack 这个主题, 不过 hugo 大部分语法应该是通用的. 应该也有一定的参考价值.&lt;/p&gt;
@@ -2610,15 +2823,13 @@
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo version
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git --version
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果成功显示了版本号, 则说明安装成功.&lt;/p&gt;
-&lt;h3 id=&#34;顺着官网的文档httpsgohugoiogetting-startedquick-start建立你的第一个本地服务的博客&#34;&gt;顺着官网的&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/getting-started/quick-start/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;h3 id=&#34;顺着官网的文档建立你的第一个本地服务的博客&#34;&gt;顺着官网的&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/getting-started/quick-start/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;文档&lt;/a&gt;建立你的第一个本地服务的博客
-&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;[!TIP]&lt;/p&gt;
-&lt;ol&gt;
+&lt;/h3&gt;&lt;blockquote class=&#34;alert alert-tip&#34;&gt;
+    &lt;ol&gt;
 &lt;li&gt;最后一次修改完博客并保存之后, 最好再运行一下&amp;quot;hugo -D&amp;quot;来刷新一下静态文件&lt;/li&gt;
 &lt;li&gt;当你最后最后一次修改完博客之后, 你需要提交你的修改. 具体过程&lt;a class=&#34;link&#34; href=&#34;#git&#34; &gt;参照教程&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
+&lt;/ol&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;将你的本地-git-仓库-push-到-github&#34;&gt;将你的本地 git 仓库 push 到 github
 &lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;创建一个公共仓库, 并将其命名为&amp;quot;&amp;lt;你的用户名&amp;gt;.github.io&amp;quot;.&lt;/li&gt;
@@ -2700,7 +2911,7 @@
     &gt;参考博客&lt;/a&gt;. 圆框使用 AI 修改.&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 代码框自动折叠功能,&lt;a class=&#34;link&#34; href=&#34;https://letere-gzj.github.io/hugo-stack/p/hugo/custom-stack-theme/#8-%E8%87%AA%E5%AE%9A%E4%B9%89md%E5%BC%95%E7%94%A8%E5%9D%97%E9%A2%9C%E8%89%B2%E6%A8%A1%E6%9D%BF&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;参考&lt;/a&gt;. 在原有的基础上修改了一下样式, 更加美观.&lt;/li&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 修复字体问题, 已完成. &lt;a class=&#34;link&#34; href=&#34;https://Gzmomo001.github.io/p/stack-theme-hugo-%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE/&#34; &gt;教程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 修复字体问题, 已完成. &lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/p/stack-theme-hugo-%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE/&#34; &gt;教程&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 返回顶部按钮&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 防止爬虫(&lt;a class=&#34;link&#34; href=&#34;https://blog.lufei.de/p/215/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://blog.lufei.de/p/215/&lt;/a&gt;)
@@ -2781,11 +2992,11 @@
         </item>
         <item>
         <title>Myfirstblog</title>
-        <link>https://Gzmomo001.github.io/p/myfirstblog/</link>
+        <link>http://localhost:1313/p/myfirstblog/</link>
         <pubDate>Thu, 22 May 2025 04:08:44 +0800</pubDate>
         
-        <guid>https://Gzmomo001.github.io/p/myfirstblog/</guid>
-        <description>&lt;img src="https://Gzmomo001.github.io/default.jpeg" alt="Featured image of post Myfirstblog" /&gt;&lt;h1 id=&#34;这个是我的第一个条博客准确来说是第二条-hhh&#34;&gt;这个是我的第一个条博客(准确来说是第二条 hhh)
+        <guid>http://localhost:1313/p/myfirstblog/</guid>
+        <description>&lt;img src="http://localhost:1313/default.jpeg" alt="Featured image of post Myfirstblog" /&gt;&lt;h1 id=&#34;这个是我的第一个条博客准确来说是第二条-hhh&#34;&gt;这个是我的第一个条博客(准确来说是第二条 hhh)
 &lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;时间: 25 年 5 月 22 号&lt;/li&gt;
 &lt;/ul&gt;
@@ -2817,10 +3028,10 @@
         </item>
         <item>
         <title>Update Logs</title>
-        <link>https://Gzmomo001.github.io/update-logs/</link>
+        <link>http://localhost:1313/update-logs/</link>
         <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://Gzmomo001.github.io/update-logs/</guid>
+        <guid>http://localhost:1313/update-logs/</guid>
         <description>&lt;h2 id=&#34;todo&#34;&gt;TODO
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 配置评论区, &lt;a class=&#34;link&#34; href=&#34;https://juejin.cn/post/6844903834712539150&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -2833,7 +3044,7 @@
     &gt;参考博客&lt;/a&gt;. 圆框使用 AI 修改.&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 代码框自动折叠功能,&lt;a class=&#34;link&#34; href=&#34;https://letere-gzj.github.io/hugo-stack/p/hugo/custom-stack-theme/#8-%E8%87%AA%E5%AE%9A%E4%B9%89md%E5%BC%95%E7%94%A8%E5%9D%97%E9%A2%9C%E8%89%B2%E6%A8%A1%E6%9D%BF&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;参考&lt;/a&gt;. 在原有的基础上修改了一下样式, 更加美观.&lt;/li&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 修复字体问题, 已完成. &lt;a class=&#34;link&#34; href=&#34;https://Gzmomo001.github.io/p/stack-theme-hugo-%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE/&#34; &gt;教程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 修复字体问题, 已完成. &lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/p/stack-theme-hugo-%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE/&#34; &gt;教程&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 返回顶部按钮&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 防止爬虫(&lt;a class=&#34;link&#34; href=&#34;https://blog.lufei.de/p/215/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://blog.lufei.de/p/215/&lt;/a&gt;)&lt;/li&gt;
@@ -2874,11 +3085,11 @@
         </item>
         <item>
         <title>Chinese Test</title>
-        <link>https://Gzmomo001.github.io/p/test-chinese/</link>
+        <link>http://localhost:1313/p/test-chinese/</link>
         <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
         
-        <guid>https://Gzmomo001.github.io/p/test-chinese/</guid>
-        <description>&lt;img src="https://Gzmomo001.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg" alt="Featured image of post Chinese Test" /&gt;&lt;h2 id=&#34;正文测试&#34;&gt;正文测试
+        <guid>http://localhost:1313/p/test-chinese/</guid>
+        <description>&lt;img src="http://localhost:1313/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg" alt="Featured image of post Chinese Test" /&gt;&lt;h2 id=&#34;正文测试&#34;&gt;正文测试
 &lt;/h2&gt;&lt;p&gt;而这些并不是完全重要，更加重要的问题是， 带着这些问题，我们来审视一下学生会退会。 既然如何， 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 我们不得不面对一个非常尴尬的事实，那就是， 可是，即使是这样，学生会退会的出现仍然代表了一定的意义。 学生会退会，发生了会如何，不发生又会如何。 经过上述讨论， 生活中，若学生会退会出现了，我们就不得不考虑它出现了的事实。 学生会退会，到底应该如何实现。 这样看来， 在这种困难的抉择下，本人思来想去，寝食难安。 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 就我个人来说，学生会退会对我的意义，不能不说非常重大。 莎士比亚曾经提到过，人的一生是短的，但如果卑劣地过这一生，就太长了。这似乎解答了我的疑惑。 莫扎特说过一句富有哲理的话，谁和我一样用功，谁就会和我一样成功。这启发了我， 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 学生会退会，到底应该如何实现。 一般来说， 从这个角度来看， 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 在这种困难的抉择下，本人思来想去，寝食难安。 了解清楚学生会退会到底是一种怎么样的存在，是解决一切问题的关键。 一般来说， 生活中，若学生会退会出现了，我们就不得不考虑它出现了的事实。 问题的关键究竟为何？ 而这些并不是完全重要，更加重要的问题是。&lt;/p&gt;
 &lt;p&gt;奥斯特洛夫斯基曾经说过，共同的事业，共同的斗争，可以使人们产生忍受一切的力量。　带着这句话，我们还要更加慎重的审视这个问题： 一般来讲，我们都必须务必慎重的考虑考虑。 既然如此， 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 带着这些问题，我们来审视一下学生会退会。 我认为， 我认为， 在这种困难的抉择下，本人思来想去，寝食难安。 问题的关键究竟为何？ 每个人都不得不面对这些问题。 在面对这种问题时， 要想清楚，学生会退会，到底是一种怎么样的存在。 我认为， 既然如此， 每个人都不得不面对这些问题。 在面对这种问题时， 那么， 我认为， 学生会退会因何而发生。&lt;/p&gt;
 &lt;h2 id=&#34;引用&#34;&gt;引用
@@ -2891,10 +3102,10 @@
     &gt;最暖的憂傷 - 田馥甄&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;图片&#34;&gt;图片
-&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://Gzmomo001.github.io/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash.jpg&#34;
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash.jpg&#34;
 	width=&#34;667&#34;
 	height=&#34;1000&#34;
-	srcset=&#34;https://Gzmomo001.github.io/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu13768363498926278726.jpg 480w, https://Gzmomo001.github.io/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu13380208884366868750.jpg 1024w&#34;
+	srcset=&#34;http://localhost:1313/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu_e98fca2b4272416e.jpg 480w, http://localhost:1313/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu_e3d37c9ded115b12.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Photo by Florian Klauer on Unsplash&#34;
@@ -2904,10 +3115,10 @@
 		data-flex-grow=&#34;66&#34;
 		data-flex-basis=&#34;160px&#34;
 	
-&gt;  &lt;img src=&#34;https://Gzmomo001.github.io/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash.jpg&#34;
+&gt;  &lt;img src=&#34;http://localhost:1313/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash.jpg&#34;
 	width=&#34;1000&#34;
 	height=&#34;667&#34;
-	srcset=&#34;https://Gzmomo001.github.io/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu1712544344331247820.jpg 480w, https://Gzmomo001.github.io/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu12475395149584884402.jpg 1024w&#34;
+	srcset=&#34;http://localhost:1313/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu_e13c58d5189f892c.jpg 480w, http://localhost:1313/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu_8fc948b7ee525251.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Photo by Luca Bravo on Unsplash&#34;
@@ -2918,10 +3129,10 @@
 		data-flex-basis=&#34;359px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Gzmomo001.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg&#34;
 	width=&#34;1000&#34;
 	height=&#34;750&#34;
-	srcset=&#34;https://Gzmomo001.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu8363585391189779282.jpg 480w, https://Gzmomo001.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu15102473124145023839.jpg 1024w&#34;
+	srcset=&#34;http://localhost:1313/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu_503c0ebcc5245e10.jpg 480w, http://localhost:1313/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu_48c98de55fb3c999.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Photo by Helena Hertz on Unsplash&#34;
@@ -2931,10 +3142,10 @@
 		data-flex-grow=&#34;133&#34;
 		data-flex-basis=&#34;320px&#34;
 	
-&gt;  &lt;img src=&#34;https://Gzmomo001.github.io/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash.jpg&#34;
+&gt;  &lt;img src=&#34;http://localhost:1313/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash.jpg&#34;
 	width=&#34;667&#34;
 	height=&#34;1000&#34;
-	srcset=&#34;https://Gzmomo001.github.io/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hu15886963791847885497.jpg 480w, https://Gzmomo001.github.io/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hu11726476772237334826.jpg 1024w&#34;
+	srcset=&#34;http://localhost:1313/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hu_f81a3588c5c4a663.jpg 480w, http://localhost:1313/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hu_1c52ba2a4ad7b9a0.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Photo by Hudai Gayiran on Unsplash&#34;
@@ -2954,19 +3165,19 @@
         </item>
         <item>
         <title>Archives</title>
-        <link>https://Gzmomo001.github.io/archives/</link>
+        <link>http://localhost:1313/archives/</link>
         <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://Gzmomo001.github.io/archives/</guid>
+        <guid>http://localhost:1313/archives/</guid>
         <description></description>
         </item>
         <item>
         <title>Markdown Syntax Guide</title>
-        <link>https://Gzmomo001.github.io/p/markdown-syntax-guide/</link>
+        <link>http://localhost:1313/p/markdown-syntax-guide/</link>
         <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://Gzmomo001.github.io/p/markdown-syntax-guide/</guid>
-        <description>&lt;img src="https://Gzmomo001.github.io/p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg" alt="Featured image of post Markdown Syntax Guide" /&gt;&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;
+        <guid>http://localhost:1313/p/markdown-syntax-guide/</guid>
+        <description>&lt;img src="http://localhost:1313/p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg" alt="Featured image of post Markdown Syntax Guide" /&gt;&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;
 &lt;h2 id=&#34;headings&#34;&gt;Headings
 &lt;/h2&gt;&lt;p&gt;The following HTML &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;—&lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; elements represent six levels of section headings. &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; is the highest section level while &lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; is the lowest.&lt;/p&gt;
 &lt;h1 id=&#34;h1&#34;&gt;H1
@@ -2993,61 +3204,61 @@
 &lt;h2 id=&#34;tables&#34;&gt;Tables
 &lt;/h2&gt;&lt;p&gt;Tables aren&amp;rsquo;t part of the core Markdown spec, but Hugo supports supports them out-of-the-box.&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Name&lt;/th&gt;
-&lt;th&gt;Age&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Bob&lt;/td&gt;
-&lt;td&gt;27&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Alice&lt;/td&gt;
-&lt;td&gt;23&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Name&lt;/th&gt;
+          &lt;th&gt;Age&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Bob&lt;/td&gt;
+          &lt;td&gt;27&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Alice&lt;/td&gt;
+          &lt;td&gt;23&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h4 id=&#34;inline-markdown-within-tables&#34;&gt;Inline Markdown within tables
 &lt;/h4&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Italics&lt;/th&gt;
-&lt;th&gt;Bold&lt;/th&gt;
-&lt;th&gt;Code&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;em&gt;italics&lt;/em&gt;&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;bold&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;code&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Italics&lt;/th&gt;
+          &lt;th&gt;Bold&lt;/th&gt;
+          &lt;th&gt;Code&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;em&gt;italics&lt;/em&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;bold&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;code&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;A&lt;/th&gt;
-&lt;th&gt;B&lt;/th&gt;
-&lt;th&gt;C&lt;/th&gt;
-&lt;th&gt;D&lt;/th&gt;
-&lt;th&gt;E&lt;/th&gt;
-&lt;th&gt;F&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/td&gt;
-&lt;td&gt;Phasellus ultricies, sapien non euismod aliquam, dui ligula tincidunt odio, at accumsan nulla sapien eget ex.&lt;/td&gt;
-&lt;td&gt;Proin eleifend dictum ipsum, non euismod ipsum pulvinar et. Vivamus sollicitudin, quam in pulvinar aliquam, metus elit pretium purus&lt;/td&gt;
-&lt;td&gt;Proin sit amet velit nec enim imperdiet vehicula.&lt;/td&gt;
-&lt;td&gt;Ut bibendum vestibulum quam, eu egestas turpis gravida nec&lt;/td&gt;
-&lt;td&gt;Sed scelerisque nec turpis vel viverra. Vivamus vitae pretium sapien&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;A&lt;/th&gt;
+          &lt;th&gt;B&lt;/th&gt;
+          &lt;th&gt;C&lt;/th&gt;
+          &lt;th&gt;D&lt;/th&gt;
+          &lt;th&gt;E&lt;/th&gt;
+          &lt;th&gt;F&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/td&gt;
+          &lt;td&gt;Phasellus ultricies, sapien non euismod aliquam, dui ligula tincidunt odio, at accumsan nulla sapien eget ex.&lt;/td&gt;
+          &lt;td&gt;Proin eleifend dictum ipsum, non euismod ipsum pulvinar et. Vivamus sollicitudin, quam in pulvinar aliquam, metus elit pretium purus&lt;/td&gt;
+          &lt;td&gt;Proin sit amet velit nec enim imperdiet vehicula.&lt;/td&gt;
+          &lt;td&gt;Ut bibendum vestibulum quam, eu egestas turpis gravida nec&lt;/td&gt;
+          &lt;td&gt;Sed scelerisque nec turpis vel viverra. Vivamus vitae pretium sapien&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id=&#34;code-blocks&#34;&gt;Code Blocks
 &lt;/h2&gt;&lt;h4 id=&#34;code-block-with-backticks&#34;&gt;Code block with backticks
@@ -3149,14 +3360,14 @@
         </item>
         <item>
         <title>Rich Content</title>
-        <link>https://Gzmomo001.github.io/p/rich-content/</link>
+        <link>http://localhost:1313/p/rich-content/</link>
         <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://Gzmomo001.github.io/p/rich-content/</guid>
+        <guid>http://localhost:1313/p/rich-content/</guid>
         <description>&lt;p&gt;Hugo ships with several &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;
-&lt;h2 id=&#34;heading&#34;&gt;
+&lt;h2 id=&#34;&#34;&gt;
 &lt;/h2&gt;&lt;h2 id=&#34;youtube-privacy-enhanced-shortcode&#34;&gt;YouTube Privacy Enhanced Shortcode
 &lt;/h2&gt;&lt;div class=&#34;video-wrapper&#34;&gt;
     &lt;iframe loading=&#34;lazy&#34; 
@@ -3170,7 +3381,31 @@
 &lt;br&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;twitter-simple-shortcode&#34;&gt;Twitter Simple Shortcode
-&lt;/h2&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;“In addition to being more logical, asymmetry has the advantage that its complete appearance is far more optically effective than symmetry.”&lt;br&gt;— Jan Tschichold &lt;a href=&#34;https://t.co/gcv7SrhvJb&#34;&gt;pic.twitter.com/gcv7SrhvJb&lt;/a&gt;&lt;/p&gt;&amp;mdash; Design Reviewed | Graphic Design History (@DesignReviewed) &lt;a href=&#34;https://twitter.com/DesignReviewed/status/1085870671291310081?ref_src=twsrc%5Etfw&#34;&gt;January 17, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;/h2&gt;&lt;style type=&#34;text/css&#34;&gt;
+      .twitter-tweet {
+        font:
+          14px/1.45 -apple-system,
+          BlinkMacSystemFont,
+          &#34;Segoe UI&#34;,
+          Roboto,
+          Oxygen-Sans,
+          Ubuntu,
+          Cantarell,
+          &#34;Helvetica Neue&#34;,
+          sans-serif;
+        border-left: 4px solid #2b7bb9;
+        padding-left: 1.5em;
+        color: #555;
+      }
+      .twitter-tweet a {
+        color: #2b7bb9;
+        text-decoration: none;
+      }
+      blockquote.twitter-tweet a:hover,
+      blockquote.twitter-tweet a:focus {
+        text-decoration: underline;
+      }
+    &lt;/style&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;“In addition to being more logical, asymmetry has the advantage that its complete appearance is far more optically effective than symmetry.”&lt;br&gt;— Jan Tschichold &lt;a href=&#34;https://t.co/gcv7SrhvJb&#34;&gt;pic.twitter.com/gcv7SrhvJb&lt;/a&gt;&lt;/p&gt;&amp;mdash; Design Reviewed | Graphic Design History (@DesignReviewed) &lt;a href=&#34;https://twitter.com/DesignReviewed/status/1085870671291310081?ref_src=twsrc%5Etfw&#34;&gt;January 17, 2019&lt;/a&gt;&lt;/blockquote&gt;
 
 
 &lt;br&gt;
@@ -3215,11 +3450,11 @@
         </item>
         <item>
         <title>Placeholder Text</title>
-        <link>https://Gzmomo001.github.io/p/placeholder-text/</link>
+        <link>http://localhost:1313/p/placeholder-text/</link>
         <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://Gzmomo001.github.io/p/placeholder-text/</guid>
-        <description>&lt;img src="https://Gzmomo001.github.io/p/placeholder-text/matt-le-SJSpo9hQf7s-unsplash.jpg" alt="Featured image of post Placeholder Text" /&gt;&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;
+        <guid>http://localhost:1313/p/placeholder-text/</guid>
+        <description>&lt;img src="http://localhost:1313/p/placeholder-text/matt-le-SJSpo9hQf7s-unsplash.jpg" alt="Featured image of post Placeholder Text" /&gt;&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;
 &lt;p&gt;Redit teque digerit hominumque toris verebor lumina non cervice subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc caluere tempus inhospita parcite confusaque translucet patri vestro qui optatis lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Exierant elisi ambit vivere dedere&lt;/li&gt;
@@ -3246,10 +3481,10 @@
         </item>
         <item>
         <title>Math Typesetting</title>
-        <link>https://Gzmomo001.github.io/p/math-typesetting/</link>
+        <link>http://localhost:1313/p/math-typesetting/</link>
         <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://Gzmomo001.github.io/p/math-typesetting/</guid>
+        <guid>http://localhost:1313/p/math-typesetting/</guid>
         <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;
 &lt;p&gt;In this example we will be using &lt;a class=&#34;link&#34; href=&#34;https://katex.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;KaTeX&lt;/a&gt;&lt;/p&gt;
@@ -3279,11 +3514,11 @@ $$</description>
         </item>
         <item>
         <title>Emoji Support</title>
-        <link>https://Gzmomo001.github.io/p/emoji-support/</link>
+        <link>http://localhost:1313/p/emoji-support/</link>
         <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://Gzmomo001.github.io/p/emoji-support/</guid>
-        <description>&lt;img src="https://Gzmomo001.github.io/p/emoji-support/the-creative-exchange-d2zvqp3fpro-unsplash.jpg" alt="Featured image of post Emoji Support" /&gt;&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;
+        <guid>http://localhost:1313/p/emoji-support/</guid>
+        <description>&lt;img src="http://localhost:1313/p/emoji-support/the-creative-exchange-d2zvqp3fpro-unsplash.jpg" alt="Featured image of post Emoji Support" /&gt;&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;
 &lt;p&gt;The &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/functions/emojify/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;emojify&lt;/code&gt;&lt;/a&gt; function can be called directly in templates or &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/templates/shortcode-templates/#inline-shortcodes&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Inline Shortcodes&lt;/a&gt;.&lt;/p&gt;
@@ -3301,10 +3536,10 @@ $$</description>
         </item>
         <item>
         <title>About me</title>
-        <link>https://Gzmomo001.github.io/about-me/</link>
+        <link>http://localhost:1313/about-me/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://Gzmomo001.github.io/about-me/</guid>
+        <guid>http://localhost:1313/about-me/</guid>
         <description>&lt;p&gt;这里有关于我的一些信息.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 待完成&lt;/li&gt;
@@ -3354,18 +3589,18 @@ $$</description>
         </item>
         <item>
         <title>Search</title>
-        <link>https://Gzmomo001.github.io/search/</link>
+        <link>http://localhost:1313/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://Gzmomo001.github.io/search/</guid>
+        <guid>http://localhost:1313/search/</guid>
         <description></description>
         </item>
         <item>
         <title>Some Useful Links</title>
-        <link>https://Gzmomo001.github.io/some-useful-links/</link>
+        <link>http://localhost:1313/some-useful-links/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://Gzmomo001.github.io/some-useful-links/</guid>
+        <guid>http://localhost:1313/some-useful-links/</guid>
         <description>&lt;p&gt;这里有一些我认为比较实用, 并且常用的一些网站链接.&lt;/p&gt;
 &lt;p&gt;Feel free to take it🥰.&lt;/p&gt;
 &lt;ul&gt;
