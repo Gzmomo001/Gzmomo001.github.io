@@ -2,44 +2,206 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Vpn on Henry Zhang</title>
-        <link>http://localhost:1313/tags/vpn/</link>
+        <link>https://Gzmomo001.github.io/tags/vpn/</link>
         <description>Recent content in Vpn on Henry Zhang</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <copyright>henryzhang070&#43;contact@gmail.com</copyright>
-        <lastBuildDate>Tue, 25 Nov 2025 18:20:14 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/vpn/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>搭建vmless 代理服务器实现科学上网</title>
-        <link>http://localhost:1313/p/%E6%90%AD%E5%BB%BAvmless-%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%9E%E7%8E%B0%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</link>
+        <copyright>blog@mail.henry070.org</copyright>
+        <lastBuildDate>Sat, 20 Dec 2025 13:58:06 -0500</lastBuildDate><atom:link href="https://Gzmomo001.github.io/tags/vpn/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>科学上网配置教程</title>
+        <link>https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/</link>
         <pubDate>Sun, 23 Nov 2025 05:53:10 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/%E6%90%AD%E5%BB%BAvmless-%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%9E%E7%8E%B0%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</guid>
-        <description>&lt;img src="http://localhost:1313/default.jpeg" alt="Featured image of post 搭建vmless 代理服务器实现科学上网" /&gt;&lt;h2 id=&#34;购买服务器&#34;&gt;购买服务器
-&lt;/h2&gt;&lt;p&gt;在开始之前首先要确保你拥有一台能够访问外网的linux服务器，如果没有可以自行购买。博主这里推荐雨云家的服务器，这里已他家的日本大流量服务器为例子演示。
-系统: debain
-配置： 2 cores 2g 100/100mbps 90ping&lt;/p&gt;
-&lt;blockquote class=&#34;alert alert-tips&#34;&gt;
-    &lt;p&gt;在访问服务器的任何端口之前先保证服务器对应端口的防火墙打开，防火墙的端口建议按需开启。&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h2 id=&#34;购买域名optional&#34;&gt;购买域名(optional)
-&lt;/h2&gt;&lt;p&gt;即使没有域名也可以直接通过 ip 访问，只不过会暴露公网 ip 平并且没有 https。所以这里建议购买一个域名。&lt;/p&gt;
-&lt;p&gt;这里只推荐一个域名商： &lt;a class=&#34;link&#34; href=&#34;https://namesilo.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;namesilo.com&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;域名购买之后可以将域名托管到 其他的 dns 厂商，来帮地解析你的域名。 我这里使用 cloudflare。 本帖子主要展示如何搭建代理服务器，所以如果想要了解域名托管相关的知识可以自行问 chat 老师或者搜相关的教程。&lt;/p&gt;
-&lt;p&gt;&lt;del&gt;## 通过 bash 脚本安装 xray&lt;/del&gt;(xray 面板太吃服务器的资源了这里不推荐大家继续使用这个方法了。)&lt;/p&gt;
-&lt;p&gt;博主在这里找到了 github 上的一篇使用 xray 搭建代理服务器的&lt;a class=&#34;link&#34; href=&#34;https://github.com/XTLS/Xray-install/blob/main/README_zh-Hans.md&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;教程&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;本博客将会参考这篇教程搭建代理服务器。&lt;/p&gt;
+        <guid>https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/default.jpeg" alt="Featured image of post 科学上网配置教程" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
+&lt;/h2&gt;&lt;p&gt;首先在这里非常感谢每一个支持我, 信任我的伙伴和朋友们. 你们购买的不仅仅是简单的科学上网, 更是对我&lt;code&gt;技术和服务的认可&lt;/code&gt;. 我在这里承诺凡是购买了服务的朋友都能享受到&lt;code&gt;质保&lt;/code&gt;. 不会出现过一段时间就跑路的问题, 并且如果过程中遇到问题也可以随时联系我解决. 如果本博客有描述得不详细的地方也请给我指出(通过TG 或者 底部的评论区), 我会尽快补全.&lt;/p&gt;
+&lt;h2 id=&#34;我的联系方式&#34;&gt;我的联系方式
+&lt;/h2&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+    &lt;img src=&#34;https://img.shields.io/badge/Email-blog@mail.henry070.org-orange&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Email: blog@mail.henry070.org&#34;
+	
+	
+&gt; &lt;img src=&#34;https://img.shields.io/badge/Telegram-@Henry0z0-blue&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Telegram: Henry0z0&#34;
+	
+	
+&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;安装代理客户端&#34;&gt;安装代理客户端
+&lt;/h2&gt;&lt;blockquote class=&#34;alert alert-note&#34;&gt;
+    &lt;p&gt;点击右侧的导航栏跳转到对应终端的章节&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;这里是开源代理客户端的项目地址:&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/2dust/v2rayN/releases/tag/7.16.6&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;原始仓库&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://proxy.henry070.org/https://github.com/2dust/v2rayN&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;通过我代理的仓库连接&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;代理网站密码: &lt;code&gt;welcome_proxy&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote class=&#34;alert alert-error&#34;&gt;
+    &lt;p&gt;在使用代理链接的情况下为了你的账户安全, 请不要进行任何登录&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;winodws&#34;&gt;Winodws
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;下载链接 | &lt;a class=&#34;link&#34; href=&#34;https://proxy.henry070.org/https://github.com/2dust/v2rayN/releases/download/7.16.6/v2rayN-windows-64.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;v2rayn代理下载链接&lt;/a&gt; | &lt;a class=&#34;link&#34; href=&#34;https://github.com/2dust/v2rayN/releases/download/7.16.6/v2rayN-windows-64.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;v2rayn直连下载链接&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/win1.jpg&#34;
+	width=&#34;1044&#34;
+	height=&#34;634&#34;
+	srcset=&#34;https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/win1_hu_9a6ef8efacf44485.jpg 480w, https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/win1_hu_c1dc58a06ca091a.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;下载下来之后解压文件夹, 并把它放在你记得的文件位置即可&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;164&#34;
+		data-flex-basis=&#34;395px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/win4.jpg&#34;
+	width=&#34;1044&#34;
+	height=&#34;678&#34;
+	srcset=&#34;https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/win4_hu_73072d8f97059ea.jpg 480w, https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/win4_hu_2257914782d53857.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;之后可以选择创建快捷方式到桌面上方便以后打开&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;153&#34;
+		data-flex-basis=&#34;369px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/win3.jpg&#34;
+	width=&#34;1482&#34;
+	height=&#34;953&#34;
+	srcset=&#34;https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/win3_hu_52283cd0435a0081.jpg 480w, https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/win3_hu_7974fe239a362a14.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;双击后或者使用管理员模式打开后点击左上角的配置项并从剪切板导入(提前将我提供的节点复制到剪切板)&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;155&#34;
+		data-flex-basis=&#34;373px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/win5.jpg&#34;
+	width=&#34;1495&#34;
+	height=&#34;844&#34;
+	srcset=&#34;https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/win5_hu_39f25f4cd088e248.jpg 480w, https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/win5_hu_372e73bb276acbc3.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;将添加进来的节点设置为活动配置文件(右下角路由模式为白名单模式)&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;177&#34;
+		data-flex-basis=&#34;425px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/win6.jpg&#34;
+	width=&#34;696&#34;
+	height=&#34;786&#34;
+	srcset=&#34;https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/win6_hu_d9850a81728f497b.jpg 480w, https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/win6_hu_69ef5c87b199cbb3.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;右键点击桌面右下角的应用图表并设置为pac模式就完成基本的设置了&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;88&#34;
+		data-flex-basis=&#34;212px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;mac--iphone&#34;&gt;Mac | Iphone
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;下载v2rayn, 或者在app store 安装 小火箭, mac和ios系统这里还是建议使用小火箭更加稳定. 这里也使用小火箭演示. 手机的操作流程基本与电脑版一致这里不单独做教程了&lt;/li&gt;
+&lt;/ol&gt;
 &lt;blockquote class=&#34;alert alert-note&#34;&gt;
-    &lt;p&gt;在访问之前你需要先能够访问你的服务器终端。如使用服务器面板的终端，或者使用 openssh 等命令行工具进入服务器 bash shell。&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;运行安装脚本:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;bash -c &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; @ install
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;安装x-ui, 使用 webui 来配置 xray。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;bash &amp;lt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;webui 启动之后可以通过域名或者ip+端口访问。&lt;/p&gt;
-&lt;blockquote class=&#34;alert alert-tips&#34;&gt;
-    &lt;p&gt;如果想要隐藏访问的端口，使用域名的433/80端口请求可以使用iopenresty/nginx反向代理到面板的端口。注意需要提前申请好 sll 证书不然 https 无法访问。&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;del&gt;### &lt;a class=&#34;link&#34; href=&#34;https://clashhk.com/17688.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;x-ui配置参考博客&lt;/a&gt;&lt;/del&gt;&lt;/p&gt;
-&lt;p&gt;(发现这个教程很垃圾，转向chat老师)&lt;/p&gt;
+    &lt;p&gt;在app store下载小火箭需要外区账号, 如果没有账号的朋友建议去tb买或者租一个.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://proxy.henry070.org/https://github.com/2dust/v2rayN/releases/download/7.16.6/v2rayN-windows-64.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;v2rayn代理下载链接&lt;/a&gt; | &lt;a class=&#34;link&#34; href=&#34;https://github.com/2dust/v2rayN/releases/download/7.16.6/v2rayN-windows-64.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;v2rayn直连下载链接&lt;/a&gt; | &lt;a class=&#34;link&#34; href=&#34;https://apps.apple.com/us/app/shadowrocket/id932747118?platform=mac&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;小火箭 app store 链接(需要外区账号)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/mac1.jpg&#34;
+	width=&#34;1152&#34;
+	height=&#34;892&#34;
+	srcset=&#34;https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/mac1_hu_b51c9304a8d201e1.jpg 480w, https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/mac1_hu_e77ff801d65af922.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;安装并打开小火箭之后点击按钮从剪切板导入我提供的节点(节点链接需要提前复制到剪切板)&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;129&#34;
+		data-flex-basis=&#34;309px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/mac2.jpg&#34;
+	width=&#34;1164&#34;
+	height=&#34;908&#34;
+	srcset=&#34;https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/mac2_hu_4de5646745ca1c64.jpg 480w, https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/mac2_hu_39072c7feea3bff3.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;点击第二栏的config, 点击右上角的加号软件会提示输入url. 此时把下面的url粘贴到上面&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;128&#34;
+		data-flex-basis=&#34;307px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;直连url(优先选择): &lt;a class=&#34;link&#34; href=&#34;https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/sr_top500_banlist_ad.conf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/sr_top500_banlist_ad.conf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;代理url: &lt;a class=&#34;link&#34; href=&#34;https://proxy.henry070.org/https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/sr_top500_banlist_ad.conf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://proxy.henry070.org/https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/sr_top500_banlist_ad.conf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/mac3.jpg&#34;
+	width=&#34;320&#34;
+	height=&#34;668&#34;
+	srcset=&#34;https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/mac3_hu_e744499e9414634b.jpg 480w, https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/mac3_hu_4a12c1e5d771db06.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;导入规则后点击使用该规则&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;47&#34;
+		data-flex-basis=&#34;114px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/mac4.jpg&#34;
+	width=&#34;804&#34;
+	height=&#34;736&#34;
+	srcset=&#34;https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/mac4_hu_11d47162b0e7edca.jpg 480w, https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/mac4_hu_4eefbc227c271365.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;最后回到home点击选择节点,routing 选择 config, 打开开关就大功告成了&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;109&#34;
+		data-flex-basis=&#34;262px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;安卓&#34;&gt;安卓
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://proxy.henry070.org/https://github.com/2dust/v2rayNG/releases/download/1.10.31/v2rayNG_1.10.31_arm64-v8a.apk&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;v2rayng代理下载链接&lt;/a&gt; | &lt;a class=&#34;link&#34; href=&#34;https://github.com/2dust/v2rayNG/releases/download/1.10.31/v2rayNG_1.10.31_arm64-v8a.apk&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;v2rayng直连下载链接(首选)&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;安装下载好的apk之后参考windows版本的教程导入节点和配置规则即可.&lt;/li&gt;
+&lt;/ol&gt;
 </description>
         </item>
         

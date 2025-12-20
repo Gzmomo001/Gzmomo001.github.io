@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Pages on Henry Zhang</title>
-        <link>http://localhost:1313/page/</link>
+        <link>https://Gzmomo001.github.io/page/</link>
         <description>Recent content in Pages on Henry Zhang</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <copyright>henryzhang070&#43;contact@gmail.com</copyright>
-        <lastBuildDate>Sun, 23 Nov 2025 05:43:39 +0800</lastBuildDate><atom:link href="http://localhost:1313/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <copyright>blog@mail.henry070.org</copyright>
+        <lastBuildDate>Sat, 20 Dec 2025 13:58:06 -0500</lastBuildDate><atom:link href="https://Gzmomo001.github.io/page/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Update Logs</title>
-        <link>http://localhost:1313/update-logs/</link>
+        <link>https://Gzmomo001.github.io/update-logs/</link>
         <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/update-logs/</guid>
+        <guid>https://Gzmomo001.github.io/update-logs/</guid>
         <description>&lt;h2 id=&#34;todo&#34;&gt;TODO
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 配置评论区, &lt;a class=&#34;link&#34; href=&#34;https://juejin.cn/post/6844903834712539150&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -25,7 +25,7 @@
     &gt;参考博客&lt;/a&gt;. 圆框使用 AI 修改.&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 代码框自动折叠功能,&lt;a class=&#34;link&#34; href=&#34;https://letere-gzj.github.io/hugo-stack/p/hugo/custom-stack-theme/#8-%E8%87%AA%E5%AE%9A%E4%B9%89md%E5%BC%95%E7%94%A8%E5%9D%97%E9%A2%9C%E8%89%B2%E6%A8%A1%E6%9D%BF&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;参考&lt;/a&gt;. 在原有的基础上修改了一下样式, 更加美观.&lt;/li&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 修复字体问题, 已完成. &lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/p/stack-theme-hugo-%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE/&#34; &gt;教程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 修复字体问题, 已完成. &lt;a class=&#34;link&#34; href=&#34;https://Gzmomo001.github.io/p/stack-theme-hugo-%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE/&#34; &gt;教程&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 返回顶部按钮&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 防止爬虫(&lt;a class=&#34;link&#34; href=&#34;https://blog.lufei.de/p/215/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://blog.lufei.de/p/215/&lt;/a&gt;)&lt;/li&gt;
@@ -45,100 +45,273 @@
     &gt;链接&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 添加一些动画效果&lt;/li&gt;
 &lt;/ul&gt;
-&lt;!-- ## Git 提交历史图
-
-&lt;div id=&#34;git-graph&#34;&gt;&lt;/div&gt;
-
-&lt;script&gt;
-  fetch(`https://api.github.com/repos/${encodeURIComponent($repo)}/commits?sha=${encodeURIComponent($branch)}&amp;per_page=${encodeURIComponent($depth)}`)
-    .then(response =&gt; response.json())
-    .then(data =&gt; {
-      const graphDiv = document.getElementById(&#39;git-graph&#39;);
-      data.forEach(commit =&gt; {
-        const commitDiv = document.createElement(&#39;div&#39;);
-        commitDiv.textContent = `${commit.commit.author.name}: ${commit.commit.message}`;
-        graphDiv.appendChild(commitDiv);
-      });
-    })
-    .catch(error =&gt; console.error(&#39;Error fetching commits:&#39;, error));
-&lt;/script&gt; --&gt;
 </description>
         </item>
         <item>
         <title>Archives</title>
-        <link>http://localhost:1313/archives/</link>
+        <link>https://Gzmomo001.github.io/archives/</link>
         <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/archives/</guid>
+        <guid>https://Gzmomo001.github.io/archives/</guid>
         <description></description>
         </item>
         <item>
         <title>About me</title>
-        <link>http://localhost:1313/about-me/</link>
+        <link>https://Gzmomo001.github.io/about-me/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/about-me/</guid>
-        <description>&lt;p&gt;这里有关于我的一些信息.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 待完成&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;个人信息&#34;&gt;个人信息
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;姓名: 张梓墨&lt;/li&gt;
-&lt;li&gt;性别: 男&lt;/li&gt;
-&lt;li&gt;年龄: 20&lt;/li&gt;
-&lt;li&gt;专业: 计算机科学与技术(软件工程)&lt;/li&gt;
-&lt;li&gt;联系方式: +86 14748104903&lt;/li&gt;
-&lt;li&gt;邮箱: &lt;a class=&#34;link&#34; href=&#34;mailto:henryzhang070@gmail.com&#34; &gt;henryzhang070@gmail.com&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;技能掌握&#34;&gt;技能掌握
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;编程语言: 精通 python, 掌握 java, sql.&lt;/li&gt;
-&lt;li&gt;算法架构: 熟悉 Transformer/BERT 等架构，掌握 PyTorch, TensorFlow.&lt;/li&gt;
-&lt;li&gt;工具链：git, docker, linux, vscode, pycharm, intellij idea, jupyter notebook, markdown, latex&lt;/li&gt;
-&lt;li&gt;项目能力: 能独立复现代码仓库, 修改代码架构.&lt;/li&gt;
-&lt;li&gt;对 agent, 和 MoE 相关的知识有一定的了解, 并且复现过相关的代码仓库.&lt;/li&gt;
-&lt;li&gt;能独立阅读英文文献和论文.&lt;/li&gt;
-&lt;li&gt;能自主完成远程服务器的部署(基于 linux), 和使用(包括 cuda 环境, ssh 服务, conda 环境安装, 环境变量配置等). 对 linux 命令行使用娴熟.&lt;/li&gt;
-&lt;li&gt;穿越机的组装, 调试, 和飞行&lt;/li&gt;
-&lt;li&gt;能自主组装服务器和个人 pc, 对基本的硬件知识了解基本全面.&lt;/li&gt;
-&lt;li&gt;能独立完成公路自行车对组装和简单的 fitting 调试.&lt;/li&gt;
-&lt;li&gt;对运动科学, 营养科学有一定的了解. 如何规划训练和饮食来达到如提高运动表现, 增加肌肉维度等目的.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;项目经验&#34;&gt;项目经验
-&lt;/h2&gt;&lt;h3 id=&#34;bike-fitting--自行车的飞艇-web&#34;&gt;Bike-fitting | 自行车的飞艇 web
-&lt;/h3&gt;&lt;p&gt;一个网站能帮助公路自行车手提供简单的 fitting 服务.&lt;/p&gt;
-&lt;h4 id=&#34;结果&#34;&gt;结果
-&lt;/h4&gt;&lt;p&gt;商赛获奖
-成功申请国家/省级创新项目&lt;/p&gt;
-&lt;h3 id=&#34;simple-mark-it-down--将不同文件的内容转为-markdown-格式的项目&#34;&gt;Simple mark it down | 将不同文件的内容转为 markdown 格式的项目
-&lt;/h3&gt;&lt;p&gt;一个用于帮助 RAG 预处理知识库的解决方案.&lt;/p&gt;
-&lt;h2 id=&#34;科研项目&#34;&gt;科研项目
-&lt;/h2&gt;&lt;h3 id=&#34;知识增强检索retrieval-augmented-generation&#34;&gt;知识增强检索(retrieval-augmented generation)
-&lt;/h3&gt;&lt;p&gt;学习了多个 RAG 框架, 并设计基准测试测试其性能.&lt;/p&gt;
-&lt;h3 id=&#34;大语言模型的攻击与防御&#34;&gt;大语言模型的攻击与防御
-&lt;/h3&gt;&lt;p&gt;针对大模型安全开展不同的攻击和防御策略.&lt;/p&gt;
-&lt;h2 id=&#34;教育背景&#34;&gt;教育背景
-&lt;/h2&gt;&lt;p&gt;温州肯恩大学 大二在读
-主修课程: Java, 微积分(曲面积分, 高斯公式等), 线性代数, 概率论, 机器学习基础课程.&lt;/p&gt;
-&lt;h2 id=&#34;自我描述&#34;&gt;自我描述
-&lt;/h2&gt;&lt;p&gt;计算机专业本科在读，热衷于大模型与深度学习领域，具备扎实的数理基础与算法理解，熟悉 Transformer/BERT 架构，能独立使用 PyTorch/TensorFlow 完成模型复现与改造。曾参与多个科研与工程项目，并在团队中担任核心推进角色，具备良好的沟通能力与组织能力。熟练使用 Git、Docker、Linux 等工具，关注 Agent、MoE 等 LLM 前沿发展，期待在实习中不断突破技术边界并创造实际价值。&lt;/p&gt;
+        <guid>https://Gzmomo001.github.io/about-me/</guid>
+        <description>&lt;p&gt;Thanks to click on this page and get to know me !!! 😄&lt;/p&gt;
+&lt;blockquote class=&#34;alert alert-tip&#34;&gt;
+    &lt;p&gt;Click on the navigate bar on the right side to jump.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;how-to-reach-me&#34;&gt;How to reach me
+&lt;/h2&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+    &lt;img src=&#34;https://img.shields.io/badge/Email-blog@mail.henry070.org-orange&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Email: blog@mail.henry070.org&#34;
+	
+	
+&gt; &lt;img src=&#34;https://img.shields.io/badge/Telegram-@Henry0z0-blue&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Telegram: Henry0z0&#34;
+	
+	
+&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;who-am-i&#34;&gt;Who am I
+&lt;/h2&gt;&lt;p&gt;I am a student, majoring in computer science. Hopefully, I will graduate in 2027. 2025 is my third yea. It is my pleasure to study here. Many confident friends and responsible professors have been encountered here. The growth I&amp;rsquo;ve achieved is more than knowledge. It&amp;rsquo;s also about self-development.&lt;/p&gt;
+&lt;h2 id=&#34;my-career&#34;&gt;My career
+&lt;/h2&gt;&lt;p&gt;Here is an overview of my professional skills, projects, and research experience.&lt;/p&gt;
+&lt;h3 id=&#34;tech-stack&#34;&gt;Tech Stack
+&lt;/h3&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+    &lt;p&gt;&lt;img src=&#34;https://img.shields.io/badge/Python-3776AB?style=for-the-badge&amp;amp;logo=python&amp;amp;logoColor=white&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Python&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&amp;amp;logo=openjdk&amp;amp;logoColor=white&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Java&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&amp;amp;logo=gnu-bash&amp;amp;logoColor=white&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Shell Script&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&amp;amp;logo=html5&amp;amp;logoColor=white&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;HTML5&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&amp;amp;logo=css3&amp;amp;logoColor=white&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;CSS3&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&amp;amp;logo=javascript&amp;amp;logoColor=black&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;JavaScript&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&amp;amp;logo=pytorch&amp;amp;logoColor=white&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;PyTorch&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&amp;amp;logo=tensorflow&amp;amp;logoColor=white&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;TensorFlow&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&amp;amp;logo=huggingface&amp;amp;logoColor=black&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;HuggingFace&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://img.shields.io/badge/RAG%20%26%20Agents-000000?style=for-the-badge&amp;amp;logo=robotframework&amp;amp;logoColor=white&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;LangChain/Agno&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://img.shields.io/badge/uv-DE5FE7?style=for-the-badge&amp;amp;logo=python&amp;amp;logoColor=white&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;uv&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://img.shields.io/badge/Miniconda-44A833?style=for-the-badge&amp;amp;logo=anaconda&amp;amp;logoColor=white&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Miniconda&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&amp;amp;logo=docker&amp;amp;logoColor=white&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Docker&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://img.shields.io/badge/Podman-892CA0?style=for-the-badge&amp;amp;logo=podman&amp;amp;logoColor=white&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Podman&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&amp;amp;logo=kubernetes&amp;amp;logoColor=white&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Kubernetes&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&amp;amp;logo=linux&amp;amp;logoColor=black&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Linux&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://img.shields.io/badge/Proxmox_VE-E57000?style=for-the-badge&amp;amp;logo=proxmox&amp;amp;logoColor=white&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Proxmox VE&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&amp;amp;logo=git&amp;amp;logoColor=white&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Git&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://img.shields.io/badge/Hugo-FF4088?style=for-the-badge&amp;amp;logo=hugo&amp;amp;logoColor=white&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Hugo&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://img.shields.io/badge/OpenWrt-28BDB5?style=for-the-badge&amp;amp;logo=openwrt&amp;amp;logoColor=white&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;OpenWrt&#34;
+	
+	
+&gt;&lt;/p&gt;
+
+&lt;/div&gt;
 </description>
         </item>
         <item>
         <title>Search</title>
-        <link>http://localhost:1313/search/</link>
+        <link>https://Gzmomo001.github.io/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/search/</guid>
+        <guid>https://Gzmomo001.github.io/search/</guid>
         <description></description>
         </item>
         <item>
         <title>Some Useful Links</title>
-        <link>http://localhost:1313/some-useful-links/</link>
+        <link>https://Gzmomo001.github.io/some-useful-links/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/some-useful-links/</guid>
+        <guid>https://Gzmomo001.github.io/some-useful-links/</guid>
         <description>&lt;p&gt;这里有一些我认为比较实用, 并且常用的一些网站链接.&lt;/p&gt;
 &lt;p&gt;Feel free to take it🥰.&lt;/p&gt;
 &lt;ul&gt;

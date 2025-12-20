@@ -2,18 +2,257 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Posts on Henry Zhang</title>
-        <link>http://localhost:1313/post/</link>
+        <link>https://Gzmomo001.github.io/post/</link>
         <description>Recent content in Posts on Henry Zhang</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <copyright>henryzhang070&#43;contact@gmail.com</copyright>
-        <lastBuildDate>Fri, 05 Dec 2025 02:15:12 -0500</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <copyright>blog@mail.henry070.org</copyright>
+        <lastBuildDate>Sat, 20 Dec 2025 13:58:06 -0500</lastBuildDate><atom:link href="https://Gzmomo001.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Chi-Square Distribution</title>
+        <link>https://Gzmomo001.github.io/p/chi-square-distribution/</link>
+        <pubDate>Fri, 12 Dec 2025 22:00:52 +0800</pubDate>
+        
+        <guid>https://Gzmomo001.github.io/p/chi-square-distribution/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/default.jpeg" alt="Featured image of post Chi-Square Distribution" /&gt;&lt;blockquote&gt;
+&lt;p&gt;本文是基于 YouTube 频道 &lt;strong&gt;jbstatistics&lt;/strong&gt; 的视频 &lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=hcDb12fsbBU&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;An Introduction to the Chi-Square Distribution&lt;/a&gt; 整理的学习笔记。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe loading=&#34;lazy&#34; 
+            src=&#34;https://www.youtube.com/embed/hcDb12fsbBU&#34; 
+            allowfullscreen 
+            title=&#34;YouTube Video&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;什么是卡方分布&#34;&gt;什么是卡方分布？
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;卡方分布 ($\chi^2$ distribution)&lt;/strong&gt; 是一种在统计推断（Statistical Inference）中广泛使用的连续概率分布。它与其他连续概率分布一样，在实际应用中经常出现。&lt;/p&gt;
+&lt;p&gt;最核心的理解是：&lt;strong&gt;它与标准正态分布有着紧密的数学联系。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;定义与来源&#34;&gt;定义与来源
+&lt;/h2&gt;&lt;p&gt;卡方分布本质上是&lt;strong&gt;标准正态随机变量平方和&lt;/strong&gt;的分布。&lt;/p&gt;
+&lt;h3 id=&#34;1-单个变量的情况&#34;&gt;1. 单个变量的情况
+&lt;/h3&gt;&lt;p&gt;如果一个随机变量 $Z$ 服从标准正态分布，即 $Z \sim N(0, 1)$，那么 $Z$ 的平方服从自由度为 1 的卡方分布：&lt;/p&gt;
+$$Z^2 \sim \chi^2_1$$&lt;h3 id=&#34;2-一般情况-k-个变量&#34;&gt;2. 一般情况 (K 个变量)
+&lt;/h3&gt;&lt;p&gt;如果 $Z_1, Z_2, &amp;hellip;, Z_k$ 是 $k$ 个&lt;strong&gt;相互独立&lt;/strong&gt;的标准正态随机变量，那么它们的平方和服从自由度为 $k$ 的卡方分布：&lt;/p&gt;
+$$\sum_{i=1}^{k} Z_i^2 \sim \chi^2_k$$&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;注意&lt;/strong&gt;：这里的 $k$ (Degrees of Freedom) 代表了我们相加的独立标准正态随机变量的数量。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;核心性质&#34;&gt;核心性质
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;取值范围&lt;/strong&gt;：非负实数 $[0, \infty)$。
+&lt;ul&gt;
+&lt;li&gt;原因很直观：因为它是实数的平方和，所以不可能为负。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;自由度 ($k$)&lt;/strong&gt;：通常为正整数。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;均值 (Mean)&lt;/strong&gt;：等于自由度。
+$$E[X] = k$$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;方差 (Variance)&lt;/strong&gt;：等于自由度的两倍。
+$$Var(X) = 2k$$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;众数 (Mode)&lt;/strong&gt;：
+$$Mode = k - 2 \quad (\text{当 } k \ge 2)$$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;概率密度函数-pdf-的形状&#34;&gt;概率密度函数 (PDF) 的形状
+&lt;/h2&gt;&lt;p&gt;卡方分布的形状高度依赖于自由度 $k$。&lt;/p&gt;
+&lt;h3 id=&#34;1-极小自由度-k1-2&#34;&gt;1. 极小自由度 ($k=1, 2$)
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;$k=1$&lt;/strong&gt;：曲线在 $x=0$ 处趋于无穷大（Asymptotic to the y-axis）。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;$k=2$&lt;/strong&gt;：曲线从最大值开始（在 $x=0$ 处），然后单调递减。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-一般自由度-k-ge-3&#34;&gt;2. 一般自由度 ($k \ge 3$)
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;曲线从 0 开始，上升到峰值（众数），然后下降。&lt;/li&gt;
+&lt;li&gt;呈现出明显的&lt;strong&gt;右偏 (Right Skewness)&lt;/strong&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3-随着自由度增加&#34;&gt;3. 随着自由度增加
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;趋于对称&lt;/strong&gt;：随着 $k$ 的增加，右偏程度逐渐减小，分布变得越来越对称。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;趋于正态&lt;/strong&gt;：当 $k$ 很大时，卡方分布的形状越来越接近正态分布（根据中心极限定理）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;计算与应用&#34;&gt;计算与应用
+&lt;/h2&gt;&lt;p&gt;在实际的概率统计问题中，我们经常需要计算曲线下的面积（概率）或查找百分位数。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;卡方分布的 PDF 涉及 Gamma 函数，&lt;strong&gt;没有简单的封闭形式的积分公式&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;解决方法&lt;/strong&gt;：必须使用&lt;strong&gt;数值积分&lt;/strong&gt;。在实践中，我们通过统计软件（如 R, Python, Excel）或查阅卡方分布表来获取结果。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;总结速查表&#34;&gt;总结速查表
+&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;属性&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;公式/描述&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;符号&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;$\chi^2_k$&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;定义&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;$k$ 个独立标准正态变量的平方和&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;域 (Domain)&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;$x \in [0, \infty)$&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;均值 (Mean)&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;$k$&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;方差 (Variance)&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;$2k$&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;形状&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;右偏 (Right Skewed)，随 $k$ 增大趋于正态&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;应用实例卡方独立性检验-chi-squared-test-of-independence&#34;&gt;应用实例：卡方独立性检验 (Chi-Squared Test of Independence)
+&lt;/h2&gt;&lt;p&gt;假设我们要研究“性别”与“是否喜欢某种新饮料”之间是否存在关联。我们随机调查了 200 人，结果如下表（观察频数 $O_{ij}$）：&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;性别 \ 喜好&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;喜欢&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;不喜欢&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;总计&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;男&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;60&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;40&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;100&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;女&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;30&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;70&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;100&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;总计&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;90&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;110&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;200&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;1-建立假设&#34;&gt;1. 建立假设
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;$H_0$ (零假设): 性别与喜好&lt;strong&gt;独立&lt;/strong&gt;（即无关）。&lt;/li&gt;
+&lt;li&gt;$H_1$ (备择假设): 性别与喜好&lt;strong&gt;不独立&lt;/strong&gt;（即有关联）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-计算期望频数-e_ij&#34;&gt;2. 计算期望频数 ($E_{ij}$)
+&lt;/h3&gt;&lt;p&gt;如果 $H_0$ 成立，期望频数的计算公式为：
+&lt;/p&gt;
+$$E_{ij} = \frac{\text{行总计} \times \text{列总计}}{\text{总样本量}}$$&lt;ul&gt;
+&lt;li&gt;男-喜欢: $E_{11} = \frac{100 \times 90}{200} = 45$&lt;/li&gt;
+&lt;li&gt;男-不喜欢: $E_{12} = \frac{100 \times 110}{200} = 55$&lt;/li&gt;
+&lt;li&gt;女-喜欢: $E_{21} = \frac{100 \times 90}{200} = 45$&lt;/li&gt;
+&lt;li&gt;女-不喜欢: $E_{22} = \frac{100 \times 110}{200} = 55$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3-计算卡方统计量&#34;&gt;3. 计算卡方统计量
+&lt;/h3&gt;$$ \chi^2 = \sum \frac{(O*{ij} - E*{ij})^2}{E\_{ij}} $$$$
+\begin{aligned}
+\chi^2 &amp;= \frac{(60-45)^2}{45} + \frac{(40-55)^2}{55} + \frac{(30-45)^2}{45} + \frac{(70-55)^2}{55} \\
+&amp;= \frac{225}{45} + \frac{225}{55} + \frac{225}{45} + \frac{225}{55} \\
+&amp;= 5 + 4.09 + 5 + 4.09 \\
+&amp;= 18.18
+\end{aligned}
+$$&lt;h3 id=&#34;4-确定自由度与临界值&#34;&gt;4. 确定自由度与临界值
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;自由度 ($df$)&lt;/strong&gt; $= (\text{行数} - 1) \times (\text{列数} - 1) = (2-1) \times (2-1) = 1$。&lt;/li&gt;
+&lt;li&gt;选择显著性水平 $\alpha = 0.05$。&lt;/li&gt;
+&lt;li&gt;查表可知，$\chi^2_{0.05}(1) = 3.841$。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;5-结论&#34;&gt;5. 结论
+&lt;/h3&gt;&lt;p&gt;因为 $\chi^2 = 18.18 &amp;gt; 3.841$，所以我们在 0.05 的显著性水平下&lt;strong&gt;拒绝 $H_0$&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;结论&lt;/strong&gt;：有充分的证据表明，性别与是否喜欢这种新饮料之间存在显著关联。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>SHA 校验入门：从原理到实践</title>
+        <link>https://Gzmomo001.github.io/p/sha-%E6%A0%A1%E9%AA%8C%E5%85%A5%E9%97%A8%E4%BB%8E%E5%8E%9F%E7%90%86%E5%88%B0%E5%AE%9E%E8%B7%B5/</link>
+        <pubDate>Fri, 05 Dec 2025 02:31:57 -0500</pubDate>
+        
+        <guid>https://Gzmomo001.github.io/p/sha-%E6%A0%A1%E9%AA%8C%E5%85%A5%E9%97%A8%E4%BB%8E%E5%8E%9F%E7%90%86%E5%88%B0%E5%AE%9E%E8%B7%B5/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/default.jpeg" alt="Featured image of post SHA 校验入门：从原理到实践" /&gt;&lt;h1 id=&#34;sha-校验入门从原理到实践&#34;&gt;SHA 校验入门：从原理到实践
+&lt;/h1&gt;&lt;p&gt;在数字世界中，我们经常需要下载和传输文件。但你如何能确定下载的文件就是发布者想要你收到的那个，没有被篡改，也没有在传输过程中损坏呢？答案就是 &lt;strong&gt;哈希校验（Hash Validation）&lt;/strong&gt;，而 SHA256 正是其中最常用的一种算法。&lt;/p&gt;
+&lt;p&gt;这篇笔记将带你从零开始，理解 SHA256 的基本原理，并学会在不同操作系统上进行实际操作。&lt;/p&gt;
+&lt;h2 id=&#34;什么是-sha256&#34;&gt;什么是 SHA256？
+&lt;/h2&gt;&lt;p&gt;SHA256 (Secure Hash Algorithm 256) 是一种加密哈希函数。你可以把它想象成一个神奇的“指纹生成器”。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;输入&lt;/strong&gt;：任何数字文件，无论是一个 1KB 的文本文件，还是一个 4GB 的电影。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;输出&lt;/strong&gt;：一个由 256 位（即 64 个十六进制字符）组成的独一无二的字符串，这个字符串就是文件的“数字指纹”。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这个“指紋”有几个关键特性：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;唯一性：几乎不可能找到两个不同的文件，它们会生成相同的 SHA256 指纹。&lt;/li&gt;
+&lt;li&gt;不可逆性：你无法通过指纹反向推导出原始文件是什么。&lt;/li&gt;
+&lt;li&gt;雪崩效应：即使原始文件只改变了微不足道的一点点（比如一个字符或一个像素），生成的指纹也会发生天翻地覆的变化。&lt;/li&gt;
+&lt;li&gt;固定长度：无论原始文件多大或多小，生成的指纹长度永远是固定的 64 个字符。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;为什么要使用-sha256-校验&#34;&gt;为什么要使用 SHA256 校验？
+&lt;/h2&gt;&lt;p&gt;最主要的应用场景是 确保文件的完整性和真实性。&lt;/p&gt;
+&lt;blockquote class=&#34;alert alert-tip&#34;&gt;
+    &lt;p&gt;当你从网上下载一个操作系统镜像、一个重要的软件安装包或者一份关键文档时，发布者通常会一并提供该文件的 SHA256 哈希值（Checksum）。你下载文件后，可以在本地计算它的哈希值，然后与官方提供的值进行比对。如果两者完全一致，就说明你的文件是“原装正品”，可以放心使用。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;如何在不同平台使用-sha256&#34;&gt;如何在不同平台使用 SHA256？
+&lt;/h2&gt;&lt;p&gt;下面是在主流操作系统上计算文件 SHA256 哈希值的实用命令。&lt;/p&gt;
+&lt;h3 id=&#34;linux&#34;&gt;Linux
+&lt;/h3&gt;&lt;p&gt;在大多数 Linux 发行版中，&lt;code&gt;sha256sum&lt;/code&gt; 是一个预装的命令行工具，非常方便。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sha256sum /path/to/your/file
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 通过哈希值直接验证下载后的文件完整性&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;&amp;lt;hash_code&amp;gt; &amp;lt;file_name&amp;gt;&amp;#39;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; sha256sum -c&lt;span class=&#34;err&#34;&gt;&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote class=&#34;alert alert-tip&#34;&gt;
+    &lt;p&gt;一般情况下gihub上release文件都自带sha256可以直接校验.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;示例：&lt;/strong&gt;
+假设我们下载了一个名为 &lt;code&gt;ubuntu-24.04-desktop-amd64.iso&lt;/code&gt; 的文件。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 计算 ISO 文件的 SHA256 哈希值&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sha256sum ubuntu-24.04-desktop-amd64.iso
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 命令执行后会输出类似下面的结果&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 5b863375b70b5711d51c35068205562e316a3c64c4d5b6f3f7756f6b5f5a8f3d  ubuntu-24.04-desktop-amd64.iso&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;你只需要将输出的这串 &lt;code&gt;5b86...&lt;/code&gt; 与官方网站提供的哈希值进行对比即可。&lt;/p&gt;
+&lt;h3 id=&#34;macos&#34;&gt;macOS
+&lt;/h3&gt;&lt;p&gt;macOS 用户可以使用 &lt;code&gt;shasum&lt;/code&gt; 命令，并通过 &lt;code&gt;-a&lt;/code&gt; 参数指定算法。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;shasum -a &lt;span class=&#34;m&#34;&gt;256&lt;/span&gt; /path/to/your/file
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;示例：&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 计算同一个 ISO 文件的哈希值&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;shasum -a &lt;span class=&#34;m&#34;&gt;256&lt;/span&gt; ubuntu-24.04-desktop-amd64.iso
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 输出格式与 Linux 类似&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 5b863375b70b5711d51c35068205562e316a3c64c4d5b6f3f7756f6b5f5a8f3d  ubuntu-24.04-desktop-amd64.iso&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;windows&#34;&gt;Windows
+&lt;/h3&gt;&lt;p&gt;Windows 用户可以使用系统内置的 &lt;code&gt;CertUtil&lt;/code&gt; 工具。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;CertUtil&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-hashfile&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;C:&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;\&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;path&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;\&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;to&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;\&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;your&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;\&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;file&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;SHA256&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;示例：&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# 在 PowerShell 或 CMD 中运行&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;CertUtil&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-hashfile&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;D:&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;\&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Downloads&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;\&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ubuntu&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;24.04&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;-desktop-amd64&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;iso&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;SHA256&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# 输出会是这样的格式&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# SHA256 哈希值:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# 5b863375b70b5711d51c35068205562e316a3c64c4d5b6f3f7756f6b5f5a8f3d&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# CertUtil: -hashfile 命令成功完成。&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote class=&#34;alert alert-note&#34;&gt;
+    &lt;p&gt;Windows 输出的哈希值默认没有空格，但某些第三方工具可能会添加空格。比对时请确保格式一致，或者忽略空格进行比较。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;总结&#34;&gt;总结
+&lt;/h2&gt;&lt;p&gt;SHA256 校验是保护我们免受损坏文件和恶意软件侵害的一个简单而强大的工具。养成在处理重要文件时进行哈希校验的习惯，将为你的数字生活增添一道重要的安全防线。操作本身非常简单，几条命令就能搞定，但其背后的安全意义却十分重大。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Apt</title>
-        <link>http://localhost:1313/p/apt/</link>
+        <link>https://Gzmomo001.github.io/p/apt/</link>
         <pubDate>Fri, 05 Dec 2025 01:27:47 -0500</pubDate>
         
-        <guid>http://localhost:1313/p/apt/</guid>
-        <description>&lt;img src="http://localhost:1313/default.jpeg" alt="Featured image of post Apt" /&gt;&lt;h2 id=&#34;reference&#34;&gt;Reference
+        <guid>https://Gzmomo001.github.io/p/apt/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/default.jpeg" alt="Featured image of post Apt" /&gt;&lt;h2 id=&#34;reference&#34;&gt;Reference
 &lt;/h2&gt;&lt;div class=&#34;video-wrapper&#34;&gt;
     &lt;iframe loading=&#34;lazy&#34; 
             src=&#34;https://www.youtube.com/embed/j3fOfBwom5k&#34; 
@@ -209,18 +448,18 @@
         </item>
         <item>
         <title>Git</title>
-        <link>http://localhost:1313/p/git/</link>
+        <link>https://Gzmomo001.github.io/p/git/</link>
         <pubDate>Tue, 25 Nov 2025 17:43:06 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/git/</guid>
-        <description>&lt;img src="http://localhost:1313/p/git/git.png" alt="Featured image of post Git" /&gt;&lt;h2 id=&#34;hook&#34;&gt;Hook
+        <guid>https://Gzmomo001.github.io/p/git/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/p/git/git.png" alt="Featured image of post Git" /&gt;&lt;h2 id=&#34;hook&#34;&gt;Hook
 &lt;/h2&gt;&lt;p&gt;想象你写了一晚上的论文, 但是不小心被小组成员改坏了. 或者debug发现bug越来越多以至于无法修复, 整个项目基本要推倒重来. 上诉这种类似的情况其实屡见不鲜. 不只是计算机专业的同学会遇到, 其他非专业同学在编辑ppt, word, 或者设计工程图的时候也一样会遇到类似的问题. 而git的出现就是为了解决这一类的问题.&lt;/p&gt;
 &lt;h2 id=&#34;feature&#34;&gt;Feature
 &lt;/h2&gt;&lt;p&gt;git 作为版本控制工具最基本的功能就是管理文件版本. 可以将每一次文件的修改都记录起来. 当项目发生不可挽回的错误的时候. 只要.git文件夹还在就能发动败者食尘功能直接将时间会回滚到上一次提交的时候. 除此之外还提供了团队协作的功能. 不同的团队成员可以在同一个仓库下的不同brach对项目进行迭代又不会相互影响.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/git/jojos-killer.gif&#34;
+&lt;p&gt;&lt;img src=&#34;https://Gzmomo001.github.io/p/git/jojos-killer.gif&#34;
 	width=&#34;464&#34;
 	height=&#34;258&#34;
-	srcset=&#34;http://localhost:1313/p/git/jojos-killer_hu_113ff57fcf33b172.gif 480w, http://localhost:1313/p/git/jojos-killer_hu_49e2041d9bb05d24.gif 1024w&#34;
+	srcset=&#34;https://Gzmomo001.github.io/p/git/jojos-killer_hu_113ff57fcf33b172.gif 480w, https://Gzmomo001.github.io/p/git/jojos-killer_hu_49e2041d9bb05d24.gif 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;败者食尘&#34;
@@ -569,57 +808,219 @@
 </description>
         </item>
         <item>
-        <title>搭建vmless 代理服务器实现科学上网</title>
-        <link>http://localhost:1313/p/%E6%90%AD%E5%BB%BAvmless-%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%9E%E7%8E%B0%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</link>
+        <title>科学上网配置教程</title>
+        <link>https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/</link>
         <pubDate>Sun, 23 Nov 2025 05:53:10 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/%E6%90%AD%E5%BB%BAvmless-%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%9E%E7%8E%B0%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</guid>
-        <description>&lt;img src="http://localhost:1313/default.jpeg" alt="Featured image of post 搭建vmless 代理服务器实现科学上网" /&gt;&lt;h2 id=&#34;购买服务器&#34;&gt;购买服务器
-&lt;/h2&gt;&lt;p&gt;在开始之前首先要确保你拥有一台能够访问外网的linux服务器，如果没有可以自行购买。博主这里推荐雨云家的服务器，这里已他家的日本大流量服务器为例子演示。
-系统: debain
-配置： 2 cores 2g 100/100mbps 90ping&lt;/p&gt;
-&lt;blockquote class=&#34;alert alert-tips&#34;&gt;
-    &lt;p&gt;在访问服务器的任何端口之前先保证服务器对应端口的防火墙打开，防火墙的端口建议按需开启。&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h2 id=&#34;购买域名optional&#34;&gt;购买域名(optional)
-&lt;/h2&gt;&lt;p&gt;即使没有域名也可以直接通过 ip 访问，只不过会暴露公网 ip 平并且没有 https。所以这里建议购买一个域名。&lt;/p&gt;
-&lt;p&gt;这里只推荐一个域名商： &lt;a class=&#34;link&#34; href=&#34;https://namesilo.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;namesilo.com&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;域名购买之后可以将域名托管到 其他的 dns 厂商，来帮地解析你的域名。 我这里使用 cloudflare。 本帖子主要展示如何搭建代理服务器，所以如果想要了解域名托管相关的知识可以自行问 chat 老师或者搜相关的教程。&lt;/p&gt;
-&lt;p&gt;&lt;del&gt;## 通过 bash 脚本安装 xray&lt;/del&gt;(xray 面板太吃服务器的资源了这里不推荐大家继续使用这个方法了。)&lt;/p&gt;
-&lt;p&gt;博主在这里找到了 github 上的一篇使用 xray 搭建代理服务器的&lt;a class=&#34;link&#34; href=&#34;https://github.com/XTLS/Xray-install/blob/main/README_zh-Hans.md&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;教程&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;本博客将会参考这篇教程搭建代理服务器。&lt;/p&gt;
+        <guid>https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/default.jpeg" alt="Featured image of post 科学上网配置教程" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
+&lt;/h2&gt;&lt;p&gt;首先在这里非常感谢每一个支持我, 信任我的伙伴和朋友们. 你们购买的不仅仅是简单的科学上网, 更是对我&lt;code&gt;技术和服务的认可&lt;/code&gt;. 我在这里承诺凡是购买了服务的朋友都能享受到&lt;code&gt;质保&lt;/code&gt;. 不会出现过一段时间就跑路的问题, 并且如果过程中遇到问题也可以随时联系我解决. 如果本博客有描述得不详细的地方也请给我指出(通过TG 或者 底部的评论区), 我会尽快补全.&lt;/p&gt;
+&lt;h2 id=&#34;我的联系方式&#34;&gt;我的联系方式
+&lt;/h2&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+    &lt;img src=&#34;https://img.shields.io/badge/Email-blog@mail.henry070.org-orange&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Email: blog@mail.henry070.org&#34;
+	
+	
+&gt; &lt;img src=&#34;https://img.shields.io/badge/Telegram-@Henry0z0-blue&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Telegram: Henry0z0&#34;
+	
+	
+&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;安装代理客户端&#34;&gt;安装代理客户端
+&lt;/h2&gt;&lt;blockquote class=&#34;alert alert-note&#34;&gt;
+    &lt;p&gt;点击右侧的导航栏跳转到对应终端的章节&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;这里是开源代理客户端的项目地址:&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/2dust/v2rayN/releases/tag/7.16.6&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;原始仓库&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://proxy.henry070.org/https://github.com/2dust/v2rayN&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;通过我代理的仓库连接&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;代理网站密码: &lt;code&gt;welcome_proxy&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote class=&#34;alert alert-error&#34;&gt;
+    &lt;p&gt;在使用代理链接的情况下为了你的账户安全, 请不要进行任何登录&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;winodws&#34;&gt;Winodws
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;下载链接 | &lt;a class=&#34;link&#34; href=&#34;https://proxy.henry070.org/https://github.com/2dust/v2rayN/releases/download/7.16.6/v2rayN-windows-64.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;v2rayn代理下载链接&lt;/a&gt; | &lt;a class=&#34;link&#34; href=&#34;https://github.com/2dust/v2rayN/releases/download/7.16.6/v2rayN-windows-64.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;v2rayn直连下载链接&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/win1.jpg&#34;
+	width=&#34;1044&#34;
+	height=&#34;634&#34;
+	srcset=&#34;https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/win1_hu_9a6ef8efacf44485.jpg 480w, https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/win1_hu_c1dc58a06ca091a.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;下载下来之后解压文件夹, 并把它放在你记得的文件位置即可&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;164&#34;
+		data-flex-basis=&#34;395px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/win4.jpg&#34;
+	width=&#34;1044&#34;
+	height=&#34;678&#34;
+	srcset=&#34;https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/win4_hu_73072d8f97059ea.jpg 480w, https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/win4_hu_2257914782d53857.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;之后可以选择创建快捷方式到桌面上方便以后打开&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;153&#34;
+		data-flex-basis=&#34;369px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/win3.jpg&#34;
+	width=&#34;1482&#34;
+	height=&#34;953&#34;
+	srcset=&#34;https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/win3_hu_52283cd0435a0081.jpg 480w, https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/win3_hu_7974fe239a362a14.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;双击后或者使用管理员模式打开后点击左上角的配置项并从剪切板导入(提前将我提供的节点复制到剪切板)&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;155&#34;
+		data-flex-basis=&#34;373px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/win5.jpg&#34;
+	width=&#34;1495&#34;
+	height=&#34;844&#34;
+	srcset=&#34;https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/win5_hu_39f25f4cd088e248.jpg 480w, https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/win5_hu_372e73bb276acbc3.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;将添加进来的节点设置为活动配置文件(右下角路由模式为白名单模式)&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;177&#34;
+		data-flex-basis=&#34;425px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/win6.jpg&#34;
+	width=&#34;696&#34;
+	height=&#34;786&#34;
+	srcset=&#34;https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/win6_hu_d9850a81728f497b.jpg 480w, https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/win6_hu_69ef5c87b199cbb3.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;右键点击桌面右下角的应用图表并设置为pac模式就完成基本的设置了&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;88&#34;
+		data-flex-basis=&#34;212px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;mac--iphone&#34;&gt;Mac | Iphone
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;下载v2rayn, 或者在app store 安装 小火箭, mac和ios系统这里还是建议使用小火箭更加稳定. 这里也使用小火箭演示. 手机的操作流程基本与电脑版一致这里不单独做教程了&lt;/li&gt;
+&lt;/ol&gt;
 &lt;blockquote class=&#34;alert alert-note&#34;&gt;
-    &lt;p&gt;在访问之前你需要先能够访问你的服务器终端。如使用服务器面板的终端，或者使用 openssh 等命令行工具进入服务器 bash shell。&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;运行安装脚本:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;bash -c &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; @ install
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;安装x-ui, 使用 webui 来配置 xray。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;bash &amp;lt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;webui 启动之后可以通过域名或者ip+端口访问。&lt;/p&gt;
-&lt;blockquote class=&#34;alert alert-tips&#34;&gt;
-    &lt;p&gt;如果想要隐藏访问的端口，使用域名的433/80端口请求可以使用iopenresty/nginx反向代理到面板的端口。注意需要提前申请好 sll 证书不然 https 无法访问。&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;del&gt;### &lt;a class=&#34;link&#34; href=&#34;https://clashhk.com/17688.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;x-ui配置参考博客&lt;/a&gt;&lt;/del&gt;&lt;/p&gt;
-&lt;p&gt;(发现这个教程很垃圾，转向chat老师)&lt;/p&gt;
+    &lt;p&gt;在app store下载小火箭需要外区账号, 如果没有账号的朋友建议去tb买或者租一个.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://proxy.henry070.org/https://github.com/2dust/v2rayN/releases/download/7.16.6/v2rayN-windows-64.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;v2rayn代理下载链接&lt;/a&gt; | &lt;a class=&#34;link&#34; href=&#34;https://github.com/2dust/v2rayN/releases/download/7.16.6/v2rayN-windows-64.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;v2rayn直连下载链接&lt;/a&gt; | &lt;a class=&#34;link&#34; href=&#34;https://apps.apple.com/us/app/shadowrocket/id932747118?platform=mac&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;小火箭 app store 链接(需要外区账号)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/mac1.jpg&#34;
+	width=&#34;1152&#34;
+	height=&#34;892&#34;
+	srcset=&#34;https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/mac1_hu_b51c9304a8d201e1.jpg 480w, https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/mac1_hu_e77ff801d65af922.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;安装并打开小火箭之后点击按钮从剪切板导入我提供的节点(节点链接需要提前复制到剪切板)&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;129&#34;
+		data-flex-basis=&#34;309px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/mac2.jpg&#34;
+	width=&#34;1164&#34;
+	height=&#34;908&#34;
+	srcset=&#34;https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/mac2_hu_4de5646745ca1c64.jpg 480w, https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/mac2_hu_39072c7feea3bff3.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;点击第二栏的config, 点击右上角的加号软件会提示输入url. 此时把下面的url粘贴到上面&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;128&#34;
+		data-flex-basis=&#34;307px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;直连url(优先选择): &lt;a class=&#34;link&#34; href=&#34;https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/sr_top500_banlist_ad.conf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/sr_top500_banlist_ad.conf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;代理url: &lt;a class=&#34;link&#34; href=&#34;https://proxy.henry070.org/https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/sr_top500_banlist_ad.conf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://proxy.henry070.org/https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/sr_top500_banlist_ad.conf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/mac3.jpg&#34;
+	width=&#34;320&#34;
+	height=&#34;668&#34;
+	srcset=&#34;https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/mac3_hu_e744499e9414634b.jpg 480w, https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/mac3_hu_4a12c1e5d771db06.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;导入规则后点击使用该规则&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;47&#34;
+		data-flex-basis=&#34;114px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/mac4.jpg&#34;
+	width=&#34;804&#34;
+	height=&#34;736&#34;
+	srcset=&#34;https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/mac4_hu_11d47162b0e7edca.jpg 480w, https://Gzmomo001.github.io/p/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/mac4_hu_4eefbc227c271365.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;最后回到home点击选择节点,routing 选择 config, 打开开关就大功告成了&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;109&#34;
+		data-flex-basis=&#34;262px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;安卓&#34;&gt;安卓
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://proxy.henry070.org/https://github.com/2dust/v2rayNG/releases/download/1.10.31/v2rayNG_1.10.31_arm64-v8a.apk&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;v2rayng代理下载链接&lt;/a&gt; | &lt;a class=&#34;link&#34; href=&#34;https://github.com/2dust/v2rayNG/releases/download/1.10.31/v2rayNG_1.10.31_arm64-v8a.apk&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;v2rayng直连下载链接(首选)&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;安装下载好的apk之后参考windows版本的教程导入节点和配置规则即可.&lt;/li&gt;
+&lt;/ol&gt;
 </description>
         </item>
         <item>
         <title>JavaScript</title>
-        <link>http://localhost:1313/p/javascript/</link>
+        <link>https://Gzmomo001.github.io/p/javascript/</link>
         <pubDate>Tue, 12 Aug 2025 07:44:31 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/javascript/</guid>
-        <description>&lt;img src="http://localhost:1313/default.jpeg" alt="Featured image of post JavaScript" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=hdI2bqOjy3c&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+        <guid>https://Gzmomo001.github.io/p/javascript/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/default.jpeg" alt="Featured image of post JavaScript" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=hdI2bqOjy3c&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;review link&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>CSS</title>
-        <link>http://localhost:1313/p/css/</link>
+        <link>https://Gzmomo001.github.io/p/css/</link>
         <pubDate>Sun, 10 Aug 2025 09:04:48 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/css/</guid>
-        <description>&lt;img src="http://localhost:1313/p/css/css.png" alt="Featured image of post CSS" /&gt;&lt;h3 id=&#34;cheat-sheet-of-css&#34;&gt;Cheat Sheet of CSS
+        <guid>https://Gzmomo001.github.io/p/css/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/p/css/css.png" alt="Featured image of post CSS" /&gt;&lt;h3 id=&#34;cheat-sheet-of-css&#34;&gt;Cheat Sheet of CSS
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
@@ -950,11 +1351,11 @@
         </item>
         <item>
         <title>HTML</title>
-        <link>http://localhost:1313/p/html/</link>
+        <link>https://Gzmomo001.github.io/p/html/</link>
         <pubDate>Sun, 10 Aug 2025 07:31:20 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/html/</guid>
-        <description>&lt;img src="http://localhost:1313/p/html/html.png" alt="Featured image of post HTML" /&gt;&lt;h2 id=&#34;cheat-sheet-of-html&#34;&gt;Cheat Sheet of HTML
+        <guid>https://Gzmomo001.github.io/p/html/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/p/html/html.png" alt="Featured image of post HTML" /&gt;&lt;h2 id=&#34;cheat-sheet-of-html&#34;&gt;Cheat Sheet of HTML
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; 
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
@@ -1137,11 +1538,11 @@
         </item>
         <item>
         <title>Tmux</title>
-        <link>http://localhost:1313/p/tmux/</link>
+        <link>https://Gzmomo001.github.io/p/tmux/</link>
         <pubDate>Wed, 06 Aug 2025 03:08:51 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/tmux/</guid>
-        <description>&lt;img src="http://localhost:1313/p/tmux/tmux.png" alt="Featured image of post Tmux" /&gt;&lt;h2 id=&#34;后台-shell-常驻工具&#34;&gt;后台 shell 常驻工具
+        <guid>https://Gzmomo001.github.io/p/tmux/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/p/tmux/tmux.png" alt="Featured image of post Tmux" /&gt;&lt;h2 id=&#34;后台-shell-常驻工具&#34;&gt;后台 shell 常驻工具
 &lt;/h2&gt;&lt;p&gt;Reference: &lt;a class=&#34;link&#34; href=&#34;https://github.com/tmux/tmux/wiki&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;tmux wiki&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Fully tutorial
@@ -1243,11 +1644,11 @@
         </item>
         <item>
         <title>Soft_links</title>
-        <link>http://localhost:1313/p/soft_links/</link>
+        <link>https://Gzmomo001.github.io/p/soft_links/</link>
         <pubDate>Thu, 31 Jul 2025 15:38:14 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/soft_links/</guid>
-        <description>&lt;img src="http://localhost:1313/p/soft_links/link.png" alt="Featured image of post Soft_links" /&gt;&lt;h2 id=&#34;软连接&#34;&gt;软连接
+        <guid>https://Gzmomo001.github.io/p/soft_links/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/p/soft_links/link.png" alt="Featured image of post Soft_links" /&gt;&lt;h2 id=&#34;软连接&#34;&gt;软连接
 &lt;/h2&gt;&lt;p&gt;在系统中我们往往可能需要在一个项目中使用项目之外的一些文件，但是这个文件又不在这项目的根目录在。大部分人往往都选择直接将需要的文件拷贝到项目的路目中。但是这样既浪费时间又浪费系统的存储空间。尔软连接的出现就是为了解决这一问题。我们可以直接通过命令创建一个软连接。让目标文件或者文件夹的替身出现在我们的项目目录下。这样我们就可以在不使用绝对路径的情况下使用该路径了。&lt;/p&gt;
 &lt;h3 id=&#34;如何使用软连接ln&#34;&gt;如何使用软连接（ln
 &lt;/h3&gt;&lt;p&gt;在 linux 中软连接的是由&amp;rsquo;ln&amp;rsquo;这一指令完成的。&lt;/p&gt;
@@ -1274,21 +1675,12 @@
 </description>
         </item>
         <item>
-        <title>How2ReadArticle</title>
-        <link>http://localhost:1313/p/how2readarticle/</link>
-        <pubDate>Mon, 30 Jun 2025 23:02:15 +0800</pubDate>
-        
-        <guid>http://localhost:1313/p/how2readarticle/</guid>
-        <description>&lt;img src="http://localhost:1313/default.png" alt="Featured image of post How2ReadArticle" /&gt;&lt;h1 id=&#34;如何正确的打开文献阅读之路&#34;&gt;如何正确的打开文献阅读之路
-&lt;/h1&gt;</description>
-        </item>
-        <item>
         <title>Linux_system_service | Linux 之 系统服务</title>
-        <link>http://localhost:1313/p/linux_system_service-linux-%E4%B9%8B-%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1/</link>
+        <link>https://Gzmomo001.github.io/p/linux_system_service-linux-%E4%B9%8B-%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1/</link>
         <pubDate>Fri, 13 Jun 2025 15:47:20 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/linux_system_service-linux-%E4%B9%8B-%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1/</guid>
-        <description>&lt;img src="http://localhost:1313/p/linux_system_service-linux-%E4%B9%8B-%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1/image.png" alt="Featured image of post Linux_system_service | Linux 之 系统服务" /&gt;&lt;h2 id=&#34;什么是系统服务service&#34;&gt;什么是系统服务(service)
+        <guid>https://Gzmomo001.github.io/p/linux_system_service-linux-%E4%B9%8B-%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/p/linux_system_service-linux-%E4%B9%8B-%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1/image.png" alt="Featured image of post Linux_system_service | Linux 之 系统服务" /&gt;&lt;h2 id=&#34;什么是系统服务service&#34;&gt;什么是系统服务(service)
 &lt;/h2&gt;&lt;p&gt;简单理解就是开机自启动的程序或者脚本, 会常驻在系统的内存中.&lt;/p&gt;
 &lt;p&gt;对于现在的大部分的 linux 发行版, 系统服务通常使用 systemd 进行管理.&lt;/p&gt;
 &lt;h3 id=&#34;三种配置文件&#34;&gt;三种配置文件
@@ -1525,11 +1917,11 @@
         </item>
         <item>
         <title>MC服务器搭建 &amp; 加入</title>
-        <link>http://localhost:1313/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/</link>
+        <link>https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/</link>
         <pubDate>Mon, 09 Jun 2025 14:01:06 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/</guid>
-        <description>&lt;img src="http://localhost:1313/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/image.png" alt="Featured image of post MC服务器搭建 &amp; 加入" /&gt;&lt;h3 id=&#34;java-环境-&#34;&gt;java 环境 ✅
+        <guid>https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/image.png" alt="Featured image of post MC服务器搭建 &amp; 加入" /&gt;&lt;h3 id=&#34;java-环境-&#34;&gt;java 环境 ✅
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;本教程的所有内容都是基于 java 环境已经安装好的前提下.&lt;/li&gt;
 &lt;li&gt;具体的教程可以去网上搜索.&lt;/li&gt;
@@ -1621,11 +2013,11 @@
 &lt;h3 id=&#34;1-如何加入我的模组服务器-建议直接使用后面的整合包安装-更稳定也更方便&#34;&gt;&lt;del&gt;1. 如何加入我的模组服务器&lt;/del&gt; 建议直接使用后面的整合包安装, 更稳定也更方便.
 &lt;/h3&gt;&lt;h4 id=&#34;安装-1182forge-4030-版本&#34;&gt;安装 1.18.2+forge 40.3.0 版本
 &lt;/h4&gt;&lt;p&gt;&lt;code&gt;点击下载&lt;/code&gt;
-&lt;img src=&#34;http://localhost:1313/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v1_hu_736a98c9bbf842a4.png&#34; width=&#34;1200&#34; height=&#34;898&#34; alt=&#34;exception types&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v1_hu_736a98c9bbf842a4.png&#34; width=&#34;1200&#34; height=&#34;898&#34; alt=&#34;exception types&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;选择18.2+forge 40.3.0版本&lt;/code&gt;&lt;/p&gt;
-&lt;img src=&#34;http://localhost:1313/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v2_hu_276dd84c915b4521.png&#34; width=&#34;1200&#34; height=&#34;905&#34; alt=&#34;exception types&#34;&gt;
-&lt;img src=&#34;http://localhost:1313/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v3_hu_2f591b8eca54f1be.png&#34; width=&#34;1200&#34; height=&#34;904&#34; alt=&#34;exception types&#34;&gt;
-&lt;img src=&#34;http://localhost:1313/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v4_hu_a75a7d96e3be6c51.png&#34; width=&#34;1200&#34; height=&#34;899&#34; alt=&#34;exception types&#34;&gt;
+&lt;img src=&#34;https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v2_hu_276dd84c915b4521.png&#34; width=&#34;1200&#34; height=&#34;905&#34; alt=&#34;exception types&#34;&gt;
+&lt;img src=&#34;https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v3_hu_2f591b8eca54f1be.png&#34; width=&#34;1200&#34; height=&#34;904&#34; alt=&#34;exception types&#34;&gt;
+&lt;img src=&#34;https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v4_hu_a75a7d96e3be6c51.png&#34; width=&#34;1200&#34; height=&#34;899&#34; alt=&#34;exception types&#34;&gt;
 &lt;h4 id=&#34;安装模组&#34;&gt;安装模组
 &lt;/h4&gt;&lt;ol&gt;
 &lt;li&gt;下载我的模组和材质包.&lt;/li&gt;
@@ -1638,14 +2030,14 @@
 &lt;li&gt;压缩包下载后解压, 会有两种文件: zip, jar. zip 对应的是材质包, jar 是模组.
 点击版本管理&lt;/li&gt;
 &lt;/ol&gt;
-&lt;img src=&#34;http://localhost:1313/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/main_hu_cd62cbf18f0f3bf5.png&#34; width=&#34;1200&#34; height=&#34;913&#34; alt=&#34;exception types&#34;&gt;
+&lt;img src=&#34;https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/main_hu_cd62cbf18f0f3bf5.png&#34; width=&#34;1200&#34; height=&#34;913&#34; alt=&#34;exception types&#34;&gt;
 &lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;在模组拦选择添加模组, 选择刚刚下载的包里的&lt;code&gt;jar&lt;/code&gt;文件.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;img src=&#34;http://localhost:1313/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v5_hu_41c2e29e2930d7df.png&#34; width=&#34;1200&#34; height=&#34;911&#34; alt=&#34;exception types&#34;&gt;
+&lt;img src=&#34;https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v5_hu_41c2e29e2930d7df.png&#34; width=&#34;1200&#34; height=&#34;911&#34; alt=&#34;exception types&#34;&gt;
 &lt;h4 id=&#34;安装光影&#34;&gt;安装光影
 &lt;/h4&gt;&lt;p&gt;在浏览中选择打开资源包文件夹, 然后添加下载文件夹中的&lt;code&gt;zip&lt;/code&gt;文件.
-&lt;img src=&#34;http://localhost:1313/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v6_hu_a6b4669caa9893f7.png&#34; width=&#34;1200&#34; height=&#34;909&#34; alt=&#34;exception types&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/v6_hu_a6b4669caa9893f7.png&#34; width=&#34;1200&#34; height=&#34;909&#34; alt=&#34;exception types&#34;&gt;&lt;/p&gt;
 &lt;h4 id=&#34;整合包安装游戏不带启动器版本&#34;&gt;整合包安装游戏(不带启动器版本)
 &lt;/h4&gt;&lt;p&gt;&lt;code&gt;该方法已淘汰, 请勿使用该方法&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;使用 HMCL 的整合包安装功能, 直接一次性安装好所有模组和材质包.&lt;/p&gt;
@@ -1654,7 +2046,7 @@
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;
 &lt;p&gt;点击安装整合包
-&lt;img src=&#34;http://localhost:1313/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/p1_hu_a3107bb23487123e.png&#34; width=&#34;1200&#34; height=&#34;901&#34; alt=&#34;exception types&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/p1_hu_a3107bb23487123e.png&#34; width=&#34;1200&#34; height=&#34;901&#34; alt=&#34;exception types&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;从本地安装整合包, 并选择下载好的 zip 整合包.&lt;/p&gt;
@@ -1673,7 +2065,7 @@
 &lt;li&gt;选择版本.&lt;/li&gt;
 &lt;li&gt;点击 Installer 安装稳定版&lt;/li&gt;
 &lt;/ol&gt;
-&lt;img src=&#34;http://localhost:1313/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/d_hu_7c67ad27a83df608.png&#34; width=&#34;1200&#34; height=&#34;916&#34; alt=&#34;exception types&#34;&gt;
+&lt;img src=&#34;https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/d_hu_7c67ad27a83df608.png&#34; width=&#34;1200&#34; height=&#34;916&#34; alt=&#34;exception types&#34;&gt;
 &lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;下载完成之后看到 jar 结尾的文件说明成功下载.&lt;/li&gt;
 &lt;/ol&gt;
@@ -1773,7 +2165,7 @@
 &lt;li&gt;在 cploar 服务启动之后在网页中打开服务器的&lt;code&gt;9200&lt;/code&gt;端口.&lt;/li&gt;
 &lt;li&gt;设置映射.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/port_hu_6ba287f842e76ffa.png&#34; width=&#34;1200&#34; height=&#34;472&#34; alt=&#34;exception types&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;https://Gzmomo001.github.io/p/mc%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA-%E5%8A%A0%E5%85%A5/port_hu_6ba287f842e76ffa.png&#34; width=&#34;1200&#34; height=&#34;472&#34; alt=&#34;exception types&#34;&gt;
 仿照图片中的设置配置映射.&lt;/p&gt;
 &lt;blockquote class=&#34;alert alert-note&#34;&gt;
     &lt;p&gt;对于 forge, 服务器开启后默认端口为 25565, 如果想修改监听端口可以修改 properties 里的端口设置.&lt;/p&gt;&lt;/blockquote&gt;
@@ -1787,26 +2179,12 @@
 </description>
         </item>
         <item>
-        <title>ubuntu远程桌面</title>
-        <link>http://localhost:1313/p/ubuntu%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2/</link>
-        <pubDate>Sun, 08 Jun 2025 22:16:17 +0800</pubDate>
-        
-        <guid>http://localhost:1313/p/ubuntu%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2/</guid>
-        <description>&lt;img src="http://localhost:1313/default.jpeg" alt="Featured image of post ubuntu远程桌面" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
-&lt;/h2&gt;&lt;p&gt;本教程基于 ubuntu, 请确保的 ubuntu 系统大于 20.
-这里参考阿里提供的&lt;a class=&#34;link&#34; href=&#34;https://developer.aliyun.com/article/762186&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;方案&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;&#34;&gt;
-&lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt install vino
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-        </item>
-        <item>
         <title>如何diy自己的工作简历</title>
-        <link>http://localhost:1313/p/%E5%A6%82%E4%BD%95diy%E8%87%AA%E5%B7%B1%E7%9A%84%E5%B7%A5%E4%BD%9C%E7%AE%80%E5%8E%86/</link>
+        <link>https://Gzmomo001.github.io/p/%E5%A6%82%E4%BD%95diy%E8%87%AA%E5%B7%B1%E7%9A%84%E5%B7%A5%E4%BD%9C%E7%AE%80%E5%8E%86/</link>
         <pubDate>Wed, 04 Jun 2025 18:19:09 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/%E5%A6%82%E4%BD%95diy%E8%87%AA%E5%B7%B1%E7%9A%84%E5%B7%A5%E4%BD%9C%E7%AE%80%E5%8E%86/</guid>
-        <description>&lt;img src="http://localhost:1313/default.jpeg" alt="Featured image of post 如何diy自己的工作简历" /&gt;
+        <guid>https://Gzmomo001.github.io/p/%E5%A6%82%E4%BD%95diy%E8%87%AA%E5%B7%B1%E7%9A%84%E5%B7%A5%E4%BD%9C%E7%AE%80%E5%8E%86/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/default.jpeg" alt="Featured image of post 如何diy自己的工作简历" /&gt;
 
 
 
@@ -1831,11 +2209,11 @@
         </item>
         <item>
         <title>语言如何影响你的思维</title>
-        <link>http://localhost:1313/p/%E8%AF%AD%E8%A8%80%E5%A6%82%E4%BD%95%E5%BD%B1%E5%93%8D%E4%BD%A0%E7%9A%84%E6%80%9D%E7%BB%B4/</link>
+        <link>https://Gzmomo001.github.io/p/%E8%AF%AD%E8%A8%80%E5%A6%82%E4%BD%95%E5%BD%B1%E5%93%8D%E4%BD%A0%E7%9A%84%E6%80%9D%E7%BB%B4/</link>
         <pubDate>Thu, 29 May 2025 02:41:58 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/%E8%AF%AD%E8%A8%80%E5%A6%82%E4%BD%95%E5%BD%B1%E5%93%8D%E4%BD%A0%E7%9A%84%E6%80%9D%E7%BB%B4/</guid>
-        <description>&lt;img src="http://localhost:1313/default.jpeg" alt="Featured image of post 语言如何影响你的思维" /&gt;&lt;h2 id=&#34;视频源&#34;&gt;视频源
+        <guid>https://Gzmomo001.github.io/p/%E8%AF%AD%E8%A8%80%E5%A6%82%E4%BD%95%E5%BD%B1%E5%93%8D%E4%BD%A0%E7%9A%84%E6%80%9D%E7%BB%B4/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/default.jpeg" alt="Featured image of post 语言如何影响你的思维" /&gt;&lt;h2 id=&#34;视频源&#34;&gt;视频源
 &lt;/h2&gt;
 
 
@@ -1891,11 +2269,11 @@
         </item>
         <item>
         <title>Chapter13</title>
-        <link>http://localhost:1313/p/chapter13/</link>
+        <link>https://Gzmomo001.github.io/p/chapter13/</link>
         <pubDate>Mon, 26 May 2025 00:42:23 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/chapter13/</guid>
-        <description>&lt;img src="http://localhost:1313/java.png" alt="Featured image of post Chapter13" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
+        <guid>https://Gzmomo001.github.io/p/chapter13/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/java.png" alt="Featured image of post Chapter13" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
 &lt;/h2&gt;&lt;p&gt;回顾上上个章节当中讲到的遗产(inheritance)的概念, 我们可以通过创建一个类的子类来继承其 datafield 和 methods. 并且这个类也可以单独创建实例. 而抽象类就是一种特殊的父类.&lt;/p&gt;
 &lt;h2 id=&#34;抽象类&#34;&gt;抽象类
 &lt;/h2&gt;&lt;p&gt;就跟刚刚讲到的一样, 抽象类其实就是一个特殊的父类, 作为一个父类它无法实例化. 而是要通过创建其子类然后才能实例化.&lt;/p&gt;
@@ -2069,11 +2447,11 @@
         </item>
         <item>
         <title>Chapter12</title>
-        <link>http://localhost:1313/p/chapter12/</link>
+        <link>https://Gzmomo001.github.io/p/chapter12/</link>
         <pubDate>Sun, 25 May 2025 15:21:54 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/chapter12/</guid>
-        <description>&lt;img src="http://localhost:1313/java.png" alt="Featured image of post Chapter12" /&gt;&lt;h2 id=&#34;情景&#34;&gt;情景
+        <guid>https://Gzmomo001.github.io/p/chapter12/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/java.png" alt="Featured image of post Chapter12" /&gt;&lt;h2 id=&#34;情景&#34;&gt;情景
 &lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;随着我们的代码复杂度的增长, 很多时候我们无法完全避免程序在运行的过程中出错. 很多时候会出现程序在执行某些不重要的代码的时候报错,然后整个程序直接停止.&lt;/li&gt;
 &lt;li&gt;整个项目的代码量过大导致使用 debug 功能修复代码的时候效率过低.&lt;/li&gt;
@@ -2131,7 +2509,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;exception-types--错误类型&#34;&gt;Exception Types | 错误类型
-&lt;/h2&gt;&lt;img src=&#34;http://localhost:1313/p/chapter12/exception_hu_821cfc0c383d1a10.png&#34; width=&#34;1200&#34; height=&#34;474&#34; alt=&#34;exception types&#34;&gt;
+&lt;/h2&gt;&lt;img src=&#34;https://Gzmomo001.github.io/p/chapter12/exception_hu_821cfc0c383d1a10.png&#34; width=&#34;1200&#34; height=&#34;474&#34; alt=&#34;exception types&#34;&gt;
 &lt;p&gt;在 Java 中， Throwable 是所有异常和错误的根类。所有通过 throw 抛出的异常必须继承自 Throwable 。其直接子类包括：&lt;/p&gt;
 &lt;h3 id=&#34;error&#34;&gt;Error
 &lt;/h3&gt;&lt;h4 id=&#34;linkageerror&#34;&gt;LinkageError
@@ -2328,11 +2706,11 @@
         </item>
         <item>
         <title>Stack theme hugo 字体设置</title>
-        <link>http://localhost:1313/p/stack-theme-hugo-%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE/</link>
+        <link>https://Gzmomo001.github.io/p/stack-theme-hugo-%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE/</link>
         <pubDate>Sun, 25 May 2025 02:28:03 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/stack-theme-hugo-%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE/</guid>
-        <description>&lt;img src="http://localhost:1313/hugo.jpeg" alt="Featured image of post Stack theme hugo 字体设置" /&gt;&lt;h2 id=&#34;参考链接&#34;&gt;参考链接
+        <guid>https://Gzmomo001.github.io/p/stack-theme-hugo-%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/hugo.jpeg" alt="Featured image of post Stack theme hugo 字体设置" /&gt;&lt;h2 id=&#34;参考链接&#34;&gt;参考链接
 &lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.lufei.de/p/ziti/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;博客教程&lt;/a&gt;
 &lt;a class=&#34;link&#34; href=&#34;https://chinese-font.netlify.app/cdn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -2386,11 +2764,11 @@
         </item>
         <item>
         <title>Chapter11</title>
-        <link>http://localhost:1313/p/chapter11/</link>
+        <link>https://Gzmomo001.github.io/p/chapter11/</link>
         <pubDate>Sat, 24 May 2025 21:05:41 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/chapter11/</guid>
-        <description>&lt;img src="http://localhost:1313/java.png" alt="Featured image of post Chapter11" /&gt;&lt;h1 id=&#34;继承-和-多态java&#34;&gt;继承 和 多态(java)
+        <guid>https://Gzmomo001.github.io/p/chapter11/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/java.png" alt="Featured image of post Chapter11" /&gt;&lt;h1 id=&#34;继承-和-多态java&#34;&gt;继承 和 多态(java)
 &lt;/h1&gt;&lt;p&gt;这个章节是基于类的延伸&lt;/p&gt;
 &lt;h2 id=&#34;子类和父类&#34;&gt;子类和父类
 &lt;/h2&gt;&lt;p&gt;在 java 中有一个关键字叫 &amp;rsquo;extends&amp;rsquo;，意思是扩展， 这个关键字可以定义一个类的延伸类, 并具有所有原先类的方法(method)和变量(data field)。&lt;/p&gt;
@@ -2658,11 +3036,11 @@
         </item>
         <item>
         <title>本地静态网站托管</title>
-        <link>http://localhost:1313/p/%E6%9C%AC%E5%9C%B0%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1/</link>
+        <link>https://Gzmomo001.github.io/p/%E6%9C%AC%E5%9C%B0%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1/</link>
         <pubDate>Sat, 24 May 2025 16:47:04 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/%E6%9C%AC%E5%9C%B0%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1/</guid>
-        <description>&lt;img src="http://localhost:1313/default.jpeg" alt="Featured image of post 本地静态网站托管" /&gt;&lt;h1 id=&#34;如何在本地搭建类似-gihub-的静态网站托管服务&#34;&gt;如何在本地搭建类似 gihub 的静态网站托管服务
+        <guid>https://Gzmomo001.github.io/p/%E6%9C%AC%E5%9C%B0%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/default.jpeg" alt="Featured image of post 本地静态网站托管" /&gt;&lt;h1 id=&#34;如何在本地搭建类似-gihub-的静态网站托管服务&#34;&gt;如何在本地搭建类似 gihub 的静态网站托管服务
 &lt;/h1&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
 &lt;/h2&gt;&lt;p&gt;本博客的初衷是因为博主之前使用第三方的静态博客发现国内的网站对这些托管并不友好, 特别是 wx 经常会对我的博客域名封杀. 而且这个网页托管的速度也比较一般. 所以打算在本地搭建网页托管的服务, 使用内网穿透来实现外网访问. 这也算是一个填坑博客吧.🤓&lt;/p&gt;
 &lt;h2 id=&#34;requirements&#34;&gt;requirements
@@ -2706,11 +3084,11 @@
         </item>
         <item>
         <title>Daliy_blog2025 05 24</title>
-        <link>http://localhost:1313/p/daliy_blog2025-05-24/</link>
+        <link>https://Gzmomo001.github.io/p/daliy_blog2025-05-24/</link>
         <pubDate>Sat, 24 May 2025 03:53:50 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/daliy_blog2025-05-24/</guid>
-        <description>&lt;img src="http://localhost:1313/default.jpeg" alt="Featured image of post Daliy_blog2025 05 24" /&gt;&lt;h1 id=&#34;不知好歹的博主&#34;&gt;不知好歹的博主
+        <guid>https://Gzmomo001.github.io/p/daliy_blog2025-05-24/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/default.jpeg" alt="Featured image of post Daliy_blog2025 05 24" /&gt;&lt;h1 id=&#34;不知好歹的博主&#34;&gt;不知好歹的博主
 &lt;/h1&gt;&lt;p&gt;博主第二天要考高数, 现在还熬到快四点钟真的很有生活了.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 添加网页个性化鼠标指针&lt;/li&gt;
@@ -2762,42 +3140,12 @@
 </description>
         </item>
         <item>
-        <title>Daliy_blog2025 05 22</title>
-        <link>http://localhost:1313/p/daliy_blog2025-05-22/</link>
-        <pubDate>Thu, 22 May 2025 23:40:31 +0800</pubDate>
-        
-        <guid>http://localhost:1313/p/daliy_blog2025-05-22/</guid>
-        <description>&lt;img src="http://localhost:1313/default.gif" alt="Featured image of post Daliy_blog2025 05 22" /&gt;&lt;h1 id=&#34;日常记录&#34;&gt;日常记录
-&lt;/h1&gt;&lt;h2 id=&#34;关于自己&#34;&gt;关于自己
-&lt;/h2&gt;&lt;p&gt;昨天晚上搞博客搞的太上头, 一不小心又熬到 4.多 🥹. 然后今天睡到下午才起床, 真是得不偿失啊啊啊啊. 但我这种性格就是, 很多时候如果不把一件事做完就是不会停下来. 直到我把这件事做到某一个我想对满意的阶段的时候我可能才会开始休息. 简直就是先天牛马圣体.下周大大小小的考试就基本都考完了, 所以, 这几天再撑一下吧 🫠.&lt;/p&gt;
-&lt;h2 id=&#34;关于考试&#34;&gt;关于考试
-&lt;/h2&gt;&lt;p&gt;距离高数的期末考还有两天, 今天已经看了一整天的高数视频了. 也不知道自己学没学进去, 但聊胜于无嘛. &lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1zr421F7UN?spm_id_from=333.788.videopod.episodes&amp;amp;vd_source=fbc2a846bae010cde7c33a4fbe6c2e57&amp;amp;p=4&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Kari&lt;/a&gt;老师的视频确实感觉已经比国内大部分大学教授讲的都要好了. 逻辑比较清晰, 也都是按照思维导图来复习. 很适合我这种 visual memory 的人.&lt;/p&gt;
-&lt;p&gt;目前为止的复习进度也还是比较紧张, 2231 专业课 java 我已经很久都没有看, 也没有 coding 了. 不过大部分的内容其实也都是记忆的东西. 这种一般花个半天时间就搞定了. 其实比较担心的还是我的两门数学考试, 和 2920 计算机系统架构. 数学考试的备考感觉是没有尽头的. 因为总会有更难的题型给你做, 你的熟练度也基本没有上线. 所以数学的复习还是不能太上头, 不然就像是时间黑洞一样吞噬你的时间.😇 很容易把其他事情耽误了.&lt;/p&gt;
-&lt;h2 id=&#34;final-project&#34;&gt;Final project
-&lt;/h2&gt;&lt;p&gt;期末的那个论文到目前的情况确实是差强人意了, 一开始我就低估了这个领域的强度和我们小组的执行能力. 布置出去的任务基本都要延迟几天才能完成, 这还是挺扰乱原本的计划的. 这个项目原本要做的实验也是时间的原因没有做成, 而且小组里似乎也只有我有这个代码能力. 本来的设想是我来完成我们项目的代码部分, 然后我的小组成员能帮我完成论文. 但我也没有提前了解他们对这领域的了解, 最后出于他们的执行力, 和了解程度. 我打算论文还是我自己来执手. 所以, 项目的代码部分就只能学期结束之后再继续推进了.&lt;/p&gt;
-&lt;h2 id=&#34;今天最后的一点任务&#34;&gt;今天最后的一点任务
-&lt;/h2&gt;&lt;p&gt;当我开始写这个博客的时候已经快 12.了. 但事情总是做不完的. 今晚也不能再熬怎么晚了. 所以今晚就最后再完成两个任务吧.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 完善我的博客内容, 由于博客是昨天才匆忙搭建完的. 对这个项目的熟悉程度也不够. 希望今天能在完善博客的时候, 顺便也能熟悉一下这个项目的使用.
-&lt;ul&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 换头像&lt;/li&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 配置文件的配置过一遍&lt;/li&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 添加博客默认图片&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 完成我们论文的初稿, 即使论文目前还有很多漏洞. 但是船大难掉头, 目前先考虑论文写完, 先是一个完整的论文再说. 毕竟明晚就是 ddl 了, 也没有办法再去做论文的重构了.(发现 ddl 是第二天 12. 明天起来交作业)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;好的又要吧论文拖到明天了 😅&lt;/p&gt;
-</description>
-        </item>
-        <item>
         <title>Hugo_notes</title>
-        <link>http://localhost:1313/p/hugo_notes/</link>
+        <link>https://Gzmomo001.github.io/p/hugo_notes/</link>
         <pubDate>Thu, 22 May 2025 23:29:01 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/hugo_notes/</guid>
-        <description>&lt;img src="http://localhost:1313/p/hugo_notes/1.jpeg" alt="Featured image of post Hugo_notes" /&gt;&lt;h1 id=&#34;hugo-笔记&#34;&gt;Hugo 笔记
+        <guid>https://Gzmomo001.github.io/p/hugo_notes/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/p/hugo_notes/1.jpeg" alt="Featured image of post Hugo_notes" /&gt;&lt;h1 id=&#34;hugo-笔记&#34;&gt;Hugo 笔记
 &lt;/h1&gt;&lt;p&gt;这里是我记录 Hugo 这个框架笔记的方法, 方便我以后忘记的时候能回来查看. 本 blog 会持续更新&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;当然这里很多笔记也会是基于 stack 这个主题, 不过 hugo 大部分语法应该是通用的. 应该也有一定的参考价值.&lt;/p&gt;
@@ -2912,7 +3260,7 @@
     &gt;参考博客&lt;/a&gt;. 圆框使用 AI 修改.&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 代码框自动折叠功能,&lt;a class=&#34;link&#34; href=&#34;https://letere-gzj.github.io/hugo-stack/p/hugo/custom-stack-theme/#8-%E8%87%AA%E5%AE%9A%E4%B9%89md%E5%BC%95%E7%94%A8%E5%9D%97%E9%A2%9C%E8%89%B2%E6%A8%A1%E6%9D%BF&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;参考&lt;/a&gt;. 在原有的基础上修改了一下样式, 更加美观.&lt;/li&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 修复字体问题, 已完成. &lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/p/stack-theme-hugo-%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE/&#34; &gt;教程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 修复字体问题, 已完成. &lt;a class=&#34;link&#34; href=&#34;https://Gzmomo001.github.io/p/stack-theme-hugo-%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE/&#34; &gt;教程&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 返回顶部按钮&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 防止爬虫(&lt;a class=&#34;link&#34; href=&#34;https://blog.lufei.de/p/215/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://blog.lufei.de/p/215/&lt;/a&gt;)
@@ -2993,11 +3341,11 @@
         </item>
         <item>
         <title>Myfirstblog</title>
-        <link>http://localhost:1313/p/myfirstblog/</link>
+        <link>https://Gzmomo001.github.io/p/myfirstblog/</link>
         <pubDate>Thu, 22 May 2025 04:08:44 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/myfirstblog/</guid>
-        <description>&lt;img src="http://localhost:1313/default.jpeg" alt="Featured image of post Myfirstblog" /&gt;&lt;h1 id=&#34;这个是我的第一个条博客准确来说是第二条-hhh&#34;&gt;这个是我的第一个条博客(准确来说是第二条 hhh)
+        <guid>https://Gzmomo001.github.io/p/myfirstblog/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/default.jpeg" alt="Featured image of post Myfirstblog" /&gt;&lt;h1 id=&#34;这个是我的第一个条博客准确来说是第二条-hhh&#34;&gt;这个是我的第一个条博客(准确来说是第二条 hhh)
 &lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;时间: 25 年 5 月 22 号&lt;/li&gt;
 &lt;/ul&gt;
@@ -3029,11 +3377,11 @@
         </item>
         <item>
         <title>Chinese Test</title>
-        <link>http://localhost:1313/p/test-chinese/</link>
+        <link>https://Gzmomo001.github.io/p/test-chinese/</link>
         <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/test-chinese/</guid>
-        <description>&lt;img src="http://localhost:1313/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg" alt="Featured image of post Chinese Test" /&gt;&lt;h2 id=&#34;正文测试&#34;&gt;正文测试
+        <guid>https://Gzmomo001.github.io/p/test-chinese/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg" alt="Featured image of post Chinese Test" /&gt;&lt;h2 id=&#34;正文测试&#34;&gt;正文测试
 &lt;/h2&gt;&lt;p&gt;而这些并不是完全重要，更加重要的问题是， 带着这些问题，我们来审视一下学生会退会。 既然如何， 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 我们不得不面对一个非常尴尬的事实，那就是， 可是，即使是这样，学生会退会的出现仍然代表了一定的意义。 学生会退会，发生了会如何，不发生又会如何。 经过上述讨论， 生活中，若学生会退会出现了，我们就不得不考虑它出现了的事实。 学生会退会，到底应该如何实现。 这样看来， 在这种困难的抉择下，本人思来想去，寝食难安。 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 就我个人来说，学生会退会对我的意义，不能不说非常重大。 莎士比亚曾经提到过，人的一生是短的，但如果卑劣地过这一生，就太长了。这似乎解答了我的疑惑。 莫扎特说过一句富有哲理的话，谁和我一样用功，谁就会和我一样成功。这启发了我， 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 学生会退会，到底应该如何实现。 一般来说， 从这个角度来看， 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 在这种困难的抉择下，本人思来想去，寝食难安。 了解清楚学生会退会到底是一种怎么样的存在，是解决一切问题的关键。 一般来说， 生活中，若学生会退会出现了，我们就不得不考虑它出现了的事实。 问题的关键究竟为何？ 而这些并不是完全重要，更加重要的问题是。&lt;/p&gt;
 &lt;p&gt;奥斯特洛夫斯基曾经说过，共同的事业，共同的斗争，可以使人们产生忍受一切的力量。　带着这句话，我们还要更加慎重的审视这个问题： 一般来讲，我们都必须务必慎重的考虑考虑。 既然如此， 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 带着这些问题，我们来审视一下学生会退会。 我认为， 我认为， 在这种困难的抉择下，本人思来想去，寝食难安。 问题的关键究竟为何？ 每个人都不得不面对这些问题。 在面对这种问题时， 要想清楚，学生会退会，到底是一种怎么样的存在。 我认为， 既然如此， 每个人都不得不面对这些问题。 在面对这种问题时， 那么， 我认为， 学生会退会因何而发生。&lt;/p&gt;
 &lt;h2 id=&#34;引用&#34;&gt;引用
@@ -3046,10 +3394,10 @@
     &gt;最暖的憂傷 - 田馥甄&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;图片&#34;&gt;图片
-&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash.jpg&#34;
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://Gzmomo001.github.io/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash.jpg&#34;
 	width=&#34;667&#34;
 	height=&#34;1000&#34;
-	srcset=&#34;http://localhost:1313/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu_e98fca2b4272416e.jpg 480w, http://localhost:1313/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu_e3d37c9ded115b12.jpg 1024w&#34;
+	srcset=&#34;https://Gzmomo001.github.io/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu_e98fca2b4272416e.jpg 480w, https://Gzmomo001.github.io/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu_e3d37c9ded115b12.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Photo by Florian Klauer on Unsplash&#34;
@@ -3059,10 +3407,10 @@
 		data-flex-grow=&#34;66&#34;
 		data-flex-basis=&#34;160px&#34;
 	
-&gt;  &lt;img src=&#34;http://localhost:1313/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash.jpg&#34;
+&gt;  &lt;img src=&#34;https://Gzmomo001.github.io/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash.jpg&#34;
 	width=&#34;1000&#34;
 	height=&#34;667&#34;
-	srcset=&#34;http://localhost:1313/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu_e13c58d5189f892c.jpg 480w, http://localhost:1313/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu_8fc948b7ee525251.jpg 1024w&#34;
+	srcset=&#34;https://Gzmomo001.github.io/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu_e13c58d5189f892c.jpg 480w, https://Gzmomo001.github.io/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu_8fc948b7ee525251.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Photo by Luca Bravo on Unsplash&#34;
@@ -3073,10 +3421,10 @@
 		data-flex-basis=&#34;359px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://Gzmomo001.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg&#34;
 	width=&#34;1000&#34;
 	height=&#34;750&#34;
-	srcset=&#34;http://localhost:1313/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu_503c0ebcc5245e10.jpg 480w, http://localhost:1313/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu_48c98de55fb3c999.jpg 1024w&#34;
+	srcset=&#34;https://Gzmomo001.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu_503c0ebcc5245e10.jpg 480w, https://Gzmomo001.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu_48c98de55fb3c999.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Photo by Helena Hertz on Unsplash&#34;
@@ -3086,10 +3434,10 @@
 		data-flex-grow=&#34;133&#34;
 		data-flex-basis=&#34;320px&#34;
 	
-&gt;  &lt;img src=&#34;http://localhost:1313/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash.jpg&#34;
+&gt;  &lt;img src=&#34;https://Gzmomo001.github.io/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash.jpg&#34;
 	width=&#34;667&#34;
 	height=&#34;1000&#34;
-	srcset=&#34;http://localhost:1313/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hu_f81a3588c5c4a663.jpg 480w, http://localhost:1313/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hu_1c52ba2a4ad7b9a0.jpg 1024w&#34;
+	srcset=&#34;https://Gzmomo001.github.io/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hu_f81a3588c5c4a663.jpg 480w, https://Gzmomo001.github.io/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hu_1c52ba2a4ad7b9a0.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Photo by Hudai Gayiran on Unsplash&#34;
@@ -3109,11 +3457,11 @@
         </item>
         <item>
         <title>Markdown Syntax Guide</title>
-        <link>http://localhost:1313/p/markdown-syntax-guide/</link>
+        <link>https://Gzmomo001.github.io/p/markdown-syntax-guide/</link>
         <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/markdown-syntax-guide/</guid>
-        <description>&lt;img src="http://localhost:1313/p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg" alt="Featured image of post Markdown Syntax Guide" /&gt;&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;
+        <guid>https://Gzmomo001.github.io/p/markdown-syntax-guide/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg" alt="Featured image of post Markdown Syntax Guide" /&gt;&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;
 &lt;h2 id=&#34;headings&#34;&gt;Headings
 &lt;/h2&gt;&lt;p&gt;The following HTML &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;—&lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; elements represent six levels of section headings. &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; is the highest section level while &lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; is the lowest.&lt;/p&gt;
 &lt;h1 id=&#34;h1&#34;&gt;H1
@@ -3296,10 +3644,10 @@
         </item>
         <item>
         <title>Rich Content</title>
-        <link>http://localhost:1313/p/rich-content/</link>
+        <link>https://Gzmomo001.github.io/p/rich-content/</link>
         <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/rich-content/</guid>
+        <guid>https://Gzmomo001.github.io/p/rich-content/</guid>
         <description>&lt;p&gt;Hugo ships with several &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;
@@ -3386,11 +3734,11 @@
         </item>
         <item>
         <title>Placeholder Text</title>
-        <link>http://localhost:1313/p/placeholder-text/</link>
+        <link>https://Gzmomo001.github.io/p/placeholder-text/</link>
         <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/placeholder-text/</guid>
-        <description>&lt;img src="http://localhost:1313/p/placeholder-text/matt-le-SJSpo9hQf7s-unsplash.jpg" alt="Featured image of post Placeholder Text" /&gt;&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;
+        <guid>https://Gzmomo001.github.io/p/placeholder-text/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/p/placeholder-text/matt-le-SJSpo9hQf7s-unsplash.jpg" alt="Featured image of post Placeholder Text" /&gt;&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;
 &lt;p&gt;Redit teque digerit hominumque toris verebor lumina non cervice subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc caluere tempus inhospita parcite confusaque translucet patri vestro qui optatis lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Exierant elisi ambit vivere dedere&lt;/li&gt;
@@ -3417,10 +3765,10 @@
         </item>
         <item>
         <title>Math Typesetting</title>
-        <link>http://localhost:1313/p/math-typesetting/</link>
+        <link>https://Gzmomo001.github.io/p/math-typesetting/</link>
         <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/math-typesetting/</guid>
+        <guid>https://Gzmomo001.github.io/p/math-typesetting/</guid>
         <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;
 &lt;p&gt;In this example we will be using &lt;a class=&#34;link&#34; href=&#34;https://katex.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;KaTeX&lt;/a&gt;&lt;/p&gt;
@@ -3450,11 +3798,11 @@ $$</description>
         </item>
         <item>
         <title>Emoji Support</title>
-        <link>http://localhost:1313/p/emoji-support/</link>
+        <link>https://Gzmomo001.github.io/p/emoji-support/</link>
         <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/emoji-support/</guid>
-        <description>&lt;img src="http://localhost:1313/p/emoji-support/the-creative-exchange-d2zvqp3fpro-unsplash.jpg" alt="Featured image of post Emoji Support" /&gt;&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;
+        <guid>https://Gzmomo001.github.io/p/emoji-support/</guid>
+        <description>&lt;img src="https://Gzmomo001.github.io/p/emoji-support/the-creative-exchange-d2zvqp3fpro-unsplash.jpg" alt="Featured image of post Emoji Support" /&gt;&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;
 &lt;p&gt;The &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/functions/emojify/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;emojify&lt;/code&gt;&lt;/a&gt; function can be called directly in templates or &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/templates/shortcode-templates/#inline-shortcodes&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Inline Shortcodes&lt;/a&gt;.&lt;/p&gt;
